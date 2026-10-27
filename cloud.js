@@ -101,12 +101,17 @@
     Cloud.ready = true;
     emit("ready");
 
-    Cloud.client.auth.onAuthStateChange(async (event, session) => {
+    // UWAGA: callback nie może czekać (await) na inne wywołania Supabase –
+    // biblioteka trzyma wtedy blokadę sesji i wszystko się zawiesza
+    // (m.in. przycisk „Wyloguj”). Dlatego właściwą pracę odkładamy przez setTimeout.
+    Cloud.client.auth.onAuthStateChange((event, session) => {
       // sesję początkową obsłużyliśmy już wyżej; odświeżenie tokenu nic nie zmienia
       if (event === "INITIAL_SESSION") return;
       if (event === "TOKEN_REFRESHED" && Cloud.user) return;
-      await loadIdentity(session);
-      emit(Cloud.user ? "login" : "logout");
+      setTimeout(async () => {
+        try { await loadIdentity(session); } catch (e) { Cloud.lastError = human(e); }
+        emit(Cloud.user ? "login" : "logout");
+      }, 0);
     });
     return !!Cloud.user;
   };
@@ -143,8 +148,18 @@
   };
 
   Cloud.signOut = async function () {
-    await Cloud.client.auth.signOut().catch(() => {});
     Cloud.user = null; Cloud.profile = null; Cloud.isAdmin = false;
+    // wylogowanie lokalne; nie czekamy na serwer dłużej niż 3 s
+    await Promise.race([
+      Cloud.client.auth.signOut({ scope: "local" }).catch(() => {}),
+      new Promise(r => setTimeout(r, 3000))
+    ]);
+    // gdyby biblioteka nie zdążyła – usuwamy zapisaną sesję ręcznie
+    try {
+      Object.keys(localStorage)
+        .filter(k => /^sb-.*-auth-token/.test(k))
+        .forEach(k => localStorage.removeItem(k));
+    } catch (e) {}
     emit("logout");
   };
 
