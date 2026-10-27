@@ -1,0 +1,322 @@
+{
+ "361": {
+  "answer": "a",
+  "explanation": "W budynku wysokim (ZL II) podłogi podniesione powinny mieć niepalną konstrukcję nośną, niezapalne płyty o klasie REI 60, a przestrzeń podpodłogową podzieloną na sektory ≤ 1000 m² przegrodami EI 30.",
+  "legal": [
+   "§ 261 WT – podłogi podniesione"
+  ],
+  "verified": false
+ },
+ "362": {
+  "answer": "c",
+  "explanation": "Czujka klasy A1S („S” – statyczna) zadziała po przekroczeniu określonego progu temperatury, niezależnie od szybkości narastania temperatury.",
+  "legal": [
+   "PN-EN 54-5 – czujki ciepła, klasy"
+  ],
+  "verified": false
+ },
+ "363": {
+  "answer": "b",
+  "explanation": "Magazyn butli z gazem płynnym należy usytuować od budynku PM (1000 MJ/m²) w odległości co najmniej 15 m.",
+  "legal": [
+   "rozp. dot. baz i rozlewni gazu płynnego"
+  ],
+  "verified": false
+ },
+ "364": {
+  "answer": "b",
+  "explanation": "Wylot kanału dymowego w dachu niższego budynku, blisko wyższego z oknami, jest dopuszczalny pod warunkiem zachowania odległości wylotu od najbliższego okna co najmniej 8 m.",
+  "legal": [
+   "§ 266, § 271 WT"
+  ],
+  "verified": false
+ },
+ "365": {
+  "answer": "a",
+  "explanation": "Instalacja gazowa może być zasilana z grupy zbiorników naziemnych (do 6 sztuk), pod warunkiem że ich łączna pojemność nie przekroczy 20 m³.",
+  "legal": [
+   "§ 179 WT – zbiorniki gazu płynnego"
+  ],
+  "verified": false
+ },
+ "366": {
+  "answer": "c",
+  "explanation": "W tunelu drogowym przewody i kable obwodów urządzeń ppoż. powinny zapewniać ciągłość dostawy energii/przekazu sygnału przez czas nie mniejszy niż 120 minut (bezpieczeństwo ekip ratowniczych).",
+  "legal": [
+   "rozp. z 30.05.2000 – drogowe obiekty inżynierskie"
+  ],
+  "verified": false
+ },
+ "367": {
+  "answer": "b",
+  "explanation": "Minimalna odległość stanowiska czerpania wody przeciwpożarowego zbiornika od ściany zewnętrznej chronionego budynku wynosi co najmniej 16 m.",
+  "legal": [
+   "PN-B-02857:2017 – przeciwpożarowe zbiorniki wodne"
+  ],
+  "verified": false
+ },
+ "368": {
+  "answer": "c",
+  "explanation": "Materiałem niebezpiecznym pożarowo jest ciecz o temperaturze zapłonu poniżej 328,15 K (55°C). Zarówno 327 K, jak i 328 K są poniżej progu – obie ciecze są materiałem niebezpiecznym pożarowo, więc żadna z odpowiedzi a i b nie jest prawidłowa.",
+  "legal": [
+   "§ 2 RPB – definicja materiałów niebezpiecznych pożarowo"
+  ],
+  "verified": true
+ },
+ "369": {
+  "answer": "c",
+  "explanation": "Pojedynczy punkt dostarczania powietrza dla klatki schodowej o podwyższonym ciśnieniu jest dopuszczalny w budynkach o wysokości poniżej 11 m.",
+  "legal": [
+   "PN-EN 12101-6 – systemy różnicowania ciśnień"
+  ],
+  "verified": false
+ },
+ "370": {
+  "answer": "b",
+  "explanation": "Strefa PM (2500 MJ/m²) w budynku wysokim z tryskaczami i oddymianiem może być powiększona o 150% (100% za tryskacze + 50% za oddymianie).",
+  "legal": [
+   "§ 228 WT – powiększanie powierzchni stref PM"
+  ],
+  "verified": false
+ },
+ "371": {
+  "answer": "a",
+  "explanation": "Woda w zbiorniku do zewnętrznego gaszenia pożaru (urządzenie tryskaczowe zasilane z własnego, odrębnego zbiornika nie jest wliczane) dla tej strefy wynosi 432 m³.",
+  "legal": [
+   "§ 6, § 8 RW – zapas wody do zewnętrznego gaszenia pożaru"
+  ],
+  "verified": false
+ },
+ "372": {
+  "answer": "c",
+  "explanation": "Przejście w PM (jednokondygnacyjny) = 100 m. Wysokość 6 m > 5 m → +25%; oddymianie sterowane SSP → +50%. 100 × 1,75 = 175 m.",
+  "legal": [
+   "§ 237 WT – długość przejścia ewakuacyjnego"
+  ],
+  "verified": true
+ },
+ "373": {
+  "answer": "c",
+  "explanation": "Pomieszczenie dla ponad 50 osób niebędących stałymi użytkownikami to ZL I – przy co najmniej dwóch dojściach 40 m (§ 256 ust. 3). Urządzenie mgłowe jest urządzeniem wodnym → +50% (ust. 4 pkt 1) = 60 m; drugie dojście może być dłuższe o 100% od najkrótszego → 120 m.",
+  "legal": [
+   "§ 256 ust. 3 i 4 WT – długości dojść ewakuacyjnych"
+  ],
+  "verified": true
+ },
+ "374": {
+  "answer": "a",
+  "explanation": "Minimalna szerokość w świetle drzwi do kabiny dźwigu dla straży pożarnej wynosi 0,8 m.",
+  "legal": [
+   "PN-EN 81-72:2020 – dźwigi dla straży pożarnej"
+  ],
+  "verified": false
+ },
+ "375": {
+  "answer": "b",
+  "explanation": "Niski budynek biurowy ze strefą ZL III wymaga klasy odporności pożarowej co najmniej C.",
+  "legal": [
+   "§ 212 WT – klasa odporności pożarowej"
+  ],
+  "verified": false
+ },
+ "376": {
+  "answer": "c",
+  "explanation": "§ 278 ust. 1 WT: dwa wyjścia są wymagane, gdy strefa ma ponad 25 stanowisk i nie ma wentylacji oddymiającej, albo gdy powierzchnia przekracza 1500 m². Tu garaż ma oddymianie, a powierzchnia 1400 m² – wystarcza jedno wyjście, przy zachowaniu długości przejścia do 40 m (ust. 2 pkt 1).",
+  "legal": [
+   "§ 278 ust. 1 i 2 WT – wyjścia i przejścia w garażach"
+  ],
+  "verified": true
+ },
+ "377": {
+  "answer": "a",
+  "explanation": "W budynku wysokim użyteczności publicznej zastosowanie instalacji gazowej do urządzeń gastronomicznych w restauracji jest niedopuszczalne (dopuszcza się jedynie zasilanie pomieszczeń technicznych).",
+  "legal": [
+   "§ 157 WT – instalacje gazowe w budynkach wysokich"
+  ],
+  "verified": false
+ },
+ "378": {
+  "answer": "b",
+  "explanation": "Przestrzenie ukryte przy dachu lub podłodze podniesionej powinny być chronione urządzeniem tryskaczowym, jeżeli ich wysokość jest większa niż 0,8 m.",
+  "legal": [
+   "PN-EN 12845+A1:2020 – ochrona przestrzeni ukrytych"
+  ],
+  "verified": false
+ },
+ "379": {
+  "answer": "a",
+  "explanation": "Pompownie przeciwpożarowe należy lokalizować od osi obwałowania lub ściany osłonowej zbiornika ropy naftowej w odległości nie mniejszej niż 20 m.",
+  "legal": [
+   "rozp. MG z 21.11.2005 – bazy paliw płynnych"
+  ],
+  "verified": false
+ },
+ "380": {
+  "answer": "c",
+  "explanation": "Odnośnik 3 do tabeli § 216 ust. 1 WT zwalnia przekrycie dachu z wymagań, jeżeli nad najwyższą kondygnacją znajduje się strop albo inna przegroda spełniająca kryteria z kolumny 4 (strop). Dla klasy „C” strop wymaga klasy REI 60.",
+  "legal": [
+   "§ 216 ust. 1 WT – odnośnik 3 do tabeli (kolumna 4 – strop)"
+  ],
+  "verified": true
+ },
+ "381": {
+  "answer": "c",
+  "explanation": "Na rysunkach należy oznaczać klasy odporności ogniowej lub dymoszczelności elementów oddzielenia ppoż. i innych elementów z przejściami instalacyjnymi wymagającymi zabezpieczenia, a także drzwi, bram i innych zamknięć przeciwpożarowych.",
+  "legal": [
+   "rozp. z 11.09.2020 (Dz.U. poz. 1609) – zakres projektu budowlanego"
+  ],
+  "verified": false
+ },
+ "382": {
+  "answer": "b",
+  "explanation": "W poziomach pośrednich regałów dopuszcza się zasilanie z tego samego stanowiska kontrolno-alarmowego nie więcej niż 100 tryskaczy w regałach.",
+  "legal": [
+   "PN-EN 12845+A1:2020 – tryskacze w regałach"
+  ],
+  "verified": false
+ },
+ "383": {
+  "answer": "a",
+  "explanation": "Ściany zewnętrzne kotłowni gazowej nad dachem budynku powinny mieć klasę odporności ogniowej jak ściany zewnętrzne (wg klasy budynku) i być wykonane z materiałów klasy reakcji na ogień co najmniej B,d0.",
+  "legal": [
+   "§ 220 WT / PN-B-02431-1 – kotłownie gazowe"
+  ],
+  "verified": false
+ },
+ "384": {
+  "answer": "b",
+  "explanation": "Wentylację oddymiającą uruchamianą systemem wykrywania dymu wymaga się w strefie pożarowej garażu pozbawionej bezpośredniego wjazdu lub wyjazdu na zewnątrz budynku.",
+  "legal": [
+   "§ 277 WT – oddymianie garaży"
+  ],
+  "verified": false
+ },
+ "385": {
+  "answer": "c",
+  "explanation": "Nie jest wymagane zastosowanie hydrantów 52: strefa ma gęstość 400 MJ/m² (< 500), a pojedyncze pomieszczenie o wyższej gęstości ma powierzchnię poniżej progu.",
+  "legal": [
+   "§ 19 RPB – dobór hydrantów wewnętrznych"
+  ],
+  "verified": false
+ },
+ "386": {
+  "answer": "c",
+  "explanation": "Kurtyna dymowa oznaczona DA spełnia wszystkie wymagania klasyfikacji D.",
+  "legal": [
+   "PN-EN 12101-1:2007 – kurtyny dymowe"
+  ],
+  "verified": false
+ },
+ "387": {
+  "answer": "c",
+  "explanation": "Dla niskiego motelu o 40 miejscach noclegowych (poniżej progu) doprowadzenie drogi pożarowej nie jest wymagane.",
+  "legal": [
+   "§ 12 RW – wymóg drogi pożarowej dla ZL V"
+  ],
+  "verified": false
+ },
+ "388": {
+  "answer": "b",
+  "explanation": "Dla klasy zagrożenia pożarowego HHP każde zasilanie wodą powinno zapewnić minimalny czas działania 90 minut.",
+  "legal": [
+   "PN-EN 12845+A1:2020 – czas działania wg klasy zagrożenia"
+  ],
+  "verified": false
+ },
+ "389": {
+  "answer": "b",
+  "explanation": "Awaryjne oświetlenie ewakuacyjne należy obligatoryjnie zastosować w pomieszczeniu o powierzchni netto ponad 1000 m² w budynku użyteczności publicznej, niezależnie od liczby osób.",
+  "legal": [
+   "§ 181 WT – awaryjne oświetlenie ewakuacyjne"
+  ],
+  "verified": false
+ },
+ "390": {
+  "answer": "a",
+  "explanation": "Na terenie zamkniętym służącym obronności państwa SSP jest wymagany m.in. w budynku zamieszkania zbiorowego, w którym okres pobytu tych samych osób przekracza 3 doby, a liczba miejsc noclegowych przekracza 150.",
+  "legal": [
+   "§ 28 RPB – obiekty wymagające SSP (tereny zamknięte)"
+  ],
+  "verified": false
+ },
+ "391": {
+  "answer": "b",
+  "explanation": "Do jednokondygnacyjnego budynku magazynowego o gęstości poniżej 500 MJ/m² drogę pożarową doprowadza się, gdy powierzchnia strefy PM przekracza 20 000 m².",
+  "legal": [
+   "§ 12 RW – wymóg drogi pożarowej"
+  ],
+  "verified": false
+ },
+ "392": {
+  "answer": "b",
+  "explanation": "Okna dla ekip ratowniczych powinny znajdować się w każdej klatce schodowej służącej ewakuacji.",
+  "legal": [
+   "§ 13 RW / WT – okna dla ekip ratowniczych"
+  ],
+  "verified": false
+ },
+ "393": {
+  "answer": "b",
+  "explanation": "Strefę pożarową z odpadami stałymi w budynku wyposaża się w samoczynne urządzenia oddymiające, jeżeli jej powierzchnia przekracza 1000 m² i gęstość obciążenia ogniowego przekracza 1000 MJ/m².",
+  "legal": [
+   "rozp. MSWiA z 19.02.2020 (Dz.U. poz. 296)"
+  ],
+  "verified": false
+ },
+ "394": {
+  "answer": "b",
+  "explanation": "Awaryjne oświetlenie ewakuacyjne powinno wytworzyć 50% wymaganego natężenia w ciągu 5 s, a 100% w ciągu 60 s.",
+  "legal": [
+   "PN-EN 1838:2013 – czas osiągania natężenia"
+  ],
+  "verified": true
+ },
+ "395": {
+  "answer": "b",
+  "explanation": "Uzgodnienia ppoż. wymaga projekt garażu ze stanowiskami postojowymi oraz punktami ładowania pojazdów elektrycznych.",
+  "legal": [
+   "§ 4 rozp. w sprawie uzgadniania projektu pod względem ochrony ppoż."
+  ],
+  "verified": false
+ },
+ "396": {
+  "answer": "c",
+  "explanation": "Parametr Re w klasyfikacji klapy dymowej dotyczy niezawodności (liczby cykli otwarcia).",
+  "legal": [
+   "PN-EN 12101-2:2017 – urządzenia do grawitacyjnego odprowadzania dymu"
+  ],
+  "verified": true
+ },
+ "397": {
+  "answer": "a",
+  "explanation": "Przeciwpożarowe zaopatrzenie w wodę do zewnętrznego gaszenia jest wymagane m.in. dla obiektu gospodarki rolnej o powierzchni strefy pożarowej 1500 m² (powyżej progu).",
+  "legal": [
+   "§ 3–5 RW – wymagane zaopatrzenie w wodę"
+  ],
+  "verified": false
+ },
+ "398": {
+  "answer": "c",
+  "explanation": "Maksymalny promień działania punktowej czujki dymu w pomieszczeniu o wysokości 3 m (strop płaski) wynosi 7,5 m.",
+  "legal": [
+   "PKN-CEN/TS 54-14:2020 – promienie działania czujek"
+  ],
+  "verified": false
+ },
+ "399": {
+  "answer": "b",
+  "explanation": "Oznaczenie „II 2G” (kategoria 2, G – gazy) pozwala na zastosowanie urządzenia w strefie 1.",
+  "legal": [
+   "dyrektywa ATEX – kategorie urządzeń i strefy gazowe"
+  ],
+  "verified": false
+ },
+ "400": {
+  "answer": "a",
+  "explanation": "Długość przewodu ssawnego do pracy ze ssaniem przy zbiorniku o pojemności do 150 m³ nie powinna przekraczać 8 m.",
+  "legal": [
+   "PN-B-02857:2017 – przeciwpożarowe zbiorniki wodne"
+  ],
+  "verified": false
+ }
+}

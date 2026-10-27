@@ -1,0 +1,325 @@
+{
+ "481": {
+  "answer": "c",
+  "explanation": "Elastyczne przewody wentylacyjne łączące (długości do 4 m) powinny być wykonane z materiałów co najmniej trudno zapalnych.",
+  "legal": [
+   "§ 267 WT – przewody wentylacyjne"
+  ],
+  "verified": false
+ },
+ "482": {
+  "answer": "c",
+  "explanation": "Efektywna powierzchnia otworów napływu powietrza kompensacyjnego do klatki schodowej powinna być nie mniejsza niż 130% łącznej powierzchni czynnej oddymiania tej klatki.",
+  "legal": [
+   "PN-B-02877-4:2025-07 – oddymianie grawitacyjne"
+  ],
+  "verified": false
+ },
+ "483": {
+  "answer": "a",
+  "explanation": "W miejscu połączenia stropu antresoli (użytkowanej przez ponad 10 osób) ze ścianą zewnętrzną wymagany jest pas międzykondygnacyjny o wysokości co najmniej 0,8 m.",
+  "legal": [
+   "§ 225 WT – pas międzykondygnacyjny"
+  ],
+  "verified": false
+ },
+ "484": {
+  "answer": "b",
+  "explanation": "Do budynku magazynowego o gęstości 4000 MJ/m² i strefie przekraczającej 1000 m² droga pożarowa jest wymagana; powinna umożliwiać przejazd pojazdów o nacisku osi co najmniej 100 kN.",
+  "legal": [
+   "§ 12–13 RW – droga pożarowa, nacisk osi"
+  ],
+  "verified": false
+ },
+ "485": {
+  "answer": "b",
+  "explanation": "Przy przejściu przewodów wentylacyjnych klasy E przez przegrody wydzielające lokal mieszkalny należy zastosować przeciwpożarową klapę odcinającą o klasie co najmniej EIS 60.",
+  "legal": [
+   "§ 267 WT – przejścia przewodów wentylacyjnych"
+  ],
+  "verified": false
+ },
+ "486": {
+  "answer": "b",
+  "explanation": "W pomieszczeniach ZL III niebędących drogą ewakuacji można stosować materiały klasy D-s2,d0 o wskaźniku toksykometrycznym 15 < WLC50SM ≤ 40.",
+  "legal": [
+   "§ 258 WT – wykończenie wnętrz; wskaźnik toksyczności"
+  ],
+  "verified": false
+ },
+ "487": {
+  "answer": "c",
+  "explanation": "Uzgodnienia nie wymaga projekt techniczny tunelu technologicznego nieprzeznaczonego do ruchu pojazdów lub pieszych.",
+  "legal": [
+   "§ 4 rozp. w sprawie uzgadniania projektu pod względem ochrony ppoż."
+  ],
+  "verified": false
+ },
+ "488": {
+  "answer": "b",
+  "explanation": "W strefie z odpadami stałymi poza budynkiem, chronionej SUG wodnym, maksymalna powierzchnia sekcji magazynowej (1000 MJ/m²) wynosi 800 m².",
+  "legal": [
+   "rozp. MSWiA z 19.02.2020 (Dz.U. poz. 296)"
+  ],
+  "verified": false
+ },
+ "489": {
+  "answer": "c",
+  "explanation": "Odległość punktowej czujki dymu od ściany pomieszczenia nie może być większa niż 6,4 m.",
+  "legal": [
+   "PKN-CEN/TS 54-14:2020 – rozmieszczenie czujek"
+  ],
+  "verified": false
+ },
+ "490": {
+  "answer": "b",
+  "explanation": "§ 277 ust. 1 WT: powierzchnia strefy pożarowej w garażu zamkniętym nie powinna przekraczać 5000 m². Ust. 2 pozwala powiększyć ją o 100% przy zastosowaniu stałych samoczynnych urządzeń gaśniczych wodnych → 10 000 m².",
+  "legal": [
+   "§ 277 ust. 1 i 2 WT – powierzchnia strefy pożarowej garażu zamkniętego"
+  ],
+  "verified": true
+ },
+ "491": {
+  "answer": "b",
+  "explanation": "Droga pożarowa jest wymagana (pomieszczenie zagrożone wybuchem); w miejscu przebiegu wzdłuż dłuższego boku budynku jej szerokość powinna wynosić co najmniej 4 m.",
+  "legal": [
+   "§ 12 RW – parametry drogi pożarowej"
+  ],
+  "verified": false
+ },
+ "492": {
+  "answer": "a",
+  "explanation": "Belki z drewna klejonego stanowiące konstrukcję dachu hali powinny łącznie spełniać: klasa R 30, wymiar przekroju co najmniej 14 cm, klasa reakcji na ogień D-s1,d0.",
+  "legal": [
+   "§ 216, § 217 WT – konstrukcja dachu z drewna klejonego"
+  ],
+  "verified": false
+ },
+ "493": {
+  "answer": "c",
+  "explanation": "Liczba podziemnych zbiorników z gazem płynnym (po 10 m³) w stacji paliw nie może być większa niż 4.",
+  "legal": [
+   "rozp. MG z 21.11.2005 – stacje paliw, zbiorniki gazu płynnego"
+  ],
+  "verified": false
+ },
+ "494": {
+  "answer": "b",
+  "explanation": "Klasyfikacja HOT 400/30 oznacza zdolność klapy do wykonania 30 cykli otwierania i zamykania w warunkach oddziaływania temperatury niższej niż 400°C.",
+  "legal": [
+   "PN-EN 13501-4:2016-07 – klasyfikacja klap odcinających"
+  ],
+  "verified": false
+ },
+ "495": {
+  "answer": "a",
+  "explanation": "Budynek średniowysoki (ZL) o strefie 2500 m² z możliwością przebywania 60 osób należy wyposażyć w instalację wodociągową przeciwpożarową z hydrantami 25.",
+  "legal": [
+   "§ 19 RPB – hydranty wewnętrzne w strefach ZL"
+  ],
+  "verified": false
+ },
+ "496": {
+  "answer": "b",
+  "explanation": "Źródło zasilające (inne niż sieć wodociągowa ppoż.) powinno napełnić cały zbiornik (300 m³) po opróżnieniu w czasie nie dłuższym niż 48 h.",
+  "legal": [
+   "PN-B-02857:2017-04 – przeciwpożarowe zbiorniki wodne"
+  ],
+  "verified": false
+ },
+ "497": {
+  "answer": "a",
+  "explanation": "Klatki schodowe w budynku wysokim przeznaczonym do zakwaterowania osadzonych powinny być wyposażone w urządzenia zapobiegające zadymieniu lub usuwające dym, uruchamiane samoczynnie systemem wykrywania dymu.",
+  "legal": [
+   "§ 245 WT – zabezpieczenie klatek schodowych"
+  ],
+  "verified": false
+ },
+ "498": {
+  "answer": "c",
+  "explanation": "W budynku wysokim (60 m) należy zapewnić możliwość ewakuacji do co najmniej dwóch klatek schodowych.",
+  "legal": [
+   "§ 245 WT – liczba klatek schodowych"
+  ],
+  "verified": false
+ },
+ "499": {
+  "answer": "b",
+  "explanation": "Strop antresoli przeznaczonej do użytku (30 osób) powinien mieć klasę odporności ogniowej co najmniej REI 30.",
+  "legal": [
+   "§ 216, § 220 WT – klasy odporności ogniowej stropów/antresol"
+  ],
+  "verified": false
+ },
+ "500": {
+  "answer": "c",
+  "explanation": "Poza wymaganiem dotyczącym zasilania zbiornika z sieci, instalacja wodociągowa ppoż. budynku wysokiego wymaga wyprowadzenia w elewacji (od strony drogi pożarowej) nasady 75 mm umożliwiającej zasilanie z samochodów gaśniczych – dlatego odpowiedzi a i b są niepełne.",
+  "legal": [
+   "§ 19–20 RPB – instalacja wodociągowa przeciwpożarowa w budynkach wysokich"
+  ],
+  "verified": false
+ },
+ "501": {
+  "answer": "a",
+  "explanation": "Tabela § 271 ust. 1 dla ZL ↔ PM o 1000 < Q ≤ 4000 MJ/m² daje 15 m (ściany NRO, ponad 65% powierzchni w wymaganej klasie – brak powiększeń). Ponieważ budynek biurowy jest chroniony stałymi urządzeniami gaśniczymi wodnymi, odległość można zmniejszyć o 25% (ust. 7): 15 × 0,75 = 11,25 m.",
+  "legal": [
+   "§ 271 ust. 1 WT – tabela odległości",
+   "§ 271 ust. 7 WT – zmniejszenie o 25% przy SUG wodnych"
+  ],
+  "verified": true
+ },
+ "502": {
+  "answer": "b",
+  "explanation": "Wydajność wentylacji oddymiającej tunelu (autobusy do 20 t) ustala się przy mocy pożaru projektowego nie mniejszej niż 30 MW.",
+  "legal": [
+   "rozp. dot. drogowych obiektów inżynierskich – moc pożaru projektowego"
+  ],
+  "verified": false
+ },
+ "503": {
+  "answer": "b",
+  "explanation": "Budynek o wysokości 13 m jest średniowysoki. Dla strefy PM z pomieszczeniem zagrożonym wybuchem o 500 < Q ≤ 1000 MJ/m² tabela § 228 w kolumnie N i SW daje 2000 m². Samoczynne oddymianie pozwala powiększyć o 50% (§ 229 ust. 1 pkt 2) → 3000 m².",
+  "legal": [
+   "§ 228 ust. 1 WT",
+   "§ 229 ust. 1 pkt 2 WT"
+  ],
+  "verified": true
+ },
+ "504": {
+  "answer": "b",
+  "explanation": "§ 9 ust. 2 RW: sieć wodociągowa przeciwpożarowa powinna zapewniać wydajność nie mniejszą niż 5 dm³/s i ciśnienie w hydrancie zewnętrznym nie mniejsze niż 0,1 MPa przez co najmniej 2 godziny (ust. 1 wymienia zbiornik wieżowy jako źródło zasilania).",
+  "legal": [
+   "§ 9 ust. 1 i 2 RW – sieć wodociągowa przeciwpożarowa"
+  ],
+  "verified": true
+ },
+ "505": {
+  "answer": "c",
+  "explanation": "Dla intensywnego czerpania wody na sieciach DN ≥ 250 przy hydrancie należy przewidzieć stanowisko czerpania wody o wymiarach zapewniających swobodny dostęp.",
+  "legal": [
+   "§ 10 RW – hydranty zewnętrzne, stanowisko czerpania"
+  ],
+  "verified": false
+ },
+ "506": {
+  "answer": "b",
+  "explanation": "Sygnalizatory optyczne nie wymagają świadectwa dopuszczenia CNBOP-PIB (czujki i ręczne ostrzegacze pożarowe – wymagają).",
+  "legal": [
+   "rozp. w sprawie wykazu wyrobów służących ochronie ppoż. wymagających świadectwa dopuszczenia"
+  ],
+  "verified": false
+ },
+ "507": {
+  "answer": "a",
+  "explanation": "Hydrofor stosowany jako pojedyncze zasilanie wodą powinien być w stanie całkowicie się napełnić i zapewnić wymagane ciśnienie w czasie nie dłuższym niż 4 godziny.",
+  "legal": [
+   "PN-EN 12845+A1:2020 – hydrofory"
+  ],
+  "verified": false
+ },
+ "508": {
+  "answer": "b",
+  "explanation": "UWAGA – odpowiedź obliczeniowa, wymaga sprawdzenia. Przyjęto wymaganą ilość wody 20 dm³/s utrzymywaną przez 4 godziny: 20 × 14 400 s = 288 000 dm³ = 288 m³. Rozporządzenie nie podaje wprost wzoru – wartości wynikają z tabel załącznika i PN-B-02857.",
+  "legal": [
+   "§ 6–7 RW – wymagana ilość wody dla stref poza budynkami",
+   "PN-B-02857 – przeciwpożarowe zbiorniki wodne (obliczanie zapasu)"
+  ],
+  "verified": false
+ },
+ "509": {
+  "answer": "a",
+  "explanation": "Dojście i dojazd do budowli rolniczej są wymagane m.in. gdy występuje strefa pożarowa o gęstości 2000 MJ/m² i powierzchni 800 m².",
+  "legal": [
+   "rozp. dot. budowli rolniczych – dojścia i dojazdy"
+  ],
+  "verified": false
+ },
+ "510": {
+  "answer": "a",
+  "explanation": "Wg PN-EN 1838 poziom natężenia oświetlenia awaryjnego w strefie otwartej (z wyłączeniem pasa obwodowego 0,5 m) powinien wynosić na poziomie podłogi co najmniej 0,5 lx.",
+  "legal": [
+   "PN-EN 1838:2025-05 – oświetlenie strefy otwartej (antypaniczne)"
+  ],
+  "verified": false
+ },
+ "511": {
+  "answer": "a",
+  "explanation": "W budynku wysokościowym system różnicowania ciśnień powinien zapewnić różnicę ciśnień między klatką a przestrzenią użytkową co najmniej 50 Pa oraz prędkość przepływu powietrza przez otwarte drzwi co najmniej 2 m/s.",
+  "legal": [
+   "PN-EN 12101-13:2022 – systemy różnicowania ciśnień"
+  ],
+  "verified": false
+ },
+ "512": {
+  "answer": "c",
+  "explanation": "Wymagania dotyczące minimalnej odległości czujki punktowej od otworu wentylacyjnego nie dotyczą czujek ciepła (odnoszą się do czujek dymu).",
+  "legal": [
+   "PKN-CEN/TS 54-14:2020 – rozmieszczenie czujek a wentylacja"
+  ],
+  "verified": false
+ },
+ "513": {
+  "answer": "c",
+  "explanation": "Wentylacja mechaniczna oddymiająca w tunelu drogowym powinna zapewniać prędkość przepływu powietrza w tunelu nie większą niż 10 m/s.",
+  "legal": [
+   "rozp. dot. drogowych obiektów inżynierskich – wentylacja tuneli"
+  ],
+  "verified": false
+ },
+ "514": {
+  "answer": "b",
+  "explanation": "Tryskacze wiszące nie powinny być przyłączane bezpośrednio do przewodów o średnicy większej niż 65 mm.",
+  "legal": [
+   "PN-EN 12845+A1:2020 – przyłączanie tryskaczy"
+  ],
+  "verified": false
+ },
+ "515": {
+  "answer": "b",
+  "explanation": "Źródło wody powinno ponownie napełnić zbiornik z zapasem wody dla urządzeń tryskaczowych klasy OH w czasie nie dłuższym niż 36 godzin.",
+  "legal": [
+   "PN-EN 12845+A1:2020 – uzupełnianie zapasu wody"
+  ],
+  "verified": false
+ },
+ "516": {
+  "answer": "a",
+  "explanation": "Urządzenie zatrzymujące („Stop Gaszenia”) należy lokalizować wewnątrz i na zewnątrz zabezpieczanego pomieszczenia – przy wejściu oraz przy wyjściu ewakuacyjnym.",
+  "legal": [
+   "PN-EN 15004-1:2025-05 – urządzenia gaśnicze gazowe"
+  ],
+  "verified": false
+ },
+ "517": {
+  "answer": "a",
+  "explanation": "Biegi i spoczniki schodów ewakuacyjnych w budynku wysokościowym powinny być wykonane z materiałów niepalnych oraz mieć klasę odporności ogniowej co najmniej R 60.",
+  "legal": [
+   "§ 253 WT – biegi i spoczniki schodów"
+  ],
+  "verified": false
+ },
+ "518": {
+  "answer": "b",
+  "explanation": "Zbiorniki gazu płynnego na stacji gazu płynnego powinny być usytuowane od granicy lasu w odległości nie mniejszej niż 20 m.",
+  "legal": [
+   "rozp. dot. stacji gazu płynnego – odległości od lasu"
+  ],
+  "verified": false
+ },
+ "519": {
+  "answer": "c",
+  "explanation": "Klapa awaryjna dźwigu dla straży pożarnej (udźwig 630 kg) powinna mieć wymiary otworu w świetle co najmniej 0,5 m × 0,7 m.",
+  "legal": [
+   "PN-EN 81-72:2020-12 – dźwigi dla straży pożarnej"
+  ],
+  "verified": false
+ },
+ "520": {
+  "answer": "b",
+  "explanation": "Zbiornik biogazu rolniczego należy usytuować od pomieszczeń przeznaczonych na pobyt ludzi w budynku produkcyjnym (1000 MJ/m²) w odległości co najmniej 15 m.",
+  "legal": [
+   "rozp. dot. budowli rolniczych/biogazowni – odległości"
+  ],
+  "verified": false
+ }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#c62828">
+<meta name="description" content="Nauka do egzaminu na rzeczoznawcę do spraw zabezpieczeń przeciwpożarowych – pytania, objaśnienia i przypisy prawne.">
+<title>Rzeczoznawca PPOŻ – nauka</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="app">
+  <button class="home-btn" id="homeBtn" aria-label="Menu główne">‹</button>
+  <h1 id="topTitle">Rzeczoznawca PPOŻ</h1>
+  <button class="acct-btn hidden" id="acctBtn" aria-label="Konto użytkownika" title="Konto">👤</button>
+  <button class="theme-btn" id="themeBtn" aria-label="Motyw">◐</button>
+</header>
+<main id="app"><!-- widoki wstrzykiwane przez app.js --></main>
+
+<script src="questions.js"></script>
+<script src="answers.js"></script>
+<script src="questions-new.js"></script>
+<script src="acts.js"></script>
+<script src="quotes.js"></script>
+<!-- warstwa serwerowa: biblioteka Supabase + konfiguracja + klient -->
+<script src="vendor/supabase.js"></script>
+<script src="cloud-config.js"></script>
+<script src="cloud.js"></script>
+<script src="app.js"></script>
+<script>
+if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('service-worker.js').catch(()=>{}));
+}
+</script>
+</body>
+</html>

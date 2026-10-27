@@ -1,0 +1,322 @@
+{
+ "401": {
+  "answer": "a",
+  "explanation": "Klatka schodowa obsługująca wszystkie strefy powinna być zamykana drzwiami EI 30 dymoszczelnymi na kondygnacjach nadziemnych oraz (od strony garażu podziemnego) mieć oddzielenie przedsionkiem przeciwpożarowym z drzwiami E 30 dymoszczelnymi.",
+  "legal": [
+   "§ 245, § 246 WT – obudowa i oddzielenie klatek schodowych"
+  ],
+  "verified": false
+ },
+ "402": {
+  "answer": "a",
+  "explanation": "W badaniu odporności na oddziaływanie mechaniczne (M) wg PN-EN 1363-2 całkowity ciężar elementu uderzającego wynosi 200 kg.",
+  "legal": [
+   "PN-EN 1363-2:2001 – badania odporności ogniowej, procedury dodatkowe"
+  ],
+  "verified": false
+ },
+ "403": {
+  "answer": "a",
+  "explanation": "Zbiornik naziemny z gazem płynnym o pojemności 50 m³ należy usytuować od budynku produkcyjno-magazynowego w odległości co najmniej 15 m.",
+  "legal": [
+   "§ 179 WT / rozp. dot. zbiorników gazu płynnego"
+  ],
+  "verified": false
+ },
+ "404": {
+  "answer": "b",
+  "explanation": "Zasady projektowania SRC wg PN-EN 12101-13 stosuje się bez dodatkowych metod weryfikacji dla budynków o wysokości do 60 m, jednak poniżej limitu określonego dla budynków wysokościowych wg wymogów krajowych.",
+  "legal": [
+   "PN-EN 12101-13:2022 – systemy różnicowania ciśnień"
+  ],
+  "verified": false
+ },
+ "405": {
+  "answer": "b",
+  "explanation": "Awaryjna wentylacja mechaniczna w pomieszczeniu sprężarek gazu ziemnego powinna być uruchamiana automatycznie przy przekroczeniu 20% dolnej granicy wybuchowości metanu.",
+  "legal": [
+   "rozp. MG z 26.04.2013 – sieci gazowe"
+  ],
+  "verified": false
+ },
+ "406": {
+  "answer": "c",
+  "explanation": "Na zewnątrz powinny otwierać się drzwi zarówno z pomieszczenia dla ponad 50 osób, jak i z pomieszczenia, do którego jest możliwe niespodziewane przedostanie się mieszanin wybuchowych lub substancji trujących – obie odpowiedzi są prawidłowe.",
+  "legal": [
+   "§ 236 WT – kierunek otwierania drzwi ewakuacyjnych"
+  ],
+  "verified": false
+ },
+ "407": {
+  "answer": "b",
+  "explanation": "Silos na zboże/pasze o pojemności większej niż 100 ton należy usytuować od budynku produkcyjno-magazynowego o gęstości > 4000 MJ/m² w odległości co najmniej 15 m.",
+  "legal": [
+   "rozp. z 13.01.2023 (Dz.U. poz. 297) – budowle rolnicze"
+  ],
+  "verified": false
+ },
+ "408": {
+  "answer": "b",
+  "explanation": "Przeszklenia wypełniające otwory w ścianie oddzielenia przeciwpożarowego (klasa C) powinny mieć klasę odporności ogniowej nie niższą niż EI 60 (izolacyjność i szczelność).",
+  "legal": [
+   "§ 234, § 256 WT – zamknięcia otworów w oddzieleniach ppoż."
+  ],
+  "verified": false
+ },
+ "409": {
+  "answer": "a",
+  "explanation": "Strefę pożarową z odpadami stałymi o powierzchni 2500 m² wyposaża się w samoczynne urządzenia oddymiające oraz stałe urządzenia gaśnicze wodne lub pianowe, jeżeli gęstość obciążenia ogniowego przekracza 1000 MJ/m².",
+  "legal": [
+   "rozp. MSWiA z 19.02.2020 (Dz.U. poz. 296)"
+  ],
+  "verified": false
+ },
+ "410": {
+  "answer": "a",
+  "explanation": "§ 261 WT: między przejściami podstawowo 16 siedzeń w rzędzie przy odstępie 0,45 m, a każde dodatkowe siedzenie powyżej 16 wymaga zwiększenia odstępu o 1 cm. Dla 35 siedzeń: 35 − 16 = 19 → 0,45 m + 0,19 m = 0,64 m.",
+  "legal": [
+   "§ 261 WT – liczba siedzeń w rzędzie i odstępy"
+  ],
+  "verified": true
+ },
+ "411": {
+  "answer": "c",
+  "explanation": "Powierzchnia urządzeń odciążających wynosi 0,065 m²/m³ kubatury (600 m³ × 0,065 = 39,0 m²), przy czym nie mniej niż wynika z obliczeń przyrostu ciśnienia i parcia na ściany o wartości nie większej niż 15 kN/m².",
+  "legal": [
+   "§ 37 RPB / WT – urządzenia odciążające pomieszczeń zagrożonych wybuchem"
+  ],
+  "verified": false
+ },
+ "412": {
+  "answer": "b",
+  "explanation": "Wentylację mechaniczną półporzeczną w tunelu z jezdnią dwukierunkową można stosować bez dodatkowej analizy ryzyka, jeżeli długość tunelu jest nie większa niż 1500 m.",
+  "legal": [
+   "rozp. dot. drogowych obiektów inżynierskich – wentylacja tuneli"
+  ],
+  "verified": false
+ },
+ "413": {
+  "answer": "c",
+  "explanation": "W tabeli Metody A (PN-EN 1992-1-2) dla słupów żelbetowych jedną z danych jest odległość osiowa zbrojenia (głównych prętów).",
+  "legal": [
+   "PN-EN 1992-1-2:2008 – Eurokod 2, warunki pożarowe"
+  ],
+  "verified": false
+ },
+ "414": {
+  "answer": "b",
+  "explanation": "Źródłem wody w lasach tworzących kompleks o powierzchni ponad 300 ha jest studnia z pompą oraz punkt poboru z nasadą ssawną typu 110.",
+  "legal": [
+   "rozp. MŚ – zabezpieczenie przeciwpożarowe lasów"
+  ],
+  "verified": false
+ },
+ "415": {
+  "answer": "a",
+  "explanation": "W sekcji tandemowej przy klasie LH maksymalny czas od otwarcia pojedynczego tryskacza do wypływu wody nie powinien przekraczać 60 s.",
+  "legal": [
+   "PN-EN 12845+A1:2020 – sekcje tandemowe"
+  ],
+  "verified": false
+ },
+ "416": {
+  "answer": "a",
+  "explanation": "Wielokondygnacyjny garaż nadziemny należy wyposażyć w hydranty wewnętrzne 33.",
+  "legal": [
+   "§ 19 RPB – hydranty wewnętrzne w garażach"
+  ],
+  "verified": false
+ },
+ "417": {
+  "answer": "c",
+  "explanation": "Palną izolację (samogasnący polistyren) w ścianie zewnętrznej budynku żłobka można stosować, gdy osłaniająca ją od wewnątrz okładzina ma klasę odporności ogniowej co najmniej EI 30 (o↔i) i klasę reakcji na ogień A2-s1,d0.",
+  "legal": [
+   "§ 216 ust. 8 WT – palna izolacja cieplna w ścianach"
+  ],
+  "verified": false
+ },
+ "418": {
+  "answer": "c",
+  "explanation": "Palne opakowania (folia, kartony, palety z tworzyw) uwzględnia się w całości; przy obliczaniu gęstości obciążenia ogniowego uwzględnia się całkowitą masę tak składowanych materiałów palnych (mrożonki o dużej zawartości wody się pomija).",
+  "legal": [
+   "PN-B-02852:2001 – obliczanie gęstości obciążenia ogniowego"
+  ],
+  "verified": false
+ },
+ "419": {
+  "answer": "b",
+  "explanation": "W niskim budynku PM z SUG wodnym słabo rozprzestrzeniające ogień mogą być ściany zewnętrzne i elementy konstrukcji dachu, a stropy powinny być nierozprzestrzeniające ognia.",
+  "legal": [
+   "§ 216, § 219 WT – rozprzestrzenianie ognia przez elementy"
+  ],
+  "verified": false
+ },
+ "420": {
+  "answer": "a",
+  "explanation": "Scenariusz pożarowy nie jest wymagany dla prostego, dwukondygnacyjnego budynku przedszkola o wysokości poniżej 12 m (brak urządzeń ppoż. wymagających sterowania scenariuszem).",
+  "legal": [
+   "rozp. z 17.09.2021 (Dz.U. poz. 1722) – uzgadnianie projektu, scenariusz pożarowy"
+  ],
+  "verified": false
+ },
+ "421": {
+  "answer": "a",
+  "explanation": "Wymagana jest instalacja wodociągowa przeciwpożarowa z hydrantami wewnętrznymi 52 i zaworami hydrantowymi 52 oraz awaryjne oświetlenie ewakuacyjne w pomieszczeniu magazynowym i na drogach ewakuacyjnych.",
+  "legal": [
+   "§ 19, § 181 WT/RPB – hydranty i awaryjne oświetlenie"
+  ],
+  "verified": false
+ },
+ "422": {
+  "answer": "b",
+  "explanation": "Przestrzeń z obłokiem atmosfery wybuchowej o objętości mniejszej niż 0,1 m³ (pomijalny zasięg), występującej sporadycznie podczas normalnej pracy, klasyfikuje się jako strefę 1 NE (negligible extent).",
+  "legal": [
+   "PN-EN IEC 60079-10-1:2021-09 – klasyfikacja przestrzeni"
+  ],
+  "verified": false
+ },
+ "423": {
+  "answer": "a",
+  "explanation": "Pomieszczenie zagrożone wybuchem na pierwszej kondygnacji może być usytuowane, jeżeli wyposaży się je w urządzenia odciążające o powierzchni 0,065 m²/m³ kubatury przestrzeni powietrznej.",
+  "legal": [
+   "§ 37 RPB / WT – pomieszczenia zagrożone wybuchem, urządzenia odciążające"
+  ],
+  "verified": false
+ },
+ "424": {
+  "answer": "a",
+  "explanation": "Dla strefy PM pozostałej o 1000 < Q ≤ 2000 MJ/m² w budynku wysokim tabela § 228 ust. 1 daje 1000 m², a § 228 ust. 2 ogranicza strefę w części podziemnej do 50% tej wartości → 500 m² (dla stref PM nie przewidziano wyjątku analogicznego do § 227 ust. 3).",
+  "legal": [
+   "§ 228 ust. 1 i 2 WT – powierzchnie stref PM, część podziemna"
+  ],
+  "verified": true
+ },
+ "425": {
+  "answer": "b",
+  "explanation": "W pomieszczeniach z ludźmi niedopuszczalne jest przyjęcie stężenia maksymalnego gazu gaśniczego powyżej LOAEL.",
+  "legal": [
+   "PN-EN 15004-1:2019 – gazowe urządzenia gaśnicze, bezpieczeństwo ludzi"
+  ],
+  "verified": false
+ },
+ "426": {
+  "answer": "c",
+  "explanation": "Do ochrony zbiorników naziemnych z dachem stałym stosuje się pianę o niskim współczynniku spienienia (mniejszym niż 20).",
+  "legal": [
+   "PN-EN 13565 / rozp. MG – urządzenia pianowe zbiorników"
+  ],
+  "verified": false
+ },
+ "427": {
+  "answer": "a",
+  "explanation": "System różnicowania ciśnień w klatce schodowej budynku mieszkalnego o wysokości 29 m powinien spełniać kryteria klasy B.",
+  "legal": [
+   "PN-EN 12101-13:2022 / PN-EN 12101-6 – klasy systemów"
+  ],
+  "verified": false
+ },
+ "428": {
+  "answer": "c",
+  "explanation": "Dla klasy HHP/HHS pompa napędzana silnikiem spalinowym powinna mieć zapas paliwa wystarczający do pracy przy pełnym obciążeniu przez co najmniej 6 godzin.",
+  "legal": [
+   "PN-EN 12845+A1:2020 – zasilanie pomp"
+  ],
+  "verified": false
+ },
+ "429": {
+  "answer": "c",
+  "explanation": "Studzienka ssawna i jej połączenie ze zbiornikiem (> 300 m³) powinny zapewniać jednoczesny pobór wody każdym przewodem ssawnym z wydajnością co najmniej 20 dm³/s.",
+  "legal": [
+   "PN-B-02857:2017 – przeciwpożarowe zbiorniki wodne"
+  ],
+  "verified": false
+ },
+ "430": {
+  "answer": "a",
+  "explanation": "Drogę pożarową należy zapewnić do budynku średniowysokiego PM (< 500 MJ/m²), w którym występuje pomieszczenie zagrożone wybuchem.",
+  "legal": [
+   "§ 12 RW – wymóg drogi pożarowej"
+  ],
+  "verified": false
+ },
+ "431": {
+  "answer": "a",
+  "explanation": "Poddasze użytkowe należy oddzielić od konstrukcji i przekrycia dachu przegrodami o klasie odporności ogniowej co najmniej EI 30.",
+  "legal": [
+   "§ 219 WT – oddzielenie poddasza użytkowego"
+  ],
+  "verified": false
+ },
+ "432": {
+  "answer": "c",
+  "explanation": "Punktowe czujki ciepła klasy A1 nie powinny być stosowane do ochrony pomieszczeń o wysokości przekraczającej 7,5 m.",
+  "legal": [
+   "PKN-CEN/TS 54-14:2020 – dobór czujek ciepła"
+  ],
+  "verified": false
+ },
+ "433": {
+  "answer": "b",
+  "explanation": "Minimalna objętość wody w hydroforze zasilającym urządzenie tryskaczowe dla klasy LH powinna wynosić 15 m³.",
+  "legal": [
+   "PN-EN 12845+A1:2020 – zbiorniki hydroforowe"
+  ],
+  "verified": false
+ },
+ "434": {
+  "answer": "b",
+  "explanation": "Metoda A (PN-EN 1992-1-2) ma ograniczenia co do długości/wyboczenia słupa; dla słupa o długości 8 m jej zastosowanie jest niewłaściwe.",
+  "legal": [
+   "PN-EN 1992-1-2:2008 – Eurokod 2, Metoda A"
+  ],
+  "verified": false
+ },
+ "435": {
+  "answer": "a",
+  "explanation": "W pomieszczeniach handlowo-usługowych dopuszcza się przechowywanie cieczy palnych o temperaturze zapłonu poniżej 21°C w ilości do 10 dm³.",
+  "legal": [
+   "§ 8 RPB – składowanie cieczy palnych"
+  ],
+  "verified": false
+ },
+ "436": {
+  "answer": "a",
+  "explanation": "W magazynach o wysokości składowania powyżej 9 m maksymalna odległość między otworami próbkującymi zasysającej czujki dymu wynosi 6,2 m.",
+  "legal": [
+   "PKN-CEN/TS 54-14:2020 – zasysające czujki dymu"
+  ],
+  "verified": false
+ },
+ "437": {
+  "answer": "a",
+  "explanation": "Dla budynku produkcyjnego o niewielkiej powierzchni (200 m²) wymagana ilość wody do zewnętrznego gaszenia pożaru wynosi co najmniej 10 dm³/s.",
+  "legal": [
+   "§ 5 RW – ilość wody do zewnętrznego gaszenia pożaru"
+  ],
+  "verified": false
+ },
+ "438": {
+  "answer": "a",
+  "explanation": "Przejście klapy odcinającej wentylacji pożarowej z jednej pozycji krańcowej do drugiej powinno następować w ciągu 60 s od otrzymania sygnału.",
+  "legal": [
+   "PN-EN 12101-8:2012 – klapy odcinające wentylacji pożarowej"
+  ],
+  "verified": false
+ },
+ "439": {
+  "answer": "c",
+  "explanation": "Uzgodnienia nie wymaga projekt przejścia podziemnego przeznaczonego tylko do ruchu pieszych (tunel 150 m); garaż i budynek handlowy ZL III 5000 m² – wymagają.",
+  "legal": [
+   "§ 4 rozp. w sprawie uzgadniania projektu pod względem ochrony ppoż."
+  ],
+  "verified": false
+ },
+ "440": {
+  "answer": "b",
+  "explanation": "Belka o niższym wskaźniku ekspozycji przekroju (masywniejsza) nagrzewa się wolniej, więc przy tej samej temperaturze krytycznej wymaga zabezpieczenia o mniejszej grubości.",
+  "legal": [
+   "PN-EN 1993-1-2 – zabezpieczenia ogniochronne konstrukcji stalowych"
+  ],
+  "verified": true
+ }
+}

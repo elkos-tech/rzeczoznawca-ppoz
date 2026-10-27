@@ -1,0 +1,323 @@
+{
+ "81": {
+  "answer": "a",
+  "explanation": "Droga pożarowa prowadzona pod estakadą powinna mieć prześwit o szerokości co najmniej 3,6 m i wysokości co najmniej 4,5 m.",
+  "legal": [
+   "§ 13 RW – prześwit nad drogą pożarową"
+  ],
+  "verified": false
+ },
+ "82": {
+  "answer": "b",
+  "explanation": "Urządzenie sygnalizacyjno-odcinające instalacji gazowej zasilającej kotłownię powinno odcinać dopływ gazu do kotłowni.",
+  "legal": [
+   "§ 158 WT – urządzenia sygnalizacyjno-odcinające dopływ gazu"
+  ],
+  "verified": false
+ },
+ "83": {
+  "answer": "a",
+  "explanation": "Osłona/obudowa o klasie EI 30 (EI 60) instalacji palnych w przestrzeni podpodłogowej wymagana jest, gdy przestrzeń ta służy do wentylacji lub ogrzewania i jednocześnie podłoga jest podniesiona o więcej niż 0,2 m.",
+  "legal": [
+   "§ 261 WT – przestrzeń podpodłogowa podłóg podniesionych"
+  ],
+  "verified": false
+ },
+ "84": {
+  "answer": "c",
+  "explanation": "Indeks „fl” (flooring) w klasie reakcji na ogień dotyczy wyrobów podłogowych – zarówno posadzek, jak i wykładzin podłogowych.",
+  "legal": [
+   "PN-EN 13501-1 – klasyfikacja reakcji na ogień posadzek (indeks fl)"
+  ],
+  "verified": false
+ },
+ "85": {
+  "answer": "b",
+  "explanation": "W garażach o powierzchni powyżej 100 m² przechowywanie cieczy o temperaturze zapłonu poniżej 100°C jest dopuszczalne tylko gdy są niezbędne przy eksploatacji pojazdu i przechowywane w jednostkowych opakowaniach handlu detalicznego.",
+  "legal": [
+   "§ 111 WT / RPB – przechowywanie materiałów niebezpiecznych w garażach"
+  ],
+  "verified": false
+ },
+ "86": {
+  "answer": "c",
+  "explanation": "Krytycznym warunkiem środowiskowym w metrze jest m.in. temperatura powietrza powyżej 60°C na wysokości mniejszej lub równej 1,8 m od poziomu drogi ewakuacyjnej.",
+  "legal": [
+   "rozp. w sprawie warunków technicznych obiektów budowlanych metra – kryteria środowiskowe"
+  ],
+  "verified": false
+ },
+ "87": {
+  "answer": "a",
+  "explanation": "Przekrycie dachu powinno być nierozprzestrzeniające ognia, co odpowiada klasie co najmniej BROOF(t1).",
+  "legal": [
+   "§ 216 WT / PN-EN 13501-5 – klasyfikacja przekryć dachów"
+  ],
+  "verified": false
+ },
+ "88": {
+  "answer": "a",
+  "explanation": "Wymagana ilość wody do zewnętrznego gaszenia pożaru dla zlokalizowanych poza budynkami urządzeń technologicznych z cieczami palnymi zależy od powierzchni zajmowanej przez te urządzenia.",
+  "legal": [
+   "§ 6–7 RW – ilość wody dla obiektów innych niż budynki"
+  ],
+  "verified": false
+ },
+ "89": {
+  "answer": "b",
+  "explanation": "Galeria niska o strefie do 5000 m² z kinem (sale po 200 miejsc) wymaga systemu sygnalizacji pożarowej oraz dźwiękowego systemu ostrzegawczego; SUG wodne nie jest w tym przypadku wymagane.",
+  "legal": [
+   "§ 28, § 29 RPB – obowiązek SSP i DSO"
+  ],
+  "verified": false
+ },
+ "90": {
+  "answer": "b",
+  "explanation": "Przejście ewakuacyjne w ZL = 40 m. Powiększenie +25% za wysokość pomieszczenia > 5 m (5,8 m) → 50 m. SUG gazowe nie uprawnia do powiększenia o 50% (to ulga dla urządzeń wodnych). Wynik: 50 m.",
+  "legal": [
+   "§ 237 WT – długość przejścia ewakuacyjnego i powiększenia"
+  ],
+  "verified": true
+ },
+ "91": {
+  "answer": "b",
+  "explanation": "Budynek mieszkalny o 4 kondygnacjach traktowany jest jako niski. Dla części ZL II niski → klasa C, dla ZL IV niski → klasa D; wymaganie surowsze decyduje o najniższej klasie „C”.",
+  "legal": [
+   "§ 8, § 212 WT – definicja budynku niskiego i klasa odporności pożarowej"
+  ],
+  "verified": false
+ },
+ "92": {
+  "answer": "c",
+  "explanation": "Hotel średniowysoki (13,45 m) ZL V wymaga klasy odporności pożarowej B: główna konstrukcja nośna R 120, konstrukcja dachu R 30.",
+  "legal": [
+   "§ 212, § 216 WT – klasa B, wymagane klasy odporności ogniowej elementów"
+  ],
+  "verified": false
+ },
+ "93": {
+  "answer": "b",
+  "explanation": "Ze względu na przeszklenie zwykłe (ściana z otworami) budynek średniowysoki należy usytuować od granicy działki przeznaczonej pod zabudowę w odległości nie mniejszej niż 7,5 m (połowa wymaganej odległości między budynkami).",
+  "legal": [
+   "§ 271, § 272 WT – odległości między budynkami i od granicy działki"
+  ],
+  "verified": false
+ },
+ "94": {
+  "answer": "b",
+  "explanation": "§ 261 WT: w rzędzie przyściennym podstawowo 8 siedzeń przy odstępie 0,45 m; każde dodatkowe siedzenie powyżej 8 wymaga zwiększenia odstępu o 1 cm. Dla 18 siedzeń: 18 − 8 = 10 dodatkowych → 0,45 m + 0,10 m = 0,55 m.",
+  "legal": [
+   "§ 261 WT – liczba siedzeń w rzędzie i odstępy między rzędami"
+  ],
+  "verified": true
+ },
+ "95": {
+  "answer": "a",
+  "explanation": "Palną izolację cieplną w ścianie zewnętrznej niskiego budynku ZL II można zastosować, jeżeli osłaniająca ją od wewnątrz okładzina jest niepalna i ma klasę odporności ogniowej co najmniej EI 30.",
+  "legal": [
+   "§ 216 ust. 8 WT – palna izolacja cieplna w ścianach"
+  ],
+  "verified": false
+ },
+ "96": {
+  "answer": "a",
+  "explanation": "W pomieszczeniach zagrożonych wybuchem należy stosować oddzielną instalację wyciągową dla każdego takiego pomieszczenia.",
+  "legal": [
+   "§ 37 RPB / WT – wentylacja pomieszczeń zagrożonych wybuchem"
+  ],
+  "verified": false
+ },
+ "97": {
+  "answer": "a",
+  "explanation": "Podziemny zbiornik gazu propan-butan o pojemności 50 m³ należy usytuować od budynku produkcyjnego w odległości co najmniej 7,5 m.",
+  "legal": [
+   "§ 179 WT / rozp. dot. zbiorników gazu płynnego – odległości"
+  ],
+  "verified": false
+ },
+ "98": {
+  "answer": "c",
+  "explanation": "Na drogach ewakuacyjnych z lokalu na kondygnacji podziemnej (dyskoteka, 200 osób) należy zastosować urządzenia zapobiegające zadymieniu lub służące do usuwania dymu.",
+  "legal": [
+   "§ 270 WT – usuwanie dymu z dróg ewakuacyjnych"
+  ],
+  "verified": false
+ },
+ "99": {
+  "answer": "c",
+  "explanation": "§ 24 ust. 2 RPB wymaga zapasu 100 m³. Zgodnie z ust. 3 pkt 3 lit. a dopuszcza się zmniejszenie pojemności zbiorników do 50 m³ przy zapewnieniu zasilania z zewnętrznej sieci wodociągowej ppoż. o wydajności nie mniejszej niż 10 dm³/s.",
+  "legal": [
+   "§ 24 ust. 2 i 3 RPB – zapas wody dla instalacji wodociągowej ppoż."
+  ],
+  "verified": true
+ },
+ "100": {
+  "answer": "b",
+  "explanation": "Wg PN-EN 13200-1 dla obszarów pod przykryciem zaleca się osiągnięcie miejsca bezpiecznego w ciągu 8 minut.",
+  "legal": [
+   "PN-EN 13200-1:2013 – ewakuacja z widowni"
+  ],
+  "verified": false
+ },
+ "101": {
+  "answer": "a",
+  "explanation": "Część opisowa projektu zagospodarowania terenu określa m.in. parametry sieci i urządzeń uzbrojenia terenu zapewniających przeciwpożarowe zaopatrzenie w wodę.",
+  "legal": [
+   "rozp. z 25.04.2012 (Dz.U. 2012 poz. 462) – zakres projektu zagospodarowania terenu"
+  ],
+  "verified": false
+ },
+ "102": {
+  "answer": "b",
+  "explanation": "Zastosowanie SUG mgłowego (nie wodnego tryskaczowego) nie upoważnia do obniżenia klasy odporności pożarowej budynku.",
+  "legal": [
+   "§ 230 WT – warunki obniżenia klasy odporności pożarowej"
+  ],
+  "verified": false
+ },
+ "103": {
+  "answer": "a",
+  "explanation": "Rzeczoznawca ds. zabezpieczeń ppoż. może być autorem instrukcji bezpieczeństwa pożarowego. Nie może natomiast uzgadniać projektu, którego sam jest autorem.",
+  "legal": [
+   "ustawa o ochronie ppoż. – zadania rzeczoznawcy; RPB – instrukcja bezpieczeństwa pożarowego"
+  ],
+  "verified": false
+ },
+ "104": {
+  "answer": "a",
+  "explanation": "Garaż obejmujący kondygnację na poziomie „0” i „-1” jest garażem wielokondygnacyjnym, co skutkuje obowiązkiem wyposażenia w system sygnalizacji pożarowej.",
+  "legal": [
+   "§ 28 RPB – obiekty wymagające SSP"
+  ],
+  "verified": false
+ },
+ "105": {
+  "answer": "c",
+  "explanation": "Wymóg dźwigu przystosowanego dla ekip ratowniczych dotyczy budynku mającego kondygnację z posadzką położoną powyżej 25 m ponad poziomem terenu przy najniższym wejściu.",
+  "legal": [
+   "§ 193, § 207 WT – dźwigi dla ekip ratowniczych"
+  ],
+  "verified": false
+ },
+ "106": {
+  "answer": "a",
+  "explanation": "W pomieszczeniach do spania (pokoje hotelowe) minimalny poziom słyszalności komunikatu alarmowego powinien wynosić 75 dBA (przy wezgłowiu łóżka).",
+  "legal": [
+   "PN-EN 60849 / PKN-CEN/TS 54-14 – poziomy dźwięku"
+  ],
+  "verified": false
+ },
+ "107": {
+  "answer": "b",
+  "explanation": "Zapotrzebowanie 1800 dm³/min = 30 dm³/s przez 60 min = 108 m³. Dopływ 10 dm³/s przez 60 min = 36 m³. Pojemność zbiornika = 108 − 36 = 72 m³.",
+  "legal": [
+   "PN-EN 12845 – zbiornik pośredni z uzupełnianiem"
+  ],
+  "verified": true
+ },
+ "108": {
+  "answer": "c",
+  "explanation": "Przy indywidualnej adresacji czujek maksymalna powierzchnia strefy dozorowej nie powinna przekraczać 1600 m².",
+  "legal": [
+   "PKN-CEN/TS 54-14:2006 – strefy dozorowe"
+  ],
+  "verified": false
+ },
+ "109": {
+  "answer": "c",
+  "explanation": "Wg PN-EN 1838 na drodze ewakuacyjnej średnie natężenie oświetlenia awaryjnego w centralnym pasie podłogi o szerokości 1 m powinno wynosić co najmniej 1 lx.",
+  "legal": [
+   "PN-EN 1838 – oświetlenie awaryjne dróg ewakuacyjnych"
+  ],
+  "verified": true
+ },
+ "110": {
+  "answer": "b",
+  "explanation": "Dla strefy PM pozostałej o 500 < Q ≤ 1000 MJ/m² w budynku wielokondygnacyjnym wysokim tabela § 228 daje 2500 m². Tryskacze (+100%) i oddymianie (+50%) stosowane jednocześnie pozwalają powiększyć strefę o 150% (§ 229 ust. 2): 2500 × 2,5 = 6250 m².",
+  "legal": [
+   "§ 228 ust. 1 WT – tabela powierzchni stref PM",
+   "§ 229 ust. 1 i 2 WT – powiększenie o 150%"
+  ],
+  "verified": true
+ },
+ "111": {
+  "answer": "c",
+  "explanation": "Gęstość 500 MJ/m² nie przekracza 500, więc przejście = 100 m. +25% (kondygnacja 6 m > 5 m) i +50% (tryskacze) → 100 × 1,75 = 175 m.",
+  "legal": [
+   "§ 237 WT – długość przejścia ewakuacyjnego i powiększenia"
+  ],
+  "verified": true
+ },
+ "112": {
+  "answer": "c",
+  "explanation": "Deficyt = 30 − 10 = 20 dm³/s. Przez względny czas trwania pożaru 6 h (21 600 s): 20 × 21 600 = 432 000 dm³ = 432 m³.",
+  "legal": [
+   "§ 8–9 RW – uzupełniający zapas wody w zbiorniku"
+  ],
+  "verified": false
+ },
+ "113": {
+  "answer": "b",
+  "explanation": "Stanowiska przeładunku produktów naftowych I i II klasy powinny być oddalone od ogrodzenia bazy paliw co najmniej 10 m.",
+  "legal": [
+   "rozp. MG z 21.11.2005 – odległości na terenie baz paliw"
+  ],
+  "verified": false
+ },
+ "114": {
+  "answer": "b",
+  "explanation": "Jednym z warunków dopuszczalności rozwiązań zamiennych jest uwzględnienie możliwości ewakuacji ludzi lub ich uratowania w inny sposób.",
+  "legal": [
+   "art. 6a ustawy o ochronie ppoż. – rozwiązania zamienne"
+  ],
+  "verified": false
+ },
+ "115": {
+  "answer": "c",
+  "explanation": "Obowiązkowi uzgodnienia ppoż. podlega m.in. obiekt PM o strefie pożarowej przekraczającej 1000 m² i gęstości obciążenia ogniowego powyżej 500 MJ/m² (tu 2500 m², do 1000 MJ/m²).",
+  "legal": [
+   "§ 4 rozp. w sprawie uzgadniania projektu pod względem ochrony ppoż."
+  ],
+  "verified": false
+ },
+ "116": {
+  "answer": "a",
+  "explanation": "Obowiązek uzgodnienia projektu urządzenia przeciwpożarowego pod względem zgodności z wymaganiami ochrony ppoż. wynika z ustawy o ochronie przeciwpożarowej.",
+  "legal": [
+   "ustawa o ochronie ppoż. – uzgadnianie projektów urządzeń ppoż."
+  ],
+  "verified": false
+ },
+ "117": {
+  "answer": "a",
+  "explanation": "W scenariuszu pożarowym uwzględnia się przede wszystkim sposób funkcjonowania urządzeń przeciwpożarowych i innych środków zabezpieczenia oraz ich współdziałanie i wzajemne oddziaływanie.",
+  "legal": [
+   "§ 2 RPB – definicja scenariusza pożarowego"
+  ],
+  "verified": false
+ },
+ "118": {
+  "answer": "b",
+  "explanation": "Informacja o doborze urządzeń ppoż. w projekcie budowlanym powinna zawierać podstawową charakterystykę tych urządzeń (szczegóły w projekcie wykonawczym).",
+  "legal": [
+   "rozp. w sprawie zakresu i formy projektu budowlanego"
+  ],
+  "verified": false
+ },
+ "119": {
+  "answer": "b",
+  "explanation": "Celem instalacji tryskaczowych ESFR jest ugaszenie pożaru.",
+  "legal": [
+   "PN-EN 12845 / NFPA – tryskacze ESFR"
+  ],
+  "verified": false
+ },
+ "120": {
+  "answer": "a",
+  "explanation": "Hydranty wewnętrzne 33 należy stosować w garażu wielokondygnacyjnym w każdym przypadku.",
+  "legal": [
+   "§ 19 RPB – hydranty wewnętrzne w garażach"
+  ],
+  "verified": false
+ }
+}

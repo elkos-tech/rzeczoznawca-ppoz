@@ -1,0 +1,322 @@
+{
+ "41": {
+  "answer": "a",
+  "explanation": "Obowiązek zawiadomienia PSP przy zakończeniu budowy jest powiązany z obowiązkiem uzyskania pozwolenia na użytkowanie. Gdy obiekt nie jest objęty tym obowiązkiem, zawiadomienie PSP nie jest wymagane.",
+  "legal": [
+   "art. 56 ustawy – Prawo budowlane"
+  ],
+  "verified": false
+ },
+ "42": {
+  "answer": "c",
+  "explanation": "Poza obszarami miejskimi odległość między hydrantami zewnętrznymi powinna być dostosowana do gęstości istniejącej i planowanej zabudowy.",
+  "legal": [
+   "§ 10 RW – rozmieszczenie hydrantów zewnętrznych"
+  ],
+  "verified": false
+ },
+ "43": {
+  "answer": "b",
+  "explanation": "Obowiązek utrzymania dróg pożarowych w stanie umożliwiającym korzystanie z nich przez pojazdy PSP określa rozporządzenie w sprawie ochrony przeciwpożarowej budynków, innych obiektów budowlanych i terenów.",
+  "legal": [
+   "§ 4 RPB – obowiązki właścicieli/zarządców"
+  ],
+  "verified": false
+ },
+ "44": {
+  "answer": "a",
+  "explanation": "Klapy dymowe otwierane wyłącznie ręcznie mogą mieć obniżoną klasę niezawodności – B300 30 (temperatura 300°C, klasa niezawodności 30).",
+  "legal": [
+   "PN-EN 12101-2 – klasyfikacja klap dymowych"
+  ],
+  "verified": false
+ },
+ "45": {
+  "answer": "a",
+  "explanation": "Klasa A2 oznacza materiał niepalny; s3 – intensywne wydzielanie dymu; d0 – brak płonących kropli (niekapiący). Zatem: niepalny, niekapiący i intensywnie dymiący.",
+  "legal": [
+   "PN-EN 13501-1 – klasyfikacja reakcji na ogień"
+  ],
+  "verified": true
+ },
+ "46": {
+  "answer": "c",
+  "explanation": "Lokal przedszkola z przekształcenia może być na drugiej kondygnacji, jeśli spełnia warunki szczególne rozporządzenia (m.in. do 25 dzieci, co najmniej dwa wyjścia na drogi ewakuacyjne spełniające wymagania dla ZL II).",
+  "legal": [
+   "rozp. MEN z 31.12.2014 (Dz.U. 2015 poz. 20)"
+  ],
+  "verified": false
+ },
+ "47": {
+  "answer": "b",
+  "explanation": "Zapas środka pianotwórczego powinien wystarczyć na okres zużycia wymaganego zapasu wody przewidzianego do gaszenia.",
+  "legal": [
+   "rozp. MG – bazy i stacje paliw; PN-EN 13565 – urządzenia pianowe"
+  ],
+  "verified": false
+ },
+ "48": {
+  "answer": "b",
+  "explanation": "Pojemność zbiornika magazynowego stacji paliw płynnych dla produktów naftowych nie powinna przekraczać 100 m³.",
+  "legal": [
+   "rozp. MG z 21.11.2005 – warunki techniczne stacji paliw"
+  ],
+  "verified": false
+ },
+ "49": {
+  "answer": "b",
+  "explanation": "Wg PKN-CEN/TS 54-14 pod czujką dymu należy zachować wolną przestrzeń co najmniej 0,5 m we wszystkich kierunkach.",
+  "legal": [
+   "PKN-CEN/TS 54-14:2006"
+  ],
+  "verified": false
+ },
+ "50": {
+  "answer": "a",
+  "explanation": "W budynku średniowysokim ZL III długość poziomej drogi od wyjścia z obudowanej, oddymianej klatki schodowej do wyjścia na zewnątrz przy jednym dojściu nie może przekroczyć 40 m.",
+  "legal": [
+   "§ 256 WT – długość dojść ewakuacyjnych"
+  ],
+  "verified": false
+ },
+ "51": {
+  "answer": "b",
+  "explanation": "Najmniejsza szerokość drzwi w świetle ościeżnicy stanowiących wyjście ewakuacyjne wynosi 0,9 m.",
+  "legal": [
+   "§ 239 WT – szerokość drzwi ewakuacyjnych"
+  ],
+  "verified": true
+ },
+ "52": {
+  "answer": "b",
+  "explanation": "§ 227 ust. 4 pkt 1 WT mówi o „stałych samoczynnych urządzeniach gaśniczych wodnych” (nie tylko tryskaczowych) – ich zastosowanie pozwala powiększyć powierzchnię strefy pożarowej ZL o 100%.",
+  "legal": [
+   "§ 227 ust. 4 pkt 1 WT – powiększenie strefy pożarowej ZL o 100%"
+  ],
+  "verified": true
+ },
+ "53": {
+  "answer": "a",
+  "explanation": "Ściana zewnętrzna na odcinku, gdzie droga pożarowa jest przybliżona na mniej niż 5 m, powinna mieć na tym odcinku (i do 5 m od niego) klasę odporności ogniowej wymaganą dla ściany oddzielenia przeciwpożarowego.",
+  "legal": [
+   "§ 12 ust. 9 RW – zbliżenie drogi pożarowej do ściany"
+  ],
+  "verified": false
+ },
+ "54": {
+  "answer": "a",
+  "explanation": "Pomieszczenia magazynowe karbidu muszą spełniać wymagania określone dla pomieszczeń zagrożonych wybuchem – wprost z przepisów, bez indywidualnej oceny.",
+  "legal": [
+   "§ 37 RPB – pomieszczenia uznane za zagrożone wybuchem"
+  ],
+  "verified": false
+ },
+ "55": {
+  "answer": "b",
+  "explanation": "Urządzeniem przeciwpożarowym w rozumieniu przepisów są m.in. półstałe urządzenia gaśnicze. Gaśnica to podręczny sprzęt gaśniczy, a nie urządzenie ppoż.",
+  "legal": [
+   "§ 2 ust. 1 pkt 9 RPB – definicja urządzeń przeciwpożarowych"
+  ],
+  "verified": false
+ },
+ "56": {
+  "answer": "b",
+  "explanation": "Wymiary stref zagrożenia wybuchem dla cysterny kolejowej podczas spustu w bazie paliw wyznacza się na podstawie załącznika do rozporządzenia MG w sprawie baz i stacji paliw.",
+  "legal": [
+   "rozp. MG z 21.11.2005 – załącznik dot. stref zagrożenia wybuchem"
+  ],
+  "verified": false
+ },
+ "57": {
+  "answer": "b",
+  "explanation": "Przy infrastrukturze do tankowania na użytek własny przedsiębiorstwa transportowego przepisy rozporządzenia MG mogą być stosowane na zasadach wiedzy technicznej.",
+  "legal": [
+   "rozp. MG z 21.11.2005 – zakres stosowania"
+  ],
+  "verified": false
+ },
+ "58": {
+  "answer": "a",
+  "explanation": "W odniesieniu do ogółu budynków użyteczności publicznej kryterium obowiązku wyposażenia w SSP jest liczba osób mogących w nich przebywać.",
+  "legal": [
+   "§ 28 RPB – obiekty wymagające systemu sygnalizacji pożarowej"
+  ],
+  "verified": false
+ },
+ "59": {
+  "answer": "a",
+  "explanation": "Parking dla pojazdów przewożących materiały niebezpieczne w obrębie MOP należy usytuować w odległości nie mniejszej niż 20 m od budynków przeznaczonych na pobyt ludzi.",
+  "legal": [
+   "przepisy techniczno-budowlane dla dróg publicznych / MOP"
+  ],
+  "verified": false
+ },
+ "60": {
+  "answer": "c",
+  "explanation": "Zaliczenie kondygnacji podziemnej do ZL może powodować konieczność uwzględnienia jej wysokości przy określaniu wymaganej klasy odporności pożarowej budynku.",
+  "legal": [
+   "§ 209, § 212 WT – klasa odporności pożarowej"
+  ],
+  "verified": false
+ },
+ "61": {
+  "answer": "a",
+  "explanation": "Przepust instalacyjny w stropie oddzielającym garaż od części mieszkalnej niskiego budynku ZL IV powinien mieć klasę odporności ogniowej stropu oddzielenia, tj. EI 60.",
+  "legal": [
+   "§ 234 WT – przepusty instalacyjne w elementach oddzielających"
+  ],
+  "verified": false
+ },
+ "62": {
+  "answer": "a",
+  "explanation": "Obowiązek wyposażenia w system sygnalizacji pożarowej dotyczy tunelu drogowego o długości większej niż 500 m.",
+  "legal": [
+   "przepisy techniczno-budowlane dla tuneli / § 28 RPB"
+  ],
+  "verified": false
+ },
+ "63": {
+  "answer": "b",
+  "explanation": "Współczynnik bezpieczeństwa (nie mniejszy niż 1,3) uwzględnia się przy określaniu przewidywanego czasu ewakuacji.",
+  "legal": [
+   "rozp. w sprawie warunków technicznych obiektów budowlanych metra – zał. nr 1"
+  ],
+  "verified": false
+ },
+ "64": {
+  "answer": "b",
+  "explanation": "Wypełnienie otworu z materiału przepuszczającego światło w ścianie oddzielenia przeciwpożarowego powinno mieć klasę odporności ogniowej EI 60 (wymóg izolacyjności, nie tylko szczelności).",
+  "legal": [
+   "§ 234, § 256 WT – zamknięcia otworów w oddzieleniach ppoż."
+  ],
+  "verified": false
+ },
+ "65": {
+  "answer": "a",
+  "explanation": "Masę dachu lekkiego (≤ 75 kg/m²) w pomieszczeniu zagrożonym wybuchem ustala się bez uwzględniania elementów konstrukcji nośnej dachu.",
+  "legal": [
+   "§ 39 RPB – lekki dach w pomieszczeniu zagrożonym wybuchem"
+  ],
+  "verified": false
+ },
+ "66": {
+  "answer": "c",
+  "explanation": "Przy zbliżeniu drogi pożarowej poniżej wymaganej odległości od ściany z oknami budynku wysokiego dopuszcza się uznanie jej za drogę pożarową pod warunkiem zastosowania rozwiązań zamiennych, uzgodnionych z właściwym komendantem wojewódzkim PSP.",
+  "legal": [
+   "§ 12 RW; art. 6a ustawy o ochronie ppoż. – rozwiązania zamienne"
+  ],
+  "verified": false
+ },
+ "67": {
+  "answer": "b",
+  "explanation": "Budynek średniowysoki o funkcji mieszkalno-usługowej (ZL) należy zaprojektować w klasie odporności pożarowej B dla całego budynku.",
+  "legal": [
+   "§ 212 WT – klasa odporności pożarowej budynków ZL"
+  ],
+  "verified": false
+ },
+ "68": {
+  "answer": "b",
+  "explanation": "Kwalifikacji zamierzonego odstąpienia od zatwierdzonego projektu budowlanego (także w zakresie ochrony ppoż.) dokonuje projektant.",
+  "legal": [
+   "art. 36a ustawy – Prawo budowlane"
+  ],
+  "verified": false
+ },
+ "69": {
+  "answer": "c",
+  "explanation": "W strefie zagrożenia wybuchem 2 mogą być stosowane urządzenia kategorii 3, a także kategorii 1 i 2 (wyższych).",
+  "legal": [
+   "dyrektywa ATEX / PN-EN 60079-10-1 – dobór urządzeń do stref"
+  ],
+  "verified": false
+ },
+ "70": {
+  "answer": "b",
+  "explanation": "Klapa przeciwpożarowa w ścianie pionowej obudowy klatki schodowej, gdzie ogień może oddziaływać z obu stron, powinna mieć klasyfikację EI 60 (ve i↔o) S.",
+  "legal": [
+   "PN-EN 15650 / PN-EN 13501-3 – klasyfikacja klap ppoż."
+  ],
+  "verified": false
+ },
+ "71": {
+  "answer": "b",
+  "explanation": "Celem instalacji tryskaczowych ESFR jest ugaszenie pożaru.",
+  "legal": [
+   "PN-EN 12845 / NFPA – tryskacze ESFR"
+  ],
+  "verified": false
+ },
+ "72": {
+  "answer": "a",
+  "explanation": "W budynku wysokim (26 m > 25 m) stosowanie instalacji zasilanych z butli z gazem płynnym jest zabronione.",
+  "legal": [
+   "§ 157 WT – zakaz stosowania gazu płynnego w budynkach wysokich i wysokościowych"
+  ],
+  "verified": false
+ },
+ "73": {
+  "answer": "b",
+  "explanation": "§ 285 WT: dopuszcza się umieszczenie w jednym budynku części mieszkalnej i gospodarczej pod warunkiem odrębnych wejść oraz wykonania między nimi ściany o klasie odporności ogniowej co najmniej REI 60 (nie REI 120).",
+  "legal": [
+   "§ 285 WT – część mieszkalna i gospodarcza w jednym budynku"
+  ],
+  "verified": true
+ },
+ "74": {
+  "answer": "a",
+  "explanation": "Ściany wewnętrzne wykonane z materiałów palnych uwzględnia się w obliczeniach gęstości obciążenia ogniowego.",
+  "legal": [
+   "PN-B-02852 – obliczanie gęstości obciążenia ogniowego"
+  ],
+  "verified": false
+ },
+ "75": {
+  "answer": "c",
+  "explanation": "Dla systemu różnicowania ciśnień klasy B (wg PN-EN 12101-6) w drzwiach należy zapewnić prędkość przepływu powietrza co najmniej 2 m/s.",
+  "legal": [
+   "PN-EN 12101-6:2007 – systemy różnicowania ciśnień, klasa B"
+  ],
+  "verified": false
+ },
+ "76": {
+  "answer": "a",
+  "explanation": "Wg PN-EN 60849 rezerwowe źródło zasilania DSO powinno zapewnić działanie w trybie zagrożenia przez czas dłuższy niż czas ewakuacji, jednak nie krótszy niż 30 min.",
+  "legal": [
+   "PN-EN 60849:2001 – dźwiękowe systemy ostrzegawcze"
+  ],
+  "verified": false
+ },
+ "77": {
+  "answer": "b",
+  "explanation": "Wg PN-B-02877-4 w dachu płaskim co najmniej jedna klapa dymowa powinna przypadać na każde 200 m² powierzchni.",
+  "legal": [
+   "PN-B-02877-4:2001 – grawitacyjne odprowadzanie dymu i ciepła"
+  ],
+  "verified": false
+ },
+ "78": {
+  "answer": "b",
+  "explanation": "Dopuszczalna powierzchnia strefy pożarowej ZL w budynku wielokondygnacyjnym wynosi w tym przypadku 5000 m²; strefa 30 000 m² wymaga odstępstwa.",
+  "legal": [
+   "§ 227 WT – dopuszczalne powierzchnie stref pożarowych ZL"
+  ],
+  "verified": false
+ },
+ "79": {
+  "answer": "b",
+  "explanation": "Woda do zewnętrznego gaszenia w ilości 20 dm³/s jest wymagana, gdy powierzchnia strefy pożarowej garażu przekracza 2000 m².",
+  "legal": [
+   "§ 5 RW – wymagana ilość wody"
+  ],
+  "verified": false
+ },
+ "80": {
+  "answer": "c",
+  "explanation": "Wymiana odmierzacza paliw w istniejącej stacji (z 1993 r.) w ramach bieżącej eksploatacji jest możliwa bez procedur odstępstwa ani uzgadniania spełnienia wymagań w sposób zastępczy – nowe przepisy nie działają wstecz wobec istniejących obiektów.",
+  "legal": [
+   "przepisy przejściowe rozp. MG z 21.11.2005"
+  ],
+  "verified": false
+ }
+}

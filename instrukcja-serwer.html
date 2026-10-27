@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rzeczoznawca PPOŻ — uruchomienie na serwerze</title>
+<style>
+  :root {
+    --bg:#f3f4f6; --surface:#fff; --surface-2:#f8fafc; --text:#1f2937; --text-soft:#6b7280;
+    --border:#e5e7eb; --brand:#c62828; --brand-soft:#fdecea; --ok:#1b8f4d; --ok-soft:#e6f5ec;
+    --warn:#b7791f; --warn-soft:#fdf6e3; --accent:#1d4ed8; --radius:14px;
+    --shadow:0 1px 3px rgba(0,0,0,.08),0 1px 2px rgba(0,0,0,.04);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#0f1115; --surface:#171a21; --surface-2:#1e222b; --text:#e6e8ec; --text-soft:#9aa2ad;
+      --border:#2a2f3a; --brand:#ef5350; --brand-soft:#3a1b1b; --ok:#4ade80; --ok-soft:#12301f;
+      --warn:#fbbf24; --warn-soft:#2e2510; --accent:#60a5fa; --shadow:0 1px 3px rgba(0,0,0,.4);
+    }
+  }
+  * { box-sizing:border-box; }
+  html,body { margin:0; padding:0; }
+  body {
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    background:var(--bg); color:var(--text); line-height:1.6; font-size:16px;
+  }
+  a { color:var(--accent); }
+
+  header {
+    position:sticky; top:0; z-index:30; background:var(--brand); color:#fff;
+    padding:14px 18px; box-shadow:var(--shadow);
+  }
+  header h1 { margin:0; font-size:18px; letter-spacing:.2px; }
+  header .sub { font-size:13px; opacity:.9; margin-top:2px; }
+  .progress { height:5px; background:rgba(255,255,255,.25); border-radius:999px; margin-top:10px; overflow:hidden; }
+  .progress > span { display:block; height:100%; background:#fff; width:0; transition:width .25s ease; }
+
+  main { max-width:860px; margin:0 auto; padding:18px 16px 60px; }
+
+  .panel {
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:16px 18px; margin-bottom:18px; box-shadow:var(--shadow);
+  }
+  .panel.tip { border-left:3px solid var(--accent); }
+  .panel.warn { border-left:3px solid var(--warn); background:var(--warn-soft); }
+
+  h2 { font-size:17px; margin:30px 0 12px; padding-bottom:7px; border-bottom:2px solid var(--brand); }
+  h2:first-of-type { margin-top:10px; }
+  h3 { font-size:15px; margin:0 0 8px; }
+  p { margin:8px 0; }
+  .soft { color:var(--text-soft); font-size:14px; }
+
+  /* dane użytkownika */
+  .vars { display:grid; gap:12px; grid-template-columns:1fr; }
+  @media (min-width:620px) { .vars { grid-template-columns:1fr 1fr; } }
+  .vars label { font-size:13px; font-weight:700; display:block; }
+  .vars label small { display:block; font-weight:400; color:var(--text-soft); margin-top:1px; }
+  .vars input {
+    width:100%; font:inherit; font-size:14px; margin-top:5px; padding:9px 11px; color:var(--text);
+    background:var(--surface-2); border:1px solid var(--border); border-radius:9px;
+  }
+  .vars input:focus { outline:2px solid var(--accent); outline-offset:-1px; }
+
+  /* kroki */
+  .step {
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:14px 16px; margin-bottom:12px; box-shadow:var(--shadow);
+    display:flex; gap:13px; align-items:flex-start;
+  }
+  .step.done { border-color:var(--ok); background:var(--ok-soft); }
+  .step.done .body > h3 { text-decoration:line-through; opacity:.65; }
+  .step > input[type=checkbox] { flex:0 0 auto; width:21px; height:21px; margin:3px 0 0; cursor:pointer; accent-color:var(--ok); }
+  .step .body { flex:1; min-width:0; }
+  .step .tag {
+    display:inline-block; font-size:11px; font-weight:800; letter-spacing:.4px;
+    background:var(--brand-soft); color:var(--brand); border-radius:999px; padding:2px 8px; margin-bottom:5px;
+  }
+  .step ul, .step ol { margin:7px 0; padding-left:22px; }
+  .step li { margin:4px 0; }
+
+  /* kod + kopiowanie */
+  .code { position:relative; margin:10px 0; }
+  .code pre {
+    margin:0; background:var(--surface-2); border:1px solid var(--border); border-radius:10px;
+    padding:12px 14px; padding-right:86px; overflow-x:auto;
+    font-family: ui-monospace,SFMono-Regular,Consolas,monospace; font-size:13px; line-height:1.55;
+    white-space:pre-wrap; word-break:break-word;
+  }
+  .code button {
+    position:absolute; top:8px; right:8px; font:inherit; font-size:12px; font-weight:700;
+    background:var(--surface); color:var(--accent); border:1px solid var(--border);
+    border-radius:8px; padding:4px 10px; cursor:pointer;
+  }
+  .code button.ok { color:var(--ok); border-color:var(--ok); }
+  code.i {
+    background:var(--surface-2); border:1px solid var(--border); border-radius:6px;
+    padding:1px 6px; font-family:ui-monospace,Consolas,monospace; font-size:13.5px; word-break:break-all;
+  }
+  .v { color:var(--brand); font-weight:700; }
+  .v.unset { color:var(--text-soft); font-weight:400; font-style:italic; }
+  kbd {
+    background:var(--surface-2); border:1px solid var(--border); border-bottom-width:2px;
+    border-radius:5px; padding:1px 6px; font-size:12.5px; font-family:inherit; font-weight:600;
+  }
+
+  table { width:100%; border-collapse:collapse; margin:10px 0; font-size:14px; }
+  th,td { border:1px solid var(--border); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:var(--surface-2); font-size:13px; }
+
+  .bar { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:14px; }
+  .btn {
+    font:inherit; font-size:14px; font-weight:700; cursor:pointer; border-radius:9px; padding:8px 14px;
+    background:var(--surface); color:var(--text); border:1px solid var(--border);
+  }
+  .btn.primary { background:var(--brand); color:#fff; border-color:var(--brand); }
+
+  footer { text-align:center; color:var(--text-soft); font-size:13px; margin-top:34px; }
+
+  @media print {
+    header { position:static; } .progress, .bar, .code button { display:none; }
+    .step, .panel { box-shadow:none; break-inside:avoid; }
+    body { background:#fff; font-size:11.5pt; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Rzeczoznawca PPOŻ — uruchomienie na serwerze</h1>
+  <div class="sub">Supabase (konta i baza) + GitHub Pages (pliki) · 0 zł · ok. 30–40 min · <span id="cnt">0 / 0</span> kroków</div>
+  <div class="progress"><span id="pbar"></span></div>
+</header>
+
+<main>
+
+<div class="panel tip">
+  <h3>Twoje dane — wpisz raz, wstawią się w całej instrukcji</h3>
+  <p class="soft">Zapisuje się w tej przeglądarce. Nic nie jest nigdzie wysyłane.</p>
+  <div class="vars">
+    <div><label>Nazwa użytkownika GitHub
+      <small>z adresu github.com/<b>nazwa</b></small>
+      <input id="f_gh" placeholder="np. lkosek" autocomplete="off"></label></div>
+    <div><label>Nazwa repozytorium
+      <small>dowolna, bez spacji</small>
+      <input id="f_repo" placeholder="rzeczoznawca-ppoz" autocomplete="off"></label></div>
+    <div><label>Identyfikator projektu Supabase
+      <small>z Project URL: https://<b>to</b>.supabase.co</small>
+      <input id="f_ref" placeholder="np. abcdefghijklmnop" autocomplete="off"></label></div>
+    <div><label>Twój e-mail (konto admina)
+      <small>użyty w komendzie nadania praw</small>
+      <input id="f_mail" placeholder="np. lukasz.kosek@op.pl" autocomplete="off"></label></div>
+  </div>
+  <div class="bar">
+    <button class="btn" id="btnPrint">Zapisz jako PDF / drukuj</button>
+    <button class="btn" id="btnReset">Wyczyść odhaczone kroki</button>
+  </div>
+</div>
+
+<div class="panel">
+  <h3>Jak to będzie działać</h3>
+  <table>
+    <tr><th style="width:42%">GitHub Pages — darmowe</th><th>Supabase — darmowe</th></tr>
+    <tr>
+      <td>Pliki aplikacji: <code class="i">index.html</code>, <code class="i">app.js</code>,
+          <code class="i">questions.js</code>, <code class="i">akty/*.pdf</code> (~19 MB)</td>
+      <td>Logowanie (e-mail, Google), profile, postęp nauki, pytania użytkowników</td>
+    </tr>
+  </table>
+  <p class="soft">GitHub Pages serwuje tylko pliki — nie uruchomi kodu po stronie serwera.
+     Dlatego konta i baza siedzą w Supabase. Żadnego serwera nie trzeba pisać ani utrzymywać.</p>
+</div>
+
+<!-- ============================ CZĘŚĆ A ============================ -->
+<h2>CZĘŚĆ A — Supabase: konta, profile, pytania</h2>
+
+<div class="step"><input type="checkbox" data-k="a1"><div class="body">
+  <span class="tag">A1</span>
+  <h3>Utwórz projekt</h3>
+  <ol>
+    <li>Wejdź na <a href="https://supabase.com" target="_blank" rel="noopener">supabase.com</a> →
+        <b>Start your project</b> → zaloguj się (najprościej kontem GitHub — przyda się w części B).</li>
+    <li><b>New project</b>:
+      <ul>
+        <li><b>Name:</b> <code class="i">rzeczoznawca-ppoz</code></li>
+        <li><b>Database Password:</b> wygeneruj i <b>zapisz w menedżerze haseł</b></li>
+        <li><b>Region:</b> <code class="i">Central EU (Frankfurt)</code> — najbliżej Polski</li>
+        <li><b>Plan:</b> Free</li>
+      </ul>
+    </li>
+    <li>Projekt tworzy się ok. 2 minut.</li>
+  </ol>
+</div></div>
+
+<div class="step"><input type="checkbox" data-k="a2"><div class="body">
+  <span class="tag">A2</span>
+  <h3>Wgraj strukturę bazy</h3>
+  <ol>
+    <li>Menu po lewej: <b>SQL Editor</b> → <b>New query</b>.</li>
+    <li>Otwórz plik <code class="i">schema.sql</code> z folderu aplikacji, skopiuj <b>całą</b> treść, wklej do okna.</li>
+    <li>Kliknij <b>Run</b> (albo <kbd>Ctrl</kbd>+<kbd>Enter</kbd>).</li>
+    <li>Oczekiwany wynik: <code class="i">Success. No rows returned</code> — tak ma być.</li>
+  </ol>
+  <p class="soft">Powstały tabele <code class="i">profiles</code>, <code class="i">admins</code>,
+     <code class="i">progress</code>, <code class="i">questions</code> wraz z regułami RLS.
+     Od tej chwili baza sama pilnuje, kto co widzi — pytanie prywatne nie opuści serwera,
+     nawet gdyby ktoś przerobił kod strony w przeglądarce.</p>
+</div></div>
+
+<div class="step"><input type="checkbox" data-k="a3"><div class="body">
+  <span class="tag">A3</span>
+  <h3>Skopiuj adres i klucz do aplikacji</h3>
+  <ol>
+    <li>Supabase: <b>Settings</b> (⚙ na dole) → <b>API Keys</b> (lub <b>API</b>).</li>
+    <li>Skopiuj <b>Project URL</b> oraz klucz <b>anon public</b> (zaczyna się od <code class="i">eyJ…</code>).</li>
+    <li>Otwórz <code class="i">cloud-config.js</code> (Notatnik wystarczy) i wklej:</li>
+  </ol>
+  <div class="code"><pre id="cfg">window.CLOUD_CONFIG = {
+  url:     "https://<span class="v unset" data-v="ref">TWÓJ-PROJEKT</span>.supabase.co",
+  anonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3M...",
+  google: true,
+  ...
+};</pre><button data-copy="#cfg">Kopiuj</button></div>
+  <p class="soft"><b>Czy klucz <code class="i">anon public</code> można publikować?</b> Tak — jest do tego
+     przeznaczony i trafia do kodu każdej strony korzystającej z Supabase. To nie hasło: sam z siebie nie daje
+     dostępu do danych, bo wszystko filtrują reguły RLS.
+     <b>Nigdy nie wklejaj tu klucza <code class="i">service_role</code></b> — ten omija wszystkie reguły.</p>
+</div></div>
+
+<div class="step"><input type="checkbox" data-k="a4"><div class="body">
+  <span class="tag">A4</span>
+  <h3>Ustaw adresy powrotu</h3>
+  <p>Bez tego linki z e-maili (potwierdzenie konta, reset hasła) i logowanie Google odeślą w złe miejsce.</p>
+  <p><b>Authentication</b> → <b>URL Configuration</b>:</p>
+  <ul>
+    <li><b>Site URL:</b><div class="code"><pre id="siteurl"><span class="v unset" data-v="appurl">https://TWOJA-NAZWA.github.io/rzeczoznawca-ppoz/</span></pre><button data-copy="#siteurl">Kopiuj</button></div></li>
+    <li><b>Redirect URLs</b> → <i>Add URL</i> (gwiazdki na końcu są istotne):
+      <div class="code"><pre id="redir"><span class="v unset" data-v="appurlstar">https://TWOJA-NAZWA.github.io/rzeczoznawca-ppoz/**</span></pre><button data-copy="#redir">Kopiuj</button></div></li>
+    <li>Na czas testów na komputerze dodaj dodatkowo <code class="i">http://localhost:8777/**</code></li>
+  </ul>
+  <p class="soft">Adres aplikacji poznasz w części B — możesz tu wrócić później.</p>
+</div></div>
+
+<div class="step"><input type="checkbox" data-k="a5"><div class="body">
+  <span class="tag">A5</span>
+  <h3>Potwierdzanie adresu e-mail — decyzja</h3>
+  <p><b>Authentication</b> → <b>Providers</b> (lub <i>Sign In / Providers</i>) → <b>Email</b>:</p>
+  <table>
+    <tr><th>Ustawienie <code class="i">Confirm email</code></th><th>Skutek</th></tr>
+    <tr><td><b>włączone</b> (domyślnie)</td><td>Po rejestracji trzeba kliknąć link z e-maila. Bezpieczniejsze.</td></tr>
+    <tr><td><b>wyłączone</b></td><td>Rejestracja działa natychmiast. Wygodniejsze dla siebie i znajomych.</td></tr>
+  </table>
+  <p><b>⚠ Uwaga:</b> darmowy plan wysyła tylko <b>kilka e-maili na godzinę</b> (to usługa testowa).
+     Jeśli aplikacja ma być dla kilkunastu osób — albo <b>wyłącz potwierdzanie</b>, albo wpisz własny SMTP
+     (<i>Settings → Authentication → SMTP Settings</i>; darmowy Brevo czy Resend wystarczy).</p>
+</div></div>
+
+<div class="step"><input type="checkbox" data-k="a6"><div class="body">
+  <span class="tag">A6</span>
+  <h3>Logowanie przez Google <span class="soft">(opcjonalne)</span></h3>
+  <p class="soft">Nie chcesz Google? Ustaw <code class="i">google: false</code> w <code class="i">cloud-config.js</code>
+     i pomiń ten krok — zostaje logowanie e-mailem i hasłem.</p>
+  <ol>
+    <li><a href="https://console.cloud.google.com" target="_blank" rel="noopener">console.cloud.google.com</a>
+        → utwórz projekt (dowolna nazwa).</li>
+    <li><b>APIs &amp; Services → OAuth consent screen</b>: typ <b>External</b>, podaj nazwę aplikacji
+        i e-mail kontaktowy, zapisz.</li>
+    <li><b>APIs &amp; Services → Credentials</b> → <i>Create credentials</i> → <b>OAuth client ID</b>:
+      <ul>
+        <li><b>Application type:</b> <code class="i">Web application</code></li>
+        <li><b>Authorized JavaScript origins:</b>
+          <div class="code"><pre id="ghorigin"><span class="v unset" data-v="ghorigin">https://TWOJA-NAZWA.github.io</span></pre><button data-copy="#ghorigin">Kopiuj</button></div></li>
+        <li><b>Authorized redirect URIs:</b>
+          <div class="code"><pre id="cb"><span class="v unset" data-v="callback">https://TWÓJ-PROJEKT.supabase.co/auth/v1/callback</span></pre><button data-copy="#cb">Kopiuj</button></div></li>
+      </ul>
+    </li>
+    <li>Skopiuj <b>Client ID</b> i <b>Client Secret</b>.</li>
+    <li>Supabase → <b>Authentication → Providers → Google</b> → <i>Enable</i>, wklej oba pola → <b>Save</b>.</li>
+  </ol>
+</div></div>
+
+<div class="step"><input type="checkbox" data-k="a7"><div class="body">
+  <span class="tag">A7</span>
+  <h3>Nadaj sobie prawa administratora</h3>
+  <p>Administrator zatwierdza pytania zgłoszone jako publiczne. Zrób to <b>po</b> zarejestrowaniu
+     swojego konta w aplikacji (czyli po części B).</p>
+  <p>Supabase → <b>SQL Editor</b> → wklej i uruchom:</p>
+  <div class="code"><pre id="sqladmin">insert into public.admins (user_id)
+select id from auth.users where email = '<span class="v unset" data-v="mail">twoj@email.pl</span>'
+on conflict (user_id) do nothing;</pre><button data-copy="#sqladmin">Kopiuj</button></div>
+  <p class="soft">Po odświeżeniu aplikacji (i ponownym zalogowaniu) w menu pojawi się kafelek
+     <b>🛡️ Do zatwierdzenia</b>.</p>
+</div></div>
+
+<!-- ============================ CZĘŚĆ B ============================ -->
+<h2>CZĘŚĆ B — GitHub Pages: publikacja plików</h2>
+
+<div class="step"><input type="checkbox" data-k="b1"><div class="body">
+  <span class="tag">B1</span>
+  <h3>Utwórz repozytorium</h3>
+  <ol>
+    <li><a href="https://github.com/new" target="_blank" rel="noopener">github.com/new</a> (zaloguj się).</li>
+    <li><b>Repository name:</b> <code class="i"><span class="v unset" data-v="repo">rzeczoznawca-ppoz</span></code></li>
+    <li><b>Public</b> — GitHub Pages dla repozytoriów prywatnych wymaga planu płatnego.</li>
+    <li><i>Create repository</i>.</li>
+  </ol>
+</div></div>
+
+<div class="step"><input type="checkbox" data-k="b2"><div class="body">
+  <span class="tag">B2</span>
+  <h3>Wgraj pliki</h3>
+  <ol>
+    <li>W repozytorium: <b>Add file → Upload files</b>.</li>
+    <li>Przeciągnij <b>całą zawartość</b> folderu <code class="i">RzeczoznawcaPPOZ</code>
+        (łącznie z folderami <code class="i">akty/</code>, <code class="i">icons/</code>, <code class="i">vendor/</code>).</li>
+    <li>Przewiń w dół → <i>Commit changes</i>.</li>
+  </ol>
+  <table>
+    <tr><th>Potrzebne na serwerze</th><th>Można pominąć</th></tr>
+    <tr>
+      <td>
+        <code class="i">index.html</code>, <code class="i">app.js</code>, <code class="i">styles.css</code><br>
+        <code class="i">questions.js</code>, <code class="i">answers.js</code>, <code class="i">questions-new.js</code><br>
+        <code class="i">acts.js</code>, <code class="i">quotes.js</code><br>
+        <code class="i">cloud-config.js</code>, <code class="i">cloud.js</code>, <code class="i">vendor/supabase.js</code><br>
+        <code class="i">manifest.webmanifest</code>, <code class="i">service-worker.js</code>, <code class="i">icons/</code><br>
+        <code class="i">akty/</code> — 17 PDF-ów, ~17 MB<br>
+        <code class="i">.nojekyll</code> — <b>ważne</b>, bez tego GitHub może pominąć niektóre pliki
+      </td>
+      <td>
+        <code class="i">answers_data/</code> — robocze skrypty<br>
+        <code class="i">zrodlo_pytan_KGPSP_2015-2026.pdf</code> — 1,8 MB, tylko źródło<br>
+        <code class="i">Uruchom TEST.bat</code>, <code class="i">start.bat</code> — tylko Windows<br>
+        <code class="i">README-SERWER.md</code>, <code class="i">schema.sql</code>,
+        <code class="i">instrukcja-serwer.html</code> — nie szkodzą
+      </td>
+    </tr>
+  </table>
+  <p class="soft">Jeśli przeglądarka nie radzi sobie z 19 MB naraz — wgraj w dwóch turach:
+     najpierw wszystko oprócz <code class="i">akty/</code>, potem sam folder <code class="i">akty/</code>.</p>
+</div></div>
+
+<div class="step"><input type="checkbox" data-k="b3"><div class="body">
+  <span class="tag">B3</span>
+  <h3>Włącz GitHub Pages</h3>
+  <ol>
+    <li>W repozytorium: <b>Settings</b> → <b>Pages</b> (menu po lewej).</li>
+    <li><b>Source:</b> <code class="i">Deploy from a branch</code></li>
+    <li><b>Branch:</b> <code class="i">main</code>, folder <code class="i">/ (root)</code> → <b>Save</b>.</li>
+    <li>Po 1–2 minutach u góry pojawi się adres aplikacji:
+      <div class="code"><pre id="appurl2"><span class="v unset" data-v="appurl">https://TWOJA-NAZWA.github.io/rzeczoznawca-ppoz/</span></pre><button data-copy="#appurl2">Kopiuj</button></div></li>
+  </ol>
+</div></div>
+
+<div class="step"><input type="checkbox" data-k="b4"><div class="body">
+  <span class="tag">B4</span>
+  <h3>Domknij konfigurację</h3>
+  <ol>
+    <li>Wróć do <b>A4</b> i wpisz adres aplikacji w Supabase (<i>Site URL</i> i <i>Redirect URLs</i>).</li>
+    <li>Jeśli używasz Google — uzupełnij <b>A6</b> punkt 3 tym samym adresem.</li>
+    <li>Otwórz aplikację i <b>zarejestruj konto</b>.</li>
+    <li>Wykonaj <b>A7</b> — nadanie praw administratora.</li>
+  </ol>
+</div></div>
+
+<div class="step"><input type="checkbox" data-k="b5"><div class="body">
+  <span class="tag">B5</span>
+  <h3>Zainstaluj na Androidzie</h3>
+  <ol>
+    <li>Otwórz adres aplikacji w <b>Chrome</b> na telefonie.</li>
+    <li>Menu (⋮) → <b>Zainstaluj aplikację</b> / <i>Dodaj do ekranu głównego</i>.</li>
+    <li>Działa jak zwykła apka, pełnoekranowo, i <b>bez internetu</b> — pytania, objaśnienia
+        i PDF-y aktów są zapisane w telefonie.</li>
+  </ol>
+  <p class="soft">Logowanie i synchronizacja wymagają połączenia. Bez niego aplikacja działa dalej,
+     tylko postęp zapisuje lokalnie i wyśle go przy następnym połączeniu.</p>
+  <p class="soft">Przy okazji sprawdź tryb offline: Chrome na komputerze → <kbd>F12</kbd> →
+     <b>Application → Service Workers</b> (powinien być „activated"), potem zaznacz <b>Offline</b>
+     i odśwież — aplikacja musi się otworzyć.</p>
+</div></div>
+
+<!-- ============================ DALEJ ============================ -->
+<h2>Aktualizacja aplikacji</h2>
+<div class="panel">
+  <p>Po zmianie pytań albo odpowiedzi: <b>Add file → Upload files</b> → wgraj zmienione pliki →
+     <i>Commit changes</i>. Po ok. minucie zmiany są u wszystkich.</p>
+  <p>Service worker bierze kod aplikacji <b>najpierw z sieci</b>, więc <b>nie trzeba czyścić pamięci
+     przeglądarki</b> (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd>) po każdej zmianie — to był problem
+     wersji lokalnej. PDF-y aktów nadal idą z pamięci urządzenia; gdybyś podmienił któryś PDF,
+     podnieś numer wersji w <code class="i">service-worker.js</code>:</p>
+  <div class="code"><pre id="swv">const CACHE = "rzppoz-v8";   // → "rzppoz-v9"</pre><button data-copy="#swv">Kopiuj</button></div>
+</div>
+
+<h2>Inne hostingi — alternatywy dla GitHub Pages</h2>
+<div class="panel">
+  <p class="soft">Część A (Supabase) jest wspólna — zmienia się tylko miejsce na pliki.</p>
+  <table>
+    <tr><th>Rozwiązanie</th><th>Koszt</th><th>Zalety</th><th>Wady</th></tr>
+    <tr><td><b>GitHub Pages</b> (wybrane)</td><td>0 zł</td><td>HTTPS, prosta aktualizacja, limit 1 GB</td><td>repozytorium musi być publiczne</td></tr>
+    <tr><td>Cloudflare Pages</td><td>0 zł</td><td>najszybszy CDN, repo może być prywatne, drag &amp; drop</td><td>konto Cloudflare</td></tr>
+    <tr><td>Netlify</td><td>0 zł</td><td>wrzucanie folderu myszką, podgląd wersji</td><td>limit 100 GB transferu/mies.</td></tr>
+    <tr><td>Własny hosting / FTP</td><td>masz</td><td>pełna kontrola, własna domena</td><td>HTTPS trzeba mieć włączony</td></tr>
+    <tr><td>VPS, np. mikr.us</td><td>~50 zł/rok</td><td>wszystko u siebie</td><td>konfiguracja serwera WWW</td></tr>
+  </table>
+</div>
+
+<div class="panel warn">
+  <h3>Limity darmowego planu Supabase</h3>
+  <table>
+    <tr><td>Baza danych</td><td><b>500 MB</b> — pytania i postępy: tysiące użytkowników zmieszczą się bez problemu</td></tr>
+    <tr><td>Aktywni użytkownicy / mies.</td><td><b>50 000</b></td></tr>
+    <tr><td>Transfer</td><td><b>5 GB</b> / mies.</td></tr>
+    <tr><td>Wysyłka e-maili</td><td>kilka na godzinę — patrz <b>A5</b></td></tr>
+  </table>
+  <p><b>Najważniejszy haczyk:</b> darmowy projekt zostaje <b>uśpiony po 7 dniach bez ruchu</b>.
+     Budzi się jednym kliknięciem w panelu Supabase, ale do tego czasu logowanie nie działa
+     (aplikacja nadal otworzy się w trybie offline). Bez przestojów — plan Pro 25 USD/mies.
+     Przy korzystaniu raz na kilka dni problem nie wystąpi.</p>
+</div>
+
+<h2>Co się dzieje z danymi użytkowników</h2>
+<div class="panel">
+  <p>Przechowywane są <b>tylko</b>: adres e-mail i hasło (hasła trzyma i szyfruje Supabase — aplikacja
+     nigdy ich nie widzi), pseudonim, postęp nauki oraz pytania dodane przez użytkownika.</p>
+  <p>Reguły RLS z <code class="i">schema.sql</code> zapewniają, że:</p>
+  <ul>
+    <li>postęp nauki widzi <b>wyłącznie</b> jego właściciel,</li>
+    <li>pytanie prywatne widzi <b>wyłącznie</b> autor,</li>
+    <li>pytanie publiczne widzą wszyscy zalogowani — ale dopiero <b>po zatwierdzeniu</b> przez admina,</li>
+    <li>nikt nie nada sobie praw administratora z aplikacji — tabela <code class="i">admins</code>
+        nie ma reguły zapisu, wpis można dodać tylko z panelu Supabase,</li>
+    <li>autor edytujący zatwierdzone pytanie <b>zrzuca je z powrotem do kolejki moderacji</b>,
+        więc nie da się podmienić treści po akceptacji.</li>
+  </ul>
+</div>
+
+<h2>Gdy coś nie działa</h2>
+<div class="panel">
+  <table>
+    <tr><th style="width:38%">Objaw</th><th>Przyczyna i rozwiązanie</th></tr>
+    <tr><td>Kafelek „Konto" pokazuje <i>Tryb offline — bez konta</i></td><td>Puste <code class="i">url</code> lub <code class="i">anonKey</code> w <code class="i">cloud-config.js</code>, albo plik nie został wgrany.</td></tr>
+    <tr><td>„Brak połączenia z serwerem"</td><td>Projekt Supabase uśpiony — zaloguj się do panelu i obudź go.</td></tr>
+    <tr><td>„Rejestracja jest wyłączona w panelu Supabase"</td><td><i>Authentication → Providers → Email</i> → włącz <i>Enable sign up</i>.</td></tr>
+    <tr><td>Po rejestracji nie przychodzi e-mail</td><td>Limit wysyłki darmowego planu. Wyłącz <i>Confirm email</i> (<b>A5</b>) albo ustaw własny SMTP.</td></tr>
+    <tr><td>Link z e-maila prowadzi na <code class="i">localhost</code></td><td>Nieustawiony <i>Site URL</i> — krok <b>A4</b>.</td></tr>
+    <tr><td>„Logowanie Google nie jest włączone"</td><td>Krok <b>A6</b> nie wykonany, albo ustaw <code class="i">google: false</code>.</td></tr>
+    <tr><td>Google: <code class="i">redirect_uri_mismatch</code></td><td>W Google Cloud brakuje adresu <span class="v unset" data-v="callback">https://TWÓJ-PROJEKT.supabase.co/auth/v1/callback</span></td></tr>
+    <tr><td>Brak kafelka „Do zatwierdzenia"</td><td>Krok <b>A7</b> — i wyloguj się oraz zaloguj ponownie.</td></tr>
+    <tr><td>„Brak uprawnień do tej operacji"</td><td>Reguła RLS zadziałała prawidłowo — konto próbuje zrobić coś nie swojego.</td></tr>
+    <tr><td>Strona GitHub Pages pokazuje 404</td><td>Poczekaj 2 minuty po pierwszym wgraniu; sprawdź, czy <code class="i">index.html</code> leży w <b>głównym</b> katalogu repozytorium.</td></tr>
+    <tr><td>PDF-y aktów się nie otwierają</td><td>Folder <code class="i">akty/</code> nie został wgrany (17 MB — mógł nie przejść w jednej turze).</td></tr>
+  </table>
+</div>
+
+<h2>Praca lokalna, bez publikowania</h2>
+<div class="panel">
+  <p>Do testów na komputerze nadal działa <code class="i">Uruchom TEST.bat</code> albo:</p>
+  <div class="code"><pre id="loc">python -m http.server 8777</pre><button data-copy="#loc">Kopiuj</button></div>
+  <p>i <a href="http://localhost:8777/index.html">http://localhost:8777/index.html</a>. Pamiętaj tylko,
+     żeby w Supabase (<b>A4</b>) dodać <code class="i">http://localhost:8777/**</code> do
+     <i>Redirect URLs</i> — inaczej logowanie na localhost odbije.</p>
+</div>
+
+<footer>
+  Odhaczone kroki i wpisane dane zapisują się w tej przeglądarce.<br>
+  Wersja tekstowa tej instrukcji: <code class="i">README-SERWER.md</code>
+</footer>
+
+</main>
+
+<script>
+(function () {
+  "use strict";
+  var LS = "rzppoz_instr_v1";
+  var state = { done: {}, vars: {} };
+  try { var raw = localStorage.getItem(LS); if (raw) state = Object.assign(state, JSON.parse(raw)); } catch (e) {}
+  function store() { try { localStorage.setItem(LS, JSON.stringify(state)); } catch (e) {} }
+
+  // ---------- podstawianie danych użytkownika ----------
+  var FIELDS = ["gh", "repo", "ref", "mail"];
+  var PLACEHOLDER = {
+    ref: "TWÓJ-PROJEKT", repo: "rzeczoznawca-ppoz", mail: "twoj@email.pl",
+    appurl: "https://TWOJA-NAZWA.github.io/rzeczoznawca-ppoz/",
+    appurlstar: "https://TWOJA-NAZWA.github.io/rzeczoznawca-ppoz/**",
+    ghorigin: "https://TWOJA-NAZWA.github.io",
+    callback: "https://TWÓJ-PROJEKT.supabase.co/auth/v1/callback"
+  };
+  function val(k) { return (state.vars[k] || "").trim(); }
+  function derived() {
+    var gh = val("gh"), repo = val("repo") || (val("gh") ? "rzeczoznawca-ppoz" : ""), ref = val("ref");
+    var base = gh ? "https://" + gh + ".github.io/" + (repo || "rzeczoznawca-ppoz") + "/" : "";
+    return {
+      gh: gh, repo: val("repo"), ref: ref, mail: val("mail"),
+      appurl: base, appurlstar: base ? base + "**" : "",
+      ghorigin: gh ? "https://" + gh + ".github.io" : "",
+      callback: ref ? "https://" + ref + ".supabase.co/auth/v1/callback" : ""
+    };
+  }
+  function paint() {
+    var d = derived();
+    var nodes = document.querySelectorAll("[data-v]");
+    for (var i = 0; i < nodes.length; i++) {
+      var el = nodes[i], k = el.getAttribute("data-v"), v = d[k];
+      if (v) { el.textContent = v; el.classList.remove("unset"); }
+      else { el.textContent = PLACEHOLDER[k] || ""; el.classList.add("unset"); }
+    }
+  }
+  FIELDS.forEach(function (k) {
+    var inp = document.getElementById("f_" + k);
+    inp.value = state.vars[k] || "";
+    inp.addEventListener("input", function () { state.vars[k] = inp.value; store(); paint(); });
+  });
+
+  // ---------- odhaczanie kroków ----------
+  var boxes = document.querySelectorAll(".step > input[type=checkbox]");
+  function progress() {
+    var n = 0;
+    for (var i = 0; i < boxes.length; i++) if (boxes[i].checked) n++;
+    document.getElementById("cnt").textContent = n + " / " + boxes.length;
+    document.getElementById("pbar").style.width = (boxes.length ? (n / boxes.length * 100) : 0) + "%";
+  }
+  for (var i = 0; i < boxes.length; i++) {
+    (function (box) {
+      var k = box.getAttribute("data-k");
+      box.checked = !!state.done[k];
+      box.parentNode.classList.toggle("done", box.checked);
+      box.addEventListener("change", function () {
+        if (box.checked) state.done[k] = 1; else delete state.done[k];
+        box.parentNode.classList.toggle("done", box.checked);
+        store(); progress();
+      });
+    })(boxes[i]);
+  }
+
+  // ---------- kopiowanie ----------
+  document.addEventListener("click", function (ev) {
+    var btn = ev.target.closest ? ev.target.closest("[data-copy]") : null;
+    if (!btn) return;
+    var src = document.querySelector(btn.getAttribute("data-copy"));
+    if (!src) return;
+    var txt = src.innerText;
+    var done = function () {
+      var old = btn.textContent;
+      btn.textContent = "Skopiowane ✓"; btn.classList.add("ok");
+      setTimeout(function () { btn.textContent = old; btn.classList.remove("ok"); }, 1600);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(txt).then(done, fallback);
+    } else fallback();
+    function fallback() {
+      var ta = document.createElement("textarea");
+      ta.value = txt; ta.style.position = "fixed"; ta.style.opacity = "0";
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy"); done(); } catch (e) { alert("Skopiuj ręcznie:\n\n" + txt); }
+      document.body.removeChild(ta);
+    }
+  });
+
+  document.getElementById("btnPrint").onclick = function () { window.print(); };
+  document.getElementById("btnReset").onclick = function () {
+    if (!confirm("Odznaczyć wszystkie kroki? Wpisane dane zostaną.")) return;
+    state.done = {}; store();
+    for (var i = 0; i < boxes.length; i++) { boxes[i].checked = false; boxes[i].parentNode.classList.remove("done"); }
+    progress();
+  };
+
+  paint(); progress();
+})();
+</script>
+</body>
+</html>

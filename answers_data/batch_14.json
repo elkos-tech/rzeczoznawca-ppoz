@@ -1,0 +1,323 @@
+{
+ "521": {
+  "answer": "c",
+  "explanation": "§ 234 ust. 3 WT nakazuje klasę EI przepustom o średnicy ponad 0,04 m tylko w ścianach/stropach pomieszczenia, dla których wymagana klasa odporności ogniowej jest nie niższa niż EI 60 lub REI 60. Hotel o wysokości 12,5 m jest średniowysoki (ZL V, klasa B), a jego ściany wewnętrzne wymagają jedynie EI 30 – wymaganie z ust. 3 nie powstaje.",
+  "legal": [
+   "§ 234 ust. 1 i 3 WT – przepusty instalacyjne",
+   "§ 216 ust. 1 WT – klasa B, ściana wewnętrzna EI 30"
+  ],
+  "verified": true
+ },
+ "522": {
+  "answer": "c",
+  "explanation": "Maksymalna odległość między elementami ograniczającymi strefę dymową to suma długości dwóch najdłuższych boków elementów ograniczających podzielona przez 2, lecz nie więcej niż 60 m.",
+  "legal": [
+   "PN-B-02877-4:2025-07 – strefy dymowe"
+  ],
+  "verified": false
+ },
+ "523": {
+  "answer": "a",
+  "explanation": "Ukrycie kategorii U-3 powinno stanowić strefę pożarową zabezpieczoną przed rozprzestrzenianiem się pożaru do wnętrza przez czas nie krótszy niż 60 minut (krzywa standardowa).",
+  "legal": [
+   "przepisy dot. budowli ochronnych – kategorie ukryć"
+  ],
+  "verified": false
+ },
+ "524": {
+  "answer": "a",
+  "explanation": "Tryskacze w regałach (poziomy pośrednie) nie powinny być zasilane z tego samego stanowiska kontrolno-alarmowego co tryskacze stropowe, gdy ich liczba przekracza 50.",
+  "legal": [
+   "PN-EN 12845+A1:2020 – tryskacze w regałach"
+  ],
+  "verified": false
+ },
+ "525": {
+  "answer": "a",
+  "explanation": "W niskim budynku hotelu biegi i spoczniki obudowanej, zamykanej klatki schodowej mogą być wykonane z materiałów palnych (co najmniej trudno zapalnych) i mieć klasę odporności ogniowej co najmniej R 30.",
+  "legal": [
+   "§ 253 WT – biegi i spoczniki schodów"
+  ],
+  "verified": false
+ },
+ "526": {
+  "answer": "a",
+  "explanation": "Przy modernizacji istniejącego wodociągu o wydajności 5 dm³/s w małej jednostce osadniczej średnica przewodu z hydrantami zewnętrznymi powinna wynosić co najmniej DN 80.",
+  "legal": [
+   "§ 10 RW – sieć wodociągowa przeciwpożarowa"
+  ],
+  "verified": false
+ },
+ "527": {
+  "answer": "a",
+  "explanation": "Dla strefy PM o Q > 500 MJ/m² bez pomieszczenia zagrożonego wybuchem przy jednym dojściu tabela § 256 ust. 3 daje 30 m, w tym nie więcej niż 20 m na poziomej drodze ewakuacyjnej (odnośnik 2). Ochrona strefy urządzeniem wodnym daje +50% (ust. 4 pkt 1): 20 × 1,5 = 30 m na odcinku poziomym (sam SSP nie uprawnia do powiększenia).",
+  "legal": [
+   "§ 256 ust. 3 (odnośnik 2) i ust. 4 WT – długości dojść ewakuacyjnych"
+  ],
+  "verified": true
+ },
+ "528": {
+  "answer": "c",
+  "explanation": "Ściana tworząca kąt ze ścianą zewnętrzną klatki schodowej (z otworami ze szkła zwykłego) powinna w pasie terenu o szerokości co najmniej 6 m mieć klasę odporności ogniowej co najmniej REI 60 i być wykonana z materiałów niepalnych.",
+  "legal": [
+   "§ 249 WT – przeszklenia i ściany przy narożach"
+  ],
+  "verified": false
+ },
+ "529": {
+  "answer": "c",
+  "explanation": "Wymagana ilość wody do zewnętrznego gaszenia dla magazynu o wysokiej gęstości obciążenia ogniowego (3900 MJ/m², 2100 m²), zgromadzona w zbiorniku, wynosi 432 m³.",
+  "legal": [
+   "§ 6, § 8 RW – zapas wody do zewnętrznego gaszenia"
+  ],
+  "verified": false
+ },
+ "530": {
+  "answer": "c",
+  "explanation": "Powierzchnia efektywna otworu napływu powietrza kompensacyjnego to wynik przemnożenia powierzchni geometrycznej otworu przez współczynnik korygujący (Cz).",
+  "legal": [
+   "PN-B-02877-4:2025-07 – powietrze kompensacyjne"
+  ],
+  "verified": false
+ },
+ "531": {
+  "answer": "a",
+  "explanation": "Pomieszczenie z rozdzielnią zasilającą urządzenia funkcjonujące w czasie pożaru powinno być wydzielone ścianami i stropem zapewniającymi szczelność i izolacyjność ogniową co najmniej przez czas wymagany do uruchomienia i działania zasilanych urządzeń.",
+  "legal": [
+   "§ 181 WT / PN-HD 60364-5-56 – zasilanie urządzeń ppoż."
+  ],
+  "verified": false
+ },
+ "532": {
+  "answer": "a",
+  "explanation": "Korytarz stanowiący drogę ewakuacyjną o długości powyżej 50 m należy podzielić na odcinki nie dłuższe niż 50 m przegrodami z drzwiami dymoszczelnymi.",
+  "legal": [
+   "§ 256 WT – podział korytarzy ewakuacyjnych"
+  ],
+  "verified": false
+ },
+ "533": {
+  "answer": "b",
+  "explanation": "Nachylenie podłużne drogi pożarowej może wynosić do 5% (1 m w pionie na każde 20 m w poziomie); 5° (ok. 8,7%) jest zbyt duże.",
+  "legal": [
+   "§ 12 RW – parametry drogi pożarowej"
+  ],
+  "verified": false
+ },
+ "534": {
+  "answer": "c",
+  "explanation": "W wysokim budynku szpitala nie dopuszcza się prowadzenia ewakuacji tylko do jednej klatki schodowej – wymagane są co najmniej dwie – więc żadna z pozostałych odpowiedzi nie jest prawidłowa.",
+  "legal": [
+   "§ 245 WT – liczba klatek schodowych w budynkach wysokich"
+  ],
+  "verified": false
+ },
+ "535": {
+  "answer": "c",
+  "explanation": "Punktową czujkę płomienia można instalować w pomieszczeniach o maksymalnej wysokości 45 m.",
+  "legal": [
+   "PKN-CEN/TS 54-14:2020 – dobór czujek płomienia"
+  ],
+  "verified": false
+ },
+ "536": {
+  "answer": "b",
+  "explanation": "Dla budynku wysokościowego z nasadą 75 mm można zastosować zbiornik o zapasie wody 25 m³, przy zapewnieniu zasilania z sieci o wydajności nie mniejszej niż 15 dm³/s.",
+  "legal": [
+   "§ 19–20 RPB – instalacja wodociągowa ppoż. w budynkach wysokościowych"
+  ],
+  "verified": false
+ },
+ "537": {
+  "answer": "a",
+  "explanation": "§ 278 ust. 1 WT: dwa wyjścia są wymagane, gdy strefa ma ponad 25 stanowisk i nie jest wyposażona w wentylację oddymiającą, albo gdy powierzchnia przekracza 1500 m². Tu jest oddymianie, a powierzchnia 1450 m² – wystarcza jedno wyjście ewakuacyjne.",
+  "legal": [
+   "§ 278 ust. 1 WT – wyjścia ewakuacyjne ze strefy garażu"
+  ],
+  "verified": true
+ },
+ "538": {
+  "answer": "a",
+  "explanation": "Minimalna powierzchnia czynna pojedynczej klapy dymowej to 1,0 m², a najmniejszy wymiar boku nie powinien być większy niż 2,0·d^0,5 (d – wysokość warstwy dymu w metrach).",
+  "legal": [
+   "PN-B-02877-4:2025-07 – klapy dymowe"
+  ],
+  "verified": false
+ },
+ "539": {
+  "answer": "a",
+  "explanation": "Pomieszczenie magazynowe do sprzedaży detalicznej wyrobów pirotechnicznych widowiskowych należy wydzielić ścianami EI 120 i stropami REI 120 oraz zamykać drzwiami EI 60.",
+  "legal": [
+   "rozp. dot. wyrobów pirotechnicznych / § 240 WT"
+  ],
+  "verified": false
+ },
+ "540": {
+  "answer": "b",
+  "explanation": "§ 19 ust. 3 pkt 2 RPB wymaga hydrantów 52 w strefie PM o Q ≤ 500 MJ/m², w której znajduje się pomieszczenie o powierzchni ponad 100 m² i gęstości ponad 1000 MJ/m² (tu 150 m² i 2000 MJ/m²). Złagodzenie z ust. 4, dopuszczające hydranty 33 przy Q ≤ 1000 MJ/m², dotyczy wyłącznie przypadków z ust. 3 pkt 1 i pkt 3 – nie obejmuje pkt 2.",
+  "legal": [
+   "§ 19 ust. 3 pkt 2 i ust. 4 RPB – dobór hydrantów wewnętrznych"
+  ],
+  "verified": true
+ },
+ "541": {
+  "answer": "a",
+  "explanation": "Tryskacze przyścienne (boczne) mogą być instalowane w obszarach magazynowania/zagrożenia klasy LH i OH.",
+  "legal": [
+   "PN-EN 12845+A1:2020 – tryskacze przyścienne"
+  ],
+  "verified": false
+ },
+ "542": {
+  "answer": "c",
+  "explanation": "Aby stanowisko czerpania wody mogło być usytuowane w odległości 8 m od budynku PM klasy D, jego ściana zewnętrzna w pasie 16 m powinna mieć klasę odporności ogniowej co najmniej REI-M 120 (jak ściana oddzielenia przeciwpożarowego odporna na uderzenie).",
+  "legal": [
+   "PN-B-02857:2017-04 – przeciwpożarowe zbiorniki wodne"
+  ],
+  "verified": false
+ },
+ "543": {
+  "answer": "b",
+  "explanation": "Odległość silosów na zboże i pasze (150 ton) od granicy działki sąsiedniej powinna wynosić co najmniej 8 m.",
+  "legal": [
+   "rozp. dot. budowli rolniczych – odległości silosów"
+  ],
+  "verified": false
+ },
+ "544": {
+  "answer": "b",
+  "explanation": "§ 261 WT: w rzędzie przyściennym podstawowo 8 siedzeń, z dopuszczalnym zwiększeniem do 20 pod warunkiem zwiększenia odstępu o 1 cm na każde dodatkowe siedzenie. Odstęp 0,6 m daje 0,15 m zapasu (teoretycznie 23 siedzenia), ale przepis ustala górny limit 20 siedzeń w rzędzie przyściennym.",
+  "legal": [
+   "§ 261 WT – liczba siedzeń w rzędzie (limit 20 w rzędzie przyściennym)"
+  ],
+  "verified": true
+ },
+ "545": {
+  "answer": "b",
+  "explanation": "W budynku wysokim ZL III chronionym tryskaczami o RTI > 50 należy stosować system różnicowania ciśnień klasy 2.",
+  "legal": [
+   "PN-EN 12101-13:2022 – klasy systemów różnicowania ciśnień"
+  ],
+  "verified": false
+ },
+ "546": {
+  "answer": "b",
+  "explanation": "Magazyn podręczny sprzedaży materiałów wybuchowych, broni i amunicji należy wydzielić ścianami i stropami o klasie odporności ogniowej co najmniej REI 120 i zamykać drzwiami EI 60.",
+  "legal": [
+   "rozp. dot. sprzedaży materiałów wybuchowych/broni; § 240 WT"
+  ],
+  "verified": false
+ },
+ "547": {
+  "answer": "a",
+  "explanation": "Odległość pomieszczeń na pobyt ludzi od silosu na pszenicę o pojemności 50 ton powinna wynosić co najmniej 8 m.",
+  "legal": [
+   "rozp. dot. budowli rolniczych – odległości silosów"
+  ],
+  "verified": false
+ },
+ "548": {
+  "answer": "a",
+  "explanation": "Strefę zagrożenia wybuchem wyznacza się, jeżeli w pomieszczeniu może występować mieszanina wybuchowa o objętości co najmniej 0,01 m³ (10 dm³) w zwartej przestrzeni.",
+  "legal": [
+   "§ 37 RPB – ocena zagrożenia wybuchem"
+  ],
+  "verified": false
+ },
+ "549": {
+  "answer": "b",
+  "explanation": "W strefie zagrożenia wybuchem 21 (pyły) stosuje się urządzenia kategorii 1 lub 2 (2D i 1D).",
+  "legal": [
+   "dyrektywa ATEX – kategorie urządzeń a strefy pyłowe"
+  ],
+  "verified": false
+ },
+ "550": {
+  "answer": "c",
+  "explanation": "Maksymalna odległość punktowej czujki ciepła od narożnika pomieszczenia wynosi 4,5 m (odległość od ściany 3,2 m × √2).",
+  "legal": [
+   "PKN-CEN/TS 54-14:2020 – rozmieszczenie czujek ciepła"
+  ],
+  "verified": false
+ },
+ "551": {
+  "answer": "b",
+  "explanation": "Wymóg wydzielenia maszynowni wentylacyjnych ścianami EI 60 i drzwiami EI 30 dotyczy m.in. budynku magazynowego o gęstości obciążenia ogniowego powyżej 4000 MJ/m².",
+  "legal": [
+   "§ 268 WT – maszynownie wentylacyjne i klimatyzacyjne"
+  ],
+  "verified": false
+ },
+ "552": {
+  "answer": "b",
+  "explanation": "Ścianę zewnętrzną budynku od granicy niezabudowanej działki (która może zostać zabudowana) należy usytuować w odległości co najmniej 4 m (ściana z możliwością otworów).",
+  "legal": [
+   "§ 12 WT – usytuowanie budynku względem granicy działki"
+  ],
+  "verified": false
+ },
+ "553": {
+  "answer": "b",
+  "explanation": "Tryskacze należy dobierać o temperaturze znamionowej zadziałania wyższej od najwyższej spodziewanej temperatury otoczenia o co najmniej 30°C.",
+  "legal": [
+   "PN-EN 12845+A1:2020 – dobór temperatury tryskaczy"
+  ],
+  "verified": false
+ },
+ "554": {
+  "answer": "b",
+  "explanation": "Między zbiornikiem naziemnym z paliwem (20 000 m³) a granicą lasu należy zapewnić pas terenu ochronnego o szerokości nie mniejszej niż 100 m.",
+  "legal": [
+   "rozp. MG z 21.11.2005 / przepisy ppoż. lasów – pas ochronny"
+  ],
+  "verified": false
+ },
+ "555": {
+  "answer": "c",
+  "explanation": "Ściany wewnętrzne oddzielające mieszkania położone powyżej 25 m od poziomu terenu powinny mieć klasę odporności ogniowej co najmniej EI 60.",
+  "legal": [
+   "§ 216, § 232 WT – ściany oddzielające mieszkania"
+  ],
+  "verified": false
+ },
+ "556": {
+  "answer": "c",
+  "explanation": "Maksymalny promień działania czujki dymu w pobliżu kalenicy dachu o nachyleniu połaci 30° wynosi 8,06 m.",
+  "legal": [
+   "PKN-CEN/TS 54-14:2020 – promienie działania czujek na dachach spadzistych"
+  ],
+  "verified": false
+ },
+ "557": {
+  "answer": "a",
+  "explanation": "Tunel wyposaża się w hydranty zewnętrzne nadziemne DN 80 usytuowane w pobliżu wjazdów i w tunelu w odległościach nieprzekraczających 250 m.",
+  "legal": [
+   "rozp. dot. drogowych obiektów inżynierskich – hydranty w tunelach"
+  ],
+  "verified": false
+ },
+ "558": {
+  "answer": "c",
+  "explanation": "UWAGA: pytanie dotyczy miejsca doraźnego schronienia, regulowanego przepisami o ochronie ludności, a nie § 239 WT. Przyjęto, że przy 200 osobach łączna szerokość drzwi wynika z przelicznika 0,6 m na 100 osób → 1,2 m. Odpowiedź wymaga sprawdzenia w aktualnych przepisach o obiektach zbiorowej ochrony.",
+  "legal": [
+   "przepisy o ochronie ludności i obronie cywilnej – miejsca doraźnego schronienia (do sprawdzenia)"
+  ],
+  "verified": false
+ },
+ "559": {
+  "answer": "a",
+  "explanation": "Szerokość w świetle wejścia do kabiny dźwigu dla straży pożarnej powinna wynosić co najmniej 0,8 m.",
+  "legal": [
+   "PN-EN 81-72:2020 – dźwigi dla straży pożarnej"
+  ],
+  "verified": false
+ },
+ "560": {
+  "answer": "c",
+  "explanation": "Przeciwpożarowe zaopatrzenie w wodę do zewnętrznego gaszenia pożaru dla budynku magazynowego z materiałami wybuchowymi i amunicją nie może być mniejsze niż 20 dm³/s.",
+  "legal": [
+   "§ 5–6 RW – wymagana ilość wody do zewnętrznego gaszenia"
+  ],
+  "verified": false
+ }
+}

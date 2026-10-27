@@ -1,0 +1,324 @@
+{
+ "121": {
+  "answer": "c",
+  "explanation": "Stanowisko czerpania wody przeciwpożarowego zbiornika wodnego powinno zapewniać stanowisko postojowe dla samochodu pożarniczego o szerokości co najmniej 4 m i długości co najmniej 12 m.",
+  "legal": [
+   "PN-B-02857:2017-04 – przeciwpożarowe zbiorniki wodne"
+  ],
+  "verified": false
+ },
+ "122": {
+  "answer": "c",
+  "explanation": "Przewód gazowy doprowadzony do pomieszczenia z kotłami o mocy powyżej 60 kW może służyć wyłącznie do zasilania tych kotłów.",
+  "legal": [
+   "§ 164 WT – instalacje gazowe zasilające kotłownie"
+  ],
+  "verified": false
+ },
+ "123": {
+  "answer": "b",
+  "explanation": "Urządzenia grupy II kategorii 2 przeznaczone są do przestrzeni, w których zachodzi prawdopodobieństwo sporadycznego wystąpienia atmosfery wybuchowej (odpowiednik strefy 1/21).",
+  "legal": [
+   "dyrektywa ATEX 2014/34/UE – kategorie urządzeń"
+  ],
+  "verified": false
+ },
+ "124": {
+  "answer": "a",
+  "explanation": "Przy dopływie powietrza przez sufit perforowany perforacja powinna być zaślepiona wokół czujki w promieniu co najmniej 0,6 m.",
+  "legal": [
+   "PKN-CEN/TS 54-14:2006"
+  ],
+  "verified": false
+ },
+ "125": {
+  "answer": "a",
+  "explanation": "Dla hydrantów wewnętrznych 33 z wężem półsztywnym średnica nominalna przewodów zasilających powinna wynosić co najmniej DN 32.",
+  "legal": [
+   "§ 19–20 RPB – instalacja wodociągowa przeciwpożarowa"
+  ],
+  "verified": false
+ },
+ "126": {
+  "answer": "b",
+  "explanation": "Obowiązek posiadania m.in. punktów alarmowych i wyjść awaryjnych dotyczy tunelu drogowego o długości większej niż 500 m.",
+  "legal": [
+   "rozp. w sprawie warunków technicznych drogowych obiektów inżynierskich"
+  ],
+  "verified": false
+ },
+ "127": {
+  "answer": "c",
+  "explanation": "Pomieszczenie urządzeń pompowych w budynku chronionym urządzeniem tryskaczowym powinno być chronione tym urządzeniem.",
+  "legal": [
+   "PN-EN 12845:2015-10 – urządzenia tryskaczowe"
+  ],
+  "verified": false
+ },
+ "128": {
+  "answer": "a",
+  "explanation": "Obowiązkowe ubezpieczenie OC rzeczoznawcy obejmuje szkody wyrządzone w związku z uzgadnianiem projektów budowlanych oraz projektów urządzeń przeciwpożarowych.",
+  "legal": [
+   "ustawa o ochronie ppoż. / rozp. w sprawie OC rzeczoznawcy"
+  ],
+  "verified": false
+ },
+ "129": {
+  "answer": "a",
+  "explanation": "W przypadku stropów płaskich czujki należy sytuować bezpośrednio na stropie (lub tuż pod nim, w dopuszczalnych granicach).",
+  "legal": [
+   "PKN-CEN/TS 54-14:2006 – rozmieszczenie czujek"
+  ],
+  "verified": false
+ },
+ "130": {
+  "answer": "c",
+  "explanation": "Oznaczenie „multi” wskazuje, że klapa ma konstrukcję umożliwiającą jej montaż w zespole (baterii) wielu klap przylegających do siebie.",
+  "legal": [
+   "PN-EN 13501-4 / PN-EN 1366-10 – klasyfikacja klap wentylacji oddymiającej"
+  ],
+  "verified": false
+ },
+ "131": {
+  "answer": "b",
+  "explanation": "Odległość zbiornika gazu płynnego samodzielnej stacji gazu płynnego od budynku użyteczności publicznej powinna wynosić co najmniej 60 m.",
+  "legal": [
+   "rozp. dot. warunków technicznych zbiorników gazu płynnego – odległości"
+  ],
+  "verified": false
+ },
+ "132": {
+  "answer": "b",
+  "explanation": "Krytycznym warunkiem środowiskowym w metrze jest m.in. zasięg widzialności mniejszy niż 10 m na wysokości mniejszej lub równej 1,8 m od poziomu drogi ewakuacyjnej.",
+  "legal": [
+   "rozp. w sprawie warunków technicznych obiektów metra – kryteria środowiskowe"
+  ],
+  "verified": false
+ },
+ "133": {
+  "answer": "a",
+  "explanation": "Przewody wodociągowe w odgałęzieniach sieci obwodowej, na których instaluje się hydranty zewnętrzne, powinny mieć średnicę co najmniej DN 100.",
+  "legal": [
+   "§ 10 RW – sieć wodociągowa i hydranty zewnętrzne"
+  ],
+  "verified": false
+ },
+ "134": {
+  "answer": "a",
+  "explanation": "Dzieci z lokalu przedszkola mogą, po spełnieniu warunków, korzystać ze znajdujących się poza lokalem szkolnej stołówki, szatni oraz sali gimnastycznej.",
+  "legal": [
+   "rozp. MEN z 31.12.2014 (Dz.U. 2015 poz. 20)"
+  ],
+  "verified": false
+ },
+ "135": {
+  "answer": "a",
+  "explanation": "Za niepalne uznaje się wyroby klasy A1 oraz A2. Spośród podanych za budzący wątpliwości uznano wyrób A2-s1,d1 (do sprawdzenia z definicją materiału niepalnego w § 208a WT).",
+  "legal": [
+   "§ 208a WT – materiały niepalne; PN-EN 13501-1"
+  ],
+  "verified": false
+ },
+ "136": {
+  "answer": "c",
+  "explanation": "W budynku klasy odporności pożarowej „E” nie stawia się wymagań co do klasy odporności ogniowej głównej konstrukcji nośnej – dotyczy to również konstrukcji nośnej antresoli.",
+  "legal": [
+   "§ 216 WT – wymagane klasy odporności ogniowej elementów (klasa E)"
+  ],
+  "verified": false
+ },
+ "137": {
+  "answer": "a",
+  "explanation": "Do jednostkowego zastosowania dopuszcza się wyroby wg indywidualnej dokumentacji, z wyłączeniem wyrobów objętych normą zharmonizowaną lub europejską oceną techniczną.",
+  "legal": [
+   "art. 10 ust. 1 ustawy o wyrobach budowlanych"
+  ],
+  "verified": false
+ },
+ "138": {
+  "answer": "c",
+  "explanation": "Kurtyny dymowe, które muszą funkcjonować w warunkach wyższych temperatur, klasyfikuje się jako DH XX (np. DH 30, DH 60, DH 120).",
+  "legal": [
+   "PN-EN 12101-1 – kurtyny dymowe, klasyfikacja"
+  ],
+  "verified": false
+ },
+ "139": {
+  "answer": "c",
+  "explanation": "Przy zapotrzebowaniu na wodę przekraczającym 20 dm³/s agregat prądotwórczy jako źródło rezerwowe pomp powinien mieć zapas paliwa wystarczający na pracę przy pełnym obciążeniu co najmniej 240 minut (4 godziny).",
+  "legal": [
+   "§ 20 RPB / RW – zasilanie rezerwowe pompowni przeciwpożarowych"
+  ],
+  "verified": false
+ },
+ "140": {
+  "answer": "c",
+  "explanation": "Zespoły kablowe uznaje się za odporne na działanie wody, jeżeli będą ułożone w ognioochronnych (szczelnych) kanałach kablowych.",
+  "legal": [
+   "wytyczne / normy dot. zasilania urządzeń ppoż."
+  ],
+  "verified": false
+ },
+ "141": {
+  "answer": "a",
+  "explanation": "Magazyny karbidu muszą spełniać wymagania dla pomieszczeń zagrożonych wybuchem – wprost z przepisów, bez indywidualnej oceny.",
+  "legal": [
+   "§ 37 RPB – pomieszczenia uznane za zagrożone wybuchem"
+  ],
+  "verified": false
+ },
+ "142": {
+  "answer": "a",
+  "explanation": "Kabel YnTKSYekw jest kablem sygnalizacyjnym stosowanym m.in. do linii dozorowych czujek pożarowych.",
+  "legal": [
+   "norma zakładowa / karty katalogowe kabli SSP"
+  ],
+  "verified": false
+ },
+ "143": {
+  "answer": "b",
+  "explanation": "Przyspieszacz w powietrznej (suchej) sekcji tryskaczowej służy skróceniu czasu do otwarcia zaworu kontrolno-alarmowego.",
+  "legal": [
+   "PN-EN 12845 – urządzenia tryskaczowe suche"
+  ],
+  "verified": false
+ },
+ "144": {
+  "answer": "c",
+  "explanation": "Elementy oddzielenia pomieszczenia zbiornika powinny mieć klasę odporności ogniowej zapewniającą pobór wody przez czas nie krótszy niż obliczeniowy czas trwania pożaru, jednak nie krótszy niż 4 godziny.",
+  "legal": [
+   "PN-B-02857:2017-04 – przeciwpożarowe zbiorniki wodne"
+  ],
+  "verified": false
+ },
+ "145": {
+  "answer": "c",
+  "explanation": "Doprowadzenie drogi pożarowej jest wymagane do budynku ZL V zarówno niskiego z 50 miejscami noclegowymi, jak i średniowysokiego.",
+  "legal": [
+   "§ 12 RW – wymóg drogi pożarowej"
+  ],
+  "verified": false
+ },
+ "146": {
+  "answer": "b",
+  "explanation": "Belki o wysokości 0,2 m (poniżej progu podziału na odrębne pola) pozwalają traktować sufit jako płaski; przy powierzchni 144 m² i długości 24 m wymagane są co najmniej 2 punktowe czujki dymu.",
+  "legal": [
+   "PKN-CEN/TS 54-14:2006 – rozmieszczenie czujek, wpływ belek"
+  ],
+  "verified": false
+ },
+ "147": {
+  "answer": "c",
+  "explanation": "Samoczynne oddymianie uruchamiane systemem wykrywania dymu pozwala powiększyć strefę pożarową ZL o 100% (§ 227 ust. 4 pkt 2 WT) oraz wydłużyć przejście ewakuacyjne o 50% (§ 237 ust. 6 pkt 2 WT).",
+  "legal": [
+   "§ 227 ust. 4 pkt 2 WT – powiększenie strefy o 100%",
+   "§ 237 ust. 6 pkt 2 WT – powiększenie przejścia o 50%"
+  ],
+  "verified": true
+ },
+ "148": {
+  "answer": "a",
+  "explanation": "Awaryjne oświetlenie ewakuacyjne w jednokondygnacyjnym muzeum stosuje się w salach wystawowych o powierzchni ponad 100 m² przeznaczonych dla ponad 50 osób i na drogach ewakuacyjnych oświetlonych wyłącznie światłem sztucznym.",
+  "legal": [
+   "§ 181 WT – awaryjne oświetlenie ewakuacyjne"
+  ],
+  "verified": false
+ },
+ "149": {
+  "answer": "a",
+  "explanation": "Budynek o wysokości 25 m jest średniowysoki (SW). Dla strefy PM z pomieszczeniem zagrożonym wybuchem, 1000 < Q ≤ 2000 MJ/m², w budynku N/SW tabela § 228 daje 1000 m². Tryskacze pozwalają powiększyć o 100% (§ 229 ust. 1 pkt 1) → 2000 m².",
+  "legal": [
+   "§ 228 ust. 1 WT – tabela powierzchni stref PM",
+   "§ 229 ust. 1 pkt 1 WT – powiększenie o 100%"
+  ],
+  "verified": true
+ },
+ "150": {
+  "answer": "a",
+  "explanation": "Przejście w PM (>1 kondygnacja, ≤500 MJ/m²) = 100 m. Wysokość 5 m nie przekracza 5 m (brak +25%). Oddymianie sterowane SSP → +50%. Wynik: 100 × 1,5 = 150 m.",
+  "legal": [
+   "§ 237 WT – długość przejścia ewakuacyjnego i powiększenia"
+  ],
+  "verified": true
+ },
+ "151": {
+  "answer": "b",
+  "explanation": "Budynek IN (strefa PM/IN) projektuje się w klasie odporności pożarowej wynikającej z ustalonej gęstości obciążenia ogniowego.",
+  "legal": [
+   "§ 212 ust. 3 WT – klasa odporności pożarowej budynków PM/IN"
+  ],
+  "verified": false
+ },
+ "152": {
+  "answer": "b",
+  "explanation": "Przy obliczaniu gęstości obciążenia ogniowego nie uwzględnia się materiałów o zawartości wody ponad 60%.",
+  "legal": [
+   "PN-B-02852:2001 – obliczanie gęstości obciążenia ogniowego"
+  ],
+  "verified": false
+ },
+ "153": {
+  "answer": "b",
+  "explanation": "Stanowiska przeładunku produktów naftowych I i II klasy powinny być oddalone od ogrodzenia bazy paliw co najmniej 10 m.",
+  "legal": [
+   "rozp. MG z 21.11.2005 – bazy paliw płynnych"
+  ],
+  "verified": false
+ },
+ "154": {
+  "answer": "a",
+  "explanation": "Dopuszczalna długość drugiego dojścia ewakuacyjnego w opisanej strefie wynosi 60 m.",
+  "legal": [
+   "§ 256 WT – długość dojść ewakuacyjnych (drugie dojście)"
+  ],
+  "verified": false
+ },
+ "155": {
+  "answer": "b",
+  "explanation": "Wykładzina podłogowa w sali konferencyjnej dla 200 osób powinna być co najmniej trudno zapalna, czyli klasy co najmniej Cfl-s2.",
+  "legal": [
+   "§ 258 WT – wymagania dla posadzek na drogach ewakuacyjnych i w pomieszczeniach"
+  ],
+  "verified": false
+ },
+ "156": {
+  "answer": "b",
+  "explanation": "Budynek mieszkalny o 4 kondygnacjach traktowany jest jako niski: ZL III niski → klasa C, ZL IV niski → klasa D; wymaganie surowsze → najniższa klasa C.",
+  "legal": [
+   "§ 8, § 212 WT – klasa odporności pożarowej"
+  ],
+  "verified": false
+ },
+ "157": {
+  "answer": "b",
+  "explanation": "Zapas środka pianotwórczego na terenie bazy paliw płynnych powinien wystarczyć na okres zużycia wymaganego zapasu wody.",
+  "legal": [
+   "rozp. MG z 21.11.2005 – urządzenia pianowe"
+  ],
+  "verified": false
+ },
+ "158": {
+  "answer": "b",
+  "explanation": "Zapotrzebowanie 1800 dm³/min = 30 dm³/s przez 60 min = 108 m³. Dopływ 10 dm³/s przez 60 min = 36 m³. Pojemność zbiornika = 108 − 36 = 72 m³.",
+  "legal": [
+   "PN-EN 12845 – zbiornik pośredni"
+  ],
+  "verified": true
+ },
+ "159": {
+  "answer": "c",
+  "explanation": "Deficyt = 40 − 10 = 30 dm³/s. Przez względny czas trwania pożaru 6 h (21 600 s): 30 × 21 600 = 648 000 dm³ = 648 m³.",
+  "legal": [
+   "§ 8–9 RW – uzupełniający zapas wody"
+  ],
+  "verified": true
+ },
+ "160": {
+  "answer": "a",
+  "explanation": "W scenariuszu pożarowym uwzględnia się przede wszystkim sposób funkcjonowania urządzeń przeciwpożarowych i innych środków oraz ich współdziałanie i wzajemne oddziaływanie.",
+  "legal": [
+   "§ 2 RPB – definicja scenariusza pożarowego"
+  ],
+  "verified": false
+ }
+}

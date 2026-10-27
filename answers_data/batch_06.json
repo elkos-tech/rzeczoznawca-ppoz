@@ -1,0 +1,322 @@
+{
+ "201": {
+  "answer": "a",
+  "explanation": "Temperatura w pomieszczeniu magazynowym butli z gazami palnymi nie powinna przekraczać 35°C.",
+  "legal": [
+   "§ 11 RPB / przepisy dot. magazynowania gazów palnych"
+  ],
+  "verified": false
+ },
+ "202": {
+  "answer": "b",
+  "explanation": "Silos na zboże o pojemności większej niż 100 ton należy usytuować od otworów okiennych i drzwiowych budynku mieszkalnego w odległości co najmniej 15 m.",
+  "legal": [
+   "rozp. w sprawie warunków technicznych budowli rolniczych"
+  ],
+  "verified": false
+ },
+ "203": {
+  "answer": "c",
+  "explanation": "Działka budowlana w rozumieniu WT może obejmować wiele działek ewidencyjnych.",
+  "legal": [
+   "§ 3 pkt 1a WT – definicja działki budowlanej"
+  ],
+  "verified": true
+ },
+ "204": {
+  "answer": "a",
+  "explanation": "Do średniowysokiego budynku produkcyjnego o gęstości poniżej 500 MJ/m² droga pożarowa jest wymagana m.in. gdy w budynku występuje pomieszczenie zagrożone wybuchem.",
+  "legal": [
+   "§ 12 RW – wymóg drogi pożarowej"
+  ],
+  "verified": false
+ },
+ "205": {
+  "answer": "c",
+  "explanation": "Wymaganą ilość wody do zewnętrznego gaszenia dla składów gazów i cieczy poza budynkami określa się na podstawie gęstości obciążenia ogniowego i powierzchni strefy pożarowej składowiska.",
+  "legal": [
+   "§ 6 RW – ilość wody dla obiektów innych niż budynki"
+  ],
+  "verified": false
+ },
+ "206": {
+  "answer": "b",
+  "explanation": "Magazyn butli z gazem płynnym na terenie bazy i rozlewni gazu należy usytuować od budynków mieszkalnych, zamieszkania zbiorowego i użyteczności publicznej w odległości co najmniej 30 m.",
+  "legal": [
+   "rozp. dot. baz i rozlewni gazu płynnego – odległości"
+  ],
+  "verified": false
+ },
+ "207": {
+  "answer": "a",
+  "explanation": "Przestrzenie biurowe klasyfikowane są jako klasa zagrożenia pożarowego LH (light hazard) wg PN-EN 12845.",
+  "legal": [
+   "PN-EN 12845 – klasy zagrożenia (LH/OH/HH)"
+  ],
+  "verified": false
+ },
+ "208": {
+  "answer": "a",
+  "explanation": "W sekcji z przewodami wypełnionymi gazem obojętnym (instalacja sucha/wstępnego działania) niedopuszczalne jest stosowanie tryskaczy szybkiego reagowania o czułości RTI < 50.",
+  "legal": [
+   "PN-EN 12845 – dobór tryskaczy w instalacjach suchych"
+  ],
+  "verified": false
+ },
+ "209": {
+  "answer": "c",
+  "explanation": "Po unieważnieniu uzgodnienia poprawiony projekt może, na wniosek inwestora, uzgodnić organ, który dokonał unieważnienia (komendant wojewódzki PSP).",
+  "legal": [
+   "ustawa o ochronie ppoż. – unieważnienie uzgodnienia"
+  ],
+  "verified": false
+ },
+ "210": {
+  "answer": "a",
+  "explanation": "Budynek niski ze strefą ZL I wymaga klasy odporności pożarowej co najmniej B (ZL I decyduje jako wymaganie surowsze wobec ZL V).",
+  "legal": [
+   "§ 212 WT – klasa odporności pożarowej"
+  ],
+  "verified": false
+ },
+ "211": {
+  "answer": "a",
+  "explanation": "Izolacja cieplna przewodów instalacji wodociągowej przeciwpożarowej powinna mieć klasę reakcji na ogień co najmniej BL-s3,d0 (indeks „L” dla izolacji przewodów liniowych).",
+  "legal": [
+   "PN-EN 13501-1 – klasyfikacja izolacji przewodów; WT"
+  ],
+  "verified": false
+ },
+ "212": {
+  "answer": "c",
+  "explanation": "§ 28 ust. 1 pkt 3 RPB: system sygnalizacji pożarowej jest wymagany w kinach o liczbie miejsc powyżej 600. Spośród podanych wartości warunek spełnia 700.",
+  "legal": [
+   "§ 28 ust. 1 pkt 3 RPB – obiekty wymagające SSP"
+  ],
+  "verified": true
+ },
+ "213": {
+  "answer": "a",
+  "explanation": "Dla wyrobu budowlanego nieobjętego Polską Normą wyrobu, w krajowym systemie oceny wydaje się krajową ocenę techniczną (KOT).",
+  "legal": [
+   "ustawa o wyrobach budowlanych – krajowa ocena techniczna"
+  ],
+  "verified": false
+ },
+ "214": {
+  "answer": "a",
+  "explanation": "Pawilon stacji paliw powinien być usytuowany poza strefą zagrożenia wybuchem.",
+  "legal": [
+   "rozp. MG z 21.11.2005 – strefy zagrożenia wybuchem na stacji paliw"
+  ],
+  "verified": false
+ },
+ "215": {
+  "answer": "b",
+  "explanation": "Wyposażenie istniejącego budynku w dźwig (z ingerencją w konstrukcję – podszybie żelbetowo-stalowe) należy kwalifikować jako przebudowę.",
+  "legal": [
+   "art. 3 pkt 7a ustawy – Prawo budowlane (definicja przebudowy)"
+  ],
+  "verified": false
+ },
+ "216": {
+  "answer": "a",
+  "explanation": "Dwukondygnacyjny niski budynek biurowy o niewielkiej powierzchni (750 m²) nie wymaga uzgodnienia projektu pod względem ochrony ppoż.; hotel (ZL V) i budynek z wydzieloną strefą handlową 1000 m² – wymagają.",
+  "legal": [
+   "§ 4 rozp. w sprawie uzgadniania projektu pod względem ochrony ppoż."
+  ],
+  "verified": false
+ },
+ "217": {
+  "answer": "a",
+  "explanation": "Nierozprzestrzenianie ognia przez ocieplenie i okładziny zewnętrzne ścian określa się zgodnie z PN-B-02867 (metoda badania stopnia rozprzestrzeniania ognia przez ściany).",
+  "legal": [
+   "§ 216 ust. 8 WT; PN-B-02867"
+  ],
+  "verified": false
+ },
+ "218": {
+  "answer": "c",
+  "explanation": "Przy zastosowanym DSO inne akustyczne urządzenia alarmowe są dopuszczalne tylko do zaalarmowania służb dozoru lub ochrony.",
+  "legal": [
+   "§ 29 RPB / PN-EN 54 – dźwiękowy system ostrzegawczy"
+  ],
+  "verified": false
+ },
+ "219": {
+  "answer": "a",
+  "explanation": "Odległość magazynu butli od obiektu użyteczności publicznej można zmniejszyć, stosując ścianę oddzielenia przeciwpożarowego o klasie co najmniej REI 120, zasłaniającą zbiornik/magazyn od strony tego obiektu.",
+  "legal": [
+   "rozp. MG z 21.11.2005 – zmniejszenie odległości ścianą oddzielenia"
+  ],
+  "verified": false
+ },
+ "220": {
+  "answer": "b",
+  "explanation": "Natężenie wypływu wody z tryskacza określa się na podstawie ciśnienia przed tryskaczem oraz współczynnika wypływu K (Q = K·√p).",
+  "legal": [
+   "PN-EN 12845 – wydatek tryskacza"
+  ],
+  "verified": true
+ },
+ "221": {
+  "answer": "a",
+  "explanation": "Do zabezpieczenia pomieszczenia magazynowego o dużej gęstości obciążenia ogniowego (>1000 MJ/m²) należy zastosować hydrant wewnętrzny 52.",
+  "legal": [
+   "§ 19 RPB – dobór hydrantów wewnętrznych"
+  ],
+  "verified": false
+ },
+ "222": {
+  "answer": "b",
+  "explanation": "Wśród warunków dopuszczalności punktu przedszkolnego w lokalu niespełniającym wymagań ZL II jest zapewnienie co najmniej dwóch wyjść ewakuacyjnych oraz nierozprzestrzenianie ognia przez elementy budowlane strefy.",
+  "legal": [
+   "rozp. MEN z 28.08.2017 (Dz.U. poz. 1657) – inne formy wychowania przedszkolnego"
+  ],
+  "verified": false
+ },
+ "223": {
+  "answer": "a",
+  "explanation": "Przy jedynym dojściu ewakuacyjnym o niewielkiej długości (20 m) klatkę schodową w niskim budynku przedszkola należy zamknąć drzwiami dymoszczelnymi.",
+  "legal": [
+   "§ 245 WT – obudowa i zamykanie klatek schodowych"
+  ],
+  "verified": false
+ },
+ "224": {
+  "answer": "b",
+  "explanation": "Odległość zbiornika biogazu rolniczego od granicy sąsiedniej działki powinna wynosić co najmniej 5 m.",
+  "legal": [
+   "rozp. z 7.10.1997 – warunki techniczne budowli rolniczych"
+  ],
+  "verified": false
+ },
+ "225": {
+  "answer": "c",
+  "explanation": "Odległość pionowa od poziomu stanowiska czerpania wody do najniższego użytecznego poziomu wody (praca ze ssaniem) nie powinna przekraczać 7 m.",
+  "legal": [
+   "PN-B-02857:2017 – przeciwpożarowe zbiorniki wodne"
+  ],
+  "verified": false
+ },
+ "226": {
+  "answer": "c",
+  "explanation": "Zastosowanie urządzeń mgłowych (nie tryskaczowych) nie stanowi podstawy do powiększenia powierzchni strefy pożarowej – powiększenie jest przewidziane dla urządzeń tryskaczowych.",
+  "legal": [
+   "§ 227 WT – powiększanie powierzchni stref pożarowych"
+  ],
+  "verified": false
+ },
+ "227": {
+  "answer": "b",
+  "explanation": "W praktycznym sprawdzeniu warunków ewakuacji z obiektów typu „escape room” wymagany jest udział rzeczoznawcy ds. zabezpieczeń ppoż. lub inżyniera pożarnictwa / absolwenta SGSP w specjalności inżynieria bezpieczeństwa pożarowego.",
+  "legal": [
+   "§ 17 RPB – praktyczne sprawdzenie warunków ewakuacji"
+  ],
+  "verified": false
+ },
+ "228": {
+  "answer": "a",
+  "explanation": "Wyjście z klatki schodowej na strych w wielorodzinnym budynku mieszkalnym wymaga zamknięcia drzwiami lub klapą wyjściową o klasie odporności ogniowej co najmniej EI 30.",
+  "legal": [
+   "§ 253 WT – wyjścia na strych/dach"
+  ],
+  "verified": false
+ },
+ "229": {
+  "answer": "b",
+  "explanation": "Minimalna długość przejazdu awaryjnego przez pas dzielący jezdnie autostrady wynosi 150 m.",
+  "legal": [
+   "rozp. MI z 16.01.2002 – przepisy techniczno-budowlane autostrad płatnych"
+  ],
+  "verified": false
+ },
+ "230": {
+  "answer": "a",
+  "explanation": "Na zewnątrz powinny otwierać się drzwi z pomieszczenia przeznaczonego do jednoczesnego przebywania ponad 50 osób – aula na 60 miejsc spełnia to kryterium.",
+  "legal": [
+   "§ 236 WT – kierunek otwierania drzwi ewakuacyjnych"
+  ],
+  "verified": false
+ },
+ "231": {
+  "answer": "c",
+  "explanation": "Łączna dopuszczalna pojemność zbiorników magazynowych dla produktów naftowych w bazie paliw płynnych nie jest określana (limitowana).",
+  "legal": [
+   "rozp. MG z 21.11.2005 – bazy paliw płynnych"
+  ],
+  "verified": false
+ },
+ "232": {
+  "answer": "b",
+  "explanation": "W obiektach metra zamknięcia otworów w przegrodach stanowiących wydzielenie przeciwpożarowe powinny mieć klasę co najmniej EI 60.",
+  "legal": [
+   "rozp. z 17.06.2011 – warunki techniczne obiektów metra"
+  ],
+  "verified": false
+ },
+ "233": {
+  "answer": "b",
+  "explanation": "Klapa wyjściowa wyłazu na poddasze powinna mieć wymiary co najmniej 0,6 × 0,6 m.",
+  "legal": [
+   "§ 308 WT – wyłazy i klapy wyjściowe"
+  ],
+  "verified": false
+ },
+ "234": {
+  "answer": "b",
+  "explanation": "Zastosowanie SUG wodnego umożliwia przyjęcie klasy odporności pożarowej obniżonej o jedną w stosunku do wymaganej.",
+  "legal": [
+   "§ 230 WT – obniżenie klasy przy zastosowaniu SUG wodnego"
+  ],
+  "verified": false
+ },
+ "235": {
+  "answer": "a",
+  "explanation": "Przegrody pionowe traktuje się jako dochodzące do stropu (a powstałe części jak odrębne pomieszczenia), jeżeli sięgają bliżej niż 0,3 m od stropu.",
+  "legal": [
+   "PKN-CEN/TS 54-14:2006 – wpływ przegród na rozmieszczenie czujek"
+  ],
+  "verified": false
+ },
+ "236": {
+  "answer": "b",
+  "explanation": "§ 229 ust. 1–2 WT: tryskacze pozwalają powiększyć strefę PM o 100%, oddymianie o 50%, a przy jednoczesnym stosowaniu obu – o 150%. Powierzchni strefy nie znosi się całkowicie.",
+  "legal": [
+   "§ 229 WT – powiększanie powierzchni stref pożarowych PM"
+  ],
+  "verified": true
+ },
+ "237": {
+  "answer": "b",
+  "explanation": "Fotele trudno zapalne w sali dla ponad 200 osób dodatkowo nie mogą wydzielać bardzo toksycznych produktów rozkładu i spalania oraz być intensywnie dymiące.",
+  "legal": [
+   "§ 261 / § 258 WT – wymagania dla wyposażenia sal"
+  ],
+  "verified": false
+ },
+ "238": {
+  "answer": "b",
+  "explanation": "Przejście w garażu zamkniętym = 40 m (§ 278 ust. 2 pkt 1). Można je powiększyć wg § 237 ust. 6 i 7, ale § 278 ust. 3 stanowi, że przy wentylacji oddymiającej STRUMIENIOWEJ nie stosuje się § 237 ust. 6 pkt 2 – powiększenie za oddymianie nie przysługuje. Zostaje +50% za tryskacze: 40 × 1,5 = 60 m.",
+  "legal": [
+   "§ 278 ust. 2 i 3 WT – przejścia ewakuacyjne w garażach"
+  ],
+  "verified": true
+ },
+ "239": {
+  "answer": "a",
+  "explanation": "Przestrzenie zagrożone wybuchem dzieli się na strefy klasyfikowane na podstawie prawdopodobieństwa i czasu występowania atmosfery wybuchowej.",
+  "legal": [
+   "PN-EN 60079-10-1 / ATEX – klasyfikacja stref"
+  ],
+  "verified": true
+ },
+ "240": {
+  "answer": "c",
+  "explanation": "Maksymalny promień działania punktowej czujki dymu w kalenicy stropodachu o nachyleniu 10° wynosi 8,25 m (7,5 m powiększone o 1% na każdy stopień nachylenia).",
+  "legal": [
+   "PKN-CEN/TS 54-14:2006 – promienie działania czujek"
+  ],
+  "verified": false
+ }
+}

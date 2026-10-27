@@ -1,0 +1,323 @@
+{
+ "321": {
+  "answer": "b",
+  "explanation": "Wylot kanału dymowego w dachu niższego budynku, blisko wyższego z bezklasowymi oknami, jest dopuszczalny pod warunkiem zachowania odległości wylotu od najbliższego okna co najmniej 8 m.",
+  "legal": [
+   "§ 266, § 271 WT – sytuowanie wylotów i otworów"
+  ],
+  "verified": false
+ },
+ "322": {
+  "answer": "b",
+  "explanation": "Podział korytarza na odcinki ≤ 50 m drzwiami dymoszczelnymi jest wymagany w korytarzach ZL i PM dłuższych niż 50 m, ale tylko tych, które nie mają rozwiązań zapobiegających zadymieniu.",
+  "legal": [
+   "§ 256 WT – podział korytarzy ewakuacyjnych"
+  ],
+  "verified": false
+ },
+ "323": {
+  "answer": "c",
+  "explanation": "Budynek jednokondygnacyjny (bez ograniczenia wysokości), z tryskaczami, może być wykonany w klasie odporności pożarowej co najmniej „E”.",
+  "legal": [
+   "§ 212 ust. 4, § 230 WT"
+  ],
+  "verified": false
+ },
+ "324": {
+  "answer": "a",
+  "explanation": "Dla strefy PM pozostałej o 1000 < Q ≤ 2000 MJ/m² w budynku wysokościowym tabela § 228 daje 1000 m². Urządzenie zraszaczowe jest urządzeniem gaśniczym wodnym → powiększenie o 100% (§ 229 ust. 1 pkt 1) → 2000 m².",
+  "legal": [
+   "§ 228 ust. 1 WT",
+   "§ 229 ust. 1 pkt 1 WT"
+  ],
+  "verified": true
+ },
+ "325": {
+  "answer": "b",
+  "explanation": "Cechę „niezapalny i niekapiący” ma sufit o klasie reakcji na ogień B-…,d0 (d0 – brak płonących kropli); spośród podanych – B-s3,d0.",
+  "legal": [
+   "PN-EN 13501-1; § 208 WT"
+  ],
+  "verified": false
+ },
+ "326": {
+  "answer": "a",
+  "explanation": "Elementy jednokondygnacyjnego budynku PM o małej gęstości obciążenia ogniowego, z tryskaczami, powinny być co najmniej nierozprzestrzeniające ognia (NRO).",
+  "legal": [
+   "§ 216 WT – wymagania w zakresie rozprzestrzeniania ognia"
+  ],
+  "verified": false
+ },
+ "327": {
+  "answer": "b",
+  "explanation": "Uzupełniający zbiornik przeciwpożarowy dla hotelu (deficyt między wymaganą ilością wody a wydajnością hydrantów 17 dm³/s, przez wymagany czas) powinien mieć pojemność co najmniej 50 m³.",
+  "legal": [
+   "§ 8–9 RW – uzupełniający zapas wody"
+  ],
+  "verified": false
+ },
+ "328": {
+  "answer": "c",
+  "explanation": "Gęstość obciążenia = 100 000 kg × 42 MJ/kg / 1000 m² = 4200 MJ/m² (> 4000). Ściana oddzielenia przeciwpożarowego powinna mieć klasę co najmniej REI 240.",
+  "legal": [
+   "§ 232 WT – klasy ścian oddzielenia przeciwpożarowego"
+  ],
+  "verified": false
+ },
+ "329": {
+  "answer": "c",
+  "explanation": "Odległość zbiornika naziemnego z gazem płynnym o pojemności do 5 m³ od granicy działki (przy zachowaniu odległości od budynku) powinna być nie mniejsza niż 3 m.",
+  "legal": [
+   "§ 179 WT – usytuowanie zbiorników gazu płynnego"
+  ],
+  "verified": false
+ },
+ "330": {
+  "answer": "b",
+  "explanation": "Przejście w ZL = 40 m. Wysokość 7,5 m > 5 m → +25% (50 m); tryskacze → +50% (SSP nie daje powiększenia). 40 × 1,75 = 70 m.",
+  "legal": [
+   "§ 237 WT – długość przejścia ewakuacyjnego"
+  ],
+  "verified": true
+ },
+ "331": {
+  "answer": "c",
+  "explanation": "Ściany wewnętrzne w obrębie samodzielnego pomieszczenia mieszkalnego (niebędące elementem oddzielającym) można wykonać bez klasy odporności ogniowej.",
+  "legal": [
+   "§ 216 WT – wymagane klasy odporności ogniowej elementów"
+  ],
+  "verified": false
+ },
+ "332": {
+  "answer": "c",
+  "explanation": "Ściany oddzielające pomieszczenie zagrożone wybuchem od innych pomieszczeń powinny być odporne na parcie o wartości 15 kPa (15·10³ Pa).",
+  "legal": [
+   "§ 37 RPB / WT – wymagania dla pomieszczeń zagrożonych wybuchem"
+  ],
+  "verified": false
+ },
+ "333": {
+  "answer": "a",
+  "explanation": "Okładziny konstrukcji, sufity i sufity podwieszane w tunelu wykonuje się z materiałów co najmniej klasy reakcji na ogień A2-s1,d0.",
+  "legal": [
+   "rozp. dot. drogowych obiektów inżynierskich – tunele"
+  ],
+  "verified": false
+ },
+ "334": {
+  "answer": "b",
+  "explanation": "Nie uznaje się za zagrażające życiu występowania okładziny D-s2,d0 na drodze ewakuacyjnej w strefie ZL III, jeżeli zapewnione są dwa kierunki ewakuacji.",
+  "legal": [
+   "§ 16 RPB – warunki uznania budynku za zagrażający życiu ludzi"
+  ],
+  "verified": false
+ },
+ "335": {
+  "answer": "a",
+  "explanation": "Hydranty i działka wodne w bazie gazu płynnego powinny być rozmieszczone co najmniej 15 m od chronionych obiektów, lecz nie dalej niż 75 m.",
+  "legal": [
+   "rozp. dot. baz i rozlewni gazu płynnego"
+  ],
+  "verified": false
+ },
+ "336": {
+  "answer": "b",
+  "explanation": "Tryskacz o RTI = 60 (w przedziale 50–80) kwalifikuje się do grupy tryskaczy specjalnego reagowania.",
+  "legal": [
+   "PN-EN 12845 – klasyfikacja tryskaczy wg RTI"
+  ],
+  "verified": false
+ },
+ "337": {
+  "answer": "b",
+  "explanation": "Pompownie przeciwpożarowe należy lokalizować w odległości od osi obwałowania lub ściany osłonowej zbiornika nie mniejszej niż 20 m.",
+  "legal": [
+   "rozp. MG z 21.11.2005 – bazy paliw płynnych"
+  ],
+  "verified": false
+ },
+ "338": {
+  "answer": "b",
+  "explanation": "Wymagana wydajność sieci zasilającej hydranty zewnętrzne dla dużej strefy magazynowej o wysokiej gęstości obciążenia ogniowego wynosi 30 dm³/s (woda urządzenia pianowego z własnego zbiornika nie jest wliczana).",
+  "legal": [
+   "§ 6 RW – ilość wody do zewnętrznego gaszenia pożaru"
+  ],
+  "verified": false
+ },
+ "339": {
+  "answer": "a",
+  "explanation": "Drogę pożarową do strefy PM poza budynkiem (plac składowy) należy doprowadzić zawsze, gdy powierzchnia strefy pożarowej przekracza 20 000 m², niezależnie od gęstości obciążenia ogniowego.",
+  "legal": [
+   "§ 12 RW – wymóg drogi pożarowej dla placów składowych"
+  ],
+  "verified": false
+ },
+ "340": {
+  "answer": "b",
+  "explanation": "Punkty dostarczania (nawiewu) powietrza systemu różnicowania ciśnień nie powinny być umieszczane w zasięgu 5 m od końcowych drzwi wyjściowych.",
+  "legal": [
+   "PN-EN 12101-6:2007 – systemy różnicowania ciśnień"
+  ],
+  "verified": false
+ },
+ "341": {
+  "answer": "b",
+  "explanation": "Na magistralnym przewodzie sieci wodociągowej przeciwpożarowej stosuje się hydranty zewnętrzne nadziemne o średnicy nominalnej DN 100.",
+  "legal": [
+   "§ 10 RW – hydranty zewnętrzne na sieci"
+  ],
+  "verified": false
+ },
+ "342": {
+  "answer": "c",
+  "explanation": "W obiekcie niebędącym budynkiem (produkcyjno-magazynowym) hydranty wewnętrzne nie muszą być stosowane.",
+  "legal": [
+   "§ 19 RPB – hydranty wewnętrzne (dotyczą budynków)"
+  ],
+  "verified": false
+ },
+ "343": {
+  "answer": "a",
+  "explanation": "W punktach sprzedaży przyborów gazowych gaz płynny można składować w butlach o łącznej masie gazu do 70 kg.",
+  "legal": [
+   "§ 8 RPB – składowanie gazu płynnego w punktach sprzedaży"
+  ],
+  "verified": false
+ },
+ "344": {
+  "answer": "b",
+  "explanation": "Maksymalna powierzchnia chroniona przez sekcję na jedno stanowisko kontrolno-alarmowe dla przestrzeni klasy LH nie powinna być większa niż 10 000 m².",
+  "legal": [
+   "PN-EN 12845+A1:2020 – powierzchnia na stanowisko kontrolno-alarmowe"
+  ],
+  "verified": false
+ },
+ "345": {
+  "answer": "b",
+  "explanation": "Wentylatory oddymiające tunelu powinny mieć klasę nie mniejszą niż F400 120, wynikającą z obliczeniowej temperatury dymu.",
+  "legal": [
+   "rozp. z 30.05.2000 – drogowe obiekty inżynierskie; PN-EN 12101-3"
+  ],
+  "verified": false
+ },
+ "346": {
+  "answer": "a",
+  "explanation": "Minimalna wysokość kurtyny dymowej w grawitacyjnej instalacji oddymiającej wynosi 2 m (dla utworzenia zbiornika dymu).",
+  "legal": [
+   "PN-B-02877-4:2001 – kurtyny dymowe"
+  ],
+  "verified": false
+ },
+ "347": {
+  "answer": "c",
+  "explanation": "Minimalna wydajność poboru wody z hydrantu wewnętrznego 52 mierzona na wylocie prądownicy wynosi 2,5 dm³/s, tj. 150 dm³/min.",
+  "legal": [
+   "§ 19 RPB / PN-EN 671-2 – hydranty wewnętrzne 52"
+  ],
+  "verified": false
+ },
+ "348": {
+  "answer": "b",
+  "explanation": "Otwory klap dymowych powinny być usytuowane od ścian oddzielenia przeciwpożarowego (REI 240) w odległości co najmniej 5 m.",
+  "legal": [
+   "PN-B-02877-4:2001/Az1:2006 – usytuowanie klap dymowych"
+  ],
+  "verified": false
+ },
+ "349": {
+  "answer": "a",
+  "explanation": "Maksymalna odległość przeciwpożarowego zbiornika wodnego od obiektu chronionego nie powinna przekraczać 500 m.",
+  "legal": [
+   "PN-B-02857:2017 – przeciwpożarowe zbiorniki wodne"
+  ],
+  "verified": false
+ },
+ "350": {
+  "answer": "a",
+  "explanation": "Im wyższa temperatura krytyczna stalowego elementu nośnego, tym dłuższy czas zachowania przez niego nośności ogniowej (dłużej osiąga temperaturę utraty nośności).",
+  "legal": [
+   "PN-EN 1993-1-2 – projektowanie konstrukcji stalowych na warunki pożarowe"
+  ],
+  "verified": true
+ },
+ "351": {
+  "answer": "b",
+  "explanation": "W wąskim korytarzu (szerokość 1,8 m) maksymalna odległość czujki dymu od ściany końcowej wynosi 6,2 m (powiększony zasięg w korytarzu).",
+  "legal": [
+   "PKN-CEN/TS 54-14:2020 – rozmieszczenie czujek w korytarzach"
+  ],
+  "verified": false
+ },
+ "352": {
+  "answer": "b",
+  "explanation": "Dla zbiornika naziemnego powyżej 300 m³ pracującego z napływem dopuszcza się jeden przewód ssawny o średnicy nominalnej nie mniejszej niż 150 mm.",
+  "legal": [
+   "PN-B-02857:2017 – przeciwpożarowe zbiorniki wodne"
+  ],
+  "verified": false
+ },
+ "353": {
+  "answer": "b",
+  "explanation": "Drzwi wejściowe do kotłowni gazowej (moc 60–2000 kW, gaz lżejszy od powietrza) powinny być niepalne i mieć szerokość co najmniej 0,9 m.",
+  "legal": [
+   "PN-B-02431-1:1999 – kotłownie gazowe"
+  ],
+  "verified": false
+ },
+ "354": {
+  "answer": "a",
+  "explanation": "Intensywność zraszania instalacji tryskaczowej wyraża się w mm/min (równoważnie dm³/min na m²).",
+  "legal": [
+   "PN-EN 12845+A1:2020 – intensywność zraszania"
+  ],
+  "verified": true
+ },
+ "355": {
+  "answer": "a",
+  "explanation": "Tunel dłuższy niż 500 m powinien być wyposażony w hydranty zewnętrzne nadziemne DN 80 usytuowane w pobliżu wjazdów i w tunelu w odległościach nieprzekraczających 250 m.",
+  "legal": [
+   "rozp. z 30.05.2000 – drogowe obiekty inżynierskie"
+  ],
+  "verified": false
+ },
+ "356": {
+  "answer": "c",
+  "explanation": "Oznaczenie „II 1D” (kategoria 1, D – pyły) pozwala na zastosowanie urządzenia w strefie 20.",
+  "legal": [
+   "dyrektywa ATEX – kategorie urządzeń i strefy pyłowe"
+  ],
+  "verified": false
+ },
+ "357": {
+  "answer": "b",
+  "explanation": "Pomieszczenia z materiałami wybuchowymi wytwarzającymi falę uderzeniową > 5 kPa rozpatruje się jako pomieszczenia zagrożone wybuchem, ale bez stref zagrożenia wybuchem (brak atmosfery gazowej/pyłowej).",
+  "legal": [
+   "§ 37 RPB – pomieszczenia zagrożone wybuchem"
+  ],
+  "verified": false
+ },
+ "358": {
+  "answer": "c",
+  "explanation": "Dla stacji gazu ziemnego w granicach miasta rozporządzenie nie określa odrębnie wymaganej ilości wody do zewnętrznego gaszenia pożaru (zapewnianej w ramach zaopatrzenia jednostki osadniczej).",
+  "legal": [
+   "RW – zaopatrzenie w wodę jednostek osadniczych"
+  ],
+  "verified": false
+ },
+ "359": {
+  "answer": "c",
+  "explanation": "Efektywny zasięg rzutu prądu gaśniczego rozproszonego płaskiego hydrantu z wężem półsztywnym przy 0,2 MPa nie powinien być mniejszy niż 3 m.",
+  "legal": [
+   "PN-EN 671-1:2012 – hydranty wewnętrzne z wężem półsztywnym"
+  ],
+  "verified": false
+ },
+ "360": {
+  "answer": "c",
+  "explanation": "Stałe urządzenia gaśnicze wodne lub pianowe stosuje się do ochrony lokalnej obszaru magazynowania odpadów palnych, jeżeli gęstość obciążenia ogniowego przekracza 4000 MJ/m² na dowolnie wybranej jednostce 500 m² powierzchni magazynowania.",
+  "legal": [
+   "rozp. MSWiA z 19.02.2020 (Dz.U. poz. 296)"
+  ],
+  "verified": false
+ }
+}

@@ -1,0 +1,323 @@
+{
+ "281": {
+  "answer": "c",
+  "explanation": "§ 261 WT: w rzędzie przyściennym podstawowo 8 siedzeń przy odstępie 0,45 m, z możliwością zwiększenia do 20 pod warunkiem zwiększenia odstępu o 1 cm na każde dodatkowe siedzenie. Odstęp 0,55 m daje 0,10 m zapasu → +10 siedzeń → 8 + 10 = 18.",
+  "legal": [
+   "§ 261 WT – liczba siedzeń w rzędzie"
+  ],
+  "verified": true
+ },
+ "282": {
+  "answer": "c",
+  "explanation": "Minimalna szerokość użytkowa schodów zewnętrznych służących do ewakuacji z garażu podziemnego powinna wynosić co najmniej 1,2 m.",
+  "legal": [
+   "§ 68 WT – szerokość schodów ewakuacyjnych"
+  ],
+  "verified": false
+ },
+ "283": {
+  "answer": "a",
+  "explanation": "Biegi i spoczniki schodów w klatce oddzielonej na każdej kondygnacji przedsionkami przeciwpożarowymi powinny być co najmniej wykonane z materiałów niepalnych.",
+  "legal": [
+   "§ 253 WT – biegi i spoczniki schodów"
+  ],
+  "verified": false
+ },
+ "284": {
+  "answer": "a",
+  "explanation": "Odległość zbiornika z gazem płynnym od rzutu poziomego skrajnego przewodu linii napowietrznej 0,4 kV powinna wynosić co najmniej 3 m.",
+  "legal": [
+   "§ 179 WT / rozp. dot. zbiorników gazu płynnego"
+  ],
+  "verified": false
+ },
+ "285": {
+  "answer": "c",
+  "explanation": "W budynku wysokim użyteczności publicznej instalacja gazowa może być wykonana tylko do pomieszczeń technicznych, w których zainstalowane są urządzenia gazowe.",
+  "legal": [
+   "§ 157 WT – instalacje gazowe w budynkach wysokich"
+  ],
+  "verified": false
+ },
+ "286": {
+  "answer": "c",
+  "explanation": "Dla drzwi z niewielkiego pomieszczenia porządkowego prowadzących na drogę ewakuacyjną nie stawia się wymagań w zakresie klasy odporności ogniowej.",
+  "legal": [
+   "§ 239 WT – drzwi na drogach ewakuacyjnych"
+  ],
+  "verified": false
+ },
+ "287": {
+  "answer": "b",
+  "explanation": "Dla strefy PM pozostałej o 1000 < Q ≤ 2000 MJ/m² w budynku wysokim tabela § 228 daje 1000 m²; strefa w części podziemnej nie powinna przekraczać 50% (§ 228 ust. 2) = 500 m², a tryskacze pozwalają powiększyć o 100% (§ 229) → 1000 m².",
+  "legal": [
+   "§ 228 ust. 1 i 2 WT",
+   "§ 229 ust. 1 pkt 1 WT"
+  ],
+  "verified": true
+ },
+ "288": {
+  "answer": "b",
+  "explanation": "Przejście w ZL = 40 m. Wysokość 5,8 m > 5 m → +25% (50 m). SUG ze środkiem gazowym (IG-100) nie uprawnia do powiększenia o 50% (to ulga dla urządzeń wodnych). Wynik: 50 m.",
+  "legal": [
+   "§ 237 WT – długość przejścia ewakuacyjnego"
+  ],
+  "verified": true
+ },
+ "289": {
+  "answer": "a",
+  "explanation": "Przy spełnionym NRO ścian i dachów oraz ponad 65% powierzchni ściany w wymaganej klasie (75%), budynek średniowysoki należy usytuować od równoległej ściany sąsiedniego budynku ZL w odległości nie mniejszej niż 8 m.",
+  "legal": [
+   "§ 271 WT – odległości między budynkami"
+  ],
+  "verified": false
+ },
+ "290": {
+  "answer": "a",
+  "explanation": "Budynek o wysokości 28 m jest wysoki (W). Dla strefy PM z pomieszczeniem zagrożonym wybuchem (magazyn gazów palnych) o 500 < Q ≤ 1000 MJ/m² tabela § 228 ust. 1 w kolumnie dla budynków W i WW daje 500 m².",
+  "legal": [
+   "§ 228 ust. 1 WT – tabela powierzchni stref PM"
+  ],
+  "verified": true
+ },
+ "291": {
+  "answer": "a",
+  "explanation": "Palną izolację cieplną w ścianie zewnętrznej niskiego budynku ZL II można stosować, gdy okładzina od wewnątrz ma klasę reakcji na ogień co najmniej A2-s3,d0 i klasę odporności ogniowej co najmniej EI 30.",
+  "legal": [
+   "§ 216 ust. 8 WT – palna izolacja cieplna w ścianach"
+  ],
+  "verified": false
+ },
+ "292": {
+  "answer": "c",
+  "explanation": "Przepusty instalacyjne w ścianie oddzielenia przeciwpożarowego powinny mieć klasę EI wymaganą dla tej ściany (tu EI 60), lecz tylko dla przepustów o średnicy ponad 0,04 m.",
+  "legal": [
+   "§ 234 WT – przepusty instalacyjne"
+  ],
+  "verified": false
+ },
+ "293": {
+  "answer": "c",
+  "explanation": "Dojście ewakuacyjne przy jednym dojściu dla budynku mieszkalnego (ZL IV) z drogami chronionymi tryskaczami wynosi 40 m (na poziomym odcinku).",
+  "legal": [
+   "§ 256 WT – długość dojść ewakuacyjnych"
+  ],
+  "verified": false
+ },
+ "294": {
+  "answer": "a",
+  "explanation": "Klatki schodowe łączące odrębne strefy pożarowe w niskim budynku ZL III powinny być obudowane ścianami REI 60, zamykane drzwiami EI 30 i wyposażone w urządzenia zapobiegające zadymieniu lub usuwające dym, uruchamiane samoczynnie systemem wykrywania dymu.",
+  "legal": [
+   "§ 245, § 256 WT – obudowa i zabezpieczenie klatek schodowych"
+  ],
+  "verified": false
+ },
+ "295": {
+  "answer": "c",
+  "explanation": "Szpital to ZL II – przy co najmniej dwóch dojściach tabela § 256 ust. 3 daje 40 m dla dojścia najkrótszego. Ochrona strefy tryskaczami pozwala powiększyć długość o 50% (§ 256 ust. 4 pkt 1) → 60 m, a drugie dojście może być dłuższe o 100% od najkrótszego (odnośnik 1) → 120 m.",
+  "legal": [
+   "§ 256 ust. 3 i 4 WT – długości dojść ewakuacyjnych"
+  ],
+  "verified": true
+ },
+ "296": {
+  "answer": "c",
+  "explanation": "§ 278 ust. 1 WT wymaga dwóch wyjść, gdy strefa ma ponad 25 stanowisk i NIE jest wyposażona w wentylację oddymiającą, albo gdy jej powierzchnia przekracza 1500 m². Tu garaż ma oddymianie, a powierzchnia 1500 m² nie przekracza progu – wystarcza jedno wyjście ewakuacyjne.",
+  "legal": [
+   "§ 278 ust. 1 WT – wyjścia ewakuacyjne ze strefy garażu"
+  ],
+  "verified": true
+ },
+ "297": {
+  "answer": "b",
+  "explanation": "Tunel drogowy powinien być wyposażony w hydranty zewnętrzne nadziemne DN 80 usytuowane w odległościach nieprzekraczających 150 m.",
+  "legal": [
+   "rozp. dot. drogowych obiektów inżynierskich; § 10 RW"
+  ],
+  "verified": false
+ },
+ "298": {
+  "answer": "a",
+  "explanation": "Zbiorniki gazu płynnego przykryte warstwą ziemi 0,5 m należy usytuować od budynków produkcyjnych i magazynowych w odległości nie mniejszej niż 10 m.",
+  "legal": [
+   "rozp. MG z 21.11.2005 / § 179 WT – odległości zbiorników gazu"
+  ],
+  "verified": false
+ },
+ "299": {
+  "answer": "b",
+  "explanation": "Stacja kontenerowa zaopatrująca jednostki żeglugi śródlądowej w produkty I klasy może mieć zbiorniki magazynowe o pojemności nie większej niż 30 m³.",
+  "legal": [
+   "rozp. MG z 21.11.2005 – stacje kontenerowe"
+  ],
+  "verified": false
+ },
+ "300": {
+  "answer": "a",
+  "explanation": "Instalacja do otrzymywania biogazu rolniczego o pojemności 500 m³ powinna mieć strefę bezpieczeństwa o szerokości co najmniej 3 m.",
+  "legal": [
+   "rozp. dot. budowli rolniczych/biogazowni"
+  ],
+  "verified": false
+ },
+ "301": {
+  "answer": "c",
+  "explanation": "Stosy lub pryzmy z oponami oddziela się pasami wolnej przestrzeni o szerokości co najmniej 5 m.",
+  "legal": [
+   "rozp. MSWiA z 19.02.2020 (Dz.U. poz. 296) – magazynowanie odpadów"
+  ],
+  "verified": false
+ },
+ "302": {
+  "answer": "c",
+  "explanation": "Maksymalne ciśnienie hydrostatyczne w sieci wodociągowej przeciwpożarowej nie może przekraczać 1,6 MPa.",
+  "legal": [
+   "§ 10 RW – sieć wodociągowa przeciwpożarowa"
+  ],
+  "verified": false
+ },
+ "303": {
+  "answer": "b",
+  "explanation": "Na magistralnym przewodzie sieci wodociągowej przeciwpożarowej należy stosować hydranty zewnętrzne o średnicy nominalnej DN 100.",
+  "legal": [
+   "§ 10 RW – hydranty zewnętrzne"
+  ],
+  "verified": false
+ },
+ "304": {
+  "answer": "b",
+  "explanation": "Dla strefy produkcyjno-magazynowej o takich parametrach najmniejsza dopuszczalna wydajność instalacji wodociągowej przeciwpożarowej do gaszenia wewnętrznego wynosi 5 dm³/s.",
+  "legal": [
+   "§ 15–19 RPB – zaopatrzenie w wodę do gaszenia wewnętrznego"
+  ],
+  "verified": false
+ },
+ "305": {
+  "answer": "a",
+  "explanation": "Dla zbiornika cieczy o temperaturze zapłonu powyżej 100°C (produkt niskiego ryzyka) o powierzchni 600 m² wymagana ilość wody do zewnętrznego gaszenia wynosi co najmniej 10 dm³/s.",
+  "legal": [
+   "§ 6 RW – ilość wody dla obiektów innych niż budynki"
+  ],
+  "verified": false
+ },
+ "306": {
+  "answer": "b",
+  "explanation": "Szerokość jezdni drogi pożarowej w przejeździe na dziedziniec wewnętrzny, oddzielonej słupkami, nie powinna być mniejsza niż 3,6 m.",
+  "legal": [
+   "§ 12 RW – parametry drogi pożarowej"
+  ],
+  "verified": false
+ },
+ "307": {
+  "answer": "b",
+  "explanation": "Zapas wody w zbiorniku instalacji wodociągowej ppoż. w budynku wysokościowym można, przy zasilaniu z sieci o wydajności ≥ 10 dm³/s, zmniejszyć do 25 m³.",
+  "legal": [
+   "§ 19–20 RPB – zapas wody instalacji wodociągowej ppoż."
+  ],
+  "verified": false
+ },
+ "308": {
+  "answer": "c",
+  "explanation": "Obwody instalacji bezpieczeństwa nie powinny być zabezpieczane urządzeniami różnicowoprądowymi (RCD), a dopuszcza się zabezpieczenie urządzeniami do detekcji zwarć łukowych (AFDD).",
+  "legal": [
+   "PN-HD 60364-5-56:2019-01 – instalacje bezpieczeństwa"
+  ],
+  "verified": false
+ },
+ "309": {
+  "answer": "a",
+  "explanation": "Przeciwpożarowy zbiornik wodny naziemny (250 m³) zapewniający pracę z napływem może być uzbrojony w co najmniej jeden przewód ssawny.",
+  "legal": [
+   "PN-B-02857:2017-04 – przeciwpożarowe zbiorniki wodne"
+  ],
+  "verified": false
+ },
+ "310": {
+  "answer": "a",
+  "explanation": "Punktowe czujki ciepła klasy A1 mogą być stosowane bez dodatkowych warunków w pomieszczeniach o wysokości maksymalnej 7,5 m.",
+  "legal": [
+   "PKN-CEN/TS 54-14:2020-09 – dobór czujek ciepła"
+  ],
+  "verified": false
+ },
+ "311": {
+  "answer": "b",
+  "explanation": "Sygnalizator optyczny Typu B wg PN-EN 54-23 to urządzenie przeznaczone głównie do zastosowań wewnętrznych.",
+  "legal": [
+   "PN-EN 54-23 – sygnalizatory optyczne"
+  ],
+  "verified": false
+ },
+ "312": {
+  "answer": "a",
+  "explanation": "Sekcje tryskaczowe powietrzne (suche) powinny być instalowane tam, gdzie możliwe są uszkodzenia mrozem oraz gdzie temperatura otoczenia przekracza 70°C.",
+  "legal": [
+   "PN-EN 12845+A1:2020-05 – instalacje suche"
+  ],
+  "verified": false
+ },
+ "313": {
+  "answer": "a",
+  "explanation": "Klasa zagrożenia pożarowego wpływa zarówno na projektową intensywność zraszania, jak i na powierzchnię działania.",
+  "legal": [
+   "PN-EN 12845 – dobór parametrów urządzenia tryskaczowego"
+  ],
+  "verified": false
+ },
+ "314": {
+  "answer": "a",
+  "explanation": "Tryskacze nie powinny być instalowane niżej od palnych stropów niż 0,3 m (deflektor w pobliżu stropu).",
+  "legal": [
+   "PN-EN 12845+A1:2020-05 – rozmieszczenie tryskaczy"
+  ],
+  "verified": false
+ },
+ "315": {
+  "answer": "b",
+  "explanation": "Gaz FK-5-1-12 (fluorowany keton) jest gazem gaśniczym będącym chlorowcopochodną (fluorowaną) węglowodorów – zamiennikiem halonów.",
+  "legal": [
+   "PN-EN 15004 – gazy gaśnicze"
+  ],
+  "verified": false
+ },
+ "316": {
+  "answer": "a",
+  "explanation": "W razie braku informacji o sile samozamykacza we wczesnej fazie projektowania dla celów projektowych można przyjąć maksymalną różnicę ciśnień 50 Pa.",
+  "legal": [
+   "PN-EN 12101-6:2007 – systemy różnicowania ciśnień"
+  ],
+  "verified": false
+ },
+ "317": {
+  "answer": "a",
+  "explanation": "Różnica ciśnień między pomieszczeniem bezpiecznym dla ewakuowanych a pomieszczeniem użytkowym powinna być nie mniejsza niż 50 Pa.",
+  "legal": [
+   "PN-EN 12101-6:2007 – systemy różnicowania ciśnień"
+  ],
+  "verified": false
+ },
+ "318": {
+  "answer": "a",
+  "explanation": "Ręczny łącznik jazdy pożarowej powinien być zlokalizowany w centrum zarządzania budynkiem lub na głównym wyznaczonym przystanku.",
+  "legal": [
+   "PN-EN 81-73:2020-12 – funkcjonowanie dźwigów w przypadku pożaru"
+  ],
+  "verified": false
+ },
+ "319": {
+  "answer": "c",
+  "explanation": "Oświetlenie awaryjne na drodze ewakuacyjnej powinno osiągnąć pełne wymagane natężenie (100%) w czasie nie dłuższym niż 60 s (50% w ciągu 5 s).",
+  "legal": [
+   "PN-EN 1838:2013 – czas osiągania natężenia oświetlenia awaryjnego"
+  ],
+  "verified": false
+ },
+ "320": {
+  "answer": "a",
+  "explanation": "Do ręcznego uruchamiania grawitacyjnej instalacji oddymiającej klatki schodowej w 8-kondygnacyjnym budynku wymagane są co najmniej 3 ręczne przyciski oddymiania.",
+  "legal": [
+   "PN-B-02877-4:2001 – grawitacyjne odprowadzanie dymu i ciepła"
+  ],
+  "verified": false
+ }
+}

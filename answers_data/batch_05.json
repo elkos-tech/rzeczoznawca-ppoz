@@ -1,0 +1,322 @@
+{
+ "161": {
+  "answer": "b",
+  "explanation": "Lokal punktu przedszkolnego powinien być wyposażony w gaśnicę o skuteczności gaśniczej co najmniej 21A, niezależnie od gaśnic zastosowanych w strefie pożarowej.",
+  "legal": [
+   "§ 32 RPB – wyposażenie w gaśnice; rozp. MEN dot. lokalu przedszkola"
+  ],
+  "verified": false
+ },
+ "162": {
+  "answer": "b",
+  "explanation": "Projektowe stężenie gaszące dla pożarów powierzchniowych klasy A powinno być większe o co najmniej 30% od stężenia gaszącego wyznaczonego wg normowej procedury badawczej.",
+  "legal": [
+   "PN-EN 15004-1:2008 – urządzenia gaśnicze gazowe"
+  ],
+  "verified": false
+ },
+ "163": {
+  "answer": "b",
+  "explanation": "Wymagania bezpieczeństwa pożarowego dla tuneli kolejowych sprecyzowano w decyzji Komisji 2008/163/WE (TSI „Bezpieczeństwo w tunelach kolejowych”).",
+  "legal": [
+   "decyzja Komisji 2008/163/WE – TSI bezpieczeństwo w tunelach kolejowych"
+  ],
+  "verified": false
+ },
+ "164": {
+  "answer": "a",
+  "explanation": "Dopuszczenie do jednostkowego zastosowania nie ma zastosowania do wyrobów służących bezpieczeństwu pożarowemu, chyba że dotyczy rozwiązań zamiennych uzgodnionych w trybie art. 6a ustawy o ochronie ppoż.",
+  "legal": [
+   "art. 10 ustawy o wyrobach budowlanych; art. 6a ustawy o ochronie ppoż."
+  ],
+  "verified": false
+ },
+ "165": {
+  "answer": "a",
+  "explanation": "Zbiorniki naziemne z produktami III klasy wymagają urządzeń pianowych, gdy produkty są podgrzewane powyżej ich temperatury zapłonu.",
+  "legal": [
+   "rozp. MG z 21.11.2005 – urządzenia gaśnicze pianowe zbiorników"
+  ],
+  "verified": false
+ },
+ "166": {
+  "answer": "c",
+  "explanation": "Punkt projektowy to punkt na przewodzie rozdzielczym sekcji wstępnie obliczonej, za którym wymiary przewodów dobiera się z tablic, a przed nim – na podstawie obliczeń hydraulicznych.",
+  "legal": [
+   "PN-EN 12845 – urządzenia tryskaczowe, punkt projektowy"
+  ],
+  "verified": false
+ },
+ "167": {
+  "answer": "a",
+  "explanation": "Jednokondygnacyjny budynek handlowy ZL I o powierzchni 9500 m² (strefa > 8000 m²) wymaga stałych urządzeń gaśniczych wodnych, systemu sygnalizacji pożarowej i dźwiękowego systemu ostrzegawczego.",
+  "legal": [
+   "§ 27, § 28, § 29 RPB – wyposażenie obiektów w urządzenia ppoż."
+  ],
+  "verified": false
+ },
+ "168": {
+  "answer": "b",
+  "explanation": "Obwody instalacji bezpieczeństwa nie mogą w żadnym przypadku przechodzić przez strefy narażone na ryzyko wybuchu (BE3).",
+  "legal": [
+   "PN-HD 60364-5-56 – instalacje bezpieczeństwa"
+  ],
+  "verified": false
+ },
+ "169": {
+  "answer": "a",
+  "explanation": "Ponieważ sąsiednia działka jest działką drogową (niezabudowywaną), ściana od jej strony nie musi być ścianą oddzielenia przeciwpożarowego; wymagana jest klasa ściany zewnętrznej właściwa dla budynku, tj. co najmniej EI 60.",
+  "legal": [
+   "§ 271, § 216 WT – usytuowanie budynku i klasy ścian zewnętrznych"
+  ],
+  "verified": false
+ },
+ "170": {
+  "answer": "c",
+  "explanation": "Tunel drogowy o długości większej niż 500 m powinien być wyposażony w hydranty zewnętrzne nadziemne DN 80 usytuowane przy punktach alarmowych w odległościach nieprzekraczających 150 m.",
+  "legal": [
+   "rozp. w sprawie warunków technicznych drogowych obiektów inżynierskich; § 10 RW"
+  ],
+  "verified": false
+ },
+ "171": {
+  "answer": "a",
+  "explanation": "Obudowa schodów na stacji metra powinna mieć klasę reakcji na ogień co najmniej A2-s1,d0.",
+  "legal": [
+   "rozp. w sprawie warunków technicznych obiektów metra – reakcja na ogień"
+  ],
+  "verified": false
+ },
+ "172": {
+  "answer": "a",
+  "explanation": "Odporność ogniową drzwi dźwigowych przystankowych określa się przy narażeniu na działanie ognia od strony podestu przystankowego.",
+  "legal": [
+   "PN-EN 81-58:2005 – próba odporności ogniowej drzwi przystankowych"
+  ],
+  "verified": false
+ },
+ "173": {
+  "answer": "b",
+  "explanation": "W budynku magazynowym awaryjne oświetlenie ewakuacyjne należy zastosować w pomieszczeniu o powierzchni netto ponad 1000 m².",
+  "legal": [
+   "§ 181 WT – awaryjne oświetlenie ewakuacyjne"
+  ],
+  "verified": false
+ },
+ "174": {
+  "answer": "a",
+  "explanation": "Rzeczoznawca ds. zabezpieczeń ppoż. jest uprawniony do potwierdzania w formie opinii spełniania wymagań ppoż. w obiektach, w których świadczone są usługi hotelarskie.",
+  "legal": [
+   "ustawa o usługach hotelarskich; ustawa o ochronie ppoż."
+  ],
+  "verified": false
+ },
+ "175": {
+  "answer": "b",
+  "explanation": "Głębokość przeciwpożarowego zbiornika wodnego niechronionego przed zamarzaniem nie powinna być mniejsza niż 2 m.",
+  "legal": [
+   "PN-B-02857:2017-04 – przeciwpożarowe zbiorniki wodne"
+  ],
+  "verified": false
+ },
+ "176": {
+  "answer": "b",
+  "explanation": "Ścianę oddzielenia przeciwpożarowego usytuowaną w odległości poziomej mniejszej niż 5 m od klap dymowych należy wyprowadzić na wysokość co najmniej 0,3 m ponad górną krawędź tych klap.",
+  "legal": [
+   "§ 234 WT – wyprowadzenie ścian oddzielenia ppoż."
+  ],
+  "verified": false
+ },
+ "177": {
+  "answer": "b",
+  "explanation": "Maksymalna powierzchnia chroniona przez jeden tryskacz w dużym pomieszczeniu open space (klasa OH) nie powinna przekraczać 12 m².",
+  "legal": [
+   "PN-EN 12845 – powierzchnia chroniona przez tryskacz"
+  ],
+  "verified": false
+ },
+ "178": {
+  "answer": "a",
+  "explanation": "Budynek niski (11,5 m) w części mieszkalnej (ZL IV, klasa D) wymaga głównej konstrukcji nośnej o klasie co najmniej R 30.",
+  "legal": [
+   "§ 212, § 216 WT – klasa D, wymagane klasy odporności ogniowej"
+  ],
+  "verified": false
+ },
+ "179": {
+  "answer": "a",
+  "explanation": "Wg PN-EN 60079-10-1 rozróżnia się poziomy dostępności (dyspozycyjności) wentylacji: dobry, dostateczny i słaby.",
+  "legal": [
+   "PN-EN 60079-10-1:2016-02 – klasyfikacja przestrzeni"
+  ],
+  "verified": false
+ },
+ "180": {
+  "answer": "a",
+  "explanation": "Strefę pożarową ZL III w budynku średniowysokim należy wyposażyć w hydranty wewnętrzne 25.",
+  "legal": [
+   "§ 19 RPB – hydranty wewnętrzne w strefach ZL"
+  ],
+  "verified": false
+ },
+ "181": {
+  "answer": "b",
+  "explanation": "Przy obliczaniu gęstości obciążenia ogniowego nie uwzględnia się materiałów palnych o zawartości wody ponad 60%.",
+  "legal": [
+   "PN-B-02852:2001 – obliczanie gęstości obciążenia ogniowego"
+  ],
+  "verified": false
+ },
+ "182": {
+  "answer": "b",
+  "explanation": "Ograniczenie 15% powierzchni otworów w ścianach oddzieleń ppoż. nie ma zastosowania w galeriach handlowych – do ścian, które nie znajdują się na drogach ewakuacyjnych.",
+  "legal": [
+   "§ 232 WT – otwory w ścianach oddzielenia ppoż."
+  ],
+  "verified": false
+ },
+ "183": {
+  "answer": "a",
+  "explanation": "Wysokość pasa międzykondygnacyjnego w ścianie zewnętrznej powinna wynosić co najmniej 0,8 m.",
+  "legal": [
+   "§ 225 WT – pas międzykondygnacyjny"
+  ],
+  "verified": false
+ },
+ "184": {
+  "answer": "b",
+  "explanation": "W promieniu 1,5 m od wlotu przewodu oddechowego zbiornika podziemnego z produktami I klasy wyznacza się strefę zagrożenia wybuchem – strefę 2.",
+  "legal": [
+   "rozp. MG z 21.11.2005 – strefy zagrożenia wybuchem"
+  ],
+  "verified": false
+ },
+ "185": {
+  "answer": "b",
+  "explanation": "Okno w ścianie zewnętrznej klatki schodowej znajdujące się blisko (2 m) okna mieszkania w ścianie prostopadłej powinno mieć klasę odporności ogniowej co najmniej EI 60.",
+  "legal": [
+   "§ 249 WT – przeszklenia przy narożach/ścianach prostopadłych"
+  ],
+  "verified": false
+ },
+ "186": {
+  "answer": "b",
+  "explanation": "§ 284 pkt 1 WT: odległość od najdalszego stanowiska dla zwierząt do wyjścia ewakuacyjnego nie powinna przekraczać przy ściółkowym utrzymaniu 50 m, a przy bezściółkowym – 75 m.",
+  "legal": [
+   "§ 284 pkt 1 WT – drogi ewakuacyjne w budynkach inwentarskich"
+  ],
+  "verified": true
+ },
+ "187": {
+  "answer": "a",
+  "explanation": "Korytarze ewakuacyjne o długości powyżej 50 m należy podzielić na odcinki nie dłuższe niż 50 m przegrodami z drzwiami dymoszczelnymi klasy co najmniej Sa.",
+  "legal": [
+   "§ 256 WT – podział korytarzy ewakuacyjnych"
+  ],
+  "verified": false
+ },
+ "188": {
+  "answer": "a",
+  "explanation": "Belki o wysokości 21 cm (powyżej progu) dzielą przestrzeń na 5 pól; przy 5 polach 20 m × 6 m (po 120 m²) wymagane są co najmniej 2 czujki na pole – łącznie 10 punktowych czujek dymu.",
+  "legal": [
+   "PKN-CEN/TS 54-14:2006 – rozmieszczenie czujek, wpływ belek"
+  ],
+  "verified": false
+ },
+ "189": {
+  "answer": "c",
+  "explanation": "W systemie różnicowania ciśnień klasy F minimalna prędkość przepływu powietrza przez otwarte drzwi między przedsionkiem a strefą pożaru nie powinna być niższa niż 2 m/s.",
+  "legal": [
+   "PN-EN 12101-6 – systemy różnicowania ciśnień, klasa F"
+  ],
+  "verified": false
+ },
+ "190": {
+  "answer": "c",
+  "explanation": "Ponieważ przez hol nie prowadzi droga ewakuacyjna z klatki schodowej, drzwi do bagażowni nie muszą spełniać wymagań klasy odporności ogniowej ani dymoszczelności – żadna z pozostałych odpowiedzi nie jest prawidłowa.",
+  "legal": [
+   "§ 239, § 245 WT – wymagania dla drzwi na drogach ewakuacyjnych"
+  ],
+  "verified": false
+ },
+ "191": {
+  "answer": "c",
+  "explanation": "Parametry hotelu (2500 m³, 450 m²) nie przekraczają progów, powyżej których wymagane jest zewnętrzne zaopatrzenie w wodę – woda nie jest wymagana.",
+  "legal": [
+   "§ 3–5 RW – przypadki niewymagające zewnętrznego zaopatrzenia w wodę"
+  ],
+  "verified": false
+ },
+ "192": {
+  "answer": "b",
+  "explanation": "Na zewnątrz powinny otwierać się drzwi ewakuacyjne z pomieszczeń w strefie ZL II przeznaczonych dla ponad 6 osób o ograniczonej zdolności poruszania się (oraz z pomieszczeń zagrożonych wybuchem).",
+  "legal": [
+   "§ 236 WT – kierunek otwierania drzwi ewakuacyjnych"
+  ],
+  "verified": false
+ },
+ "193": {
+  "answer": "b",
+  "explanation": "Ewakuacyjną klatkę schodową w budynku ZL IV należy zamknąć drzwiami przeciwpożarowymi o klasie odporności ogniowej co najmniej EI 30, dymoszczelnymi klasy Sa, z samozamykaczem.",
+  "legal": [
+   "§ 245, § 256 WT – obudowa i zamknięcie klatek schodowych"
+  ],
+  "verified": false
+ },
+ "194": {
+  "answer": "c",
+  "explanation": "Dojście do dźwigu dla ekip ratowniczych nie może przekraczać 50 m, a w obrębie budynku – dopuszczalnej długości dojścia lub przejścia ewakuacyjnego dla strefy lub pomieszczenia, przez które przebiega.",
+  "legal": [
+   "§ 193, § 207 WT – dźwigi dla ekip ratowniczych i dojścia"
+  ],
+  "verified": false
+ },
+ "195": {
+  "answer": "c",
+  "explanation": "Przy indywidualnej adresacji czujek maksymalna powierzchnia strefy dozorowej nie powinna przekraczać 1600 m².",
+  "legal": [
+   "PKN-CEN/TS 54-14:2006 – strefy dozorowe"
+  ],
+  "verified": false
+ },
+ "196": {
+  "answer": "b",
+  "explanation": "Przejście w PM (jednokondygnacyjny) = 100 m. Wysokość 8 m > 5 m → +25%; tryskacze → +50% (sam SSP nie daje powiększenia). 100 × 1,75 = 175 m.",
+  "legal": [
+   "§ 237 WT – długość przejścia ewakuacyjnego i powiększenia"
+  ],
+  "verified": true
+ },
+ "197": {
+  "answer": "c",
+  "explanation": "Zapotrzebowanie 1200 dm³/min = 20 dm³/s przez 60 min = 72 m³. Dopływ 5 dm³/s przez 60 min = 18 m³. Pojemność = 72 − 18 = 54 m³.",
+  "legal": [
+   "PN-EN 12845 – zbiornik pośredni"
+  ],
+  "verified": true
+ },
+ "198": {
+  "answer": "b",
+  "explanation": "Przeciwpożarowy zbiornik wodny o pojemności 300 m³ pracujący ze ssaniem powinien mieć co najmniej dwa przewody ssawne.",
+  "legal": [
+   "PN-B-02857:2017-04 – przeciwpożarowe zbiorniki wodne"
+  ],
+  "verified": false
+ },
+ "199": {
+  "answer": "c",
+  "explanation": "ZL I w budynku wielokondygnacyjnym średniowysokim = 5000 m² (§ 227 ust. 1). Urządzenie mgłowe jest urządzeniem gaśniczym wodnym → +100%, oddymianie sterowane SSP → +100%; przy jednoczesnym stosowaniu obu dopuszcza się powiększenie o 200% (§ 227 ust. 4). 5000 × 3 = 15 000 m².",
+  "legal": [
+   "§ 227 ust. 1 i 4 WT – powierzchnie stref ZL i ich powiększanie"
+  ],
+  "verified": true
+ },
+ "200": {
+  "answer": "a",
+  "explanation": "Dla obiektu niebędącego budynkiem, przeznaczonego na potrzeby użyteczności publicznej ze strefą dla ponad 50 osób, wymagane jest zapewnienie wody do zewnętrznego gaszenia pożaru w ilości co najmniej 10 dm³/s.",
+  "legal": [
+   "§ 6–7 RW – ilość wody dla obiektów innych niż budynki"
+  ],
+  "verified": false
+ }
+}

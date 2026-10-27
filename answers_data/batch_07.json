@@ -1,0 +1,322 @@
+{
+ "241": {
+  "answer": "c",
+  "explanation": "Budynek jednokondygnacyjny może być wykonany w klasie odporności pożarowej co najmniej „E”; zastosowanie tryskaczy dodatkowo obniża wymagania.",
+  "legal": [
+   "§ 212 ust. 4 WT – budynki jednokondygnacyjne; § 230 WT"
+  ],
+  "verified": false
+ },
+ "242": {
+  "answer": "b",
+  "explanation": "Ściany wewnętrzne stanowiące obudowę poziomej drogi ewakuacyjnej powinny mieć klasę odporności ogniowej co najmniej EI 30.",
+  "legal": [
+   "§ 256 WT – obudowa poziomych dróg ewakuacyjnych"
+  ],
+  "verified": false
+ },
+ "243": {
+  "answer": "c",
+  "explanation": "Wentylatory oddymiające tunelu drogowego powinny mieć klasę odpowiadającą wysokiej obliczeniowej temperaturze dymu, nie mniejszą niż F600 120.",
+  "legal": [
+   "rozp. w sprawie warunków technicznych drogowych obiektów inżynierskich; PN-EN 12101-3"
+  ],
+  "verified": false
+ },
+ "244": {
+  "answer": "b",
+  "explanation": "Okładziny i sufity podwieszone w strefach ZL należy wykonywać jako niekapiące i nieodpadające, z materiałów co najmniej klasy B (klasyfikacja podstawowa).",
+  "legal": [
+   "§ 258 WT – wykończenie wnętrz na drogach ewakuacyjnych i w pomieszczeniach"
+  ],
+  "verified": false
+ },
+ "245": {
+  "answer": "a",
+  "explanation": "Maksymalna dopuszczalna pojemność zbiorników magazynowych produktów naftowych w stacji kontenerowej wynosi 5 m³.",
+  "legal": [
+   "rozp. MG z 21.11.2005 – stacje kontenerowe paliw"
+  ],
+  "verified": false
+ },
+ "246": {
+  "answer": "a",
+  "explanation": "Piec na paliwo stałe może być stosowany w budynku ZL I niskim.",
+  "legal": [
+   "§ 132 WT – instalacje ogrzewcze na paliwo stałe"
+  ],
+  "verified": false
+ },
+ "247": {
+  "answer": "a",
+  "explanation": "Drogowe urządzenia przeciwhałasowe na obiektach mostowych, usytuowane bliżej niż 8 m od budynków, powinny mieć klasę reakcji na ogień co najmniej A2,d0.",
+  "legal": [
+   "rozp. w sprawie warunków technicznych drogowych obiektów inżynierskich"
+  ],
+  "verified": false
+ },
+ "248": {
+  "answer": "b",
+  "explanation": "Przy belkach o wysokości 24 cm dzielących strop na wąskie pola dopuszcza się umieszczenie punktowej czujki dymu w co drugim polu.",
+  "legal": [
+   "PKN-CEN/TS 54-14:2006 – rozmieszczenie czujek przy belkach"
+  ],
+  "verified": false
+ },
+ "249": {
+  "answer": "a",
+  "explanation": "Klapy dymowe otwierane automatycznie i ręcznie powinny mieć klasę co najmniej B300 30 (temperatura otwarcia 300°C).",
+  "legal": [
+   "PN-EN 12101-2 – klasyfikacja klap dymowych"
+  ],
+  "verified": false
+ },
+ "250": {
+  "answer": "c",
+  "explanation": "Średnie obciążenie = (600×20 + 1000×30 + 2000×50) / (20+30+50) = 142 000 / 100 = 1420 MJ/m².",
+  "legal": [
+   "PN-B-02852:2001 – obliczanie gęstości obciążenia ogniowego"
+  ],
+  "verified": true
+ },
+ "251": {
+  "answer": "a",
+  "explanation": "§ 278 ust. 2 pkt 2 WT: długość przejścia w garażu otwartym wynosi 60 m. Powiększenie wg § 278 ust. 3 dotyczy wyłącznie przejścia w garażu zamkniętym (ust. 2 pkt 1), więc dla garażu otwartego pozostaje 60 m.",
+  "legal": [
+   "§ 278 ust. 2 pkt 2 i ust. 3 WT – przejścia ewakuacyjne w garażach"
+  ],
+  "verified": true
+ },
+ "252": {
+  "answer": "a",
+  "explanation": "W pomieszczeniu zagrożonym wybuchem długość przejścia ewakuacyjnego nie może przekraczać 40 m i nie podlega powiększeniom (także za oddymianie).",
+  "legal": [
+   "§ 237 WT – przejście w pomieszczeniu zagrożonym wybuchem"
+  ],
+  "verified": true
+ },
+ "253": {
+  "answer": "b",
+  "explanation": "W systemie integracyjnym metra priorytetowa powinna być możliwość sterowań ręcznych (do wykorzystania przez jednostki ratowniczo-gaśnicze i uprawniony personel).",
+  "legal": [
+   "rozp. z 17.06.2011 – warunki techniczne obiektów metra"
+  ],
+  "verified": false
+ },
+ "254": {
+  "answer": "a",
+  "explanation": "§ 284 pkt 2 WT: w bezściółkowym chowie owiec, jeżeli ich liczba nie przekracza 200 sztuk, należy stosować co najmniej jedno wyjście ewakuacyjne. Przy 180 owcach wystarczy jedno wyjście.",
+  "legal": [
+   "§ 284 pkt 2 WT – wyjścia ewakuacyjne w budynkach inwentarskich"
+  ],
+  "verified": true
+ },
+ "255": {
+  "answer": "a",
+  "explanation": "Gdy organem właściwym jest marszałek województwa, operat przeciwpożarowy wykonuje rzeczoznawca do spraw zabezpieczeń przeciwpożarowych.",
+  "legal": [
+   "art. 42 ust. 4b ustawy o odpadach – operat przeciwpożarowy"
+  ],
+  "verified": false
+ },
+ "256": {
+  "answer": "c",
+  "explanation": "Materiałem niebezpiecznym pożarowo jest ciecz palna o niskiej temperaturze zapłonu; ciecz o temperaturze zapłonu 384,15 K (111°C) nie jest materiałem niebezpiecznym pożarowo.",
+  "legal": [
+   "§ 2 RPB – definicja materiałów niebezpiecznych pożarowo"
+  ],
+  "verified": true
+ },
+ "257": {
+  "answer": "b",
+  "explanation": "Przy dwóch kierunkach ewakuacji (do obu klatek) wyposażenie rezerwowe systemu różnicowania ciśnień powinno być zastosowane w co najmniej jednej klatce schodowej.",
+  "legal": [
+   "PN-EN 12101-6:2007 – systemy różnicowania ciśnień"
+  ],
+  "verified": false
+ },
+ "258": {
+  "answer": "a",
+  "explanation": "Strefa z odpadami stałymi o takich parametrach wymaga wyposażenia w samoczynne urządzenia oddymiające, system sygnalizacji pożarowej oraz stałe urządzenia gaśnicze wodne lub pianowe.",
+  "legal": [
+   "rozp. MSWiA z 19.02.2020 (Dz.U. poz. 296) – ochrona ppoż. miejsc magazynowania odpadów"
+  ],
+  "verified": false
+ },
+ "259": {
+  "answer": "c",
+  "explanation": "Tabela § 271 ust. 1 WT dla ZL ↔ PM o 1000 < Q ≤ 4000 MJ/m² daje 15 m. Ściany ZL rozprzestrzeniające ogień → +50% (ust. 2) = 22,5 m (warunek ust. 3, tj. min. 20 m przy pomieszczeniu zagrożonym wybuchem, jest spełniony). Budynek PM ma stałe urządzenia gaśnicze wodne → zmniejszenie o 25% (ust. 7): 22,5 × 0,75 = 16,875 m.",
+  "legal": [
+   "§ 271 ust. 1, 2, 3 i 7 WT – odległości między budynkami"
+  ],
+  "verified": true
+ },
+ "260": {
+  "answer": "b",
+  "explanation": "Przewody łączące pojemniki stanowiące przeciwpożarowy zbiornik wodny powinny mieć średnicę co najmniej 300 mm.",
+  "legal": [
+   "PN-B-02857:2017-04 – przeciwpożarowe zbiorniki wodne"
+  ],
+  "verified": false
+ },
+ "261": {
+  "answer": "b",
+  "explanation": "Dla pomieszczenia płaskiego 20 m × 30 m (600 m²) przy promieniu działania czujki dymu ok. 7,5 m wymagane jest co najmniej 6 punktowych czujek dymu.",
+  "legal": [
+   "PKN-CEN/TS 54-14:2006 – rozmieszczenie czujek"
+  ],
+  "verified": false
+ },
+ "262": {
+  "answer": "c",
+  "explanation": "§ 227 ust. 4 WT dopuszcza powiększanie powierzchni stref ZL „z wyjątkiem stref pożarowych w wielokondygnacyjnych budynkach wysokich (W) i wysokościowych (WW)”. W budynku wysokim wielokondygnacyjnym powiększenie nie przysługuje.",
+  "legal": [
+   "§ 227 ust. 4 WT – wyłączenie budynków W i WW"
+  ],
+  "verified": true
+ },
+ "263": {
+  "answer": "b",
+  "explanation": "Przestrzenie ukryte przy dachu (nad sufitem podwieszonym) w budynku klasy OH2 kwalifikuje się do klasy zagrożenia pożarowego OH1.",
+  "legal": [
+   "PN-EN 12845 – klasy zagrożenia przestrzeni ukrytych"
+  ],
+  "verified": false
+ },
+ "264": {
+  "answer": "a",
+  "explanation": "Przyspieszacz w powietrznej sekcji tryskaczowej skraca czas zadziałania zaworu kontrolno-alarmowego i turbinowego urządzenia alarmowego.",
+  "legal": [
+   "PN-EN 12845 – instalacje suche, przyspieszacz"
+  ],
+  "verified": false
+ },
+ "265": {
+  "answer": "b",
+  "explanation": "Przy obiektach tymczasowych o konstrukcji palnej należy zachować pas ochronny o szerokości nie mniejszej niż 5 m.",
+  "legal": [
+   "§ 273 WT / RPB – pas ochronny obiektów tymczasowych"
+  ],
+  "verified": false
+ },
+ "266": {
+  "answer": "a",
+  "explanation": "Przejście w PM (>1 kondygnacja, ≤500 MJ/m²) = 100 m. Wysokość ≤5 m – brak +25%; tryskacze → +50%; klapy termiczne (nie SSP) – bez dodatkowego +50%. Wynik: 150 m.",
+  "legal": [
+   "§ 237 WT – długość przejścia ewakuacyjnego"
+  ],
+  "verified": true
+ },
+ "267": {
+  "answer": "a",
+  "explanation": "Magazyn ciekłych odpadów palnych o powierzchni 300 m² wyposaża się w stałe lub półstałe urządzenia gaśnicze pianowe albo zapewnia otwór w ścianie umożliwiający skuteczne podanie piany.",
+  "legal": [
+   "rozp. MSWiA z 19.02.2020 (Dz.U. poz. 296)"
+  ],
+  "verified": false
+ },
+ "268": {
+  "answer": "c",
+  "explanation": "Dla pomieszczenia archiwum, gdzie liczba użytkowników nie wynika z przeznaczenia, przyjmuje się współczynnik 30 m²/osobę.",
+  "legal": [
+   "§ 240 / załącznik WT – przyjmowanie liczby użytkowników"
+  ],
+  "verified": false
+ },
+ "269": {
+  "answer": "a",
+  "explanation": "Dla dachu o nachyleniu 13° maksymalna odległość klap dymowych od krawędzi budynku nie może przekraczać 10 m.",
+  "legal": [
+   "PN-B-02877-4:2001 – grawitacyjne odprowadzanie dymu i ciepła"
+  ],
+  "verified": false
+ },
+ "270": {
+  "answer": "a",
+  "explanation": "Ognioodporne obwody instalacji bezpieczeństwa są wymagane, gdy przebiegają przez pomieszczenia narażone na ryzyko pożarowe (BE2).",
+  "legal": [
+   "PN-HD 60364-5-56:2010 – instalacje bezpieczeństwa"
+  ],
+  "verified": false
+ },
+ "271": {
+  "answer": "c",
+  "explanation": "Natężenie oświetlenia awaryjnego w strefie wysokiego ryzyka nie powinno być mniejsze niż 10% eksploatacyjnego natężenia wymaganego dla danych czynności i jednocześnie nie mniejsze niż 15 lx.",
+  "legal": [
+   "PN-EN 1838:2005 – oświetlenie awaryjne stref wysokiego ryzyka"
+  ],
+  "verified": false
+ },
+ "272": {
+  "answer": "c",
+  "explanation": "Dla znaku oświetlonego wewnętrznie odległość widzenia = 200 × wysokość znaku = 200 × 0,15 m = 30 m.",
+  "legal": [
+   "PN-EN 1838:2005 – odległość rozpoznawania znaków"
+  ],
+  "verified": true
+ },
+ "273": {
+  "answer": "b",
+  "explanation": "Dla odmierzacza paliw dystrybuującego produkty I klasy ustala się strefę 1 oraz strefę 2 zagrożenia wybuchem.",
+  "legal": [
+   "rozp. MG z 21.11.2005 – strefy zagrożenia wybuchem"
+  ],
+  "verified": false
+ },
+ "274": {
+  "answer": "c",
+  "explanation": "Teatr o 500 miejscach i scenie 140 m² wymaga systemu sygnalizacji pożarowej; kurtyna przeciwpożarowa (scena < 150 m²) i DSO (poniżej 600 miejsc) nie są wymagane.",
+  "legal": [
+   "§ 28, § 29 RPB; WT – kurtyny przeciwpożarowe scen"
+  ],
+  "verified": false
+ },
+ "275": {
+  "answer": "c",
+  "explanation": "System sygnalizacji pożarowej tłoczni gazu powinien obejmować wszystkie budynki na jej terenie i być połączony z komendą PSP lub innym wskazanym obiektem.",
+  "legal": [
+   "rozp. MG z 26.04.2013 – sieci gazowe"
+  ],
+  "verified": false
+ },
+ "276": {
+  "answer": "a",
+  "explanation": "Instalację suchą można stosować pod warunkiem umożliwienia jej nawadniania w sposób ręczny i/lub automatyczny.",
+  "legal": [
+   "§ 20 RPB – instalacja wodociągowa przeciwpożarowa (instalacja sucha)"
+  ],
+  "verified": false
+ },
+ "277": {
+  "answer": "b",
+  "explanation": "Pomieszczenie stołówki poza lokalem przedszkola może znajdować się na kondygnacji innej niż pierwsza nadziemna.",
+  "legal": [
+   "rozp. MEN z 25.08.2017 (Dz.U. 2020 poz. 1531)"
+  ],
+  "verified": false
+ },
+ "278": {
+  "answer": "a",
+  "explanation": "Odległość stanowisk postojowych od instalacji do otrzymywania biogazu rolniczego powinna wynosić co najmniej 8 m.",
+  "legal": [
+   "rozp. dot. budowli rolniczych / biogazowni"
+  ],
+  "verified": false
+ },
+ "279": {
+  "answer": "b",
+  "explanation": "Dla gazów palnych (będących gazami w temperaturze 20°C) rozpatruje się temperaturę samozapłonu; temperatury zapłonu (właściwej cieczom) nie rozpatruje się.",
+  "legal": [
+   "PN-EN 60079-10-1 / ocena zagrożenia wybuchem"
+  ],
+  "verified": false
+ },
+ "280": {
+  "answer": "b",
+  "explanation": "Doprowadzenie drogi pożarowej jest wymagane, a droga powinna umożliwiać przejazd pojazdów o nacisku osi co najmniej 100 kN.",
+  "legal": [
+   "§ 12–13 RW – parametry drogi pożarowej"
+  ],
+  "verified": false
+ }
+}
