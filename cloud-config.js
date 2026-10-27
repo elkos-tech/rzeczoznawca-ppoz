@@ -15,8 +15,8 @@
    ===================================================================== */
 window.CLOUD_CONFIG = {
 
-  url:     "",   // np. "https://abcdefghijklmnop.supabase.co"
-  anonKey: "",   // np. "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3M..."
+  url:     "https://czirgsryfsjmcamkqwdp.supabase.co",
+  anonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN6aXJnc3J5ZnNqbWNhbWtxd2RwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI4MzQyMjQsImV4cCI6MjEwODQxMDIyNH0.zb3saM7KJGkHIQk-NpW31g6hik8cTGyJl-fUXjEXPHc",
 
   // Przycisk „Zaloguj przez Google”.
   // Ustaw na false, jeżeli nie skonfigurowałeś logowania Google
