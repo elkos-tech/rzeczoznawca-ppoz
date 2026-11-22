@@ -305,3 +305,10 @@ header.app .acct-btn.logged { background: rgba(255,255,255,.34); box-shadow: ins
   border-radius: 9px; padding: 8px 11px; }
 .mod-opt.ok { border-color: var(--ok); background: var(--ok-soft); color: var(--ok); font-weight: 600; }
 .mod-exp { font-size: 13.5px; color: var(--text-soft); margin-top: 6px; }
+
+/* Wznawianie przerwanej nauki / egzaminu (ekran główny) */
+.resume { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px;
+  background: var(--surface); border: 1px solid var(--accent); border-left: 4px solid var(--accent);
+  border-radius: var(--radius); padding: 12px 14px; margin-bottom: 12px; font-size: 14.5px; box-shadow: var(--shadow); }
+.resume.exam { border-color: var(--brand); }
+.resume .btn-row { flex: 0 0 auto; }

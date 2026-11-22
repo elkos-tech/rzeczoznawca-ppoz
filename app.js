@@ -136,8 +136,97 @@
   function setTop(title, showHome) { topTitle.textContent = title; homeBtn.classList.toggle("show", !!showHome); }
 
   // stan przeglądania (tryb nauki)
-  let study = { list: [], idx: 0, revealed: false, title: "" };
+  let study = { list: [], idx: 0, revealed: false, title: "", active: false };
   let exam = null;
+
+  // ---------- Trwała sesja nauki i egzaminu (wznawianie po odświeżeniu / ponownym otwarciu) ----------
+  // Zapisujemy identyfikatory pytań i pozycję, nie całe pytania. Egzamin trzyma bezwzględny
+  // czas końca (endsAt), więc zegar płynie dalej także przy zamkniętej aplikacji.
+  const STUDY_KEY = "rzppoz_study_v1", EXAM_KEY = "rzppoz_exam_v1";
+  const lsGet = k => { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } };
+  const lsSet = (k, v) => { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
+  function saveStudy() {
+    if (!study.active || !study.list.length) return;
+    lsSet(STUDY_KEY, { ids: study.list.map(q => q.id), idx: study.idx, revealed: !!study.revealed,
+      chosen: study.chosen || null, title: study.title, savedAt: Date.now() });
+  }
+  function saveExam() {
+    if (!exam) return lsSet(EXAM_KEY, null);
+    lsSet(EXAM_KEY, { ids: exam.list.map(q => q.id), idx: exam.idx, answers: exam.answers, timed: !!exam.timed,
+      endsAt: exam.endsAt || null, finished: !!exam.finished, score: exam.score || null, savedAt: Date.now() });
+  }
+  function dropStudy() { study = { list: [], idx: 0, revealed: false, title: "", active: false }; lsSet(STUDY_KEY, null); }
+  function dropExam() { if (exam && exam.tId) clearInterval(exam.tId); exam = null; lsSet(EXAM_KEY, null); }
+
+  // Pytania z serwera (id „c…") mogą być w zapisanej sesji – zanim je wczytamy, nie przywracamy na siłę
+  let cloudSettled = false;
+  const cloudPending = () => !!(window.Cloud && window.Cloud.configured && !cloudSettled);
+  const hydrate = ids => (ids || []).map(id => BY_ID[id]).filter(Boolean);
+
+  // Przywraca zapisany egzamin (ma pierwszeństwo – zegar leci) albo naukę. Zwraca true / false / "wait".
+  function restoreSession(what) {
+    const e = what === "study" ? null : lsGet(EXAM_KEY);
+    if (e && e.ids) {
+      const list = hydrate(e.ids);
+      if (list.length < e.ids.length && cloudPending()) return "wait";
+      if (!list.length) lsSet(EXAM_KEY, null);
+      else {
+        exam = { list, idx: Math.min(e.idx || 0, list.length - 1), answers: e.answers || {}, timed: !!e.timed,
+                 endsAt: e.endsAt || null, finished: !!e.finished, score: e.score || null, tId: null };
+        VIEW = "exam"; VIEW_ARG = null;   // utrzymaj „exam", by odświeżenie po zalogowaniu nie nadpisało ekranu
+        if (!exam.finished && exam.timed && exam.endsAt && Date.now() >= exam.endsAt) { finishExam(); return true; }
+        go("exam"); return true;
+      }
+    }
+    if (what === "exam") return false;
+    const s = lsGet(STUDY_KEY);
+    if (s && s.ids) {
+      const list = hydrate(s.ids);
+      if (list.length < s.ids.length && cloudPending()) return "wait";
+      if (!list.length) { lsSet(STUDY_KEY, null); return false; }
+      study = { list, idx: Math.min(s.idx || 0, list.length - 1), revealed: !!s.revealed, chosen: s.chosen || null,
+                title: s.title || "Nauka", active: true };
+      VIEW = "study"; VIEW_ARG = null;
+      if (study.revealed) renderStudyReveal(study.list[study.idx], study.chosen); else renderStudy();
+      return true;
+    }
+    return false;
+  }
+
+  // Paski „Wznów" na ekranie głównym
+  function sessionBanner() {
+    const e = lsGet(EXAM_KEY), s = lsGet(STUDY_KEY), out = [];
+    if (e && e.ids && e.ids.length) {
+      if (e.finished && e.score) {
+        out.push(`<div class="resume"><div>🏁 <b>Wynik ostatniego egzaminu:</b> ${e.score.pts} pkt (${e.score.correct}/${e.ids.length} poprawnych)</div>
+          <div class="btn-row"><button class="btn secondary" data-res="exam">Zobacz</button><button class="btn ghost" data-drop="exam">Zamknij</button></div></div>`);
+      } else {
+        const left = e.timed && e.endsAt ? Math.max(0, Math.round((e.endsAt - Date.now()) / 1000)) : null;
+        const done = Object.keys(e.answers || {}).length;
+        const time = left == null ? "" : (left > 0 ? `, pozostało <b>${fmtTime(left)}</b>` : ", <b>czas minął</b>");
+        out.push(`<div class="resume exam"><div>📝 <b>Niedokończony egzamin</b> — pytanie ${(e.idx || 0) + 1}/${e.ids.length}, odpowiedzi: ${done}${time}</div>
+          <div class="btn-row"><button class="btn" data-res="exam">Wznów</button><button class="btn ghost" data-drop="exam">Porzuć</button></div></div>`);
+      }
+    }
+    if (s && s.ids && s.ids.length) {
+      out.push(`<div class="resume"><div>📚 <b>Niedokończona nauka:</b> ${esc(s.title || "Nauka")} — pytanie ${(s.idx || 0) + 1}/${s.ids.length}</div>
+        <div class="btn-row"><button class="btn" data-res="study">Wznów</button><button class="btn ghost" data-drop="study">Zakończ</button></div></div>`);
+    }
+    return out.join("");
+  }
+  function wireBanner() {
+    app.querySelectorAll("[data-res]").forEach(b => b.onclick = () => {
+      if (restoreSession(b.dataset.res) !== true) { alert("Nie udało się wczytać zapisanej sesji."); renderHome(); }
+    });
+    app.querySelectorAll("[data-drop]").forEach(b => b.onclick = () => {
+      if (b.dataset.drop === "exam") {
+        const e = lsGet(EXAM_KEY);
+        if (e && !e.finished && !confirm("Porzucić niedokończony egzamin?")) return;
+        dropExam();
+      } else dropStudy();
+      renderHome();
+    });
+  }
 
   // ---------- Router ----------
   let VIEW = "home", VIEW_ARG = null;
@@ -163,7 +252,8 @@
   // ---------- Ekran główny ----------
   function renderHome() {
     setTop("Rzeczoznawca PPOŻ", false);
-    exam = null;
+    // egzamin zostaje w pamięci i w zapisie – na ekranie głównym tylko wstrzymujemy odświeżanie zegara
+    if (exam && exam.tId) { clearInterval(exam.tId); exam.tId = null; }
     const doneIds = Object.keys(S.seen).filter(id => BY_ID[id]).length;
     const flagged = Object.keys(S.flagged).filter(id => S.flagged[id] && BY_ID[id]).length;
     const dueCount = srsDue().length;
@@ -181,6 +271,7 @@
           ${CLOUDQ.length ? `<span class="chip">Pytania użytkowników: <b>${CLOUDQ.length}</b></span>` : ""}
         </div>
       </div>
+      ${sessionBanner()}
       <div class="grid">
         ${card("📚", "Nauka", "Wybierz dział, kolejność (po kolei / losowo) i przeglądaj pytania.", "study-setup")}
         ${card("📝", "Egzamin próbny", `Test ${EXAM.count} pytań, ${EXAM.minutes} min, próg zaliczenia ${EXAM.pass} pkt.`, "exam-setup")}
@@ -199,6 +290,7 @@
       </div>
       <p class="footer-note">Materiał pomocniczy do nauki. Zawsze weryfikuj odpowiedzi z aktualnym stanem prawnym.</p>`;
     app.querySelectorAll("[data-go]").forEach(el => el.onclick = () => go(el.dataset.go, el.dataset.arg));
+    wireBanner();
   }
   const card = (ico, h, p, view, arg) =>
     `<div class="menu-card" data-go="${view}" ${arg ? `data-arg="${arg}"` : ""}>
@@ -268,7 +360,7 @@
       const c = scope.slice(4); list = Q.filter(q => q.category === c); title = c;
     } else { list = Q; title = "Nauka"; }
     if (!list.length) { alert("Brak pytań w tym zestawie."); return go("home"); }
-    study = { list, idx: 0, revealed: false, title };
+    study = { list, idx: 0, revealed: false, title, active: true };
     renderStudy();
   }
   function renderStudy() {
@@ -284,12 +376,14 @@
       renderStudyReveal(q, choice);
     });
     wireStudyNav(q);
+    saveStudy();
   }
   function renderStudyReveal(q, choice) {
     // przerysuj z odsłoniętą odpowiedzią, zachowując wybór
     setTop(study.title, true);
     app.innerHTML = questionCard(q, { mode: "study", revealed: true, chosen: choice, index: study.idx + 1, total: study.list.length }) + studyNav(q);
     wireStudyNav(q);
+    saveStudy();
   }
   function studyNav(q) {
     const flagged = !!S.flagged[q.id];
@@ -450,7 +544,7 @@
         <button class="btn" id="b">Do menu</button>`;
       document.getElementById("b").onclick = () => go("home"); return;
     }
-    study = { list: shuffle(due), idx: 0, revealed: false, title: "Powtórki (" + due.length + ")" };
+    study = { list: shuffle(due), idx: 0, revealed: false, title: "Powtórki (" + due.length + ")", active: true };
     renderStudy();
   }
 
@@ -508,8 +602,11 @@
         ? ANSWERED.filter(q => q.isNew)
         : ANSWERED.filter(q => !cat || q.category === cat);
       if (!pool2.length) return alert("Brak objaśnionych pytań w tym dziale.");
+      const prev = lsGet(EXAM_KEY);
+      if (prev && !prev.finished && !confirm("Masz niedokończony egzamin. Rozpocząć nowy i porzucić tamten?")) return;
       const list = shuffle(pool2).slice(0, Math.min(cnt, pool2.length));
-      exam = { list, idx: 0, answers: {}, timed, timeLeft: EXAM.minutes * 60, finished: false, tId: null };
+      exam = { list, idx: 0, answers: {}, timed, endsAt: timed ? Date.now() + EXAM.minutes * 60 * 1000 : null,
+               finished: false, tId: null };
       go("exam");
     };
   }
@@ -517,12 +614,13 @@
   function renderExam() {
     if (!exam) return go("exam-setup");
     if (exam.finished) return renderExamResult();
+    if (exam.timed && timeLeft() <= 0) return finishExam();
     setTop("Egzamin " + (exam.idx + 1) + "/" + exam.list.length, true);
     const q = exam.list[exam.idx];
     const chosen = exam.answers[q.id] || null;
     app.innerHTML = `
       <div class="exam-top">
-        ${exam.timed ? `<span class="timer" id="timer">${fmtTime(exam.timeLeft)}</span>` : ""}
+        ${exam.timed ? `<span class="timer ${timeLeft() <= 60 ? "warn" : ""}" id="timer">${fmtTime(timeLeft())}</span>` : ""}
         <button class="btn ghost" id="finishBtn" style="margin-left:auto">Zakończ i sprawdź</button>
       </div>
       <div class="progress-dots">${exam.list.map((qq, i) =>
@@ -544,14 +642,18 @@
     next.onclick = () => { if (exam.idx < exam.list.length - 1) { exam.idx++; renderExam(); } else finishExam(); };
     document.getElementById("finishBtn").onclick = () => { if (confirm("Zakończyć egzamin i sprawdzić wynik?")) finishExam(); };
     if (exam.timed) startTimer();
+    saveExam();
   }
+  // czas liczony od bezwzględnego końca – przetrwa odświeżenie strony i zamknięcie aplikacji
+  const timeLeft = () => (exam && exam.endsAt) ? Math.max(0, Math.round((exam.endsAt - Date.now()) / 1000)) : 0;
   function startTimer() {
     if (exam.tId) clearInterval(exam.tId);
     exam.tId = setInterval(() => {
-      exam.timeLeft--;
+      if (!exam || exam.finished) return;
+      const left = timeLeft();
       const t = document.getElementById("timer");
-      if (t) { t.textContent = fmtTime(exam.timeLeft); t.classList.toggle("warn", exam.timeLeft <= 60); }
-      if (exam.timeLeft <= 0) { clearInterval(exam.tId); finishExam(); }
+      if (t) { t.textContent = fmtTime(left); t.classList.toggle("warn", left <= 60); }
+      if (left <= 0) { clearInterval(exam.tId); exam.tId = null; finishExam(); }
     }, 1000);
   }
   const fmtTime = s => { const m = Math.floor(s / 60), r = s % 60; return `${String(m).padStart(2, "0")}:${String(r).padStart(2, "0")}`; };
@@ -572,6 +674,7 @@
     S.examsTaken++; if (pts >= EXAM.pass) S.examsPassed++;
     if (S.bestScore == null || pts > S.bestScore) S.bestScore = pts;
     save();
+    saveExam();                     // wynik przetrwa odświeżenie strony
     renderExamResult();
   }
   function renderExamResult() {
@@ -831,10 +934,14 @@
         catch (err) { showMsg("accMsg", err.message, "bad"); }
         busy(b, false);
       };
-      document.getElementById("logout").onclick = async () => {
+      document.getElementById("logout").onclick = async (e) => {
         if (!confirm("Wylogować się? Postęp zostanie na tym urządzeniu.")) return;
-        await flushPush();
-        await C.signOut();
+        const b = e.currentTarget; busy(b, true, "Wylogowuję…");
+        // Wysyłka postępu NIE może blokować wylogowania (to właśnie wisiało) – czekamy najwyżej 1,5 s.
+        await Promise.race([flushPush(), new Promise(r => setTimeout(r, 1500))]);
+        await C.signOut();            // sam ma limit 3 s i czyści sesję w pamięci przeglądarki
+        CLOUDQ = []; rebuild(); paintAcctBtn();
+        go("account");
       };
       return;
     }
@@ -1175,7 +1282,30 @@
   }
   if (acctBtn) acctBtn.onclick = () => go("account");
 
-  if (!fromHash()) go("home");
+  // Przywracanie przerwanej sesji: egzamin ma pierwszeństwo (zegar leci), potem nauka.
+  // Skróty prowadzące do innych ekranów (#akty, #konto, #moje) wygrywają z wznowieniem –
+  // zapisana sesja czeka wtedy na ekranie głównym pod przyciskiem „Wznów".
+  let restorePending = false;
+  function bootStart() {
+    const h = (location.hash || "").replace("#", "").toLowerCase();
+    if (["", "egzamin", "test", "nauka", "nowe"].indexOf(h) >= 0) {
+      const r = restoreSession();
+      if (r === true) return;
+      if (r === "wait") {
+        // sesja zawiera pytania z serwera – poczekaj na ich wczytanie, najwyżej 4 s
+        restorePending = true;
+        app.innerHTML = `<div class="intro"><h2>Wczytywanie zapisanej sesji…</h2></div>`;
+        setTimeout(() => {
+          if (!restorePending) return;
+          restorePending = false; cloudSettled = true;
+          if (restoreSession() !== true && !fromHash()) go("home");
+        }, 4000);
+        return;
+      }
+    }
+    if (!fromHash()) go("home");
+  }
+  bootStart();
   window.addEventListener("hashchange", fromHash);
 
   // ---------- Warstwa serwerowa (konta, synchronizacja, własne pytania) ----------
@@ -1190,6 +1320,12 @@
       if (C.user) { await syncQuestions(); await syncDown(); }
       else { CLOUDQ = []; rebuild(); }
       paintAcctBtn();
+      cloudSettled = true;
+      if (restorePending) {                      // sesja czekała na pytania z serwera
+        restorePending = false;
+        if (restoreSession() !== true && !fromHash()) go("home");
+        return;
+      }
       if (LIVE.indexOf(VIEW) >= 0) go(VIEW, VIEW_ARG);
     });
     C.init();

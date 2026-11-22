@@ -39,7 +39,14 @@
   }
 
   Cloud.client = LIB.createClient(CFG.url, CFG.anonKey, {
-    auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true }
+    auth: {
+      persistSession: true, autoRefreshToken: true, detectSessionInUrl: true,
+      // Bez blokady międzykartowej (navigator.locks). Biblioteka czeka na nią BEZ limitu czasu,
+      // a trzymać ją może inna karta albo zainstalowana apka – stąd wiszące wylogowanie i zapis
+      // postępu. Na jednym urządzeniu uczy się jedna osoba, więc równoległe odświeżenie tokenu
+      // w dwóch kartach nie stanowi problemu.
+      lock: async (_name, _acquireTimeout, fn) => await fn()
+    }
   });
 
   // ---------- tłumaczenie komunikatów błędów ----------
@@ -108,6 +115,7 @@
       // sesję początkową obsłużyliśmy już wyżej; odświeżenie tokenu nic nie zmienia
       if (event === "INITIAL_SESSION") return;
       if (event === "TOKEN_REFRESHED" && Cloud.user) return;
+      if (event === "SIGNED_OUT" && !Cloud.user) return;   // Cloud.signOut już wyemitował "logout"
       setTimeout(async () => {
         try { await loadIdentity(session); } catch (e) { Cloud.lastError = human(e); }
         emit(Cloud.user ? "login" : "logout");
