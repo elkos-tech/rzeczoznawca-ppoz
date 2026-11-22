@@ -1,0 +1,13 @@
+# pliki tymczasowe
+*.tmp
+*.bak
+~$*
+.DS_Store
+Thumbs.db
+
+# robocze pliki generowania klucza odpowiedzi (nie są potrzebne na serwerze)
+answers_data/__pycache__/
+
+# UWAGA: cloud-config.js JEST publikowany celowo.
+# Klucz "anon public" Supabase jest przeznaczony do umieszczania w kodzie strony.
+# Nigdy nie wpisuj tam klucza "service_role".

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Klasyfikacja pożarowa budynków – infografika</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #fff; }
+  body { font-family: "Segoe UI", Arial, Helvetica, sans-serif; color: #1f2430; font-size: 10.5pt; line-height: 1.3; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .page { width: 210mm; height: 297mm; padding: 10mm 12mm 12mm 12mm; page-break-after: always; position: relative; overflow: hidden; }
+  .page:last-child { page-break-after: auto; }
+
+  .hdr { display: flex; align-items: center; justify-content: space-between; border-bottom: 3px solid #c8102e; padding-bottom: 4px; margin-bottom: 6px; }
+  .hdr h1 { margin: 0; font-size: 16.5pt; letter-spacing: .2px; }
+  .hdr h1 small { display: block; font-size: 8.4pt; font-weight: 500; color: #5b6475; margin-top: 1px; }
+  .hdr .no { font-size: 8.5pt; color: #5b6475; text-align: right; white-space: nowrap; margin-left: 10px; }
+  .hdr .no b { display: block; font-size: 15pt; color: #c8102e; }
+  .foot { position: absolute; bottom: 5mm; left: 12mm; right: 12mm; font-size: 7.3pt; color: #7a8294; border-top: 1px solid #d9dde6; padding-top: 3px; display: flex; justify-content: space-between; gap: 10px; }
+
+  h2 { font-size: 11.5pt; margin: 7px 0 4px; color: #c8102e; text-transform: uppercase; letter-spacing: .4px; }
+  h2 .par { font-weight: 500; color: #5b6475; text-transform: none; letter-spacing: 0; font-size: 8.8pt; margin-left: 6px; }
+  p { margin: 3px 0; }
+  .note { font-size: 8.4pt; color: #3d4556; background: #f3f5f9; border-left: 3px solid #9aa3b5; padding: 4px 7px; margin: 5px 0; }
+  .warn { border-left-color: #c8102e; background: #fdf1f2; }
+  .tip  { border-left-color: #1a7f4b; background: #eef8f1; }
+  .grid { display: grid; gap: 6px; }
+  .g3 { grid-template-columns: repeat(3, 1fr); }
+
+  .card { border: 1.5px solid #d9dde6; border-radius: 6px; padding: 6px 8px; }
+  .card h3 { margin: 0 0 3px; font-size: 11.5pt; display: flex; align-items: center; gap: 6px; }
+  .card h3 .tag { display: inline-block; padding: 1px 8px; border-radius: 4px; color: #fff; font-size: 12pt; font-weight: 800; }
+  .card ul { margin: 2px 0 0 0; padding-left: 14px; font-size: 8.8pt; }
+  .card li { margin: 1px 0; }
+  .zl { border-color: #1f5fbf; } .zl .tag { background: #1f5fbf; }
+  .pm { border-color: #d9711c; } .pm .tag { background: #d9711c; }
+  .in { border-color: #1a7f4b; } .in .tag { background: #1a7f4b; }
+  .sub { font-size: 8.3pt; color: #5b6475; }
+
+  .zlcat { display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; margin-top: 4px; }
+  .zlcat div { border: 1.5px solid #1f5fbf; border-radius: 5px; padding: 4px 6px; font-size: 8.3pt; }
+  .zlcat b { display: block; font-size: 11pt; color: #1f5fbf; margin-bottom: 1px; }
+  .zlcat div b.inl { display: inline; font-size: inherit; color: inherit; }
+
+  .heights { display: grid; grid-template-columns: 1.7fr 1fr 1fr 1fr 1fr; gap: 6px; align-items: end; margin-top: 4px; }
+  .hb { border-radius: 6px 6px 0 0; color: #fff; padding: 6px 7px; display: flex; flex-direction: column; justify-content: flex-end; }
+  .hb b { font-size: 15pt; }
+  .hb span { font-size: 8.4pt; line-height: 1.25; }
+  .hN  { background: #6aa84f; min-height: 52px; }
+  .hSW { background: #e0a500; min-height: 78px; }
+  .hW  { background: #e0702a; min-height: 106px; }
+  .hWW { background: #c8102e; min-height: 134px; }
+  .hlab { font-size: 8.3pt; color: #3d4556; align-self: stretch; display: flex; flex-direction: column; justify-content: flex-end; gap: 3px; }
+  .hlab div { border-top: 1px dashed #9aa3b5; padding-top: 2px; }
+
+  table { border-collapse: collapse; width: 100%; font-size: 8.8pt; }
+  th, td { border: 1px solid #c5cad6; padding: 3px 5px; text-align: center; vertical-align: middle; }
+  th { background: #e9edf4; font-weight: 700; }
+  td.l, th.l { text-align: left; }
+  tr.sep th { background: #dfe5ef; }
+  .cA { background: #c8102e; color: #fff; font-weight: 800; }
+  .cB { background: #e0702a; color: #fff; font-weight: 800; }
+  .cC { background: #e0a500; color: #1f2430; font-weight: 800; }
+  .cD { background: #9bcc7a; color: #1f2430; font-weight: 800; }
+  .cE { background: #d6e9c9; color: #1f2430; font-weight: 800; }
+  .cX { background: #e5e7ec; color: #7a8294; font-weight: 700; }
+  .pill { padding: 1px 7px; border-radius: 3px; }
+
+  .rei { display: grid; grid-template-columns: repeat(3,1fr); gap: 6px; margin: 4px 0; }
+  .rei div { border: 1.5px solid #d9dde6; border-radius: 6px; padding: 5px 8px; font-size: 8.4pt; }
+  .rei b { font-size: 19pt; color: #c8102e; display: block; line-height: 1; margin-bottom: 2px; }
+  .rei i { display: block; font-style: normal; font-weight: 700; }
+
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .steps { counter-reset: s; margin: 4px 0 0; padding: 0; list-style: none; }
+  .steps li { counter-increment: s; position: relative; padding-left: 26px; margin: 3px 0; font-size: 9pt; }
+  .steps li::before { content: counter(s); position: absolute; left: 0; top: 0; width: 19px; height: 19px; border-radius: 50%; background: #c8102e; color: #fff; font-weight: 800; font-size: 10pt; text-align: center; line-height: 19px; }
+  .kv { font-size: 8.5pt; }
+  .kv td { text-align: left; }
+  .kv td:first-child { font-weight: 700; white-space: nowrap; background: #f3f5f9; }
+  ul.plain { margin: 2px 0; padding-left: 14px; font-size: 8.8pt; }
+  ul.plain li { margin: 1.5px 0; }
+
+  .roomy h2 { font-size: 12.5pt; margin-top: 10px; }
+  .roomy p { font-size: 11pt; }
+  .roomy .note { font-size: 9.4pt; padding: 6px 8px; margin: 7px 0; }
+  .roomy .card ul, .roomy .card .sub { font-size: 9.6pt; }
+  .roomy .card h3 { font-size: 12.5pt; }
+  .roomy .zlcat div { font-size: 9.3pt; padding: 6px 7px; }
+  .roomy .zlcat b { font-size: 12pt; }
+  .roomy .hlab { font-size: 8.8pt; }
+  .roomy .hb span { font-size: 9.4pt; }
+  .roomy .hN { min-height: 62px; } .roomy .hSW { min-height: 92px; } .roomy .hW { min-height: 124px; } .roomy .hWW { min-height: 156px; }
+  .roomy table { font-size: 9.6pt; }
+  .roomy th, .roomy td { padding: 4px 6px; }
+  .roomy .sub { font-size: 9pt; }
+  .roomy .rei div { font-size: 9.4pt; padding: 7px 9px; }
+  .roomy .rei b { font-size: 22pt; }
+  table.nw td { white-space: nowrap; }
+  h2 .par { white-space: nowrap; }
+
+  .big td, .big th { padding: 3px 6px; font-size: 9.2pt; }
+  .tight .card ul { display: none; }
+  .tight .card { padding: 4px 8px; }
+  .tight .cards2 b { font-size: 13pt; }
+  .tight .cards2 div { padding: 3px 6px; font-size: 8.2pt; }
+  .tight h2 { margin-top: 5px; }
+  .tight .note { margin: 4px 0; padding: 3px 7px; }
+  .tight table.lens td, .tight table.lens th { padding: 2px 6px; font-size: 8.8pt; }
+  .tight .lens td:nth-child(2), .tight .lens td:nth-child(3) { font-size: 9.8pt; }
+  .hi { background: #fff4d6; font-weight: 700; }
+  .cards2 { display: grid; grid-template-columns: repeat(4,1fr); gap: 6px; margin-top: 4px; }
+  .cards2 div { border: 1.5px solid #d9dde6; border-radius: 6px; padding: 5px 7px; font-size: 8.6pt; text-align: center; }
+  .cards2 b { display: block; font-size: 17pt; color: #c8102e; line-height: 1.1; }
+  .cards2 i { display: block; font-style: normal; font-weight: 700; margin-bottom: 2px; }
+  .lens td:nth-child(2), .lens td:nth-child(3) { font-weight: 700; font-size: 10.5pt; }
+</style>
+</head>
+<body>
+
+<!-- ================= STRONA 1 ================= -->
+<div class="page roomy">
+  <div class="hdr">
+    <h1>Klasyfikacja pożarowa budynków<small>Rozporządzenie w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie (WT), Dział VI „Bezpieczeństwo pożarowe”</small></h1>
+    <div class="no">strona<b>1 / 6</b></div>
+  </div>
+
+  <h2>1. Podział budynków ze względu na przeznaczenie <span class="par">§ 209 WT</span></h2>
+  <div class="grid g3">
+    <div class="card zl">
+      <h3><span class="tag">ZL</span> zagrożenia ludzi</h3>
+      <div class="sub">mieszkalne, zamieszkania zbiorowego, użyteczności publicznej</div>
+      <ul>
+        <li>charakteryzowane <b>kategorią zagrożenia ludzi</b> ZL I … ZL V</li>
+        <li>strefa zaliczona do kilku kategorii spełnia wymagania <b>każdej</b> z nich (ust. 5)</li>
+      </ul>
+    </div>
+    <div class="card pm">
+      <h3><span class="tag">PM</span> produkcyjne i magazynowe</h3>
+      <div class="sub">charakteryzowane gęstością obciążenia ogniowego Q [MJ/m²]</div>
+      <ul>
+        <li>także: <b>garaże</b>, hydrofornie, kotłownie, węzły cieplne, rozdzielnie elektryczne, stacje trafo, centrale telefoniczne (ust. 3)</li>
+      </ul>
+    </div>
+    <div class="card in">
+      <h3><span class="tag">IN</span> inwentarskie</h3>
+      <div class="sub">służące do hodowli inwentarza</div>
+      <ul>
+        <li>także budynki w zabudowie zagrodowej o kubaturze brutto <b>≤ 1500 m³</b>: stodoły, przechowalnie płodów rolnych, gospodarcze (ust. 4)</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>2. Kategorie zagrożenia ludzi <span class="par">§ 209 ust. 2 WT</span></h2>
+  <div class="zlcat">
+    <div><b>ZL I</b>pomieszczenia dla <b class="inl">&gt; 50 osób</b> niebędących stałymi użytkownikami, nieprzeznaczone przede wszystkim dla osób o ograniczonej zdolności poruszania się (sale widowiskowe, handlowe, konferencyjne)</div>
+    <div><b>ZL II</b>przede wszystkim dla ludzi o <b class="inl">ograniczonej zdolności poruszania się</b>: szpitale, żłobki, przedszkola, domy dla osób starszych</div>
+    <div><b>ZL III</b><b class="inl">użyteczności publicznej</b> niezakwalifikowane do ZL I i ZL II (biura, szkoły, urzędy, mniejsze sklepy)</div>
+    <div><b>ZL IV</b><b class="inl">mieszkalne</b> (jedno- i wielorodzinne)</div>
+    <div><b>ZL V</b><b class="inl">zamieszkania zbiorowego</b> niezakwalifikowane do ZL I i ZL II (hotele, internaty, domy studenckie, koszary)</div>
+  </div>
+  <div class="note tip"><b>Mnemotechnika:</b> I = Impreza (tłum &gt; 50), II = Inwalidzi i chorzy (ograniczona mobilność), III = Instytucje (reszta użyteczności publicznej), IV = mIeszkania, V = hotele (zamieszkanie zbiorowe).</div>
+
+  <h2>3. Grupy wysokości budynków <span class="par">§ 8 WT</span></h2>
+  <div class="heights">
+    <div class="hlab">
+      <div><b>wysokość</b> liczona od poziomu terenu przy najniżej położonym wejściu do górnej płaszczyzny stropu lub przekrycia dachu nad najwyższą kondygnacją użytkową (§ 6)</div>
+      <div>kryterium <b>liczby kondygnacji</b> dotyczy tylko budynków <b>mieszkalnych</b> (alternatywa dla metrów)</div>
+    </div>
+    <div class="hb hN"><b>N</b><span>niski<br>≤ 12 m<br>mieszkalne ≤ 4 kond.</span></div>
+    <div class="hb hSW"><b>SW</b><span>średniowysoki<br>&gt; 12 m do 25 m<br>mieszkalne 5–9 kond.</span></div>
+    <div class="hb hW"><b>W</b><span>wysoki<br>&gt; 25 m do 55 m<br>mieszkalne 10–18 kond.</span></div>
+    <div class="hb hWW"><b>WW</b><span>wysokościowy<br>&gt; 55 m<br>(bez kryterium kondygnacji)</span></div>
+  </div>
+  <div class="note"><b>Granice do zapamiętania:</b> 12 m · 25 m · 55 m oraz 4 · 9 · 18 kondygnacji. Przy 25 m pojawia się dodatkowo wymóg niepalnej okładziny elewacji i izolacji (§ 216 ust. 8).</div>
+
+  <h2>4. Klasy odporności pożarowej budynku <span class="par">§ 212 ust. 1 WT</span></h2>
+  <p>Pięć klas, od najwyższej do najniższej: <span class="cA pill">A</span> <span class="cB pill">B</span> <span class="cC pill">C</span> <span class="cD pill">D</span> <span class="cE pill">E</span>. Klasa budynku (litera) przekłada się na klasy odporności <b>ogniowej</b> elementów (R, E, I w minutach) wg § 216 i na klasy elementów <b>oddzielenia przeciwpożarowego</b> wg § 232 (strona 3).</p>
+  <div class="note warn"><b>Nie mylić:</b> klasa odporności <b>pożarowej</b> dotyczy <b>budynku</b> (litery A–E). Klasa odporności <b>ogniowej</b> dotyczy <b>elementu</b> (np. REI 120, EI 60, R 30).</div>
+
+  <div class="foot"><span>Materiał do nauki na egzamin rzeczoznawcy ds. zabezpieczeń ppoż. Wartości zweryfikowane z tekstem jednolitym WT (Dz.U. 2022 poz. 1225).</span><span>RzeczoznawcaPPOZ · 11.2026</span></div>
+</div>
+
+<!-- ================= STRONA 2 ================= -->
+<div class="page">
+  <div class="hdr">
+    <h1>Wymagana klasa odporności pożarowej budynku<small>§ 212 WT: zależnie od kategorii ZL lub gęstości obciążenia ogniowego oraz od wysokości</small></h1>
+    <div class="no">strona<b>2 / 6</b></div>
+  </div>
+
+  <h2>5. Budynki ZL <span class="par">§ 212 ust. 2 WT</span></h2>
+  <table>
+    <tr><th class="l">Budynek</th><th>ZL I</th><th>ZL II</th><th>ZL III</th><th>ZL IV</th><th>ZL V</th></tr>
+    <tr><td class="l">niski (N)</td><td class="cB">B</td><td class="cB">B</td><td class="cC">C</td><td class="cD">D</td><td class="cC">C</td></tr>
+    <tr><td class="l">średniowysoki (SW)</td><td class="cB">B</td><td class="cB">B</td><td class="cB">B</td><td class="cC">C</td><td class="cB">B</td></tr>
+    <tr><td class="l">wysoki (W)</td><td class="cB">B</td><td class="cB">B</td><td class="cB">B</td><td class="cB">B</td><td class="cB">B</td></tr>
+    <tr><td class="l">wysokościowy (WW)</td><td class="cA">A</td><td class="cA">A</td><td class="cA">A</td><td class="cB">B</td><td class="cA">A</td></tr>
+  </table>
+  <div class="note tip"><b>Jak zapamiętać:</b> ZL IV (mieszkalne) jest zawsze o jedną klasę łagodniej: D, C, B, B. ZL I i ZL II: B, B, B, A. ZL III i ZL V zachowują się identycznie: C, B, B, A. W budynku wysokim (W) wszystko jest „B”.</div>
+
+  <div class="two">
+    <div>
+      <h2>5a. Obniżenie klasy dla ZL I–III <span class="par">§ 212 ust. 3</span></h2>
+      <table>
+        <tr><th class="l">Liczba kondygnacji nadziemnych</th><th>ZL I</th><th>ZL II</th><th>ZL III</th></tr>
+        <tr><td class="l">1</td><td class="cD">D</td><td class="cD">D</td><td class="cD">D</td></tr>
+        <tr><td class="l">2 *)</td><td class="cC">C</td><td class="cC">C</td><td class="cD">D</td></tr>
+      </table>
+      <p class="sub">*) gdy strop nad pierwszą kondygnacją nadziemną jest na wysokości ≤ 9 m nad poziomem terenu.</p>
+    </div>
+    <div>
+      <h2>5b. Inne obniżenia i zasady <span class="par">§ 212, 214, 215</span></h2>
+      <ul class="plain">
+        <li><b>Tryskacze</b> (§ 214): klasa o jedną niżej, a dla budynku jednokondygnacyjnego klasa „E”. <b>Wyjątek:</b> ZL II oraz wielokondygnacyjne W i WW.</li>
+        <li><b>§ 215:</b> jednokondygnacyjny PM z Q &gt; 500 MJ/m² może mieć klasę „E”, jeśli elementy NRO i samoczynne oddymianie w strefach &gt; 1000 m².</li>
+        <li>Obniżenie klasy <b>nie zwalnia</b> z pierwotnej klasy elementów oddzielenia ppoż. wg § 232 (§ 215 ust. 2).</li>
+        <li>Część budynku nie może mieć klasy niższej niż część nad nią, a część podziemna nie niżej niż <b>„C”</b> (§ 212 ust. 7).</li>
+        <li>Kondygnacje o różnych kategoriach: klasę ustala się <b>odrębnie</b> dla każdej kondygnacji (ust. 6).</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>6. Budynki PM i IN <span class="par">§ 212 ust. 4 WT</span></h2>
+  <table>
+    <tr><th class="l" rowspan="2">Maks. gęstość obciążenia ogniowego strefy pożarowej Q [MJ/m²]</th><th rowspan="2">Budynek o jednej kondygnacji nadziemnej<br>(bez ograniczenia wysokości)</th><th colspan="4">Budynek wielokondygnacyjny</th></tr>
+    <tr class="sep"><th>niski (N)</th><th>średniowysoki (SW)</th><th>wysoki (W)</th><th>wysokościowy (WW)</th></tr>
+    <tr><td class="l">Q ≤ 500</td><td class="cE">E</td><td class="cD">D</td><td class="cC">C</td><td class="cB">B</td><td class="cB">B</td></tr>
+    <tr><td class="l">500 &lt; Q ≤ 1000</td><td class="cD">D</td><td class="cD">D</td><td class="cC">C</td><td class="cB">B</td><td class="cB">B</td></tr>
+    <tr><td class="l">1000 &lt; Q ≤ 2000</td><td class="cC">C</td><td class="cC">C</td><td class="cC">C</td><td class="cB">B</td><td class="cB">B</td></tr>
+    <tr><td class="l">2000 &lt; Q ≤ 4000</td><td class="cB">B</td><td class="cB">B</td><td class="cB">B</td><td class="cX">*</td><td class="cX">*</td></tr>
+    <tr><td class="l">Q &gt; 4000</td><td class="cA">A</td><td class="cA">A</td><td class="cA">A</td><td class="cX">*</td><td class="cX">*</td></tr>
+  </table>
+  <p class="sub">* zgodnie z § 228 ust. 1 takie budynki nie mogą występować (brak dopuszczalnej powierzchni strefy pożarowej).</p>
+  <div class="note tip"><b>Jak zapamiętać:</b> kolumna „jedna kondygnacja” to pełna drabinka E, D, C, B, A co próg Q. Budynek niski (N) różni się tylko pierwszym wierszem (D zamiast E). SW to „C” aż do 2000, potem B i A. W i WW to „B” do 2000 MJ/m², wyżej zabronione.</div>
+
+  <h2>7. Budynki zwolnione z § 212 i § 216 <span class="par">§ 213 WT</span></h2>
+  <ul class="plain">
+    <li>do <b>3 kondygnacji</b> nadziemnych: mieszkalne jednorodzinne, zagrodowe, rekreacji indywidualnej (z zastrzeżeniem § 217 ust. 2: ściana między segmentami REI 60), mieszkalne i administracyjne w gospodarstwach leśnych</li>
+    <li>wolnostojące do <b>2 kondygnacji</b>: turystyka i wypoczynek ≤ 1500 m³, gospodarcze w zabudowie jednorodzinnej, zagrodowej i leśnej, usługowo-handlowe lub do wykonywania zawodu ≤ 1000 m³ (także z częścią mieszkalną)</li>
+    <li>wolnostojące <b>garaże ≤ 2 stanowiska</b>, budynki <b>inwentarskie ≤ 1500 m³</b></li>
+    <li>dla tych budynków elementy oddzielenia ppoż. nie niżej niż dla klasy „D” i „E” (§ 232 ust. 5)</li>
+  </ul>
+
+  <div class="foot"><span>Legenda kolorów klas: <span class="cA pill">A</span> <span class="cB pill">B</span> <span class="cC pill">C</span> <span class="cD pill">D</span> <span class="cE pill">E</span>. Im ciemniejszy kolor, tym wyższe wymagania.</span><span>RzeczoznawcaPPOZ · 11.2026</span></div>
+</div>
+
+<!-- ================= STRONA 3 ================= -->
+<div class="page roomy">
+  <div class="hdr">
+    <h1>Odporność ogniowa elementów i oddzielenia przeciwpożarowe<small>§ 216 i § 232 WT: od klasy budynku (litera) do klasy elementu (minuty)</small></h1>
+    <div class="no">strona<b>3 / 6</b></div>
+  </div>
+
+  <h2>8. Oznaczenia klas odporności ogniowej <span class="par">PN-EN 13501-2</span></h2>
+  <div class="rei">
+    <div><b>R</b><i>nośność ogniowa</i>zdolność elementu do przenoszenia obciążeń w czasie pożaru (konstrukcja nośna, stropy, dach)</div>
+    <div><b>E</b><i>szczelność ogniowa</i>brak przenikania płomieni i gorących gazów na stronę nienagrzewaną (ściany, drzwi, przekrycie dachu)</div>
+    <div><b>I</b><i>izolacyjność ogniowa</i>ograniczenie wzrostu temperatury na stronie nienagrzewanej (ściany, stropy, drzwi, przepusty)</div>
+  </div>
+  <p class="sub">Liczba = czas w minutach (15, 30, 60, 120, 240). Dodatkowo: <b>(o↔i)</b> ściana zewnętrzna badana od wewnątrz i od zewnątrz, <b>S</b> dymoszczelność (drzwi), <b>C</b> samozamykanie. Element nośny będący przegrodą musi spełniać także R (przypis 1 do tabeli § 216).</p>
+
+  <h2>9. Klasa odporności ogniowej elementów budynku <span class="par">§ 216 ust. 1 WT</span></h2>
+  <table class="nw">
+    <tr><th class="l">Klasa odporności pożarowej budynku</th><th>główna konstrukcja nośna</th><th>konstrukcja dachu</th><th>strop ¹⁾</th><th>ściana zewnętrzna ¹⁾ ²⁾</th><th>ściana wewnętrzna ¹⁾</th><th>przekrycie dachu ³⁾</th></tr>
+    <tr><td class="cA">A</td><td>R 240</td><td>R 30</td><td>REI 120</td><td>EI 120 (o↔i)</td><td>EI 60</td><td>RE 30</td></tr>
+    <tr><td class="cB">B</td><td>R 120</td><td>R 30</td><td>REI 60</td><td>EI 60 (o↔i)</td><td>EI 30 ⁴⁾</td><td>RE 30</td></tr>
+    <tr><td class="cC">C</td><td>R 60</td><td>R 15</td><td>REI 60</td><td>EI 30 (o↔i)</td><td>EI 15 ⁴⁾</td><td>RE 15</td></tr>
+    <tr><td class="cD">D</td><td>R 30</td><td>(–)</td><td>REI 30</td><td>EI 30 (o↔i)</td><td>(–)</td><td>(–)</td></tr>
+    <tr><td class="cE">E</td><td>(–)</td><td>(–)</td><td>(–)</td><td>(–)</td><td>(–)</td><td>(–)</td></tr>
+  </table>
+  <p class="sub">¹⁾ przegroda będąca częścią głównej konstrukcji nośnej spełnia też R jak w kol. 2 i 3 · ²⁾ dotyczy pasa międzykondygnacyjnego wraz z połączeniem ze stropem · ³⁾ nie dotyczy świetlików, naświetli, okien połaciowych, gdy otwory ≤ 20 % połaci · ⁴⁾ ściany komór zsypu EI 60, drzwi komór zsypu EI 30 · (–) nie stawia się wymagań.</p>
+  <div class="note tip"><b>Jak zapamiętać:</b> konstrukcja nośna R 240 / 120 / 60 / 30 (każda klasa niżej = połowa). Strop: REI 120, potem dwa razy 60, potem 30. Ściana zewnętrzna: EI 120 / 60 / 30 / 30. Ściana wewnętrzna: EI 60 / 30 / 15 / brak. Dach: R 30 / 30 / 15 i przekrycie RE 30 / 30 / 15.</div>
+  <div class="note">Elementy powinny być <b>NRO</b> (nierozprzestrzeniające ognia). <b>SRO</b> dopuszczone m.in. w jednokondygnacyjnych ZL IV i PM z Q ≤ 500 MJ/m², w ścianach i dachu niskiego PM z Q ≤ 1000 MJ/m², w ścianach zewnętrznych niskiego ZL IV (§ 216 ust. 2). Powyżej <b>25 m</b> okładzina elewacji, jej mocowanie i izolacja ściany zewnętrznej muszą być <b>niepalne</b> (ust. 8).</div>
+
+  <h2>10. Elementy oddzielenia przeciwpożarowego <span class="par">§ 232 ust. 4 WT</span></h2>
+  <table class="nw">
+    <tr><th class="l" rowspan="2">Klasa odporności pożarowej budynku</th><th colspan="2">elementy oddzielenia ppoż.</th><th rowspan="2">drzwi ppoż. lub inne zamknięcia ppoż.</th><th colspan="2">drzwi z przedsionka ppoż.</th></tr>
+    <tr class="sep"><th>ściany i stropy (z wyjątkiem stropów w ZL)</th><th>stropy w ZL</th><th>na korytarz i do pomieszczenia</th><th>na klatkę schodową *)</th></tr>
+    <tr><td class="cA">A</td><td><b>REI 240</b></td><td>REI 120</td><td>EI 120</td><td>EI 60</td><td>E 60</td></tr>
+    <tr><td><span class="cB pill">B</span> i <span class="cC pill">C</span></td><td><b>REI 120</b></td><td>REI 60</td><td>EI 60</td><td>EI 30</td><td>E 30</td></tr>
+    <tr><td><span class="cD pill">D</span> i <span class="cE pill">E</span></td><td><b>REI 60</b></td><td>REI 30</td><td>EI 30</td><td>EI 15</td><td>E 15</td></tr>
+  </table>
+  <p class="sub">*) dopuszcza się osadzenie tych drzwi w ścianie o klasie z kol. 6, znajdującej się między przedsionkiem a klatką schodową.</p>
+  <div class="note tip"><b>Jak zapamiętać:</b> tylko <b>3 wiersze</b> (A · B+C · D+E) i w każdym wierszu idąc w prawo wartości maleją o połowę: 240, 120, 120, 60, 60. Ściana oddzielenia ppoż. = <b>2 × strop ZL = 2 × drzwi</b>. Drzwi ppoż. mają zawsze połowę tego, co ściana.</div>
+
+  <div class="foot"><span>Przy obniżeniu klasy budynku (tryskacze § 214, § 215) klasa elementów oddzielenia ppoż. pozostaje jak dla klasy pierwotnej (§ 215 ust. 2).</span><span>RzeczoznawcaPPOZ · 11.2026</span></div>
+</div>
+
+<!-- ================= STRONA 4 ================= -->
+<div class="page">
+  <div class="hdr">
+    <h1>Oddzielenia ppoż., strefy pożarowe i ścieżka decyzyjna<small>§ 226–235 WT oraz algorytm ustalania klasy budynku krok po kroku</small></h1>
+    <div class="no">strona<b>4 / 6</b></div>
+  </div>
+
+  <div class="two">
+    <div>
+      <h2>11. Oddzielenia ppoż. <span class="par">§ 232, 234, 235</span></h2>
+      <table class="kv">
+        <tr><td>materiał</td><td>ściany i stropy oddzielenia ppoż. z materiałów <b>niepalnych</b></td></tr>
+        <tr><td>otwory w ścianie</td><td>łącznie ≤ <b>15 %</b> powierzchni ściany (nie dotyczy dróg manewrowych w garażu)</td></tr>
+        <tr><td>otwory w stropie</td><td>łącznie ≤ <b>0,5 %</b> powierzchni stropu</td></tr>
+        <tr><td>przeszklenia</td><td>luksfery, cegła szklana ≤ <b>10 %</b> ściany: REI 240 → EI 120 / E 120, REI 120 → EI 60 / E 60, REI 60 → EI 30 / E 30 (obudowa drogi ewakuacyjnej / inna)</td></tr>
+        <tr><td>przedsionek ppoż.</td><td>rzut ≥ <b>1,4 × 1,4 m</b>, ściany i strop <b>EI 60</b> niepalne, drzwi, wentylacja co najmniej grawitacyjna</td></tr>
+        <tr><td>przepusty</td><td>klasa <b>EI</b> jak element oddzielenia (§ 234 ust. 1). Poza oddzieleniami: przepusty ø &gt; 4 cm w przegrodach ≥ EI 60 lub REI 60 pomieszczenia zamkniętego</td></tr>
+        <tr><td>fundament</td><td>ściana oddzielenia ppoż. na własnym fundamencie lub na stropie o konstrukcji nośnej ≥ klasa ściany</td></tr>
+        <tr><td>elewacja</td><td>wysunięcie ≥ <b>0,3 m</b> poza lico ściany zewnętrznej albo pionowy pas niepalny <b>2 m, EI 60</b></td></tr>
+        <tr><td>dach RO</td><td>wyprowadzenie ≥ <b>0,3 m</b> ponad pokrycie albo pas niepalny <b>1 m, EI 60</b> pod pokryciem</td></tr>
+        <tr><td>świetliki, klapy</td><td>ściana bliżej niż <b>5 m</b> od nich: wyprowadzić ≥ 0,3 m ponad ich górną krawędź (nie dotyczy świetlików nieotwieranych ≥ E 30)</td></tr>
+      </table>
+    </div>
+    <div>
+      <h2>12. Strefy pożarowe (skrót) <span class="par">§ 227, 228 · pełne tabele na str. 5</span></h2>
+      <table>
+        <tr><th class="l">ZL</th><th>1 kond.</th><th>N</th><th>SW</th><th>W, WW</th></tr>
+        <tr><td class="l">ZL I, III, IV, V</td><td>10 000</td><td>8 000</td><td>5 000</td><td>2 500</td></tr>
+        <tr><td class="l">ZL II</td><td>8 000</td><td>5 000</td><td>3 500</td><td>2 000</td></tr>
+      </table>
+      <table style="margin-top:5px">
+        <tr><th class="l">PM pozostałe, Q [MJ/m²]</th><th>1 kond.</th><th>N, SW</th><th>W, WW</th></tr>
+        <tr><td class="l">Q &gt; 4000</td><td>2 000</td><td>1 000</td><td class="cX">*</td></tr>
+        <tr><td class="l">2000 &lt; Q ≤ 4000</td><td>4 000</td><td>2 000</td><td class="cX">*</td></tr>
+        <tr><td class="l">1000 &lt; Q ≤ 2000</td><td>8 000</td><td>4 000</td><td>1 000</td></tr>
+        <tr><td class="l">500 &lt; Q ≤ 1000</td><td>15 000</td><td>8 000</td><td>2 500</td></tr>
+        <tr><td class="l">Q ≤ 500</td><td>20 000</td><td>10 000</td><td>5 000</td></tr>
+      </table>
+      <p class="sub">Strefy PM z pomieszczeniem zagrożonym wybuchem (od Q &gt; 4000 do Q ≤ 500): 1 kond. 1000 / 2000 / 4000 / 6000 / 8000, N+SW * / * / 1000 / 2000 / 3000, W+WW * / * / * / 500 / 1000. Część podziemna: 50 % wartości z tabel.</p>
+      <div class="note" style="margin-top:5px"><b>Powiększenia:</b> ZL (§ 227 ust. 4) tryskacze +100 %, oddymianie z detekcją +100 %, razem <b>+200 %</b> (nie dla wielokondygnacyjnych W i WW). PM (§ 229) tryskacze +100 %, oddymianie +50 %, razem <b>+150 %</b>. § 230: PM jednokondygnacyjny lub ostatnia kondygnacja +100 % przy NRO i oddymianiu bez pomieszczeń zagrożonych wybuchem, a z tryskaczami i oddymianiem w jednokondygnacyjnym bez ograniczeń (bez garaży).</div>
+    </div>
+  </div>
+
+  <h2>13. Ścieżka decyzyjna: jak ustalić klasę budynku i klasy elementów</h2>
+  <div class="two">
+    <ol class="steps">
+      <li><b>Przeznaczenie</b> → ZL (która kategoria I–V?), PM (jakie Q w MJ/m²?) czy IN (§ 209). Części wydzielone ścianami oddzielenia ppoż. od fundamentu po dach to odrębne budynki (§ 210).</li>
+      <li><b>Zwolnienia</b> → czy budynek jest na liście § 213? Jeśli tak: brak wymagań § 212 i § 216, oddzielenia ppoż. jak dla „D” i „E”.</li>
+      <li><b>Wysokość</b> → N / SW / W / WW według § 8 (metry albo kondygnacje dla mieszkalnych). Dla PM i IN sprawdź też, czy budynek jest jednokondygnacyjny.</li>
+      <li><b>Klasa budynku</b> → tabela § 212 ust. 2 (ZL) lub ust. 4 (PM, IN). Kondygnacje różnych kategorii liczone odrębnie, część podziemna nie niżej niż „C”.</li>
+    </ol>
+    <ol class="steps" style="counter-reset: s 4">
+      <li><b>Obniżenia</b> → § 212 ust. 3 (ZL I–III o 1–2 kondygnacjach), § 214 (tryskacze), § 215 (PM jednokondygnacyjny). Pamiętaj o wyjątkach: ZL II, wielokondygnacyjne W i WW.</li>
+      <li><b>Elementy budynku</b> → tabela § 216: główna konstrukcja nośna R, strop REI, ściany EI, dach R i RE, plus NRO/SRO.</li>
+      <li><b>Oddzielenia ppoż.</b> → tabela § 232 ust. 4 wg klasy <b>pierwotnej</b> (sprzed obniżenia): ściany REI 240/120/60, drzwi EI 120/60/30.</li>
+      <li><b>Strefy pożarowe</b> → § 227 (ZL) lub § 228 (PM) z powiększeniami § 227 ust. 4, § 229, § 230 (str. 5). Potem <b>drogi ewakuacyjne</b>: przejścia § 237 i dojścia § 256 (str. 6).</li>
+    </ol>
+  </div>
+  <div class="note warn"><b>Najczęstsze pułapki egzaminacyjne:</b> „klasa pożarowa” to litera budynku, „klasa ogniowa” to minuty elementu · ZL II nigdy nie korzysta z obniżenia za tryskacze · wielokondygnacyjne W i WW nie korzystają z obniżenia za tryskacze ani z powiększenia stref ZL · dla PM powyżej 2000 MJ/m² budynki W i WW są niedopuszczalne · kryterium kondygnacji w § 8 dotyczy tylko budynków mieszkalnych · wiersze „B i C” oraz „D i E” w tabeli oddzieleń ppoż. są wspólne.</div>
+
+  <div class="foot"><span>Źródło: rozporządzenie Ministra Infrastruktury z 12.04.2002 r. (t.j. Dz.U. 2022 poz. 1225): § 6, § 8, § 209–216, § 226–235.</span><span>RzeczoznawcaPPOZ · 11.2026</span></div>
+</div>
+
+<!-- ================= STRONA 5 ================= -->
+<div class="page tight">
+  <div class="hdr">
+    <h1>Dopuszczalne powierzchnie stref pożarowych<small>§ 226–231 WT: strefy ZL, PM (z pomieszczeniem zagrożonym wybuchem i bez) oraz IN, w m²</small></h1>
+    <div class="no">strona<b>5 / 6</b></div>
+  </div>
+
+  <h2>14. Co to jest strefa pożarowa <span class="par">§ 226 WT</span></h2>
+  <ul class="plain">
+    <li>budynek albo jego część oddzielona od innych budynków lub części <b>elementami oddzielenia ppoż.</b> (§ 232 ust. 4) bądź <b>pasami wolnego terenu</b> o szerokości nie mniejszej niż dopuszczalne odległości między budynkami (§ 271)</li>
+    <li>strefą może być także <b>kondygnacja</b>, jeżeli klatki schodowe i szyby dźwigowe spełniają § 256 ust. 2. Powierzchnia = <b>powierzchnia wewnętrzna</b> budynku lub części, <b>wliczając antresole</b></li>
+  </ul>
+
+  <h2>15. Strefy ZL <span class="par">§ 227 ust. 1 WT</span></h2>
+  <table class="big">
+    <tr><th class="l" rowspan="2">Kategoria zagrożenia ludzi</th><th rowspan="2">budynek o jednej kondygnacji nadziemnej<br>(bez ograniczenia wysokości)</th><th colspan="3">budynek wielokondygnacyjny</th></tr>
+    <tr class="sep"><th>niski (N)</th><th>średniowysoki (SW)</th><th>wysoki i wysokościowy (W, WW)</th></tr>
+    <tr><td class="l">ZL I, ZL III, ZL IV, ZL V</td><td class="hi">10 000</td><td class="hi">8 000</td><td class="hi">5 000</td><td class="hi">2 500</td></tr>
+    <tr><td class="l">ZL II</td><td class="hi">8 000</td><td class="hi">5 000</td><td class="hi">3 500</td><td class="hi">2 000</td></tr>
+  </table>
+  <div class="note tip"><b>Jak zapamiętać:</b> wiersz główny 10 / 8 / 5 / 2,5 tys. m², ZL II zawsze mniej: 8 / 5 / 3,5 / 2 tys. m². Część podziemna ZL: <b>50 %</b> wartości dla pierwszej kondygnacji nadziemnej, chyba że wyjścia z kondygnacji podziemnej prowadzą bezpośrednio na zewnątrz (ust. 2 i 3). Ze strefy ZL II powyżej <b>750 m²</b> w budynku wielokondygnacyjnym musi być możliwa ewakuacja do innej strefy na tej samej kondygnacji (ust. 5).</div>
+
+  <h2>16. Strefy PM (z wyjątkiem garaży) <span class="par">§ 228 ust. 1 WT</span></h2>
+  <table class="big">
+    <tr><th class="l" rowspan="2">Rodzaj strefy pożarowej</th><th rowspan="2">Gęstość obciążenia ogniowego Q [MJ/m²]</th><th rowspan="2">budynek o jednej kondygnacji nadziemnej<br>(bez ograniczenia wysokości)</th><th colspan="2">budynek wielokondygnacyjny</th></tr>
+    <tr class="sep"><th>niski i średniowysoki (N, SW)</th><th>wysoki i wysokościowy (W, WW)</th></tr>
+    <tr><td class="l" rowspan="5"><b>z pomieszczeniem zagrożonym wybuchem</b></td><td class="l">Q &gt; 4000</td><td>1 000</td><td class="cX">*</td><td class="cX">*</td></tr>
+    <tr><td class="l">2000 &lt; Q ≤ 4000</td><td>2 000</td><td class="cX">*</td><td class="cX">*</td></tr>
+    <tr><td class="l">1000 &lt; Q ≤ 2000</td><td>4 000</td><td>1 000</td><td class="cX">*</td></tr>
+    <tr><td class="l">500 &lt; Q ≤ 1000</td><td>6 000</td><td>2 000</td><td>500</td></tr>
+    <tr><td class="l">Q ≤ 500</td><td>8 000</td><td>3 000</td><td>1 000</td></tr>
+    <tr><td class="l" rowspan="5"><b>pozostałe</b></td><td class="l">Q &gt; 4000</td><td class="hi">2 000</td><td class="hi">1 000</td><td class="cX">*</td></tr>
+    <tr><td class="l">2000 &lt; Q ≤ 4000</td><td class="hi">4 000</td><td class="hi">2 000</td><td class="cX">*</td></tr>
+    <tr><td class="l">1000 &lt; Q ≤ 2000</td><td class="hi">8 000</td><td class="hi">4 000</td><td class="hi">1 000</td></tr>
+    <tr><td class="l">500 &lt; Q ≤ 1000</td><td class="hi">15 000</td><td class="hi">8 000</td><td class="hi">2 500</td></tr>
+    <tr><td class="l">Q ≤ 500</td><td class="hi">20 000</td><td class="hi">10 000</td><td class="hi">5 000</td></tr>
+  </table>
+  <p class="sub">* nie dopuszcza się takich przypadków. Strefy PM w części podziemnej: <b>50 %</b> wartości z tabeli (ust. 2).</p>
+  <div class="note tip"><b>Jak zapamiętać:</b> strefy „pozostałe” w budynku jednokondygnacyjnym: 2 / 4 / 8 / 15 / 20 tys. m² (podwajanie). N i SW to <b>połowa</b> kolumny jednokondygnacyjnej. Strefy z wybuchem to <b>połowa</b> stref pozostałych w kolumnie 1 kond. (1 / 2 / 4 / 6 / 8 tys.), a w budynkach wielokondygnacyjnych są dopuszczalne dopiero od Q ≤ 2000 (N, SW) i Q ≤ 1000 (W, WW).</div>
+
+  <div class="two">
+    <div>
+      <h2>17. Strefy IN <span class="par">§ 231 WT</span></h2>
+      <table>
+        <tr><th class="l">Liczba kondygnacji</th><th>hodowla ściółkowa</th><th>hodowla bezściółkowa</th></tr>
+        <tr><td class="l">jedna</td><td>5 000</td><td>nie ogranicza się</td></tr>
+        <tr><td class="l">dwie</td><td>2 500</td><td>5 000</td></tr>
+        <tr><td class="l">powyżej dwóch</td><td>1 000</td><td>2 500</td></tr>
+      </table>
+      <p class="sub">Ściany silnie rozprzestrzeniające ogień: strefa <b>25 %</b> wartości z tabeli, a jednokondygnacyjny budynek bezściółkowy: limit 5000 m² (ust. 2).</p>
+    </div>
+    <div>
+      <h2>18. Powiększenia stref <span class="par">§ 227 ust. 4, § 229, § 230</span></h2>
+      <table>
+        <tr><th class="l">Strefa</th><th>tryskacze (SUG wodne)</th><th>samoczynne oddymianie</th><th>razem</th></tr>
+        <tr><td class="l">ZL (nie W, WW wielokond.)</td><td>+100 %</td><td>+100 % ¹⁾</td><td class="hi">+200 %</td></tr>
+        <tr><td class="l">PM (§ 229)</td><td>+100 %</td><td>+50 %</td><td class="hi">+150 %</td></tr>
+      </table>
+      <p class="sub">¹⁾ oddymianie uruchamiane systemem wykrywania dymu. <b>§ 230:</b> PM jednokondygnacyjny lub ostatnia kondygnacja (bez garaży, bez pomieszczeń zagrożonych wybuchem, elementy NRO, oddymianie) <b>+100 %</b>. PM jednokondygnacyjny z tryskaczami i oddymianiem: <b>bez ograniczeń</b>.</p>
+    </div>
+  </div>
+
+  <div class="foot"><span>Garaże mają odrębne limity (§ 275). Przekroczenie dopuszczalnej powierzchni wymaga podziału elementami oddzielenia ppoż. o klasie z tabeli § 232 ust. 4 (str. 3).</span><span>RzeczoznawcaPPOZ · 11.2026</span></div>
+</div>
+
+<!-- ================= STRONA 6 ================= -->
+<div class="page tight">
+  <div class="hdr">
+    <h1>Drogi ewakuacyjne: przejścia i dojścia<small>§ 236–242 i § 256 WT: długości, powiększenia, szerokości i wskaźniki liczby osób</small></h1>
+    <div class="no">strona<b>6 / 6</b></div>
+  </div>
+
+  <h2>19. Dwa pojęcia, które egzamin lubi mylić</h2>
+  <div class="two">
+    <div class="card zl">
+      <h3><span class="tag">PRZEJŚCIE</span> ewakuacyjne, § 237</h3>
+      <div class="sub">w <b>pomieszczeniu</b>: od najdalszego miejsca, w którym może przebywać człowiek, do wyjścia na drogę ewakuacyjną, do innej strefy pożarowej albo na zewnątrz. Najwyżej przez <b>3 pomieszczenia</b> (ust. 8), ścianki między nimi bez wymagań § 216 (ust. 9).</div>
+      <ul><li>może prowadzić łącznie przez nie więcej niż <b>3 pomieszczenia</b> (ust. 8)</li><li>ścianki działowe między tymi pomieszczeniami bez wymagań § 216 (ust. 9)</li></ul>
+    </div>
+    <div class="card pm">
+      <h3><span class="tag">DOJŚCIE</span> ewakuacyjne, § 256</h3>
+      <div class="sub">na <b>drodze ewakuacyjnej</b>: od wyjścia z pomieszczenia na tę drogę do wyjścia do innej strefy pożarowej lub na zewnątrz, mierzone <b>wzdłuż osi drogi</b>. Przy przedsionku ppoż. do <b>pierwszych drzwi</b> przedsionka. Równorzędna innej strefie: obudowana klatka schodowa z drzwiami <b>EI 30</b> i zabezpieczeniem przed zadymieniem (ust. 2).</div>
+      <ul><li>przy przedsionku ppoż. mierzone do <b>pierwszych drzwi</b> przedsionka</li><li>równorzędne wyjściu do innej strefy: obudowana klatka schodowa z drzwiami <b>EI 30</b> i zabezpieczeniem przed zadymieniem (ust. 2)</li></ul>
+    </div>
+  </div>
+
+  <h2>20. Długość przejścia ewakuacyjnego <span class="par">§ 237 ust. 1–2 WT</span></h2>
+  <table class="lens big">
+    <tr><th class="l">Strefa pożarowa</th><th>długość przejścia</th><th>pomieszczenie zagrożone wybuchem</th></tr>
+    <tr><td class="l">ZL</td><td class="hi">40 m</td><td>–</td></tr>
+    <tr><td class="l">PM, Q &gt; 500 MJ/m², budynek o więcej niż jednej kondygnacji nadziemnej</td><td class="hi">75 m</td><td>40 m</td></tr>
+    <tr><td class="l">PM, Q ≤ 500 MJ/m², budynek wielokondygnacyjny <b>oraz</b> PM w budynku jednokondygnacyjnym (bez względu na Q)</td><td class="hi">100 m</td><td>40 m</td></tr>
+  </table>
+  <div class="cards2">
+    <div><i>pomieszczenie wyżej niż 5 m</i><b>+25 %</b>ust. 5</div>
+    <div><i>tryskacze (SUG wodne)</i><b>+50 %</b>ust. 6 pkt 1</div>
+    <div><i>oddymianie z detekcją dymu</i><b>+50 %</b>ust. 6 pkt 2</div>
+    <div><i>niejasny sposób zagospodarowania</i><b>80 %</b>wartości bazowej, ust. 4</div>
+  </div>
+  <div class="note tip"><b>Powiększenia przejść się sumują</b> (ust. 7): maksymalnie 25 + 50 + 50 = <b>+125 %</b>, czyli np. w ZL 40 m → 90 m. Szerokość przejścia: 0,6 m na 100 osób, nie mniej niż <b>0,9 m</b> (do 3 osób: 0,8 m), ust. 10.</div>
+
+  <h2>21. Długość dojścia ewakuacyjnego <span class="par">§ 256 ust. 3 WT</span></h2>
+  <table class="lens big">
+    <tr><th class="l">Rodzaj strefy pożarowej</th><th>przy jednym dojściu</th><th>przy co najmniej 2 dojściach ¹⁾</th></tr>
+    <tr><td class="l">z pomieszczeniem zagrożonym wybuchem</td><td class="hi">10 m</td><td class="hi">40 m</td></tr>
+    <tr><td class="l">PM, Q &gt; 500 MJ/m², bez pomieszczenia zagrożonego wybuchem</td><td class="hi">30 m ²⁾</td><td class="hi">60 m</td></tr>
+    <tr><td class="l">PM, Q ≤ 500 MJ/m², bez pomieszczenia zagrożonego wybuchem</td><td class="hi">60 m ²⁾</td><td class="hi">100 m</td></tr>
+    <tr><td class="l">ZL I, ZL II, ZL V</td><td class="hi">10 m</td><td class="hi">40 m</td></tr>
+    <tr><td class="l">ZL III</td><td class="hi">30 m ²⁾</td><td class="hi">60 m</td></tr>
+    <tr><td class="l">ZL IV</td><td class="hi">60 m ²⁾</td><td class="hi">100 m</td></tr>
+  </table>
+  <p class="sub">¹⁾ dla dojścia najkrótszego, drugie dojście może być dłuższe o <b>100 %</b> od najkrótszego. Dojścia nie mogą się pokrywać ani krzyżować, wspólny początek najwyżej <b>2 m</b>. ²⁾ w tym nie więcej niż <b>20 m na poziomej</b> drodze ewakuacyjnej.</p>
+  <div class="note tip"><b>Jak zapamiętać:</b> tylko trzy pary liczb: <b>10/40</b>, <b>30/60</b>, <b>60/100</b>. Najostrzej (10/40): wybuch oraz ZL I, II, V. Środek (30/60): PM &gt; 500 i ZL III. Najłagodniej (60/100): PM ≤ 500 i ZL IV. Powiększenia (ust. 4): tryskacze w strefie <b>+50 %</b>, oddymianie drogi ewakuacyjnej <b>+50 %</b>, oba razem <b>+100 %</b>.</div>
+
+  <div class="two">
+    <div>
+      <h2>22. Szerokości <span class="par">§ 239, § 242</span></h2>
+      <table class="kv">
+        <tr><td>drzwi z pomieszczenia</td><td>0,6 m na 100 osób, min. <b>0,9 m</b> (do 3 osób 0,8 m)</td></tr>
+        <tr><td>drzwi na drodze ewak.</td><td>0,6 m na 100 osób, min. <b>0,9 m</b>. Z budynku i z klatki: nie mniej niż bieg schodów</td></tr>
+        <tr><td>korytarz (pozioma droga)</td><td>0,6 m na 100 osób, min. <b>1,4 m</b> (1,2 m gdy ≤ 20 osób)</td></tr>
+        <tr><td>wysokość drogi</td><td>min. <b>2,2 m</b>, lokalne obniżenie 2,0 m na odcinku ≤ 1,5 m na każde 10 m</td></tr>
+        <tr><td>drzwi na zewnątrz</td><td>otwierane na zewnątrz w budynku dla <b>&gt; 50 osób</b> (§ 236 ust. 4)</td></tr>
+      </table>
+    </div>
+    <div>
+      <h2>23. Wskaźniki liczby osób <span class="par">§ 236 ust. 6</span></h2>
+      <table>
+        <tr><th class="l">Rodzaj pomieszczenia</th><th>m² na osobę</th></tr>
+        <tr><td class="l">sale konferencyjne, gastronomia, poczekalnie, hole, świetlice</td><td><b>1</b></td></tr>
+        <tr><td class="l">handlowo-usługowe</td><td><b>4</b></td></tr>
+        <tr><td class="l">administracyjno-biurowe</td><td><b>5</b></td></tr>
+        <tr><td class="l">archiwa, biblioteki</td><td><b>7</b></td></tr>
+        <tr><td class="l">magazyny</td><td><b>30</b></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="foot"><span>Przejście = w pomieszczeniu (§ 237: 40 / 75 / 100 m). Dojście = na drodze ewakuacyjnej (§ 256: 10/40, 30/60, 60/100 m). Powiększenia przejść sumują się do +125 %, dojść do +100 %.</span><span>RzeczoznawcaPPOZ · 11.2026</span></div>
+</div>
+
+</body>
+</html>
