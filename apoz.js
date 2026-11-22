@@ -290,17 +290,23 @@
     const unsc = q.unscored ? `<span class="badge-unv">bez punktacji</span>` : "";
     let explain = "";
     if (o.revealed) explain = explainBlock(q);
+    // zgłaszanie błędów (social.js)
+    const repBadge = window.Social ? window.Social.badge("apoz", q.id) : "";
+    const repBar = (o.revealed && window.Social)
+      ? window.Social.reportBar({ source: "apoz", ref: q.id, q: q.q, cat: subjName(q.subject),
+          key: q.unscored ? "" : q.answer.map(letter).join(", "), opts: q.opts.map((t, i) => [letter(i), t]) })
+      : "";
     return `<div class="qwrap">
       <div class="qmeta">
         <span class="cat">${esc(subjName(q.subject))}</span>
         <span class="badge-apoz" title="Pytanie ze studiów podyplomowych – spoza zestawu KG PSP">🎓 APOŻ</span>
-        ${conflict}${unsc}
+        ${conflict}${unsc}${repBadge}
         <span class="num">${o.index ? `${o.index} / ${o.total}` : ""} · ${esc(q.id)}</span>
       </div>
       <div class="qtext">${esc(q.q)}</div>
       ${imgHTML(q)}
       <div class="options">${opts}</div>
-      ${explain}</div>`;
+      ${explain}${repBar}</div>`;
   }
   function explainBlock(q) {
     const correct = q.unscored ? "—" : q.answer.map(i => `${letter(i)}) ${esc(q.opts[i])}`).join(" lub ");

@@ -247,6 +247,25 @@ plan Pro to 25 USD/mies. Przy zwykłym korzystaniu raz na kilka dni problem nie 
 
 ---
 
+## Zgłoszenia błędów i czat
+
+Obie funkcje potrzebują dwóch tabel w bazie: `reports` i `messages`. Tworzą je sekcje 10 i 11
+pliku `schema.sql`. Jeśli baza powstała wcześniej, uruchom **cały** `schema.sql` jeszcze raz
+(SQL Editor → New query → wklej → Run). Skrypt niczego nie kasuje.
+
+- **Zgłoszenie błędu**: pod objaśnieniem każdego pytania (egzamin KG PSP, Studia APOŻ, pytania
+  społeczności) jest przycisk „⚑ Zgłoś błąd w pytaniu”. Zgłoszenie widzi autor i administrator.
+  Pozostali zalogowani widzą przy pytaniu tylko znaczek „⚑ zgłoszone”.
+- **Rozpatrywanie**: administrator ma na ekranie głównym kafelek „Zgłoszenia błędów” z kolejką.
+  Oznacza zgłoszenie jako zasadne albo niezasadne i może dopisać odpowiedź. Sam klucz poprawia się
+  w plikach bazy (`answers_data/` dla KG PSP, `bank.json` dla APOŻ), nie w panelu.
+- **Czat**: jeden wspólny pokój dla zalogowanych, kafelek „Czat”. Własną wiadomość może usunąć
+  autor, każdą administrator. Limit to 12 wiadomości na minutę od osoby.
+- Wiadomości „na żywo” korzystają z Supabase Realtime (włącza je ostatni blok `schema.sql`).
+  Gdyby Realtime nie działał, czat i tak dociąga nowe wpisy co 15 sekund.
+
+---
+
 ## Co się dzieje z danymi użytkowników
 
 Przechowywane są **tylko**:

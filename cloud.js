@@ -61,7 +61,11 @@
     [/violates row-level security/i, "Brak uprawnień do tej operacji."],
     [/failed to fetch|networkerror|load failed/i, "Brak połączenia z serwerem."],
     [/signups? not allowed|disabled/i, "Rejestracja jest wyłączona w panelu Supabase."],
-    [/provider is not enabled/i, "Logowanie Google nie jest włączone w panelu Supabase."]
+    [/provider is not enabled/i, "Logowanie Google nie jest włączone w panelu Supabase."],
+    [/reports_one_open/i, "Masz już otwarte zgłoszenie do tego pytania."],
+    [/chat_rate_limit/i, "Zbyt wiele wiadomości naraz — odczekaj chwilę."],
+    [/could not find the (table|function)|relation .* does not exist|schema cache/i,
+      "Ta funkcja nie jest jeszcze włączona na serwerze (administrator musi uruchomić aktualny schema.sql)."]
   ];
   function human(err) {
     if (!err) return null;
@@ -355,6 +359,134 @@
       .eq("id", dbId).select(SELECT).maybeSingle();
     if (error) fail(error);
     return data ? toQuestion(data) : null;
+  };
+
+  // ---------- Zgłoszenia błędów w pytaniach ----------
+  const REP_SELECT = "id, user_id, source, question_ref, kind, suggested, comment, snapshot," +
+                     " status, admin_note, created_at, resolved_at, profiles ( nick )";
+  function toReport(r) {
+    return {
+      id: r.id, userId: r.user_id, source: r.source, ref: r.question_ref, kind: r.kind,
+      suggested: r.suggested || "", comment: r.comment, snapshot: r.snapshot || {},
+      status: r.status, adminNote: r.admin_note || "", createdAt: r.created_at, resolvedAt: r.resolved_at,
+      nick: (r.profiles && r.profiles.nick) || "—",
+      isMine: !!(Cloud.user && r.user_id === Cloud.user.id)
+    };
+  }
+  Cloud.reportCreate = async function (f) {
+    if (!Cloud.user) throw new Error("Zaloguj się, aby zgłosić pytanie.");
+    const comment = String(f.comment || "").trim();
+    if (comment.length < 5) throw new Error("Opisz krótko, co jest nie tak (min. 5 znaków).");
+    const { data, error } = await Cloud.client.from("reports").insert({
+      user_id: Cloud.user.id, source: f.source, question_ref: String(f.ref),
+      kind: f.kind || "answer", suggested: f.suggested || null,
+      comment: comment.slice(0, 2000), snapshot: f.snapshot || {}
+    }).select(REP_SELECT).maybeSingle();
+    if (error) fail(error);
+    return data ? toReport(data) : null;
+  };
+  Cloud.reportsMine = async function () {
+    const { data, error } = await Cloud.client.from("reports").select(REP_SELECT)
+      .eq("user_id", Cloud.user.id).order("created_at", { ascending: false }).limit(200);
+    if (error) fail(error);
+    return (data || []).map(toReport);
+  };
+  /* Kolejka administratora: otwarte (najstarsze pierwsze) albo rozpatrzone (ostatnie 100). */
+  Cloud.reportsAll = async function (open) {
+    let q = Cloud.client.from("reports").select(REP_SELECT);
+    q = open ? q.eq("status", "open").order("created_at", { ascending: true })
+             : q.neq("status", "open").order("resolved_at", { ascending: false });
+    const { data, error } = await q.limit(open ? 500 : 100);
+    if (error) fail(error);
+    return (data || []).map(toReport);
+  };
+  Cloud.reportResolve = async function (id, status, note) {
+    const { data, error } = await Cloud.client.from("reports")
+      .update({ status: status, admin_note: note || null })
+      .eq("id", id).select(REP_SELECT).maybeSingle();
+    if (error) fail(error);
+    return data ? toReport(data) : null;
+  };
+  Cloud.reportDelete = async function (id) {
+    const { error } = await Cloud.client.from("reports").delete().eq("id", id);
+    if (error) fail(error);
+    return true;
+  };
+  /* { "kgpsp|12": 2, "apoz|01_v31:…": 1 } – liczba otwartych zgłoszeń przy pytaniach */
+  Cloud.reportCounts = async function () {
+    const { data, error } = await Cloud.client.rpc("report_counts");
+    if (error) fail(error);
+    const out = {};
+    (data || []).forEach(r => { out[r.source + "|" + r.question_ref] = Number(r.n) || 0; });
+    return out;
+  };
+
+  // ---------- Czat (jeden wspólny pokój) ----------
+  const MSG_SELECT = "id, user_id, body, created_at, profiles ( nick )";
+  const nicks = {};                                   // pamięć podręczna pseudonimów
+  function toMessage(r) {
+    if (r.profiles && r.profiles.nick) nicks[r.user_id] = r.profiles.nick;
+    return {
+      id: r.id, userId: r.user_id, body: r.body, createdAt: r.created_at,
+      nick: nicks[r.user_id] || "—",
+      isMine: !!(Cloud.user && r.user_id === Cloud.user.id)
+    };
+  }
+  /* Ostatnie wiadomości (rosnąco). opts.before – starsze niż id, opts.after – nowsze niż id. */
+  Cloud.chatLoad = async function (opts) {
+    opts = opts || {};
+    let q = Cloud.client.from("messages").select(MSG_SELECT);
+    if (opts.before) q = q.lt("id", opts.before);
+    if (opts.after) q = q.gt("id", opts.after);
+    const { data, error } = await q.order("id", { ascending: false }).limit(opts.limit || 50);
+    if (error) fail(error);
+    return (data || []).map(toMessage).reverse();
+  };
+  Cloud.chatSend = async function (body) {
+    if (!Cloud.user) throw new Error("Zaloguj się, aby pisać na czacie.");
+    const text = String(body || "").trim();
+    if (!text) throw new Error("Wiadomość jest pusta.");
+    const { data, error } = await Cloud.client.from("messages")
+      .insert({ user_id: Cloud.user.id, body: text.slice(0, 1000) })
+      .select(MSG_SELECT).maybeSingle();
+    if (error) fail(error);
+    return data ? toMessage(data) : null;
+  };
+  Cloud.chatDelete = async function (id) {
+    const { error } = await Cloud.client.from("messages").delete().eq("id", id);
+    if (error) fail(error);
+    return true;
+  };
+  /* Ile cudzych wiadomości nowszych niż sinceId (znaczek „nowe” na ekranie głównym). */
+  Cloud.chatUnread = async function (sinceId) {
+    const { count, error } = await Cloud.client.from("messages")
+      .select("id", { count: "exact", head: true })
+      .gt("id", sinceId || 0).neq("user_id", Cloud.user.id);
+    if (error) fail(error);
+    return count || 0;
+  };
+  /* Wiadomości na żywo. Zwraca funkcję wyłączającą nasłuch. Gdy Realtime nie działa,
+     ekran czatu i tak dociąga nowe wpisy co kilkanaście sekund. */
+  Cloud.chatSubscribe = function (onInsert, onDelete) {
+    let ch = null;
+    try {
+      ch = Cloud.client.channel("czat-" + Math.random().toString(36).slice(2, 8))
+        .on("postgres_changes", { event: "INSERT", schema: "public", table: "messages" }, async p => {
+          const r = p.new || {};
+          if (!nicks[r.user_id]) {
+            try {
+              const { data } = await Cloud.client.from("profiles").select("nick").eq("id", r.user_id).maybeSingle();
+              if (data && data.nick) nicks[r.user_id] = data.nick;
+            } catch (e) {}
+          }
+          try { onInsert(toMessage(r)); } catch (e) {}
+        })
+        .on("postgres_changes", { event: "DELETE", schema: "public", table: "messages" }, p => {
+          try { if (p.old && p.old.id != null) onDelete(p.old.id); } catch (e) {}
+        })
+        .subscribe();
+    } catch (e) { ch = null; }
+    return function () { try { if (ch) Cloud.client.removeChannel(ch); } catch (e) {} ch = null; };
   };
 
   // ---------- Baza APOŻ (studia podyplomowe) – prywatny bucket „apoz" ----------

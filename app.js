@@ -232,6 +232,7 @@
   let VIEW = "home", VIEW_ARG = null;
   function go(view, arg) {
     VIEW = view; VIEW_ARG = arg;
+    if (window.Social) window.Social.leave(view);        // wyjście z czatu wyłącza nasłuch
     window.scrollTo(0, 0);
     if (view === "home") renderHome();
     else if (view === "study-setup") renderStudySetup();
@@ -247,6 +248,7 @@
     else if (view === "myq") renderMyQuestions();
     else if (view === "qedit") renderQEdit(arg);
     else if (view === "moderate") renderModerate();
+    else if ((view === "chat" || view === "reports") && window.Social) window.Social.route(view, arg);
     else if (view.indexOf("apoz") === 0 && window.Apoz) window.Apoz.route(view, arg);
   }
 
@@ -285,6 +287,13 @@
         ${card("👤", logged ? "Konto: " + esc((C.profile && C.profile.nick) || "") : "Konto / logowanie",
             logged ? "Profil, synchronizacja postępu między urządzeniami, hasło."
                    : "Zaloguj się, aby mieć postęp na telefonie i komputerze.", "account")}
+        ${C.configured ? card("💬", "Czat", (logged
+            ? "Rozmowa wszystkich zalogowanych użytkowników."
+            : "Rozmowa z innymi uczącymi się — wymaga zalogowania.") + `<span id="chatNew"></span>`, "chat") : ""}
+        ${C.configured ? card("⚑", "Zgłoszenia błędów", (C.isAdmin
+            ? "Pytania zgłoszone przez użytkowników do weryfikacji."
+            : logged ? "Twoje zgłoszenia pytań do weryfikacji i decyzje administratora."
+                     : "Zgłaszaj błędy w pytaniach — wymaga zalogowania.") + `<span id="repNew"></span>`, "reports") : ""}
         ${C.isAdmin ? card("🛡️", "Do zatwierdzenia", "Moderacja pytań zgłoszonych jako publiczne.", "moderate") : ""}
         ${card("⚖️", "Akty prawne", "Wykaz aktów, z których pochodzą odpowiedzi — z linkami do ISAP.", "acts")}
         ${card("ℹ️", "O aplikacji i egzaminie", "Zasady egzaminu, źródła, zastrzeżenia.", "about")}
@@ -293,6 +302,7 @@
     app.querySelectorAll("[data-go]").forEach(el => el.onclick = () => go(el.dataset.go, el.dataset.arg));
     wireBanner();
     if (window.Apoz) window.Apoz.homeHook();   // sekcja „Studia APOŻ" dokłada swój kafelek / pasek
+    if (window.Social) window.Social.homeHook(); // liczniki: nowe wiadomości, zgłoszenia do rozpatrzenia
   }
   const card = (ico, h, p, view, arg) =>
     `<div class="menu-card" data-go="${view}" ${arg ? `data-arg="${arg}"` : ""}>
@@ -433,6 +443,13 @@
       : "";
     const userBadge = q.isUser ? userQBadge(q) : "";
     const num = q.isUser ? "własne #" + q.dbId : "id " + q.id;
+    // zgłaszanie błędów (social.js): znaczek „zgłoszone" + przycisk pod objaśnieniem
+    const repSrc = q.isUser ? "user" : "kgpsp", repRef = q.isUser ? q.dbId : q.id;
+    const repBadge = window.Social ? window.Social.badge(repSrc, repRef) : "";
+    const repBar = (o.revealed && window.Social && !q.isMine)
+      ? window.Social.reportBar({ source: repSrc, ref: repRef, q: q.q, cat: q.isUser ? q.userCategory : q.category,
+          key: q.answer || "", opts: ["a", "b", "c"].map(k => [k, q.options[k]]) })
+      : "";
 
     return `<div class="qwrap">
       <div class="qmeta">
@@ -440,11 +457,13 @@
         ${newBadge}
         ${userBadge}
         ${verBadge}
+        ${repBadge}
         <span class="num">${o.index ? `${o.index} / ${o.total}` : "#" + q.id} · ${num}</span>
       </div>
       <div class="qtext">${esc(q.q)}</div>
       <div class="options">${opts}</div>
       ${explain}
+      ${repBar}
     </div>`;
   }
   // Oznaczenia pytań użytkowników
@@ -1265,6 +1284,8 @@
     if (h === "akty") { go("acts"); return true; }
     if (h === "konto") { go("account"); return true; }
     if (h === "moje") { go("myq"); return true; }
+    if (h === "czat") { go("chat"); return true; }
+    if (h === "zgloszenia") { go("reports"); return true; }
     if (h === "" && VIEW !== "home") { go("home"); return true; }
     return false;
   }
@@ -1324,7 +1345,7 @@
     paintAcctBtn();
     if (!C || !C.configured) return;
     // ekrany, które warto odświeżyć po zalogowaniu/wylogowaniu
-    const LIVE = ["home", "account", "myq", "moderate", "stats", "categories", "study-setup", "exam-setup"];
+    const LIVE = ["home", "account", "myq", "moderate", "stats", "categories", "study-setup", "exam-setup", "chat", "reports"];
     C.onChange(async what => {
       paintAcctBtn();
       if (C.user) { await syncQuestions(); await syncDown(); }
@@ -1332,6 +1353,7 @@
       paintAcctBtn();
       cloudSettled = true;
       if (window.Apoz && window.Apoz.onAuth) window.Apoz.onAuth(C.user ? "login" : "logout");
+      if (window.Social) window.Social.onAuth(C.user ? "login" : "logout");
       if (restorePending) {                      // sesja czekała na pytania z serwera
         restorePending = false;
         if (restoreSession() !== true && !fromHash()) go("home");
