@@ -247,6 +247,7 @@
     else if (view === "myq") renderMyQuestions();
     else if (view === "qedit") renderQEdit(arg);
     else if (view === "moderate") renderModerate();
+    else if (view.indexOf("apoz") === 0 && window.Apoz) window.Apoz.route(view, arg);
   }
 
   // ---------- Ekran główny ----------
@@ -291,6 +292,7 @@
       <p class="footer-note">Materiał pomocniczy do nauki. Zawsze weryfikuj odpowiedzi z aktualnym stanem prawnym.</p>`;
     app.querySelectorAll("[data-go]").forEach(el => el.onclick = () => go(el.dataset.go, el.dataset.arg));
     wireBanner();
+    if (window.Apoz) window.Apoz.homeHook();   // sekcja „Studia APOŻ" dokłada swój kafelek / pasek
   }
   const card = (ico, h, p, view, arg) =>
     `<div class="menu-card" data-go="${view}" ${arg ? `data-arg="${arg}"` : ""}>
@@ -1282,6 +1284,14 @@
   }
   if (acctBtn) acctBtn.onclick = () => go("account");
 
+  // Most dla modułu APOŻ (apoz.js) – prymitywy aplikacji bez odsłaniania całego stanu.
+  window.__APP = {
+    app, go, setTop, esc, shuffle, fmtTime, card,
+    lsGet, lsSet,
+    isHome: () => VIEW === "home",
+    cardGrid: () => app.querySelector(".grid")
+  };
+
   // Przywracanie przerwanej sesji: egzamin ma pierwszeństwo (zegar leci), potem nauka.
   // Skróty prowadzące do innych ekranów (#akty, #konto, #moje) wygrywają z wznowieniem –
   // zapisana sesja czeka wtedy na ekranie głównym pod przyciskiem „Wznów".
@@ -1321,6 +1331,7 @@
       else { CLOUDQ = []; rebuild(); }
       paintAcctBtn();
       cloudSettled = true;
+      if (window.Apoz && window.Apoz.onAuth) window.Apoz.onAuth(C.user ? "login" : "logout");
       if (restorePending) {                      // sesja czekała na pytania z serwera
         restorePending = false;
         if (restoreSession() !== true && !fromHash()) go("home");

@@ -356,4 +356,31 @@
     if (error) fail(error);
     return data ? toQuestion(data) : null;
   };
+
+  // ---------- Baza APOŻ (studia podyplomowe) – prywatny bucket „apoz" ----------
+  // Pliki widoczne tylko dla zalogowanych (RLS na storage.objects). Pobieramy jako
+  // Blob przez klienta z tokenem użytkownika, więc nic nie wisi w publicznym repo.
+  Cloud.APOZ_BUCKET = "apoz";
+  async function apozDownloadJSON(name) {
+    const { data, error } = await Cloud.client.storage.from(Cloud.APOZ_BUCKET).download(name);
+    if (error) {
+      const m = (error.message || "").toLowerCase();
+      if (/not found|does not exist|bucket/.test(m)) { const e = new Error("APOZ_BRAK"); e.soft = true; throw e; }
+      fail(error);
+    }
+    return JSON.parse(await data.text());
+  }
+  // Mała metryka wersji – żeby nie ściągać 13 MB przy każdym logowaniu.
+  Cloud.apozMeta = async function () {
+    if (!Cloud.user) throw new Error("Zaloguj się, aby korzystać z bazy APOŻ.");
+    return apozDownloadJSON("meta.json");
+  };
+  // Pełne pobranie banku i obrazków (wywoływane tylko, gdy wersja się zmieniła).
+  Cloud.apozFetch = async function (withImages) {
+    if (!Cloud.user) throw new Error("Zaloguj się, aby pobrać bazę APOŻ.");
+    const bank = await apozDownloadJSON("bank.json");
+    let images = {};
+    if (withImages !== false) { try { images = await apozDownloadJSON("images.json"); } catch (e) { images = {}; } }
+    return { version: bank.version || null, subjects: bank.subjects || [], questions: bank.questions || [], images };
+  };
 })();

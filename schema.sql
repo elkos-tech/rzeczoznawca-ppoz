@@ -243,3 +243,28 @@ grant execute on function public.is_admin() to authenticated;
 
 -- Sprawdzenie, kto jest adminem:
 -- select u.email from public.admins a join auth.users u on u.id = a.user_id;
+
+
+-- =====================================================================
+--  9. BAZA APOŻ (studia podyplomowe) – prywatny bucket na pliki
+--     ------------------------------------------------------------------
+--     Pytania ze studiów (bank.json, images.json, meta.json) NIE są w
+--     publicznym repozytorium – leżą w prywatnym buckecie „apoz", widocznym
+--     wyłącznie dla ZALOGOWANYCH. Pliki wgrywasz w panelu Supabase:
+--       Storage → New bucket → nazwa „apoz", Public = WYŁĄCZONE → Create,
+--       potem Upload files → bank.json, images.json, meta.json.
+--     Ten blok tworzy bucket i regułę „czyta tylko zalogowany".
+-- =====================================================================
+insert into storage.buckets (id, name, public)
+values ('apoz', 'apoz', false)
+on conflict (id) do nothing;
+
+-- odczyt plików z bucketu „apoz” tylko dla zalogowanych (anon nic nie zobaczy)
+drop policy if exists apoz_read_authenticated on storage.objects;
+create policy apoz_read_authenticated on storage.objects
+  for select to authenticated
+  using (bucket_id = 'apoz');
+
+-- Wgrywanie/zmiana plików: rób w panelu Supabase (jako właściciel projektu).
+-- Celowo NIE dodajemy reguły zapisu dla zwykłych użytkowników – bank jest
+-- materiałem tylko do odczytu.

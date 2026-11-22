@@ -11,3 +11,11 @@ answers_data/__pycache__/
 # UWAGA: cloud-config.js JEST publikowany celowo.
 # Klucz "anon public" Supabase jest przeznaczony do umieszczania w kodzie strony.
 # Nigdy nie wpisuj tam klucza "service_role".
+
+# pliki testowe/atrapy (nie trafiają na serwer)
+__*
+
+# trenażer kolegi (materiał źródłowy APOŻ) – zostaje lokalnie, nie publikujemy
+APoz_SKRZ_TEST_V11_pro.html
+# tymczasowe pliki uploadu bazy APOŻ
+__apoz_*.json

@@ -8,7 +8,7 @@
      • żądania do Supabase i innych domen – w ogóle nie przechwytywane,
        inaczej logowanie i zapis pytań działałyby na nieaktualnych danych.
 */
-const CACHE = "rzppoz-v9";
+const CACHE = "rzppoz-v10";
 
 const ASSETS = [
   "./",
@@ -23,6 +23,7 @@ const ASSETS = [
   "./vendor/supabase.js",
   "./cloud-config.js",
   "./cloud.js",
+  "./apoz.js",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
