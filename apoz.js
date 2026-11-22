@@ -19,7 +19,7 @@
   const SKEY = "apoz_study_v1", EKEY = "apoz_exam_v1";
 
   // ---------- Stan bazy ----------
-  let BANK = [], BYID = {}, SUBJECTS = [], IMAGES = {}, VERSION = null;
+  let BANK = [], BYID = {}, SUBJECTS = [], IMAGES = {}, VERSION = null, TOPICDEFS = {};
   let status = "idle";                  // idle | loading | ready | empty | error | offline
   let statusMsg = "";
   let mode = "study";                   // wybór na ekranie APOŻ: study | exam
@@ -33,17 +33,31 @@
       id: r.id, subject: r.s, q: r.q, opts: r.o || [], answer: r.a || [],
       unscored: !!r.u, reason: r.r || "", basis: r.b || "", quote: r.qt || "",
       links: r.l || [], citation: r.c || "", images: r.img || [],
-      conflict: !!r.cf, provenance: r.p || ""
+      conflict: !!r.cf, provenance: r.p || "", topic: r.t || "other"
     };
   }
   function setBank(bank) {
     SUBJECTS = bank.subjects || [];
+    TOPICDEFS = bank.topicDefs || {};
     BANK = (bank.questions || []).map(expand);
     BYID = {}; BANK.forEach(q => BYID[q.id] = q);
     VERSION = bank.version || null;
   }
   const subjName = id => (SUBJECTS.find(s => s[0] === id) || [id, id])[1];
-  const poolOf = sub => sub && sub !== "all" ? BANK.filter(q => q.subject === sub) : BANK.slice();
+  // pula wg przedmiotu i (opcjonalnie) zagadnienia
+  function poolOf(sub, topic) {
+    let list = sub && sub !== "all" ? BANK.filter(q => q.subject === sub) : BANK.slice();
+    if (topic && topic !== "all") list = list.filter(q => q.topic === topic);
+    return list;
+  }
+  const topicLabel = (sub, id) => { const d = (TOPICDEFS[sub] || []).find(t => t[0] === id); return d ? d[1] : id; };
+  // zagadnienia faktycznie obecne w przedmiocie, w kolejności Jarka, z licznościami
+  function topicsFor(sub) {
+    if (!sub || sub === "all") return [];
+    const cnt = {};
+    for (const q of poolOf(sub)) cnt[q.topic] = (cnt[q.topic] || 0) + 1;
+    return (TOPICDEFS[sub] || []).filter(([id]) => cnt[id]).map(([id, label]) => ({ id, label, count: cnt[id] }));
+  }
   const letter = i => "abcdefgh"[i] || String(i + 1);
 
   // ---------- Pamięć podręczna (IndexedDB – bank bywa > 10 MB) ----------
@@ -112,7 +126,7 @@
     setBank(data); IMAGES = data.images || {};
     status = "ready"; statusMsg = "";
     await idbSet("version", data.version);
-    await idbSet("bank", { version: data.version, subjects: data.subjects, questions: data.questions });
+    await idbSet("bank", { version: data.version, subjects: data.subjects, topicDefs: data.topicDefs || {}, questions: data.questions });
     await idbSet("images", IMAGES);
     refreshHomeIfNeeded();
   }
@@ -157,9 +171,9 @@
     if (e && e.ids && e.ids.length) {
       if (e.finished && e.score) out.push(`<div class="resume"><div>🏁 <b>APOŻ – wynik zaliczenia:</b> ${e.score.pct}% (${e.score.correct}/${e.ids.length})</div><div class="btn-row"><button class="btn secondary" data-ar="exam">Zobacz</button><button class="btn ghost" data-ad="exam">Zamknij</button></div></div>`);
       else { const left = e.endsAt ? Math.max(0, Math.round((e.endsAt - Date.now()) / 1000)) : null;
-        out.push(`<div class="resume exam"><div>🎓 <b>APOŻ – niedokończone zaliczenie:</b> ${esc(subjName(e.subject))} — pytanie ${(e.idx || 0) + 1}/${e.ids.length}${left != null ? (left > 0 ? `, pozostało <b>${fmtTime(left)}</b>` : ", <b>czas minął</b>") : ""}</div><div class="btn-row"><button class="btn" data-ar="exam">Wznów</button><button class="btn ghost" data-ad="exam">Porzuć</button></div></div>`); }
+        out.push(`<div class="resume exam"><div>🎓 <b>APOŻ – niedokończone zaliczenie:</b> ${esc(scopeName(e.subject, e.topic))} — pytanie ${(e.idx || 0) + 1}/${e.ids.length}${left != null ? (left > 0 ? `, pozostało <b>${fmtTime(left)}</b>` : ", <b>czas minął</b>") : ""}</div><div class="btn-row"><button class="btn" data-ar="exam">Wznów</button><button class="btn ghost" data-ad="exam">Porzuć</button></div></div>`); }
     }
-    if (s && s.ids && s.ids.length) out.push(`<div class="resume"><div>📘 <b>APOŻ – niedokończona nauka:</b> ${esc(subjName(s.subject))} — pytanie ${(s.idx || 0) + 1}/${s.ids.length}</div><div class="btn-row"><button class="btn" data-ar="study">Wznów</button><button class="btn ghost" data-ad="study">Zakończ</button></div></div>`);
+    if (s && s.ids && s.ids.length) out.push(`<div class="resume"><div>📘 <b>APOŻ – niedokończona nauka:</b> ${esc(scopeName(s.subject, s.topic))} — pytanie ${(s.idx || 0) + 1}/${s.ids.length}</div><div class="btn-row"><button class="btn" data-ar="study">Wznów</button><button class="btn ghost" data-ad="study">Zakończ</button></div></div>`);
     return out.join("");
   }
   function wireBanner(root) {
@@ -217,8 +231,36 @@
       </div>`;
     const tabs = app.querySelectorAll("#apozMode .tab");
     tabs.forEach(t => t.onclick = () => { mode = t.dataset.m; tabs.forEach(x => x.classList.toggle("active", x === t)); document.getElementById("apozModeInfo").textContent = modeInfo(); });
-    app.querySelectorAll("[data-sub]").forEach(el => el.onclick = () => { mode === "exam" ? startExam(el.dataset.sub) : startStudy(el.dataset.sub); });
+    app.querySelectorAll("[data-sub]").forEach(el => el.onclick = () => selectSubject(el.dataset.sub));
     if (bar) wireBanner(app);
+  }
+  // Po kliknięciu przedmiotu: jeśli ma więcej niż jedno zagadnienie – pokaż je; inaczej start od razu.
+  function selectSubject(sub) {
+    const topics = topicsFor(sub);
+    if (topics.length <= 1) return mode === "exam" ? startExam(sub, "all") : startStudy(sub, "all");
+    renderTopics(sub, topics);
+  }
+  function renderTopics(sub, topics) {
+    setTop("APOŻ · " + subjName(sub), true);
+    const total = poolOf(sub).length;
+    app.innerHTML = `
+      <div class="intro">
+        <h2>${esc(subjName(sub))}</h2>
+        <p>Wybierz zagadnienie albo cały przedmiot. Tryb: <b>${mode === "exam" ? "zaliczenie" : "nauka"}</b>.</p>
+      </div>
+      <div class="cat-list">
+        <div class="cat-item" data-tp="all"><div style="flex:1"><div class="cname">★ Cały przedmiot</div></div><span class="cnt">${total}</span></div>
+        ${topics.map(t => `<div class="cat-item" data-tp="${esc(t.id)}"><div style="flex:1"><div class="cname">${esc(t.label)}</div></div><span class="cnt">${t.count}</span></div>`).join("")}
+      </div>
+      <div class="btn-row" style="margin-top:14px"><button class="btn ghost" id="apozBack">‹ Przedmioty</button></div>`;
+    app.querySelectorAll("[data-tp]").forEach(el => el.onclick = () => mode === "exam" ? startExam(sub, el.dataset.tp) : startStudy(sub, el.dataset.tp));
+    document.getElementById("apozBack").onclick = () => renderHome();
+  }
+  // Pełna nazwa zestawu do tytułów i pasków (przedmiot + ewentualnie zagadnienie)
+  function scopeName(sub, topic) {
+    if (sub === "all") return "Wszystkie przedmioty";
+    const base = subjName(sub);
+    return topic && topic !== "all" ? base + " · " + topicLabel(sub, topic) : base;
   }
   function modeInfo() {
     return mode === "exam"
@@ -278,15 +320,16 @@
 
   // ---------- Tryb nauki ----------
   let study = null;
-  function startStudy(sub, saved) {
-    const list = saved ? saved.ids.map(id => BYID[id]).filter(Boolean) : shuffle(poolOf(sub));
-    if (!list.length) { alert("Brak pytań w tym przedmiocie."); return go("apoz"); }
-    study = { subject: sub, ids: list.map(q => q.id), list, idx: saved ? Math.min(saved.idx || 0, list.length - 1) : 0, revealed: !!(saved && saved.revealed), chosen: saved ? (saved.chosen != null ? saved.chosen : null) : null };
+  function startStudy(sub, topic, saved) {
+    if (saved === undefined && topic && typeof topic === "object") { saved = topic; topic = saved.topic || "all"; }
+    const list = saved ? saved.ids.map(id => BYID[id]).filter(Boolean) : shuffle(poolOf(sub, topic));
+    if (!list.length) { alert("Brak pytań w tym zestawie."); return go("apoz"); }
+    study = { subject: sub, topic: topic || "all", ids: list.map(q => q.id), list, idx: saved ? Math.min(saved.idx || 0, list.length - 1) : 0, revealed: !!(saved && saved.revealed), chosen: saved ? (saved.chosen != null ? saved.chosen : null) : null };
     renderStudy();
   }
-  function saveStudy() { if (study) lsSet(SKEY, { subject: study.subject, ids: study.ids, idx: study.idx, revealed: study.revealed, chosen: study.chosen }); }
+  function saveStudy() { if (study) lsSet(SKEY, { subject: study.subject, topic: study.topic, ids: study.ids, idx: study.idx, revealed: study.revealed, chosen: study.chosen }); }
   function renderStudy() {
-    setTop("APOŻ · " + subjName(study.subject === "all" ? "" : study.subject) || "APOŻ · nauka", true);
+    setTop("APOŻ · " + scopeName(study.subject, study.topic), true);
     const q = study.list[study.idx];
     app.innerHTML = questionCard(q, { revealed: study.revealed, chosen: study.chosen, index: study.idx + 1, total: study.list.length }) + studyNav();
     if (!study.revealed) app.querySelectorAll(".opt").forEach(b => b.onclick = () => { study.revealed = true; study.chosen = parseInt(b.dataset.i, 10); saveStudy(); renderStudy(); });
@@ -309,23 +352,24 @@
 
   // ---------- Tryb zaliczenia ----------
   let exam = null;
-  function startExam(sub, saved) {
+  function startExam(sub, topic, saved) {
+    if (saved === undefined && topic && typeof topic === "object") { saved = topic; topic = saved.topic || "all"; }
     let list;
     if (saved) { list = saved.ids.map(id => BYID[id]).filter(Boolean); if (list.length < saved.ids.length) { lsSet(EKEY, null); } }
     else {
       const prev = lsGet(EKEY);
       if (prev && !prev.finished && !confirm("Masz niedokończone zaliczenie APOŻ. Rozpocząć nowe?")) return;
-      list = shuffle(poolOf(sub).filter(q => !q.unscored && q.answer.length));
-      if (!list.length) { alert("Brak pytań z kluczem w tym przedmiocie."); return go("apoz"); }
+      list = shuffle(poolOf(sub, topic).filter(q => !q.unscored && q.answer.length));
+      if (!list.length) { alert("Brak pytań z kluczem w tym zestawie."); return go("apoz"); }
     }
     const n = list.length;
     exam = saved
-      ? { subject: saved.subject, ids: saved.ids, list, idx: Math.min(saved.idx || 0, n - 1), answers: saved.answers || {}, endsAt: saved.endsAt, finished: !!saved.finished, score: saved.score || null }
-      : { subject: sub, ids: list.map(q => q.id), list, idx: 0, answers: {}, endsAt: Date.now() + n * RULES.secPerQ * 1000, finished: false, score: null };
+      ? { subject: saved.subject, topic: saved.topic || "all", ids: saved.ids, list, idx: Math.min(saved.idx || 0, n - 1), answers: saved.answers || {}, endsAt: saved.endsAt, finished: !!saved.finished, score: saved.score || null }
+      : { subject: sub, topic: topic || "all", ids: list.map(q => q.id), list, idx: 0, answers: {}, endsAt: Date.now() + n * RULES.secPerQ * 1000, finished: false, score: null };
     if (!exam.finished && exam.endsAt && Date.now() >= exam.endsAt) return finishExam();
     renderExam();
   }
-  function saveExam() { if (exam) lsSet(EKEY, { subject: exam.subject, ids: exam.ids, idx: exam.idx, answers: exam.answers, endsAt: exam.endsAt, finished: exam.finished, score: exam.score }); }
+  function saveExam() { if (exam) lsSet(EKEY, { subject: exam.subject, topic: exam.topic, ids: exam.ids, idx: exam.idx, answers: exam.answers, endsAt: exam.endsAt, finished: exam.finished, score: exam.score }); }
   const left = () => exam && exam.endsAt ? Math.max(0, Math.round((exam.endsAt - Date.now()) / 1000)) : 0;
   function stopTimer() { if (examTimer) { clearInterval(examTimer); examTimer = null; } }
   function renderExam() {
@@ -375,7 +419,7 @@
       <div class="result-hero ${pass ? "pass" : "fail"}">
         <div class="score">${sc.pct}%</div>
         <div class="verdict">${pass ? "Zaliczone ✔" : "Niezaliczone ✘"}</div>
-        <div class="sub">Próg: ${RULES.passPct}% · ${esc(subjName(exam.subject === "all" ? "" : exam.subject)) || "wszystkie przedmioty"}</div>
+        <div class="sub">Próg: ${RULES.passPct}% · ${esc(scopeName(exam.subject, exam.topic))}</div>
       </div>
       <div class="qwrap" style="margin-top:14px">
         <div class="kv"><span>Poprawne</span><b style="color:var(--ok)">${sc.correct}/${exam.list.length}</b></div>

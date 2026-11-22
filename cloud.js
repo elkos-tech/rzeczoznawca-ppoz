@@ -381,6 +381,6 @@
     const bank = await apozDownloadJSON("bank.json");
     let images = {};
     if (withImages !== false) { try { images = await apozDownloadJSON("images.json"); } catch (e) { images = {}; } }
-    return { version: bank.version || null, subjects: bank.subjects || [], questions: bank.questions || [], images };
+    return { version: bank.version || null, subjects: bank.subjects || [], topicDefs: bank.topicDefs || {}, questions: bank.questions || [], images };
   };
 })();
