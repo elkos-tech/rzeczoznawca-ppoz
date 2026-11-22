@@ -8,7 +8,7 @@
      • żądania do Supabase i innych domen – w ogóle nie przechwytywane,
        inaczej logowanie i zapis pytań działałyby na nieaktualnych danych.
 */
-const CACHE = "rzppoz-v12";
+const CACHE = "rzppoz-v13";
 
 const ASSETS = [
   "./",

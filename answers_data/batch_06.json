@@ -5,7 +5,7 @@
   "legal": [
    "§ 11 RPB / przepisy dot. magazynowania gazów palnych"
   ],
-  "verified": false
+  "verified": true
  },
  "202": {
   "answer": "b",
@@ -13,7 +13,7 @@
   "legal": [
    "rozp. w sprawie warunków technicznych budowli rolniczych"
   ],
-  "verified": false
+  "verified": true
  },
  "203": {
   "answer": "c",
@@ -24,20 +24,22 @@
   "verified": true
  },
  "204": {
-  "answer": "a",
-  "explanation": "Do średniowysokiego budynku produkcyjnego o gęstości poniżej 500 MJ/m² droga pożarowa jest wymagana m.in. gdy w budynku występuje pomieszczenie zagrożone wybuchem.",
+  "answer": "c",
+  "explanation": "Dla budynków ze strefą produkcyjną lub magazynową o gęstości obciążenia ogniowego poniżej 500 MJ/m2 drogę pożarową wymaga dopiero § 12 ust. 1 pkt 4 RW, gdy powierzchnia strefy przekracza 20 000 m2. Pomieszczenie zagrożone wybuchem jest przesłanką tylko w pkt 3, który dotyczy stref o gęstości obciążenia ogniowego przekraczającej 500 MJ/m2. Grupa wysokości budynku nie ma znaczenia dla stref PM.",
   "legal": [
-   "§ 12 RW – wymóg drogi pożarowej"
+   "§ 12 ust. 1 pkt 3 RW – droga pożarowa do stref PM o gęstości ponad 500 MJ/m2",
+   "§ 12 ust. 1 pkt 4 RW – droga pożarowa do stref PM poniżej 500 MJ/m2 i ponad 20 000 m2"
   ],
-  "verified": false
+  "verified": true
  },
  "205": {
-  "answer": "c",
-  "explanation": "Wymaganą ilość wody do zewnętrznego gaszenia dla składów gazów i cieczy poza budynkami określa się na podstawie gęstości obciążenia ogniowego i powierzchni strefy pożarowej składowiska.",
+  "answer": "a",
+  "explanation": "Dla składów i magazynów gazów palnych oraz cieczy o temperaturze zapłonu do 100°C położonych poza budynkami ilość wody odczytuje się z tabeli nr 4 załącznika do RW. Jedynym parametrem tej tabeli jest zajmowana powierzchnia w m2, od której zależy wymagana wydajność wodociągu. Gęstość obciążenia ogniowego i powierzchnia strefy pożarowej decydują o ilości wody dla budynków produkcyjnych i magazynowych, a nie dla tych składów.",
   "legal": [
-   "§ 6 RW – ilość wody dla obiektów innych niż budynki"
+   "§ 6 ust. 7 RW – woda do zewnętrznego gaszenia dla składów gazów i cieczy poza budynkami",
+   "tabela nr 4 załącznika do RW – wydajność wodociągu według zajmowanej powierzchni"
   ],
-  "verified": false
+  "verified": true
  },
  "206": {
   "answer": "b",
@@ -45,13 +47,14 @@
   "legal": [
    "rozp. dot. baz i rozlewni gazu płynnego – odległości"
   ],
-  "verified": false
+  "verified": true
  },
  "207": {
-  "answer": "a",
-  "explanation": "Przestrzenie biurowe klasyfikowane są jako klasa zagrożenia pożarowego LH (light hazard) wg PN-EN 12845.",
+  "answer": "c",
+  "explanation": "W zwykłym budynku pomieszczenia biurowe zalicza się do klasy OH1. Załącznik E normy PN-EN 12845 dotyczy urządzeń tryskaczowych w budynkach wysokich (różnica wysokości między najwyższym a najniższym tryskaczem ponad 45 m) i wymaga, aby takie urządzenia spełniały wymagania jak dla klasy OH3. Dlatego w budynku wysokościowym biura projektuje się według OH3, a nie LH czy OH2.",
   "legal": [
-   "PN-EN 12845 – klasy zagrożenia (LH/OH/HH)"
+   "PN-EN 12845 załącznik E – urządzenia tryskaczowe w budynkach wysokich (wymagania jak dla OH3)",
+   "PN-EN 12845 załącznik A – klasyfikacja zagrożeń (biura OH1)"
   ],
   "verified": false
  },
@@ -69,15 +72,16 @@
   "legal": [
    "ustawa o ochronie ppoż. – unieważnienie uzgodnienia"
   ],
-  "verified": false
+  "verified": true
  },
  "210": {
-  "answer": "a",
-  "explanation": "Budynek niski ze strefą ZL I wymaga klasy odporności pożarowej co najmniej B (ZL I decyduje jako wymaganie surowsze wobec ZL V).",
+  "answer": "b",
+  "explanation": "Budynek niski ZL I wymaga co do zasady klasy B, ale przy dwóch kondygnacjach nadziemnych i stropie nad pierwszą kondygnacją nie wyżej niż 9 m § 212 ust. 3 pozwala obniżyć ją do klasy C. Część hotelowa ZL V w budynku niskim wymaga klasy C. W obu przypadkach wynik to klasa C.",
   "legal": [
-   "§ 212 WT – klasa odporności pożarowej"
+   "§ 212 ust. 2 WT – klasy odporności pożarowej budynków ZL",
+   "§ 212 ust. 3 WT – obniżenie klasy w budynkach jedno- i dwukondygnacyjnych"
   ],
-  "verified": false
+  "verified": true
  },
  "211": {
   "answer": "a",
@@ -85,7 +89,7 @@
   "legal": [
    "PN-EN 13501-1 – klasyfikacja izolacji przewodów; WT"
   ],
-  "verified": false
+  "verified": true
  },
  "212": {
   "answer": "c",
@@ -101,7 +105,7 @@
   "legal": [
    "ustawa o wyrobach budowlanych – krajowa ocena techniczna"
   ],
-  "verified": false
+  "verified": true
  },
  "214": {
   "answer": "a",
@@ -109,7 +113,7 @@
   "legal": [
    "rozp. MG z 21.11.2005 – strefy zagrożenia wybuchem na stacji paliw"
   ],
-  "verified": false
+  "verified": true
  },
  "215": {
   "answer": "b",
@@ -120,12 +124,13 @@
   "verified": false
  },
  "216": {
-  "answer": "a",
-  "explanation": "Dwukondygnacyjny niski budynek biurowy o niewielkiej powierzchni (750 m²) nie wymaga uzgodnienia projektu pod względem ochrony ppoż.; hotel (ZL V) i budynek z wydzieloną strefą handlową 1000 m² – wymagają.",
+  "answer": "c",
+  "explanation": "Budynek niski ze strefą ZL III wymaga uzgodnienia dopiero wtedy, gdy strefa przekracza 1000 m2 i obejmuje kondygnację nadziemną inną niż pierwsza. Biurowiec dwukondygnacyjny ma strefę 2 × 750 = 1500 m2 na dwóch kondygnacjach, więc wymaga uzgodnienia, a hotel to ZL V, który wymaga go zawsze. Czterokondygnacyjny budynek mieszkalny jest niski, a jego strefa ZL III ma dokładnie 1000 m2 (nie przekracza progu) i leży tylko na pierwszej kondygnacji, więc uzgodnienie nie jest wymagane.",
   "legal": [
-   "§ 4 rozp. w sprawie uzgadniania projektu pod względem ochrony ppoż."
+   "§ 3 ust. 1 pkt 1–3 rozp. MSWiA w sprawie uzgadniania projektu – obiekty wymagające uzgodnienia",
+   "§ 8 pkt 1 WT – budynek mieszkalny do 4 kondygnacji jest niski"
   ],
-  "verified": false
+  "verified": true
  },
  "217": {
   "answer": "a",
@@ -133,7 +138,7 @@
   "legal": [
    "§ 216 ust. 8 WT; PN-B-02867"
   ],
-  "verified": false
+  "verified": true
  },
  "218": {
   "answer": "c",
@@ -141,15 +146,16 @@
   "legal": [
    "§ 29 RPB / PN-EN 54 – dźwiękowy system ostrzegawczy"
   ],
-  "verified": false
+  "verified": true
  },
  "219": {
-  "answer": "a",
-  "explanation": "Odległość magazynu butli od obiektu użyteczności publicznej można zmniejszyć, stosując ścianę oddzielenia przeciwpożarowego o klasie co najmniej REI 120, zasłaniającą zbiornik/magazyn od strony tego obiektu.",
+  "answer": "c",
+  "explanation": "Magazyn butli z gazem płynnym do 1350 kg musi być oddalony o 60 m od obiektów użyteczności publicznej (ust. 1 pkt 4). Ściana REI 120 pozwala zmniejszyć o połowę tylko odległości z pkt 1, 2 i 5, a przepis wprost wyłącza pkt 3 i 4, czyli budynki jednorodzinne i obiekty użyteczności publicznej. Żaden z wariantów ze ścianą nie jest więc poprawny. Zmniejszenie o połowę jest możliwe jedynie przy masie gazu do 440 kg w kontenerach ażurowych, ale tego warianty nie obejmują.",
   "legal": [
-   "rozp. MG z 21.11.2005 – zmniejszenie odległości ścianą oddzielenia"
+   "§ 124 ust. 1 pkt 4 rozp. MKiŚ z 24.07.2023 – odległość 60 m od obiektów użyteczności publicznej",
+   "§ 124 ust. 2 rozp. MKiŚ z 24.07.2023 – przypadki zmniejszenia odległości o połowę"
   ],
-  "verified": false
+  "verified": true
  },
  "220": {
   "answer": "b",
@@ -165,7 +171,7 @@
   "legal": [
    "§ 19 RPB – dobór hydrantów wewnętrznych"
   ],
-  "verified": false
+  "verified": true
  },
  "222": {
   "answer": "b",
@@ -176,10 +182,11 @@
   "verified": false
  },
  "223": {
-  "answer": "a",
-  "explanation": "Przy jedynym dojściu ewakuacyjnym o niewielkiej długości (20 m) klatkę schodową w niskim budynku przedszkola należy zamknąć drzwiami dymoszczelnymi.",
+  "answer": "c",
+  "explanation": "Przedszkole to ZL II, a klatka schodowa w niskim budynku ZL II musi być obudowana i zamykana drzwiami dymoszczelnymi (§ 245 pkt 1). Jedyne dojście w ZL II może mieć najwyżej 10 m, więc przy 20 m trzeba zakończyć dojście na drzwiach klatki spełniającej § 256 ust. 2, czyli zamykanej drzwiami EI 30. Drzwi muszą więc łączyć klasę EI 30 z dymoszczelnością.",
   "legal": [
-   "§ 245 WT – obudowa i zamykanie klatek schodowych"
+   "§ 245 pkt 1 WT – klatki schodowe w niskim budynku ZL II",
+   "§ 256 ust. 2 i 3 WT – klatka z drzwiami EI 30 i dojście 10 m w ZL II"
   ],
   "verified": false
  },
@@ -189,13 +196,14 @@
   "legal": [
    "rozp. z 7.10.1997 – warunki techniczne budowli rolniczych"
   ],
-  "verified": false
+  "verified": true
  },
  "225": {
-  "answer": "c",
-  "explanation": "Odległość pionowa od poziomu stanowiska czerpania wody do najniższego użytecznego poziomu wody (praca ze ssaniem) nie powinna przekraczać 7 m.",
+  "answer": "b",
+  "explanation": "Pompa pożarnicza zasysa wodę skutecznie tylko przy ograniczonej geodezyjnej wysokości ssania, dlatego norma ogranicza odległość pionową od poziomu stanowiska czerpania do najniższego użytecznego poziomu wody. Przyjęto wartość 5 m. Dla porównania § 4 ust. 6 RW wymaga dla studni i punktów czerpania wody głębokości nie większej niż 4 m. Odpowiedź wymaga potwierdzenia w tekście normy. Uwaga: odpowiedź opiera się na normie lub źródle niedostępnym w aplikacji.",
   "legal": [
-   "PN-B-02857:2017 – przeciwpożarowe zbiorniki wodne"
+   "PN-B-02857:2017-04 – głębokość zbiornika i wysokość ssania",
+   "§ 4 ust. 6 RW – głębokość poboru wody z uzupełniających źródeł"
   ],
   "verified": false
  },
@@ -205,7 +213,7 @@
   "legal": [
    "§ 227 WT – powiększanie powierzchni stref pożarowych"
   ],
-  "verified": false
+  "verified": true
  },
  "227": {
   "answer": "b",
@@ -213,7 +221,7 @@
   "legal": [
    "§ 17 RPB – praktyczne sprawdzenie warunków ewakuacji"
   ],
-  "verified": false
+  "verified": true
  },
  "228": {
   "answer": "a",
@@ -221,15 +229,15 @@
   "legal": [
    "§ 253 WT – wyjścia na strych/dach"
   ],
-  "verified": false
+  "verified": true
  },
  "229": {
-  "answer": "b",
-  "explanation": "Minimalna długość przejazdu awaryjnego przez pas dzielący jezdnie autostrady wynosi 150 m.",
+  "answer": "a",
+  "explanation": "Przejazdy awaryjne przez pas dzielący jezdnie autostrady wykonuje się w odstępach nie większych niż 4 km. Długość przejazdu ma być dostosowana do potrzeb, ale nie może być mniejsza niż 75 m. Rozporządzenie o autostradach płatnych już nie obowiązuje, pytanie odnosi się jednak wprost do tego aktu.",
   "legal": [
-   "rozp. MI z 16.01.2002 – przepisy techniczno-budowlane autostrad płatnych"
+   "§ 101 ust. 1 i 3 rozp. MI z 16.01.2002 (autostrady płatne) – przejazdy awaryjne przez pas dzielący"
   ],
-  "verified": false
+  "verified": true
  },
  "230": {
   "answer": "a",
@@ -237,7 +245,7 @@
   "legal": [
    "§ 236 WT – kierunek otwierania drzwi ewakuacyjnych"
   ],
-  "verified": false
+  "verified": true
  },
  "231": {
   "answer": "c",
@@ -253,7 +261,7 @@
   "legal": [
    "rozp. z 17.06.2011 – warunki techniczne obiektów metra"
   ],
-  "verified": false
+  "verified": true
  },
  "233": {
   "answer": "b",
@@ -261,15 +269,16 @@
   "legal": [
    "§ 308 WT – wyłazy i klapy wyjściowe"
   ],
-  "verified": false
+  "verified": true
  },
  "234": {
-  "answer": "b",
-  "explanation": "Zastosowanie SUG wodnego umożliwia przyjęcie klasy odporności pożarowej obniżonej o jedną w stosunku do wymaganej.",
+  "answer": "a",
+  "explanation": "W budynku wyposażonym w stałe samoczynne urządzenia gaśnicze wodne (poza ZL II oraz wielokondygnacyjnymi budynkami wysokimi i wysokościowymi) dopuszcza się dla budynku jednokondygnacyjnego klasę „E” bez dodatkowych warunków. Obniżenie o jedną klasę (pkt 1) to dopuszczenie ogólne, które w budynku jednokondygnacyjnym daje mniej niż pkt 2. Warunek elementów nierozprzestrzeniających ognia pochodzi z § 215 i dotyczy przypadku bez urządzeń gaśniczych.",
   "legal": [
-   "§ 230 WT – obniżenie klasy przy zastosowaniu SUG wodnego"
+   "§ 214 WT – obniżenie klasy odporności pożarowej przy stałych urządzeniach gaśniczych wodnych",
+   "§ 215 ust. 1 WT – klasa „E” dla jednokondygnacyjnego budynku PM bez urządzeń gaśniczych"
   ],
-  "verified": false
+  "verified": true
  },
  "235": {
   "answer": "a",
@@ -280,20 +289,22 @@
   "verified": false
  },
  "236": {
-  "answer": "b",
-  "explanation": "§ 229 ust. 1–2 WT: tryskacze pozwalają powiększyć strefę PM o 100%, oddymianie o 50%, a przy jednoczesnym stosowaniu obu – o 150%. Powierzchni strefy nie znosi się całkowicie.",
+  "answer": "c",
+  "explanation": "Powiększenie o 150% z § 229 ust. 2 to zasada ogólna dla stref PM. Dla budynku jednokondygnacyjnego obowiązuje korzystniejszy przepis szczególny: przy jednoczesnym zastosowaniu tryskaczy i samoczynnego oddymiania wielkości strefy pożarowej PM w ogóle się nie ogranicza, niezależnie od gęstości obciążenia ogniowego.",
   "legal": [
-   "§ 229 WT – powiększanie powierzchni stref pożarowych PM"
+   "§ 230 ust. 2 WT – brak ograniczenia strefy PM w budynku jednokondygnacyjnym",
+   "§ 229 WT – powiększenie stref PM o 100%, 50% i 150%"
   ],
   "verified": true
  },
  "237": {
-  "answer": "b",
-  "explanation": "Fotele trudno zapalne w sali dla ponad 200 osób dodatkowo nie mogą wydzielać bardzo toksycznych produktów rozkładu i spalania oraz być intensywnie dymiące.",
+  "answer": "a",
+  "explanation": "§ 261 pkt 1 WT wymaga, aby w pomieszczeniach dla ponad 200 osób dorosłych z siedzeniami ustawionymi w rzędach fotele były trudno zapalne oraz nie wydzielały produktów rozkładu i spalania określanych jako bardzo toksyczne. Przepis nie stawia fotelom wymagania dotyczącego intensywnego dymienia. Zakaz z § 258 ust. 1 WT dotyczy materiałów łatwo zapalnych, a fotele trudno zapalne do nich nie należą.",
   "legal": [
-   "§ 261 / § 258 WT – wymagania dla wyposażenia sal"
+   "§ 261 pkt 1 WT – fotele w salach dla ponad 200 osób",
+   "§ 258 ust. 1 WT – materiały wykończeniowe łatwo zapalne"
   ],
-  "verified": false
+  "verified": true
  },
  "238": {
   "answer": "b",

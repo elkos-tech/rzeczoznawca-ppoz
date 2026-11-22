@@ -5,7 +5,7 @@
   "legal": [
    "§ 212 ust. 4 WT – budynki jednokondygnacyjne; § 230 WT"
   ],
-  "verified": false
+  "verified": true
  },
  "242": {
   "answer": "b",
@@ -13,15 +13,16 @@
   "legal": [
    "§ 256 WT – obudowa poziomych dróg ewakuacyjnych"
   ],
-  "verified": false
+  "verified": true
  },
  "243": {
-  "answer": "c",
-  "explanation": "Wentylatory oddymiające tunelu drogowego powinny mieć klasę odpowiadającą wysokiej obliczeniowej temperaturze dymu, nie mniejszą niż F600 120.",
+  "answer": "a",
+  "explanation": "Przepisy dla tuneli drogowych wymagają, aby wentylatory usuwające dym i ciepło miały klasę F dobraną do obliczeniowej temperatury dymu. Klasa ta nie może być niższa niż F400 120, czyli wentylator ma pracować co najmniej 120 minut w temperaturze 400°C. Tę samą wartość podawało rozporządzenie z 2000 r. po nowelizacjach i podaje ją obecne rozporządzenie z 2022 r.",
   "legal": [
-   "rozp. w sprawie warunków technicznych drogowych obiektów inżynierskich; PN-EN 12101-3"
+   "§ 321b ust. 2 rozp. MTiGM z 30.05.2000 – klasa wentylatorów oddymiających w tunelu",
+   "zał. nr 3 pkt 104 rozp. MI z 24.06.2022 – klasa wentylatorów oddymiających w tunelu"
   ],
-  "verified": false
+  "verified": true
  },
  "244": {
   "answer": "b",
@@ -29,37 +30,38 @@
   "legal": [
    "§ 258 WT – wykończenie wnętrz na drogach ewakuacyjnych i w pomieszczeniach"
   ],
-  "verified": false
+  "verified": true
  },
  "245": {
-  "answer": "a",
-  "explanation": "Maksymalna dopuszczalna pojemność zbiorników magazynowych produktów naftowych w stacji kontenerowej wynosi 5 m³.",
+  "answer": "b",
+  "explanation": "Dla stacji kontenerowej przepis ustala limit pojemności zbiorników magazynowych produktów naftowych na 30 m3. Wartość 100 m3 dotyczy pojedynczego zbiornika magazynowego zwykłej stacji paliw płynnych.",
   "legal": [
-   "rozp. MG z 21.11.2005 – stacje kontenerowe paliw"
+   "§ 96 ust. 3 rozp. w sprawie baz i stacji paliw płynnych – pojemność zbiorników stacji kontenerowej"
   ],
-  "verified": false
+  "verified": true
  },
  "246": {
-  "answer": "a",
-  "explanation": "Piec na paliwo stałe może być stosowany w budynku ZL I niskim.",
+  "answer": "b",
+  "explanation": "Kryterium dopuszczenia pieców na paliwo stałe jest liczba kondygnacji, a nie grupa wysokości ani kategoria ZL. Piece można stosować w budynkach do 3 kondygnacji nadziemnych włącznie, o ile nie sprzeciwia się temu plan miejscowy. Budynek niski może mieć więcej niż 3 kondygnacje, dlatego wariant „niskim” jest za szeroki.",
   "legal": [
-   "§ 132 WT – instalacje ogrzewcze na paliwo stałe"
+   "§ 132 ust. 2 WT – piece i trzony kuchenne na paliwo stałe"
   ],
-  "verified": false
+  "verified": true
  },
  "247": {
-  "answer": "a",
-  "explanation": "Drogowe urządzenia przeciwhałasowe na obiektach mostowych, usytuowane bliżej niż 8 m od budynków, powinny mieć klasę reakcji na ogień co najmniej A2,d0.",
+  "answer": "c",
+  "explanation": "Klasa reakcji na ogień drogowych urządzeń przeciwhałasowych zależy od miejsca ich zastosowania. W tunelach wymagana jest klasa B, na obiektach całkowicie przykrywających drogę klasa B-s1, d0, a na obiektach mostowych częściowo przykrywających pas ruchu albo położonych bliżej niż 8 m od budynków co najmniej klasa D. W pozostałych przypadkach wystarcza klasa E. Obecne rozporządzenie z 2022 r. utrzymało klasę D dla ekranów bliżej niż 8 m od budynków.",
   "legal": [
-   "rozp. w sprawie warunków technicznych drogowych obiektów inżynierskich"
+   "§ 281 ust. 1 pkt 2 rozp. MTiGM z 30.05.2000 – reakcja na ogień drogowych urządzeń przeciwhałasowych",
+   "zał. nr 3 pkt 10 rozp. MI z 24.06.2022 – reakcja na ogień drogowych urządzeń przeciwhałasowych"
   ],
-  "verified": false
+  "verified": true
  },
  "248": {
-  "answer": "b",
-  "explanation": "Przy belkach o wysokości 24 cm dzielących strop na wąskie pola dopuszcza się umieszczenie punktowej czujki dymu w co drugim polu.",
+  "answer": "c",
+  "explanation": "Według CEN/TS 54-14 nierówności stropu, w tym belki, o wysokości większej niż 5% wysokości pomieszczenia traktuje się jak ściany. Przy wysokości pomieszczenia 5 m próg wynosi 25 cm, a belki mają 24 cm, więc go nie przekraczają. Strop traktuje się zatem jak płaski i przyjmuje promień działania czujki dymu 7,5 m, który podaje wydanie z 2006 r. Uwaga: odpowiedź opiera się na normie lub źródle niedostępnym w aplikacji.",
   "legal": [
-   "PKN-CEN/TS 54-14:2006 – rozmieszczenie czujek przy belkach"
+   "PKN-CEN/TS 54-14:2006 pkt A.6.5.1 – nierówności stropu i promień działania czujek"
   ],
   "verified": false
  },
@@ -69,7 +71,7 @@
   "legal": [
    "PN-EN 12101-2 – klasyfikacja klap dymowych"
   ],
-  "verified": false
+  "verified": true
  },
  "250": {
   "answer": "c",
@@ -88,10 +90,11 @@
   "verified": true
  },
  "252": {
-  "answer": "a",
-  "explanation": "W pomieszczeniu zagrożonym wybuchem długość przejścia ewakuacyjnego nie może przekraczać 40 m i nie podlega powiększeniom (także za oddymianie).",
+  "answer": "b",
+  "explanation": "W pomieszczeniu zagrożonym wybuchem przejście ewakuacyjne może mieć 40 m. Samoczynne urządzenia oddymiające uruchamiane systemem wykrywania dymu pozwalają powiększyć tę długość o 50%, co daje 60 m. Dodatek 25% za wysokość nie przysługuje, bo pomieszczenie ma dokładnie 5 m, a przepis wymaga wysokości przekraczającej 5 m.",
   "legal": [
-   "§ 237 WT – przejście w pomieszczeniu zagrożonym wybuchem"
+   "§ 237 ust. 2 WT – przejście w pomieszczeniu zagrożonym wybuchem 40 m",
+   "§ 237 ust. 5 i 6 WT – powiększenia długości przejścia"
   ],
   "verified": true
  },
@@ -101,7 +104,7 @@
   "legal": [
    "rozp. z 17.06.2011 – warunki techniczne obiektów metra"
   ],
-  "verified": false
+  "verified": true
  },
  "254": {
   "answer": "a",
@@ -128,20 +131,22 @@
   "verified": true
  },
  "257": {
-  "answer": "b",
-  "explanation": "Przy dwóch kierunkach ewakuacji (do obu klatek) wyposażenie rezerwowe systemu różnicowania ciśnień powinno być zastosowane w co najmniej jednej klatce schodowej.",
+  "answer": "a",
+  "explanation": "PN-EN 12101-6 wymaga wentylatora rezerwowego z napędem, gdy system różnicowania ciśnień chroni jedyną drogę ewakuacji. Tutaj z każdego miejsca kondygnacji można dojść do dwóch chronionych klatek schodowych. Norma nie wymaga wtedy wyposażenia rezerwowego w żadnej z nich.",
   "legal": [
-   "PN-EN 12101-6:2007 – systemy różnicowania ciśnień"
+   "PN-EN 12101-6:2007 – systemy różnicowania ciśnień, wyposażenie rezerwowe"
   ],
   "verified": false
  },
  "258": {
-  "answer": "a",
-  "explanation": "Strefa z odpadami stałymi o takich parametrach wymaga wyposażenia w samoczynne urządzenia oddymiające, system sygnalizacji pożarowej oraz stałe urządzenia gaśnicze wodne lub pianowe.",
+  "answer": "b",
+  "explanation": "System sygnalizacji pożarowej jest wymagany przy Q ponad 1000 MJ/m2 i powierzchni ponad 2000 m2, a samoczynne oddymianie przy Q ponad 1000 MJ/m2 i powierzchni ponad 1000 m2. Strefa 1500 MJ/m2 i 3000 m2 spełnia oba progi. Stałe urządzenia gaśnicze są wymagane dopiero przy Q ponad 2000 MJ/m2, więc tutaj nie są obowiązkowe.",
   "legal": [
-   "rozp. MSWiA z 19.02.2020 (Dz.U. poz. 296) – ochrona ppoż. miejsc magazynowania odpadów"
+   "§ 34 ust. 1 rozp. MSWiA z 19.02.2020 – system sygnalizacji pożarowej w strefie z odpadami",
+   "§ 35 ust. 1 rozp. MSWiA z 19.02.2020 – stałe urządzenia gaśnicze",
+   "§ 37 ust. 1 rozp. MSWiA z 19.02.2020 – samoczynne urządzenia oddymiające"
   ],
-  "verified": false
+  "verified": true
  },
  "259": {
   "answer": "c",
@@ -192,12 +197,12 @@
   "verified": false
  },
  "265": {
-  "answer": "b",
-  "explanation": "Przy obiektach tymczasowych o konstrukcji palnej należy zachować pas ochronny o szerokości nie mniejszej niż 5 m.",
+  "answer": "a",
+  "explanation": "§ 4 ust. 3 RPB wymaga pasa ochronnego o szerokości co najmniej 2 m wokół placów składowych i składowisk przy obiektach oraz przy obiektach tymczasowych o konstrukcji palnej. Pas ma mieć nawierzchnię z materiałów niepalnych albo gruntową oczyszczoną.",
   "legal": [
-   "§ 273 WT / RPB – pas ochronny obiektów tymczasowych"
+   "§ 4 ust. 3 RPB – pas ochronny przy placach składowych i obiektach tymczasowych"
   ],
-  "verified": false
+  "verified": true
  },
  "266": {
   "answer": "a",
@@ -208,26 +213,27 @@
   "verified": true
  },
  "267": {
-  "answer": "a",
-  "explanation": "Magazyn ciekłych odpadów palnych o powierzchni 300 m² wyposaża się w stałe lub półstałe urządzenia gaśnicze pianowe albo zapewnia otwór w ścianie umożliwiający skuteczne podanie piany.",
+  "answer": "b",
+  "explanation": "§ 36 ust. 1 wymaga wyposażenia magazynu ciekłych odpadów palnych w stałe lub półstałe urządzenia gaśnicze pianowe. Zwolnienie z ust. 2, oparte na oknie lub otworze do podania piany, dotyczy tylko magazynów o powierzchni nie większej niż 200 m2. Magazyn o powierzchni 300 m2 przekracza ten próg, więc urządzenia gaśnicze pianowe są obowiązkowe, przy czym mogą być stałe albo półstałe.",
   "legal": [
-   "rozp. MSWiA z 19.02.2020 (Dz.U. poz. 296)"
+   "§ 36 ust. 1 rozp. MSWiA z 19.02.2020 – urządzenia gaśnicze pianowe w magazynie ciekłych odpadów palnych",
+   "§ 36 ust. 2 rozp. MSWiA z 19.02.2020 – zwolnienie dla magazynów do 200 m2"
   ],
-  "verified": false
+  "verified": true
  },
  "268": {
-  "answer": "c",
-  "explanation": "Dla pomieszczenia archiwum, gdzie liczba użytkowników nie wynika z przeznaczenia, przyjmuje się współczynnik 30 m²/osobę.",
+  "answer": "b",
+  "explanation": "§ 236 ust. 6 WT podaje wskaźniki powierzchni na osobę, stosowane gdy liczba użytkowników nie wynika jednoznacznie z przeznaczenia pomieszczeń. Dla archiwów i bibliotek jest to 7 m2/osobę. Wartość 5 m2/osobę dotyczy pomieszczeń administracyjno-biurowych, a 30 m2/osobę magazynów.",
   "legal": [
-   "§ 240 / załącznik WT – przyjmowanie liczby użytkowników"
+   "§ 236 ust. 6 WT – liczba użytkowników według powierzchni pomieszczeń"
   ],
-  "verified": false
+  "verified": true
  },
  "269": {
-  "answer": "a",
-  "explanation": "Dla dachu o nachyleniu 13° maksymalna odległość klap dymowych od krawędzi budynku nie może przekraczać 10 m.",
+  "answer": "c",
+  "explanation": "Norma z 2001 r. uzależnia rozmieszczenie klap od nachylenia dachu. Przy nachyleniu do 12° odległość klap od krawędzi dachu nie może przekraczać 10 m. Przy nachyleniu większym niż 12°, a więc także przy 13°, maksymalna odległość między klapami a krawędzią budynku wynosi 20 m.",
   "legal": [
-   "PN-B-02877-4:2001 – grawitacyjne odprowadzanie dymu i ciepła"
+   "PN-B-02877-4:2001 – rozmieszczenie klap dymowych na dachu"
   ],
   "verified": false
  },
@@ -261,7 +267,7 @@
   "legal": [
    "rozp. MG z 21.11.2005 – strefy zagrożenia wybuchem"
   ],
-  "verified": false
+  "verified": true
  },
  "274": {
   "answer": "c",
@@ -269,7 +275,7 @@
   "legal": [
    "§ 28, § 29 RPB; WT – kurtyny przeciwpożarowe scen"
   ],
-  "verified": false
+  "verified": true
  },
  "275": {
   "answer": "c",
@@ -277,7 +283,7 @@
   "legal": [
    "rozp. MG z 26.04.2013 – sieci gazowe"
   ],
-  "verified": false
+  "verified": true
  },
  "276": {
   "answer": "a",
@@ -285,7 +291,7 @@
   "legal": [
    "§ 20 RPB – instalacja wodociągowa przeciwpożarowa (instalacja sucha)"
   ],
-  "verified": false
+  "verified": true
  },
  "277": {
   "answer": "b",
@@ -293,15 +299,15 @@
   "legal": [
    "rozp. MEN z 25.08.2017 (Dz.U. 2020 poz. 1531)"
   ],
-  "verified": false
+  "verified": true
  },
  "278": {
-  "answer": "a",
-  "explanation": "Odległość stanowisk postojowych od instalacji do otrzymywania biogazu rolniczego powinna wynosić co najmniej 8 m.",
+  "answer": "b",
+  "explanation": "Rozporządzenie o budowlach rolniczych podaje tę odległość wprost. Stanowiska postojowe dla pojazdów samochodowych i samojezdnych maszyn rolniczych muszą być oddalone od instalacji do otrzymywania biogazu rolniczego o co najmniej 10 m.",
   "legal": [
-   "rozp. dot. budowli rolniczych / biogazowni"
+   "§ 42 rozp. MRiRW z 13.01.2023 (budowle rolnicze) – odległość stanowisk postojowych od instalacji biogazu rolniczego"
   ],
-  "verified": false
+  "verified": true
  },
  "279": {
   "answer": "b",
@@ -317,6 +323,6 @@
   "legal": [
    "§ 12–13 RW – parametry drogi pożarowej"
   ],
-  "verified": false
+  "verified": true
  }
 }

@@ -9,20 +9,20 @@
   "verified": true
  },
  "522": {
-  "answer": "c",
-  "explanation": "Maksymalna odległość między elementami ograniczającymi strefę dymową to suma długości dwóch najdłuższych boków elementów ograniczających podzielona przez 2, lecz nie więcej niż 60 m.",
+  "answer": "a",
+  "explanation": "Norma z 2025 r. zwiększyła dopuszczalną powierzchnię strefy dymowej z 2600 m2 do 4000 m2 i jednocześnie ograniczyła maksymalną odległość między elementami ograniczającymi strefę dymową do 80 m. Wartość 60 m pochodzi z wycofanej normy z 2001 r.",
   "legal": [
-   "PN-B-02877-4:2025-07 – strefy dymowe"
+   "PN-B-02877-4:2025-07 – wymiary stref dymowych"
   ],
   "verified": false
  },
  "523": {
-  "answer": "a",
-  "explanation": "Ukrycie kategorii U-3 powinno stanowić strefę pożarową zabezpieczoną przed rozprzestrzenianiem się pożaru do wnętrza przez czas nie krótszy niż 60 minut (krzywa standardowa).",
+  "answer": "b",
+  "explanation": "Rozporządzenie o budowlach ochronnych różnicuje czas zabezpieczenia strefy pożarowej według rodzaju budowli. Dla ukryć kategorii U-1 i U-2 jest to 60 minut, dla ukryć kategorii U-3 120 minut, a dla schronów 240 minut. Czas odnosi się do oddziaływania pożaru według krzywej pożaru standardowego.",
   "legal": [
-   "przepisy dot. budowli ochronnych – kategorie ukryć"
+   "§ 9 ust. 1 rozp. MSWiA z 4.11.2025 (Dz.U. poz. 1548) – wydzielenie pożarowe budowli ochronnej"
   ],
-  "verified": false
+  "verified": true
  },
  "524": {
   "answer": "a",
@@ -33,12 +33,14 @@
   "verified": false
  },
  "525": {
-  "answer": "a",
-  "explanation": "W niskim budynku hotelu biegi i spoczniki obudowanej, zamykanej klatki schodowej mogą być wykonane z materiałów palnych (co najmniej trudno zapalnych) i mieć klasę odporności ogniowej co najmniej R 30.",
+  "answer": "b",
+  "explanation": "Niski hotel to strefa ZL V, dla której wymagana jest klasa odporności pożarowej C, a obniżenie z § 212 ust. 3 nie obejmuje ZL V. W budynkach klasy A, B i C biegi i spoczniki schodów ewakuacyjnych muszą być niepalne i mieć klasę R 60. Schody z materiałów palnych dopuszcza się tylko w budynkach niskich klasy D lub E, więc drzwi EI 30 S nic tu nie zmieniają.",
   "legal": [
-   "§ 253 WT – biegi i spoczniki schodów"
+   "§ 249 ust. 3 pkt 1 WT – biegi i spoczniki R 60 w budynkach klasy A, B i C",
+   "§ 249 ust. 5 WT – schody z materiałów palnych tylko w klasie D lub E",
+   "§ 212 ust. 2 WT – klasa C dla niskiego budynku ZL V"
   ],
-  "verified": false
+  "verified": true
  },
  "526": {
   "answer": "a",
@@ -46,7 +48,7 @@
   "legal": [
    "§ 10 RW – sieć wodociągowa przeciwpożarowa"
   ],
-  "verified": false
+  "verified": true
  },
  "527": {
   "answer": "a",
@@ -57,10 +59,12 @@
   "verified": true
  },
  "528": {
-  "answer": "c",
-  "explanation": "Ściana tworząca kąt ze ścianą zewnętrzną klatki schodowej (z otworami ze szkła zwykłego) powinna w pasie terenu o szerokości co najmniej 6 m mieć klasę odporności ogniowej co najmniej REI 60 i być wykonana z materiałów niepalnych.",
+  "answer": "b",
+  "explanation": "Odległość między ścianą klatki schodowej a inną ścianą zewnętrzną ustala się według § 271: dla ZL wynosi 8 m, a przy ścianie mającej klasę odporności ogniowej tylko na 50% powierzchni rośnie o 50% do 12 m. Przy kącie 100° pas zmniejsza się o połowę, czyli do 6 m. W tym pasie ściana ma mieć klasę jak strop budynku, czyli REI 60 dla klasy B, i tak jak inne elementy budynku ma być nierozprzestrzeniająca ognia. Przepis nie wymaga wykonania jej z materiałów niepalnych.",
   "legal": [
-   "§ 249 WT – przeszklenia i ściany przy narożach"
+   "§ 249 ust. 6 WT – ściana zewnętrzna przy klatce schodowej",
+   "§ 271 ust. 1, 4 i 11 WT – odległości i pas terenu przy ścianach pod kątem",
+   "§ 216 ust. 1 i 2 WT – klasa REI 60 stropu w klasie B i nierozprzestrzenianie ognia"
   ],
   "verified": false
  },
@@ -81,18 +85,22 @@
   "verified": false
  },
  "531": {
-  "answer": "a",
-  "explanation": "Pomieszczenie z rozdzielnią zasilającą urządzenia funkcjonujące w czasie pożaru powinno być wydzielone ścianami i stropem zapewniającymi szczelność i izolacyjność ogniową co najmniej przez czas wymagany do uruchomienia i działania zasilanych urządzeń.",
+  "answer": "c",
+  "explanation": "Rozdzielnia elektryczna zasilająca urządzenia niezbędne podczas pożaru musi stanowić odrębną strefę pożarową. Część podziemna budynku ma klasę odporności pożarowej co najmniej „C”, nawet gdy część nadziemna budynku mieszkalnego niskiego wymaga tylko klasy „D”. Dla klasy „C” ściany i stropy oddzielenia przeciwpożarowego mają klasę REI 120.",
   "legal": [
-   "§ 181 WT / PN-HD 60364-5-56 – zasilanie urządzeń ppoż."
+   "§ 212 ust. 9 WT – rozdzielnia zasilająca urządzenia przeciwpożarowe jako odrębna strefa pożarowa",
+   "§ 212 ust. 7 WT – klasa co najmniej „C” dla części podziemnej",
+   "§ 232 ust. 4 WT – REI 120 dla klasy „B” i „C”"
   ],
-  "verified": false
+  "verified": true
  },
  "532": {
-  "answer": "a",
-  "explanation": "Korytarz stanowiący drogę ewakuacyjną o długości powyżej 50 m należy podzielić na odcinki nie dłuższe niż 50 m przegrodami z drzwiami dymoszczelnymi.",
+  "answer": "b",
+  "explanation": "Budynek o wysokości 30 m jest wysoki mimo dwóch kondygnacji, więc jego poziome drogi ewakuacyjne muszą być zabezpieczone przed zadymieniem i podział korytarza drzwiami dymoszczelnymi co 50 m ich nie dotyczy. Niezależnie od tego przestrzeń nad sufitem podwieszonym w korytarzu dzieli się co 50 m przegrodami z materiałów niepalnych. Pytanie nie mówi, czy korytarz ma sufit podwieszony, dlatego do obrony jest też wariant c i pytanie jest niejednoznaczne. Uwaga: pytanie niejednoznaczne, do obrony jest też inny wariant.",
   "legal": [
-   "§ 256 WT – podział korytarzy ewakuacyjnych"
+   "§ 262 ust. 2 WT – podział przestrzeni nad sufitem podwieszonym",
+   "§ 243 ust. 1 i 2 WT – podział korytarzy co 50 m i wyłączenie",
+   "§ 247 ust. 1 WT – zabezpieczenie przed zadymieniem w budynkach W i WW"
   ],
   "verified": false
  },
@@ -102,7 +110,7 @@
   "legal": [
    "§ 12 RW – parametry drogi pożarowej"
   ],
-  "verified": false
+  "verified": true
  },
  "534": {
   "answer": "c",
@@ -110,7 +118,7 @@
   "legal": [
    "§ 245 WT – liczba klatek schodowych w budynkach wysokich"
   ],
-  "verified": false
+  "verified": true
  },
  "535": {
   "answer": "c",
@@ -121,12 +129,14 @@
   "verified": false
  },
  "536": {
-  "answer": "b",
-  "explanation": "Dla budynku wysokościowego z nasadą 75 mm można zastosować zbiornik o zapasie wody 25 m³, przy zapewnieniu zasilania z sieci o wydajności nie mniejszej niż 15 dm³/s.",
+  "answer": "c",
+  "explanation": "Budynek do 100 m, który powyżej 12 m zawiera wyłącznie strefy ZL IV, może mieć zbiornik zmniejszony do 50 m3 niezależnie od powierzchni stref. Tę pojemność można dalej zmniejszyć do 6 m3, jeżeli zbiornik jest zasilany z sieci o wydajności co najmniej 10 dm3/s i wyprowadzono dodatkową nasadę 75 mm, a pytanie ten warunek podaje. Wartość 25 m3 przy 15 dm3/s dotyczy zmniejszania zbiornika 100 m3, a nie 50 m3.",
   "legal": [
-   "§ 19–20 RPB – instalacja wodociągowa ppoż. w budynkach wysokościowych"
+   "§ 24 ust. 3 pkt 1 RPB – zmniejszenie zbiornika do 50 m3",
+   "§ 24 ust. 3 pkt 3 lit. c RPB – zmniejszenie do 6 m3 przy sieci 10 dm3/s",
+   "§ 24 ust. 5 RPB – warunek dodatkowej nasady 75 mm"
   ],
-  "verified": false
+  "verified": true
  },
  "537": {
   "answer": "a",
@@ -137,20 +147,20 @@
   "verified": true
  },
  "538": {
-  "answer": "a",
-  "explanation": "Minimalna powierzchnia czynna pojedynczej klapy dymowej to 1,0 m², a najmniejszy wymiar boku nie powinien być większy niż 2,0·d^0,5 (d – wysokość warstwy dymu w metrach).",
+  "answer": "b",
+  "explanation": "Ograniczenie wymiaru klapy w stosunku do grubości warstwy dymu zapobiega zasysaniu przez klapę chłodnego powietrza spod warstwy dymu. Norma z 2025 r. opiera się na zaleceniach NFPA 204, gdzie powierzchnia pojedynczej klapy nie powinna przekraczać 2d², co daje bok kwadratowej klapy około 1,4 d. Na tej podstawie przyjęto współczynnik 1,4. Odpowiedź wymaga potwierdzenia w tekście normy. Uwaga: odpowiedź opiera się na normie lub źródle niedostępnym w aplikacji.",
   "legal": [
-   "PN-B-02877-4:2025-07 – klapy dymowe"
+   "PN-B-02877-4:2025-07 – wymagania dla klap dymowych"
   ],
   "verified": false
  },
  "539": {
-  "answer": "a",
-  "explanation": "Pomieszczenie magazynowe do sprzedaży detalicznej wyrobów pirotechnicznych widowiskowych należy wydzielić ścianami EI 120 i stropami REI 120 oraz zamykać drzwiami EI 60.",
+  "answer": "b",
+  "explanation": "Wyroby pirotechniczne widowiskowe przechowuje się w oddzielnych magazynach lub pomieszczeniach zaplecza przeznaczonych wyłącznie do tego celu. Pomieszczenia te wydziela się ścianami EI 60 i stropami REI 60 oraz zamyka drzwiami EI 30. Przepis nie uzależnia tych klas od wysokości budynku ani kategorii ZL.",
   "legal": [
-   "rozp. dot. wyrobów pirotechnicznych / § 240 WT"
+   "§ 9 ust. 2 RPB – przechowywanie wyrobów pirotechnicznych widowiskowych"
   ],
-  "verified": false
+  "verified": true
  },
  "540": {
   "answer": "b",
@@ -161,28 +171,28 @@
   "verified": true
  },
  "541": {
-  "answer": "a",
-  "explanation": "Tryskacze przyścienne (boczne) mogą być instalowane w obszarach magazynowania/zagrożenia klasy LH i OH.",
+  "answer": "b",
+  "explanation": "PN-EN 12845 ogranicza stosowanie tryskaczy przyściennych. Nie wolno ich instalować w urządzeniach klasy HH, w obszarach magazynowania klasy OH ani powyżej sufitów podwieszonych. Mogą być instalowane tylko pod płaskimi sufitami, dlatego poprawny jest wariant drugi. Uwaga: odpowiedź opiera się na normie lub źródle niedostępnym w aplikacji.",
   "legal": [
-   "PN-EN 12845+A1:2020 – tryskacze przyścienne"
+   "PN-EN 12845+A1:2020 – typy tryskaczy i ograniczenia stosowania tryskaczy przyściennych"
   ],
   "verified": false
  },
  "542": {
-  "answer": "c",
-  "explanation": "Aby stanowisko czerpania wody mogło być usytuowane w odległości 8 m od budynku PM klasy D, jego ściana zewnętrzna w pasie 16 m powinna mieć klasę odporności ogniowej co najmniej REI-M 120 (jak ściana oddzielenia przeciwpożarowego odporna na uderzenie).",
+  "answer": "a",
+  "explanation": "Norma dopuszcza zbliżenie stanowiska czerpania wody do budynku na 8 m, jeżeli ściana zewnętrzna budynku w pasie 16 m od strony stanowiska ma odpowiednią klasę odporności ogniowej. Przyjęto, że dla budynku PM w klasie odporności pożarowej „D” jest to kryterium szczelności ogniowej E 15, analogicznie do § 271 WT, który przy odległościach także posługuje się kryterium E. Odpowiedź wymaga potwierdzenia w tekście normy, bo nie udało się go sprawdzić. Uwaga: odpowiedź opiera się na normie lub źródle niedostępnym w aplikacji.",
   "legal": [
-   "PN-B-02857:2017-04 – przeciwpożarowe zbiorniki wodne"
+   "PN-B-02857:2017-04 – przeciwpożarowe zbiorniki wodne, usytuowanie stanowiska czerpania wody"
   ],
   "verified": false
  },
  "543": {
-  "answer": "b",
-  "explanation": "Odległość silosów na zboże i pasze (150 ton) od granicy działki sąsiedniej powinna wynosić co najmniej 8 m.",
+  "answer": "a",
+  "explanation": "Silos o pojemności 150 ton należy do silosów większych niż 100 ton, których odległości określa § 8 ust. 2. Od granicy działki sąsiedniej wymagane jest co najmniej 4 m, tak samo jak dla silosów do 100 ton. Wartości 8 m i 15 m dotyczą odległości od budynków, biogazowni oraz składów węgla i koksu.",
   "legal": [
-   "rozp. dot. budowli rolniczych – odległości silosów"
+   "§ 8 ust. 1 i 2 rozp. MRiRW z 13.01.2023 – odległości silosów na zboże i pasze"
   ],
-  "verified": false
+  "verified": true
  },
  "544": {
   "answer": "b",
@@ -214,7 +224,7 @@
   "legal": [
    "rozp. dot. budowli rolniczych – odległości silosów"
   ],
-  "verified": false
+  "verified": true
  },
  "548": {
   "answer": "a",
@@ -222,7 +232,7 @@
   "legal": [
    "§ 37 RPB – ocena zagrożenia wybuchem"
   ],
-  "verified": false
+  "verified": true
  },
  "549": {
   "answer": "b",
@@ -241,20 +251,23 @@
   "verified": false
  },
  "551": {
-  "answer": "b",
-  "explanation": "Wymóg wydzielenia maszynowni wentylacyjnych ścianami EI 60 i drzwiami EI 30 dotyczy m.in. budynku magazynowego o gęstości obciążenia ogniowego powyżej 4000 MJ/m².",
+  "answer": "c",
+  "explanation": "Wymóg dotyczy budynków mieszkalnych średniowysokich i wyższych oraz innych budynków mających więcej niż dwie kondygnacje nadziemne. Budynek mieszkalny o czterech kondygnacjach jest niski, a magazyn ma tylko dwie kondygnacje, więc oba są poza przepisem. Biurowiec o trzech kondygnacjach nadziemnych spełnia przesłankę, a gęstość obciążenia ogniowego nie ma tu znaczenia.",
   "legal": [
-   "§ 268 WT – maszynownie wentylacyjne i klimatyzacyjne"
+   "§ 268 ust. 1 pkt 5 WT – wydzielenie maszynowni wentylacyjnych i klimatyzacyjnych",
+   "§ 8 WT – grupy wysokości budynków"
   ],
-  "verified": false
+  "verified": true
  },
  "552": {
-  "answer": "b",
-  "explanation": "Ścianę zewnętrzną budynku od granicy niezabudowanej działki (która może zostać zabudowana) należy usytuować w odległości co najmniej 4 m (ściana z możliwością otworów).",
+  "answer": "c",
+  "explanation": "Przy braku planu miejscowego przyjmuje się, że na sąsiedniej działce stanie budynek ZL, więc odległość podstawowa wynosi 8 m. Przekrycie dachu klasy FROOF (t1) jest silnie rozprzestrzeniające ogień, co zwiększa odległość o 50%, do 12 m. Od granicy działki wymagana jest połowa tej wartości, czyli 6 m. Odległości 3 m i 4 m z § 12 WT nie wystarczają, bo § 12 stosuje się z zastrzeżeniem § 271–273.",
   "legal": [
-   "§ 12 WT – usytuowanie budynku względem granicy działki"
+   "§ 272 ust. 1 WT – odległość od granicy niezabudowanej działki budowlanej",
+   "§ 271 ust. 1 i 2 WT – odległość ZL–ZL i zwiększenie o 50% przy dachu rozprzestrzeniającym ogień",
+   "załącznik nr 3 WT pkt 4.3 – FROOF (t1) jako przekrycie silnie rozprzestrzeniające ogień"
   ],
-  "verified": false
+  "verified": true
  },
  "553": {
   "answer": "b",
@@ -273,18 +286,19 @@
   "verified": false
  },
  "555": {
-  "answer": "c",
-  "explanation": "Ściany wewnętrzne oddzielające mieszkania położone powyżej 25 m od poziomu terenu powinny mieć klasę odporności ogniowej co najmniej EI 60.",
+  "answer": "b",
+  "explanation": "Budynek mieszkalny o 9 kondygnacjach nadziemnych jest średniowysoki, nawet jeśli ma 32 m wysokości, bo dla budynków mieszkalnych stosuje się kryterium liczby kondygnacji. W budynkach ZL IV niskich i średniowysokich ściany oddzielające mieszkania od innych mieszkań i od dróg komunikacji ogólnej mają mieć klasę co najmniej EI 30. Klasa EI 60 dotyczy dopiero budynków wysokich i wysokościowych, a położenie mieszkań powyżej 25 m tego nie zmienia.",
   "legal": [
-   "§ 216, § 232 WT – ściany oddzielające mieszkania"
+   "§ 217 ust. 1 pkt 1 WT – klasa ścian oddzielających mieszkania",
+   "§ 8 pkt 2 WT – budynek mieszkalny do 9 kondygnacji jest średniowysoki"
   ],
-  "verified": false
+  "verified": true
  },
  "556": {
-  "answer": "c",
-  "explanation": "Maksymalny promień działania czujki dymu w pobliżu kalenicy dachu o nachyleniu połaci 30° wynosi 8,06 m.",
+  "answer": "b",
+  "explanation": "Promień działania punktowej czujki dymu w wydaniu z 2020 r. wynosi 6,2 m. Dla czujek montowanych w pobliżu kalenicy dachu pochyłego promień można zwiększyć o 1% na każdy stopień nachylenia, ale nie więcej niż o 25%. Przy nachyleniu 30° działa ograniczenie 25%, więc 6,2 m x 1,25 daje 7,75 m, a nie 8,06 m. Uwaga: odpowiedź opiera się na normie lub źródle niedostępnym w aplikacji.",
   "legal": [
-   "PKN-CEN/TS 54-14:2020 – promienie działania czujek na dachach spadzistych"
+   "PKN-CEN/TS 54-14:2020-09 – rozmieszczenie czujek pod stropami i dachami pochyłymi"
   ],
   "verified": false
  },
@@ -297,12 +311,13 @@
   "verified": false
  },
  "558": {
-  "answer": "c",
-  "explanation": "UWAGA: pytanie dotyczy miejsca doraźnego schronienia, regulowanego przepisami o ochronie ludności, a nie § 239 WT. Przyjęto, że przy 200 osobach łączna szerokość drzwi wynika z przelicznika 0,6 m na 100 osób → 1,2 m. Odpowiedź wymaga sprawdzenia w aktualnych przepisach o obiektach zbiorowej ochrony.",
+  "answer": "a",
+  "explanation": "Drzwi wyjścia ewakuacyjnego i drogi służącej do ewakuacji z miejsca doraźnego schronienia muszą mieć w świetle ościeżnicy co najmniej 0,8 m. Szerokość oblicza się też proporcjonalnie do liczby osób, przyjmując co najmniej 0,4 m na 100 osób, co przy 200 osobach daje 0,8 m. Wartości 0,9 m i 0,6 m na 100 osób pochodzą z WT i nie dotyczą miejsc doraźnego schronienia.",
   "legal": [
-   "przepisy o ochronie ludności i obronie cywilnej – miejsca doraźnego schronienia (do sprawdzenia)"
+   "§ 6 ust. 3 pkt 2 rozp. MSWiA z 9.07.2025 (mds) – drzwi o szerokości co najmniej 0,8 m",
+   "§ 6 ust. 3 pkt 3 rozp. MSWiA z 9.07.2025 (mds) – 0,4 m szerokości na 100 osób"
   ],
-  "verified": false
+  "verified": true
  },
  "559": {
   "answer": "a",

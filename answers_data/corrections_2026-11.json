@@ -1,0 +1,2035 @@
+{
+ "_opis": "Poprawki po niezaleznej kontroli calego klucza (2026-11-22): dwa niezalezne ustalenia + rozstrzygniecie rozbieznosci na tekstach aktow.",
+ "zmienione": [
+  {
+   "id": 4,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 259 ust. 1 pkt 1 WT",
+   "q": "Podłogi podniesione o więcej niż 0,2 m ponad poziom stropu, znajdujące się w strefie pożarowej ZL II w budynku niskim użyteczności publicznej, powinny mieć klas"
+  },
+  {
+   "id": 12,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 276 ust. 1 WT",
+   "q": "Parametrem warunkującym usytuowanie ze względu na bezpieczeństwo pożarowe garażu zamkniętego i otwartego jest:"
+  },
+  {
+   "id": 13,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 157 ust. 5 w zw. z § 8 pkt 1 i 2 WT",
+   "q": "W budynku hali magazynowej o wysokości 12,70 m można zastosować ogrzewanie za pomocą promienników zasilanych gazem propan-butan:"
+  },
+  {
+   "id": 19,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 83 rozp. MI z 16.05.2023 w sprawie warunków technicznych obiektów budowlanych metra (Dz.U. poz. 1210, sprawdzone w api.sejm.gov.pl), poprzednio § 85 rozp. MI z 17.06.2011",
+   "q": "Przeciwpożarowy wyłącznik prądu odcinający dopływ energii elektrycznej do wszystkich odbiorników na stacji metra, z wyjątkiem obwodów zasilających instalacje i "
+  },
+  {
+   "id": 21,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 214 WT w związku z § 8 pkt 3 i § 212 WT",
+   "q": "Zastosowanie stałego samoczynnego urządzenia gaśniczego wodnego w budynku o wysokości 30 m, zaliczonym do kategorii zagrożenia ludzi ZL III i zaprojektowanym ws"
+  },
+  {
+   "id": 22,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 256 ust. 7 w zw. z ust. 2 i 3 WT",
+   "q": "W budynku zakwalifikowanym do kategorii ZL V zagrożenia ludzi, długość poziomej drogi ewakuacyjnej od wyjścia z obudowanej klatki schodowej, zamykanej drzwiami "
+  },
+  {
+   "id": 23,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN ISO 7010:2012 (z wiedzy, norma niedostępna)",
+   "q": "Polska Norma PN-EN ISO 7010:2012 Symbole graficzne – Barwy bezpieczeństwa i znaki bezpieczeństwa – Zarejestrowane znaki bezpieczeństwa, zastąpiła Polską Normę:"
+  },
+  {
+   "id": 27,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 24 ust. 2, ust. 3 pkt 1 lit. a i pkt 3 lit. c oraz ust. 4 RPB",
+   "q": "W budynku o wysokości 11 kondygnacji, posadowionym na trzykondygnacyjnym garażu podziemnym, w którym na pierwszej kondygnacji nadziemnej zlokalizowano sklepy a "
+  },
+  {
+   "id": 34,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 12101-6 (z wiedzy, norma niedostępna)",
+   "q": "W budynku biurowym o wysokości 165 m, do zabezpieczenia przed zadymieniem dwóch klatek schodowych zastosowano system różnicowania ciśnień wg PN-EN-12101-6 Wymag"
+  },
+  {
+   "id": 35,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 212 ust. 2, 3, 6 i 7 WT",
+   "q": "Budynek niski o trzech kondygnacjach nadziemnych, niepodpiwniczony, w którym dwie pierwsze kondygnacje stanowią strefę pożarową ZL II, ze stropem nad pierwszą k"
+  },
+  {
+   "id": 36,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 15 RW",
+   "q": "Droga pożarowa prowadzona na terenie zakładu produkcyjnego pod estakadą z instalacjami technicznymi, powinna mieć zapewniony prześwit:"
+  },
+  {
+   "id": 41,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "art. 56 ust. 1 i 1a Pb",
+   "q": "Czy inwestor jest zobowiązany do zawiadomienia organów Państwowej Straży Pożarnej o zakończeniu budowy obiektu budowlanego i zamiarze przystąpienia do użytkowan"
+  },
+  {
+   "id": 44,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 270 ust. 5 pkt 2 WT",
+   "q": "Klapy dymowe w grawitacyjnej wentylacji oddymiającej otwierane wyłącznie w sposób ręczny powinny mieć klasę:"
+  },
+  {
+   "id": 46,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 2, § 3 pkt 2 i § 4 pkt 1 rozp. MEN z 31.12.2014 (Dz.U. z 2015 r. poz. 20)",
+   "q": "Czy zgodnie z rozporządzeniem Ministra Edukacji Narodowej w sprawie wymagań ochrony przeciwpożarowej, jakie musi spełniać lokal, w którym jest prowadzone przeds"
+  },
+  {
+   "id": 47,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 47 ust. 2 rozp. MKiŚ z 24.07.2023 (Dz.U. poz. 1707), tekst urzędowy sprawdzony w api.sejm.gov.pl, identycznie § 47 ust. 2 rozp. MG z 21.11.2005",
+   "q": "Zapas środka pianotwórczego do stałego urządzenia gaśniczego pianowego do ochrony zbiornika z paliwem na terenie bazy paliw płynnych powinien wystarczyć na okre"
+  },
+  {
+   "id": 50,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 256 ust. 7 w zw. z ust. 3 WT (ZL III, odnośnik 2)",
+   "q": "W średniowysokim budynku zakwalifikowanym do kategorii zagrożenia ludzi ZL III długość poziomej drogi ewakuacyjnej od wyjścia z obudowanej klatki schodowej, zam"
+  },
+  {
+   "id": 51,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": true,
+   "podstawa": "§ 239 ust. 4 w zw. z § 68 ust. 1 WT",
+   "q": "Minimalna szerokość w świetle drzwi prowadzących bezpośrednio na zewnątrz z klatki schodowej przeznaczonej do ewakuacji ludzi z wielokondygnacyjnego budynku mie"
+  },
+  {
+   "id": 57,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "srednia",
+   "flag": "niejednoznaczne",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 3 ust. 1 rozp. MG z 21.11.2005 (bazy i stacje paliw), tak samo § 3 ust. 1 rozp. MKiŚ z 24.07.2023 (Dz.U. poz. 1707, sprawdzone w api.sejm.gov.pl)",
+   "q": "Przy projektowaniu infrastruktury do magazynowania i tankowania pojazdów paliwami płynnymi na użytek własny przedsiębiorstwa transportowego przepisy rozporządze"
+  },
+  {
+   "id": 58,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 28 ust. 1 pkt 10 RPB",
+   "q": "W odniesieniu do ogółu budynków użyteczności publicznej, kryterium w kontekście obowiązku ich wyposażenia w system sygnalizacji pożarowej jest :"
+  },
+  {
+   "id": 59,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "srednia",
+   "flag": "niejednoznaczne",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 160 ust. 1 i § 161 ust. 2 rozp. MTiGM z 2.03.1999 w sprawie warunków technicznych dróg publicznych (t.j. Dz.U. z 2016 r. poz. 124, sprawdzony w api.sejm.gov.pl, akt uchylony w 2022 r.)",
+   "q": "W przypadku usytuowania w obrębie miejsca obsługi podróżnych (MOP), na drodze klasy S, parkingu przeznaczonego dla pojazdów przewożących materiały niebezpieczne"
+  },
+  {
+   "id": 61,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 234 ust. 1 i 3, § 232 ust. 4, § 212 ust. 7 WT",
+   "q": "Przepust instalacyjny o średnicy 0,04 m w stropie oddzielającym garaż podziemny od części mieszkalnej niskiego budynku ZL IV:"
+  },
+  {
+   "id": 64,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 232 ust. 4 i 6 WT, § 212 ust. 2 i 3 WT",
+   "q": "Klasa odporności ogniowej wypełnienia otworu wykonanego z materiału przepuszczającego światło, znajdującego się w ścianie oddzielenia przeciwpożarowego, oddziel"
+  },
+  {
+   "id": 66,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "srednia",
+   "flag": "niejednoznaczne",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 12 ust. 2 i § 13 ust. 1 i 4 RW",
+   "q": "Jezdnia asfaltowa o szerokości 15 m, przebiegająca w odległości 2 m od ściany zewnętrznej z oknami budynku wysokiego biurowego (wzdłuż jego dłuższego boku o sze"
+  },
+  {
+   "id": 74,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-B-02852:2001 (norma niedostępna, odpowiedź z wiedzy), § 212 ust. 4 WT",
+   "q": "Ustalając klasę odporności pożarowej budynku produkcyjno-magazynowego jego ściany wewnętrzne wykonane z materiałów palnych:"
+  },
+  {
+   "id": 76,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 60849:2001 (z wiedzy, norma niedostępna)",
+   "q": "Zgodnie z PN-EN 60849:2001 Dźwiękowe systemy ostrzegawcze rezerwowe źródło zasilania powinno umożliwić działanie systemu w trybie zagrożenia, w czasie:"
+  },
+  {
+   "id": 78,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 227 ust. 1, 2 i 4 WT",
+   "q": "Przy projektowaniu budynku galerii handlowej o wysokości 20 m, w której część handlowo-usługowa stanowić będzie jedną strefę pożarową o powierzchni 30 000 m z h"
+  },
+  {
+   "id": 81,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 15 RW",
+   "q": "Droga pożarowa prowadzona na terenie zakładu produkcyjnego pod estakadą z instalacjami technicznymi, powinna mieć zapewniony prześwit:"
+  },
+  {
+   "id": 83,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 259 ust. 1 i 2 WT",
+   "q": "Przewody i kable elektryczne oraz inne instalacje wykonane z materiałów palnych, prowadzone w przestrzeni podpodłogowej podłogi podniesionej powinny mieć osłonę"
+  },
+  {
+   "id": 87,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 216 ust. 2 pkt 2 WT, pkt 4.2 załącznika nr 3 do WT, § 219 ust. 1 WT",
+   "q": "W dwukondygnacyjnym budynku magazynowym o wysokości 8 m i o gęstości obciążenia ogniowego 800 MJ/m2 jako przekrycie dachu należy zastosować:"
+  },
+  {
+   "id": 98,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 247 ust. 3 WT",
+   "q": "Na drogach ewakuacyjnych z lokalu dyskoteki przeznaczonej dla 200 osób, usytuowanego na kondygnacji podziemnej należy zastosować:"
+  },
+  {
+   "id": 100,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "srednia",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 13200-1 (z wiedzy, norma niedostępna)",
+   "q": "Wymagania stawiane obiektom widowiskowych (PN-EN 13200-1:2013 Obiekty widowiskowe. Część 1: Ogólna charakterystyka widowni) w zakresie ewakuacji zalecają, aby w"
+  },
+  {
+   "id": 104,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 28 ust. 1 pkt 17 RPB",
+   "q": "Czy garaż przeznaczony dla samochodów osobowych, w którym strefa pożarowa nie przekracza 1500 m2 i obejmuje jednocześnie kondygnację na poziomie „0\" i „-1\", pow"
+  },
+  {
+   "id": 105,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 253 ust. 1 WT",
+   "q": "Przynajmniej jeden dźwig w każdej strefie pożarowej powinien być przystosowany do potrzeb ekip ratowniczych w budynku ZL IV, zakwalifikowanym do:"
+  },
+  {
+   "id": 109,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": true,
+   "podstawa": "PN-EN 1838 pkt 4.2 (z wiedzy, norma niedostępna)",
+   "q": "W korytarzu stanowiącym drogę ewakuacyjną o szerokości 2 m, zgodnie z wymaganiami PN-EN-1838 Zastosowania oświetlenia. Oświetlenie awaryjne, średnie natężenie a"
+  },
+  {
+   "id": 112,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 6 ust. 10 pkt 1 RW",
+   "q": "Dla budynku produkcyjnego, dla którego: zapotrzebowanie na wodę do zewnętrznego gaszenia pożaru wynosi 30 dm3/s, względny czas trwania pożaru wynosi 6 godzin a "
+  },
+  {
+   "id": 114,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "art. 6a ust. 1 UOP",
+   "q": "Jednym z warunków, jakie muszą spełniać proponowane rozwiązania zamienne jest:"
+  },
+  {
+   "id": 117,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 2 pkt 4 rozp. MSWiA w sprawie uzgadniania projektu (2021 i 2023, to samo brzmienie)",
+   "q": "W ramach opracowania scenariusza pożarowego uwzględnia się:"
+  },
+  {
+   "id": 125,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 25 ust. 4 pkt 2 RPB",
+   "q": "Średnica nominalna w milimetrach przewodów zasilających, na których instaluje się hydranty wewnętrzne z wężem półsztywnym o nominalnej średnicy węża 33 mm, powi"
+  },
+  {
+   "id": 129,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "wysoka",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PKN-CEN/TS 54-14:2006 pkt A.6.5.1 (norma niedostępna, odpowiedź z wiedzy)",
+   "q": "Zgodnie ze specyfikacją techniczną PKN-CEN/TS 54-14:2006 „Systemy sygnalizacji pożarowej. Część 14: Wytyczne planowania, projektowania, instalowania, odbioru, e"
+  },
+  {
+   "id": 130,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 13501-4 i PN-EN 12101-8 (normy niedostępne, odpowiedź z wiedzy)",
+   "q": "W przypadku ognioodpornej klapy odcinającej do przewodów wentylacji oddymiającej oznaczonej jako EI 120 (vedw i↔o) S1000C300AAmulti, oznaczenie „multi” wskazuje"
+  },
+  {
+   "id": 133,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 9 ust. 7 pkt 3 RW",
+   "q": "Średnice nominalne w milimetrach (DN) przewodów wodociągowych wykonanych z rur stalowych w odgałęzieniach sieci obwodowej, na których przewiduje się instalowani"
+  },
+  {
+   "id": 136,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 216 ust. 7 i ust. 1 WT (tabela, klasa D)",
+   "q": "W jednokondygnacyjnym budynku produkcyjno-magazynowym w klasie odporności pożarowej „E”, niewyposażonym w stałe samoczynne urządzenia gaśnicze wodne, konstrukcj"
+  },
+  {
+   "id": 144,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "niska",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-B-02857:2017-04 (norma niedostępna, odpowiedź z wiedzy, nie udało się potwierdzić w dostępnych źródłach)",
+   "q": "Zgodnie z Polską Normą PN-B-02857:2017-04 „Ochrona przeciwpożarowa budynków. Przeciwpożarowe zbiorniki wodne. Wymagania ogólne.” elementy oddzielenia przeciwpoż"
+  },
+  {
+   "id": 145,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 12 ust. 1 pkt 2 i pkt 5 lit. b RW",
+   "q": "Zgodnie z przepisami przeciwpożarowymi, doprowadzenie drogi pożarowej jest wymagane, do budynku zawierającego strefę pożarową zakwalifikowaną do kategorii zagro"
+  },
+  {
+   "id": 148,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 181 ust. 3 pkt 1 lit. c i pkt 2 lit. a WT",
+   "q": "Awaryjne oświetlenie ewakuacyjne w jednokondygnacyjnym budynku muzeum powinno być zastosowane:"
+  },
+  {
+   "id": 151,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 282 w zw. z § 209 ust. 4 WT",
+   "q": "Budynek IN do przechowywania płodów rolnych, stanowiący odrębną strefę pożarową o kubaturze brutto 1000 m3:"
+  },
+  {
+   "id": 154,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 256 ust. 3 (odnośnik 1) w zw. z § 209 ust. 5 WT",
+   "q": "Dopuszczalna długość drugiego dojścia ewakuacyjnego w budynku wielofunkcyjnym, stanowiącym jedną strefę pożarową, którego poszczególne kondygnacje zaliczane są "
+  },
+  {
+   "id": 157,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 47 ust. 2 rozp. MKiŚ z 24.07.2023 (Dz.U. poz. 1707), tekst urzędowy sprawdzony w api.sejm.gov.pl, identycznie § 47 ust. 2 rozp. MG z 21.11.2005",
+   "q": "Zapas środka pianotwórczego do urządzeń gaśniczych pianowych na terenie bazy paliw płynnych powinien wystarczyć na okres:"
+  },
+  {
+   "id": 159,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": true,
+   "podstawa": "§ 6 ust. 10 pkt 1 RW",
+   "q": "Dla budynku produkcyjnego, dla którego zapotrzebowanie na wodę do zewnętrznego gaszenia pożaru wynosi 40 dm3/s, względny czas trwania pożaru wynosi 6 godzin, a "
+  },
+  {
+   "id": 160,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 2 pkt 4 rozp. MSWiA w sprawie uzgadniania projektu (2021 i 2023, to samo brzmienie)",
+   "q": "W ramach opracowania scenariusza pożarowego uwzględnia się:"
+  },
+  {
+   "id": 164,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "art. 10 ust. 1 w zw. z art. 5 ust. 1 ustawy o wyrobach budowlanych",
+   "q": "Dopuszczenie do jednostkowego zastosowania w obiekcie budowlanym, o którym mowa w art. 10 ustawy z dnia 16 kwietnia 2004 r. o wyrobach budowlanych (Dz. U. z 201"
+  },
+  {
+   "id": 169,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "srednia",
+   "flag": "niejednoznaczne",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 8 pkt 2, § 212 ust. 2, § 216 ust. 1, § 272 ust. 1 i 3 WT",
+   "q": "Budynek mieszkalny wielorodzinny o 9 kondygnacjach nadziemnych, który jest usytuowany bezpośrednio przy granicy niezabudowanej działki drogowej, powinien mieć o"
+  },
+  {
+   "id": 170,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "pkt 61 załącznika nr 3 do rozp. MI z 24.06.2022 (Dz.U. poz. 1518), tekst urzędowy sprawdzony w api.sejm.gov.pl, poprzednio § 322c ust. 1 rozp. MTiGM z 30.05.2000 (zm. Dz.U. z 2012 r. poz. 608)",
+   "q": "Tunel drogowy o długości większej niż 500 m powinien być wyposażony w:"
+  },
+  {
+   "id": 171,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "zał. nr 1 pkt 8 rozp. MI z 17.06.2011 (metro), tak samo zał. nr 1 pkt 7 rozp. MI z 16.05.2023 (Dz.U. poz. 1210, sprawdzone w api.sejm.gov.pl)",
+   "q": "Obudowa schodów na stacji metra powinna mieć klasę reakcji na ogień co najmniej:"
+  },
+  {
+   "id": 173,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 181 ust. 3 pkt 1 lit. e WT",
+   "q": "W budynku magazynowym, awaryjne oświetlenie ewakuacyjne należy zastosować w pomieszczeniu:"
+  },
+  {
+   "id": 182,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 232 ust. 2 WT",
+   "q": "Ograniczenia, w stosunku do łącznej powierzchni otworów w ścianach oddzieleń przeciwpożarowych, która nie powinna przekraczać 15% powierzchni tych ścian, nie ma"
+  },
+  {
+   "id": 187,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 247 ust. 1 i § 243 ust. 1 i 2 WT",
+   "q": "W projektowanym budynku biurowym wysokim (W) ze strefami pożarowymi ZL III, korytarze ewakuacyjne o długości 90 m:"
+  },
+  {
+   "id": 188,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "srednia",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PKN-CEN/TS 54-14 (norma niedostępna, odpowiedź z wiedzy)",
+   "q": "Do wykrywania pożaru w pomieszczeniu biurowym typu „open space” o wysokości 4,5 m, długości 30 m i szerokości 20 m, w którym na suficie występują 4 belki stropo"
+  },
+  {
+   "id": 189,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "srednia",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 12101-6 (norma niedostępna, odpowiedź z wiedzy, nie udało się potwierdzić w dostępnych źródłach)",
+   "q": "W przypadku występowania w budynku wysokim przedsionka przeciwpożarowego z dwoma drzwiami prowadzącymi do powierzchni użytkowej (np. jednoprzestrzennych pomiesz"
+  },
+  {
+   "id": 190,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 246 ust. 6 WT",
+   "q": "W budynku hotelu o wysokości 15 m, stanowiącym w całości jedną strefę pożarową o powierzchni 4000 m2, drzwi do pomieszczenia bagażowni, które jest dostępne z ho"
+  },
+  {
+   "id": 193,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 256 ust. 2 WT",
+   "q": "W pięciokondygnacyjnym budynku zakwalifikowanym w całości do kategorii zagrożenia ludzi ZL IV, ze względu na przekroczenie dopuszczalnej długości dojścia ewakua"
+  },
+  {
+   "id": 194,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "niska",
+   "flag": "wadliwe pytanie",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 12 ust. 4 i 5 RW (żaden wariant nie odpowiada brzmieniu przepisu)",
+   "q": "Każdy dźwig dla ekip ratowniczych w budynku powinien mieć połączenie z drogą pożarową dojściem:"
+  },
+  {
+   "id": 204,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 12 ust. 1 pkt 3 i 4 RW",
+   "q": "Do średniowysokiego budynku zawierającego wyłącznie strefę pożarową produkcyjną o gęstości obciążenia ogniowego poniżej 500 MJ/m2 wymagane jest zapewnienie drog"
+  },
+  {
+   "id": 205,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 6 ust. 7 RW oraz tabela nr 4 załącznika do RW",
+   "q": "Wymaganą ilość wody do celów przeciwpożarowych dla składów i magazynów z gazami palnymi i cieczami o temperaturze zapłonu do 373,15 K (100 °C), zlokalizowanych "
+  },
+  {
+   "id": 207,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 12845, załącznik E (wymagania szczególne dla urządzeń w budynkach wysokich). Norma niedostępna, rozstrzygnięcie z wiedzy",
+   "q": "Zgodnie z Polską Normą PN-EN 12845 Stałe urządzenia gaśnicze – Automatyczne urządzenia tryskaczowe – Projektowanie, instalowanie i konserwacja urządzenia tryska"
+  },
+  {
+   "id": 210,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 212 ust. 2, 3 i 6 WT",
+   "q": "Budynek niski o dwóch kondygnacjach nadziemnych stanowiących jedną strefę pożarową i wysokości nieprzekraczającej 9 m, w którym na pierwszej (dolnej) kondygnacj"
+  },
+  {
+   "id": 216,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 3 ust. 1 pkt 1–3 rozp. MSWiA z 5.08.2023 w sprawie uzgadniania projektu (Dz.U. poz. 1563, brzmienie identyczne jak w rozp. z 17.09.2021, sprawdzone także w api.sejm.gov.pl)",
+   "q": "Obiektem, którego projekt budowlany nie wymaga uzgodnienia pod względem ochrony przeciwpożarowej jest:"
+  },
+  {
+   "id": 219,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 124 ust. 1 pkt 4 i ust. 2 pkt 1 rozp. MKiŚ z 24.07.2023 (Dz.U. poz. 1707), tekst urzędowy sprawdzony w api.sejm.gov.pl. Tak samo w rozp. MG z 21.11.2005",
+   "q": "Minimalną odległość magazynu butli z gazem o masie do 1350 kg, zlokalizowanego na stacji paliw, od obiektów użyteczności publicznej, można zmniejszyć poprzez za"
+  },
+  {
+   "id": 223,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 245 pkt 1 oraz § 256 ust. 2 i 3 WT",
+   "q": "Klatka schodowa w budynku niskim przeznaczonym na przedszkole, w przypadku w którym łączna długość jedynego dojścia ewakuacyjnego zmierzona poziomymi i pionowym"
+  },
+  {
+   "id": 225,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "niska",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-B-02857:2017 (norma niedostępna, odpowiedź z wiedzy, nie udało się potwierdzić w dostępnych źródłach)",
+   "q": "Zgodnie z PN-B-02857:2017 Ochrona przeciwpożarowa – Przeciwpożarowe zbiorniki wodne – Wymagania ogólne głębokość przeciwpożarowego zbiornika wodnego powinna być"
+  },
+  {
+   "id": 229,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 101 ust. 3 rozp. MI z 16.01.2002 w sprawie autostrad płatnych (Dz.U. Nr 12, poz. 116), tekst ogłoszony sprawdzony w api.sejm.gov.pl, akt już nie obowiązuje",
+   "q": "Zgodnie z wymaganiami rozporządzenia Ministra Infrastruktury z dnia 16 stycznia 2002 r. w sprawie przepisów techniczno-budowlanych dotyczących autostrad płatnyc"
+  },
+  {
+   "id": 234,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 214 pkt 2 WT",
+   "q": "Zastosowanie w jednokondygnacyjnym budynku produkcyjnym stałych samoczynnych urządzeń gaśniczych wodnych umożliwia przyjęcie klasy odporności pożarowej budynku:"
+  },
+  {
+   "id": 236,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": true,
+   "podstawa": "§ 230 ust. 2 WT",
+   "q": "W jednokondygnacyjnym budynku magazynowym o gęstości obciążenia ogniowego powyżej 2000 MJ/m2, w którym zastosowano stałe urządzenia gaśnicze tryskaczowe i samoc"
+  },
+  {
+   "id": 237,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 261 pkt 1 WT",
+   "q": "Jeżeli w sali widowiskowej przeznaczonej do jednoczesnego przebywania ponad 200 osób fotele są trudno zapalne, to dodatkowo:"
+  },
+  {
+   "id": 243,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 321 ust. 4a rozp. MTiGM z 30.05.2000 (dodany Dz.U. z 2012 r. poz. 608), od 2019 r. § 321b ust. 2 (Dz.U. poz. 1642), obecnie zał. nr 3 pkt 104 rozp. MI z 24.06.2022 (Dz.U. poz. 1518), teksty sprawdzone w api.sejm.gov.pl",
+   "q": "Wentylatory służące do usuwania dymu i ciepła z tunelu drogowego powinny posiadać klasę F wynikającą z obliczeniowej temperatury dymu, przy czym klasa ta nie mo"
+  },
+  {
+   "id": 245,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 96 ust. 3 rozp. MKiŚ z 24.07.2023 (Dz.U. poz. 1707), tekst urzędowy sprawdzony w api.sejm.gov.pl, identycznie § 96 ust. 3 rozp. MG z 21.11.2005",
+   "q": "Maksymalna dopuszczalna pojemność zbiorników magazynowych dla produktów naftowych w stacji kontenerowej wynosi:"
+  },
+  {
+   "id": 246,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 132 ust. 2 WT",
+   "q": "Piec na paliwo stałe może być stosowany w budynku zakwalifikowanym do kategorii zagrożenia ludzi ZL I:"
+  },
+  {
+   "id": 247,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 281 ust. 1 pkt 2 lit. c rozp. MTiGM z 30.05.2000 w brzmieniu nadanym Dz.U. z 2019 r. poz. 1642, obecnie zał. nr 3 pkt 10 ppkt 2 lit. c rozp. MI z 24.06.2022 (Dz.U. poz. 1518), oba teksty sprawdzone w api.sejm.gov.pl",
+   "q": "Drogowe urządzenia przeciwhałasowe zainstalowane na obiektach mostowych, które są usytuowane w odległości mniejszej niż 8 m od budynków, powinny być wykonane z "
+  },
+  {
+   "id": 248,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "wysoka",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PKN-CEN/TS 54-14:2006 pkt A.6.5.1 (norma niedostępna, odpowiedź z wiedzy)",
+   "q": "Zgodnie ze specyfikacją techniczną PKN-CEN/TS 54-14:2006 Systemy sygnalizacji pożarowej – Część 14: Wytyczne planowania, projektowania, instalowania, odbioru, e"
+  },
+  {
+   "id": 252,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": true,
+   "podstawa": "§ 237 ust. 2, 5 i ust. 6 pkt 2 WT",
+   "q": "Dopuszczalna długość przejścia ewakuacyjnego w pomieszczeniu zagrożonym wybuchem o wysokości 5 m, zlokalizowanym w budynku jednokondygnacyjnym, w strefie pożaro"
+  },
+  {
+   "id": 257,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 12101-6:2007 (z wiedzy, norma niedostępna)",
+   "q": "W budynku biurowym o wysokości 165 m, do zabezpieczenia przed zadymieniem dwóch występujących w nim klatek schodowych zastosowano system różnicowania ciśnień wg"
+  },
+  {
+   "id": 258,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 34 ust. 1, § 35 ust. 1 i § 37 ust. 1 rozp. MSWiA z 19.02.2020 (Dz.U. poz. 296)",
+   "q": "Zgodnie z rozporządzeniem Ministra Spraw Wewnętrznych i Administracji z dnia 19 lutego 2020 r. w sprawie wymagań w zakresie ochrony przeciwpożarowej, jakie mają"
+  },
+  {
+   "id": 265,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 4 ust. 3 RPB",
+   "q": "Przy obiektach tymczasowych o konstrukcji palnej musi być zachowany pas ochronny o nawierzchni z materiałów niepalnych lub gruntowej oczyszczonej, którego szero"
+  },
+  {
+   "id": 267,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 36 ust. 1 i 2 rozp. MSWiA z 19.02.2020 (odpady, Dz.U. poz. 296)",
+   "q": "Zgodnie z rozporządzeniem Ministra Spraw Wewnętrznych i Administracji z dnia 19 lutego 2020 r. w sprawie wymagań w zakresie ochrony przeciwpożarowej, jakie mają"
+  },
+  {
+   "id": 268,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 236 ust. 6 pkt 4 WT",
+   "q": "W pomieszczeniu archiwum, w którym z przeznaczenia i sposobu zagospodarowania nie wynika jednoznacznie maksymalna liczba jego użytkowników, liczbę tę należy prz"
+  },
+  {
+   "id": 269,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "srednia",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-B-02877-4:2001 (norma niedostępna, odpowiedź z wiedzy)",
+   "q": "W budynku, którego kąt nachylenia dachu wynosi 13º maksymalna odległość między klapami dymowymi a krawędzią budynku, zgodnie z Polską Normą PN-B-02877-4:2001 Oc"
+  },
+  {
+   "id": 278,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 42 rozp. MRiRW z 13.01.2023 w sprawie warunków technicznych budowli rolniczych (Dz.U. poz. 297)",
+   "q": "Odległości stanowisk postojowych dla pojazdów samochodowych i samojezdnych maszyn rolniczych od instalacji służących do otrzymywania biogazu rolniczego powinny "
+  },
+  {
+   "id": 285,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 157 ust. 3 i 4 WT",
+   "q": "Zgodnie z wymaganiami przepisów rozporządzenia Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budy"
+  },
+  {
+   "id": 289,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 212 ust. 2, § 216 ust. 1 (kol. 5) oraz § 271 ust. 1 i 5 WT",
+   "q": "Przy spełnionym wymaganiu nierozprzestrzeniania ognia (NRO) przez ściany zewnętrzne i dachy sąsiadujących budynków, ściana zewnętrzna projektowanego budynku biu"
+  },
+  {
+   "id": 292,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 212 ust. 2, § 214 pkt 1, § 215 ust. 2, § 232 ust. 4 i § 234 ust. 1 WT",
+   "q": "W niskim (N) budynku biurowym o 4 kondygnacjach nadziemnych, zaprojektowanym w klasie odporności pożarowej „D” ze względu na wyposażenie go w stałe urządzenia g"
+  },
+  {
+   "id": 293,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "srednia",
+   "flag": "niejednoznaczne",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 256 ust. 3 (ZL IV, odnośnik 2) i ust. 4 pkt 1 WT",
+   "q": "W budynku mieszkalnym wielorodzinnym o 30 kondygnacjach nadziemnych, w którym drogi ewakuacyjne chronione są przez stałe samoczynne urządzenia gaśnicze wodne, d"
+  },
+  {
+   "id": 297,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 322c ust. 1 rozp. MTiGM z 30.05.2000 w brzmieniu nadanym Dz.U. z 2012 r. poz. 608 (tekst urzędowy sprawdzony w api.sejm.gov.pl), obecnie pkt 61 zał. nr 3 rozp. MI z 24.06.2022 (Dz.U. poz. 1518)",
+   "q": "Zgodnie z rozporządzeniem Ministra Transportu i Gospodarki Morskiej z dnia 30 maja 2000 r. w sprawie warunków technicznych, jakim powinny odpowiadać drogowe obi"
+  },
+  {
+   "id": 300,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 44 ust. 1 i ust. 2 pkt 2 rozp. MRiRW z 13.01.2023 (budowle rolnicze, Dz.U. poz. 297)",
+   "q": "Instalacja do otrzymywania biogazu rolniczego o pojemności 500 m3 powinna mieć ustaloną wokół siebie strefę bezpieczeństwa, mierzoną od zewnętrznych krawędzi sk"
+  },
+  {
+   "id": 301,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 15 ust. 2 rozp. MSWiA z 19.02.2020 (odpady, Dz.U. poz. 296)",
+   "q": "Zgodnie z rozporządzeniem Ministra Spraw Wewnętrznych i Administracji z dnia 19 lutego 2020 r. w sprawie wymagań w zakresie ochrony przeciwpożarowej, jakie mają"
+  },
+  {
+   "id": 304,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 19 ust. 3 pkt 1 i ust. 4, § 22 ust. 1 pkt 2, § 23 pkt 2 i pkt 3 lit. b RPB",
+   "q": "Dla strefy pożarowej produkcyjno-magazynowej (jednoprzestrzennej) o powierzchni 3000 m2 i gęstości obciążenia ogniowego 800 MJ/m2, znajdującej się w budynku śre"
+  },
+  {
+   "id": 307,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 24 ust. 2 i ust. 3 pkt 1 oraz pkt 3 lit. a i c RPB",
+   "q": "Wymagany zapas wody w zbiorniku przeznaczonym do zasilania instalacji wodociągowej przeciwpożarowej w wysokościowym (WW) budynku użyteczności publicznej o wysok"
+  },
+  {
+   "id": 308,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "srednia",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-HD 60364-5-56:2019-01 (z wiedzy, norma niedostępna)",
+   "q": "Zgodnie z Polską Normą PN-HD 60364-5-56:2019-01 Instalacje elektryczne niskiego napięcia − Część 5-56: Dobór i montaż wyposażenia elektrycznego − Instalacje bez"
+  },
+  {
+   "id": 309,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "niska",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-B-02857:2017-04 (norma niedostępna, odpowiedź z wiedzy, nie udało się potwierdzić w dostępnych źródłach)",
+   "q": "Zgodnie z Polską Normą PN-B-02857:2017-04 Ochrona przeciwpożarowa budynków - Przeciwpożarowe zbiorniki wodne - Wymagania ogólne przeciwpożarowy zbiornik wodny n"
+  },
+  {
+   "id": 311,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "wysoka",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 54-23, podział sygnalizatorów optycznych na typy A i B (norma niedostępna, odpowiedź z wiedzy)",
+   "q": "W systemach sygnalizacji pożarowej sygnalizator optyczny Typu B, o którym mowa w Polskiej Normie PN-EN 54-23 Systemy sygnalizacji pożarowej. Cześć 23: Pożarowe "
+  },
+  {
+   "id": 316,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 12101-6:2007, wymagania dotyczące siły otwierania drzwi i maksymalnej różnicy ciśnień. Norma niedostępna, rozstrzygnięcie z wiedzy",
+   "q": "Polska Norma PN-EN 12101-6:2007 Systemy kontroli rozprzestrzeniania dymu i ciepła. Część 6: Wymagania techniczne dotyczące systemów różnicowania ciśnień. Zestaw"
+  },
+  {
+   "id": 320,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "niska",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-B-02877-4:2001, wymagania dotyczące uruchamiania urządzeń oddymiających klatek schodowych. Norma niedostępna, rozstrzygnięcie z pamięci",
+   "q": "Do ręcznego uruchamiania grawitacyjnej instalacji oddymiającej zaprojektowanej wg Polskiej Normy PN-B-02877-4:2001 Ochrona przeciwpożarowa budynków. Instalacje "
+  },
+  {
+   "id": 321,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 218 ust. 1, 2 i 4 WT (wniosek a contrario)",
+   "q": "Sytuowanie wyniesionych ponad dach wylotów kanałów dymowych w dachu budynku niższego, w pasie o szerokości mniejszej niż 8 m od budynku wyższego ze ścianą zewnę"
+  },
+  {
+   "id": 322,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 243 ust. 1 i 2 WT",
+   "q": "Podział korytarza na odcinki nie dłuższe niż 50 m, za pomocą przegród z drzwiami dymoszczelnymi wymagany jest:"
+  },
+  {
+   "id": 326,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 216 ust. 2 pkt 1 WT",
+   "q": "W jednokondygnacyjnym budynku produkcyjno-magazynowym o wysokości 15 m, stanowiącym jedną strefę pożarową PM o gęstości obciążenia ogniowego 400 MJ/m2, wyposażo"
+  },
+  {
+   "id": 329,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 179 ust. 4 (tabela) i ust. 6 WT",
+   "q": "Zgodnie z rozporządzeniem Ministra Infrastruktury z dnia 12 kwietnia 2002 r. w sprawie warunków technicznych, jakim powinny odpowiadać budynki i ich usytuowanie"
+  },
+  {
+   "id": 335,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 67 pkt 1 rozp. MKiŚ z 24.07.2023 (Dz.U. poz. 1707), tekst urzędowy sprawdzony w api.sejm.gov.pl, tak samo § 67 pkt 1 rozp. MG z 21.11.2005",
+   "q": "Bazy gazu płynnego powinny być wyposażone w urządzenia i instalacje przeciwpożarowe wodne, przy czym przeciwpożarowe hydranty i działka wodne powinny być rozmie"
+  },
+  {
+   "id": 337,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 55 ust. 1 pkt 1 rozp. MKiŚ z 24.07.2023 (Dz.U. poz. 1707), tekst urzędowy sprawdzony w api.sejm.gov.pl, identycznie § 55 ust. 1 pkt 1 rozp. MG z 21.11.2005",
+   "q": "Zgodnie z rozporządzeniem Ministra Gospodarki z dnia 21 listopada 2005 r. w sprawie warunków technicznych, jakim powinny odpowiadać bazy i stacje paliw płynnych"
+  },
+  {
+   "id": 338,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 6 ust. 3 i tabela nr 2 RW, § 7 ust. 1 pkt 3 RW",
+   "q": "Wymagana wydajność sieci wodociągowej przeciwpożarowej, zasilającej hydranty zewnętrzne stanowiące źródło wody do zewnętrznego gaszenia pożaru dla obiektu magaz"
+  },
+  {
+   "id": 339,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 12 ust. 1 pkt 3 lit. a i pkt 4 RW",
+   "q": "Drogę pożarową należy doprowadzić do obejmującej plac składowy strefy pożarowej PM poza budynkiem, zawsze w przypadku gdy:"
+  },
+  {
+   "id": 340,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 12101-6:2007 (z wiedzy, norma niedostępna)",
+   "q": "W budynku hotelowym o wysokości 60 m, w którym do zabezpieczenia przed zadymieniem klatek schodowych zastosowano system różnicowania ciśnień zaprojektowany zgod"
+  },
+  {
+   "id": 348,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "srednia",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-B-02877-4:2001/Az1:2006, usytuowanie klap dymowych względem ścian oddzielenia przeciwpożarowego. Norma niedostępna, rozstrzygnięcie z wiedzy",
+   "q": "Zgodnie z Polską Normą PN-B-02877-4:2001/Az1:2006 Ochrona przeciwpożarowa budynków – Instalacje grawitacyjne do odprowadzania dymu i ciepła – Zasady projektowan"
+  },
+  {
+   "id": 349,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "niska",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-B-02857:2017 (norma niedostępna, odpowiedź z wiedzy), pomocniczo § 4 ust. 5 RW",
+   "q": "Zgodnie z Polską Normą PN-B-02857:2017 Ochrona przeciwpożarowa budynków – Przeciwpożarowe zbiorniki wodne – Wymagania ogólne maksymalna odległość przeciwpożarow"
+  },
+  {
+   "id": 357,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 37 ust. 1, 7 i 9 oraz § 2 ust. 1 pkt 1 lit. e RPB (przepis nie zawiera takiej kwalifikacji)",
+   "q": "Zgodnie z rozporządzeniem Ministra Spraw Wewnętrznych i Administracji z dnia 7 czerwca 2010 r. w sprawie ochrony przeciwpożarowej budynków, innych obiektów budo"
+  },
+  {
+   "id": 358,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 6 ust. 4 RW",
+   "q": "Zgodnie z rozporządzeniem Ministra Spraw Wewnętrznych i Administracji z dnia 24 lipca 2009 r. w sprawie przeciwpożarowego zaopatrzenia w wodę oraz dróg pożarowy"
+  },
+  {
+   "id": 359,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 671-1 (norma niedostępna, odpowiedź z wiedzy)",
+   "q": "Zgodnie z Polską Normą PN-EN 671-1:2012 Stałe urządzenia gaśnicze – Hydranty wewnętrzne – Część 1: Hydranty wewnętrzne z wężem półsztywnym efektywny zasięg rzut"
+  },
+  {
+   "id": 364,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 218 ust. 1 i 4 WT (wniosek a contrario)",
+   "q": "Sytuowanie wylotów kanałów dymowych, w dachu budynku niższego, w pasie o szerokości mniejszej niż 8 m od budynku wyższego ze ścianą zewnętrzną z oknami, jest:"
+  },
+  {
+   "id": 365,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 179 ust. 1 i 2 WT",
+   "q": "Instalacja gazowa w budynku może być zasilana gazem płynnym z grupy zbiorników naziemnych (w ilości nieprzekraczającej 6 sztuk), pod warunkiem, że ich łączna po"
+  },
+  {
+   "id": 366,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 321a ust. 2 pkt 2 rozp. MTiGM z 30.05.2000 w brzmieniu nadanym Dz.U. z 2019 r. poz. 1642, obecnie zał. nr 3 pkt 46 rozp. MI z 24.06.2022 (Dz.U. poz. 1518), oba teksty sprawdzone w api.sejm.gov.pl",
+   "q": "Zgodnie z rozporządzeniem Ministra Transportu i Gospodarki Morskiej z dnia 30 maja 2000 r. w sprawie warunków technicznych, jakim powinny odpowiadać drogowe obi"
+  },
+  {
+   "id": 370,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 228 ust. 1 WT (tabela) i § 212 ust. 4 WT (odnośnik pod tabelą)",
+   "q": "W wielokondygnacyjnym budynku wysokim (W) wyposażonym w stałe samoczynne urządzenie gaśnicze wodne (tryskaczowe) oraz samoczynne urządzenia oddymiające, dopuszc"
+  },
+  {
+   "id": 372,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": true,
+   "podstawa": "§ 237 ust. 1 pkt 3, ust. 4, 5, 6 pkt 2 i ust. 7 WT",
+   "q": "W jednokondygnacyjnym budynku magazynowym o wysokości kondygnacji w świetle 6 m, wyposażonym w samoczynne urządzenia oddymiające uruchamiane za pomocą systemu w"
+  },
+  {
+   "id": 375,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 212 ust. 2 i 5 WT",
+   "q": "Niski (N) budynek biurowy, stanowiący w całości strefę pożarową ZL III z jednym wyjściem ewakuacyjnym na parterze, posiadający trzy kondygnacje nadziemne o łącz"
+  },
+  {
+   "id": 377,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 157 ust. 3 i 4 WT",
+   "q": "W budynku użyteczności publicznej o wysokości 35 m zastosowanie w lokalu restauracji urządzeń gastronomicznych zasilanych z instalacji gazowej na gaz ziemny jes"
+  },
+  {
+   "id": 379,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 55 ust. 1 pkt 1 rozp. MKiŚ z 24.07.2023 (Dz.U. poz. 1707), tekst urzędowy sprawdzony w api.sejm.gov.pl, identycznie § 55 ust. 1 pkt 1 rozp. MG z 21.11.2005",
+   "q": "W bazach paliw płynnych pompownie przeciwpożarowe należy lokalizować od osi obwałowania zbiornika przeznaczonego do magazynowania ropy naftowej i produktów naft"
+  },
+  {
+   "id": 382,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "wysoka",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 12845+A1:2020, wymagania dla tryskaczy w poziomach pośrednich regałów (norma niedostępna, odpowiedź z wiedzy)",
+   "q": "Zgodnie z Polską Normą PN-EN 12845+A1:2020 Stałe urządzenia gaśnicze –Automatyczne urządzenia tryskaczowe – Projektowanie, instalowanie i konserwacja, w pozioma"
+  },
+  {
+   "id": 383,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 220 ust. 3 WT",
+   "q": "Ściany zewnętrzne kotłowni gazowej z kotłem o mocy cieplnej 350 kW, przeznaczonym do spalania gazu ziemnego, która jest zlokalizowana ponad dachem czterokondygn"
+  },
+  {
+   "id": 385,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 19 ust. 3 pkt 2 i ust. 4 RPB",
+   "q": "W strefie pożarowej PM o powierzchni 8000 m2 i gęstości obciążenia ogniowego 400 MJ/m2, w której znajduje się pomieszczenie o powierzchni 150 m2 i gęstości obci"
+  },
+  {
+   "id": 389,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 181 ust. 3 pkt 1 lit. a, b i e WT",
+   "q": "Awaryjne oświetlenie ewakuacyjne należy obligatoryjnie zastosować w pomieszczeniu:"
+  },
+  {
+   "id": 390,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 28 ust. 1 pkt 4 i 11 oraz ust. 2 RPB",
+   "q": "Na terenie zamkniętym służącym obronności państwa stosowanie systemu sygnalizacji pożarowej jest wymagane w przypadku:"
+  },
+  {
+   "id": 392,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "srednia",
+   "flag": "niejednoznaczne",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 12 ust. 6 pkt 1 RW",
+   "q": "Zgodnie z rozporządzeniem Ministra Spraw Wewnętrznych i Administracji z dnia 24 lipca 2009 r. w sprawie przeciwpożarowego zaopatrzenia w wodę oraz dróg pożarowy"
+  },
+  {
+   "id": 400,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "niska",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-B-02857:2017 (norma niedostępna, odpowiedź szacunkowa z wiedzy, nie udało się potwierdzić w dostępnych źródłach)",
+   "q": "Zgodnie z Polską Normą PN-B-02857:2017 Ochrona przeciwpożarowa budynków – Przeciwpożarowe zbiorniki wodne – Wymagania ogólne, długość przewodu ssawnego do pracy"
+  },
+  {
+   "id": 404,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "EN 12101-13:2022, rozdział 1 Zakres normy. Sprawdzone w ogólnodostępnym podglądzie słowackiego wydania STN EN 12101-13 (normy.normoff.gov.sk), polski tekst PN-EN niedostępny",
+   "q": "Zgodnie z postanowieniami Polskiej Normy PN-EN 12101-13:2022 Systemy kontroli rozprzestrzeniania dymu i ciepła – Część 13: Systemy różnicowania ciśnień (SRC) – "
+  },
+  {
+   "id": 405,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 91 ust. 1 i ust. 2 pkt 1 rozp. MG z 26.04.2013 (sieci gazowe, Dz.U. poz. 640)",
+   "q": "Zgodnie z rozporządzeniem Ministra Gospodarki z dnia 26 kwietnia 2013 r. w sprawie warunków technicznych, jakim powinny odpowiadać sieci gazowe i ich usytuowani"
+  },
+  {
+   "id": 406,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 211 ust. 2 w zw. z § 239 ust. 2 pkt 2 i 3 WT",
+   "q": "W budynku administracyjno-biurowym znajdującym się na terenie zakładu karnego drzwi stanowiące wyjście ewakuacyjne powinny otwierać się na zewnątrz pomieszczeni"
+  },
+  {
+   "id": 407,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 8 ust. 2 pkt 2 rozp. MRiRW z 13.01.2023 (budowle rolnicze, Dz.U. poz. 297)",
+   "q": "Zgodnie z wymaganiami rozporządzenia Ministra Rolnictwa i Rozwoju Wsi z dnia 13 stycznia 2023 r. w sprawie warunków technicznych, jakim powinny odpowiadać budow"
+  },
+  {
+   "id": 408,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 232 ust. 4 i 6 WT",
+   "q": "W budynku o wymaganej klasie odporności pożarowej „C” przeszklenia wypełniające otwory w ścianie wewnętrznej pomiędzy dwoma pomieszczeniami biurowymi, stanowiąc"
+  },
+  {
+   "id": 409,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 37 ust. 1 oraz § 35 ust. 1 i 2 rozp. MSWiA z 19.02.2020 (odpady, Dz.U. poz. 296)",
+   "q": "Zgodnie z rozporządzeniem Ministra Spraw Wewnętrznych i Administracji z dnia 19 lutego 2020 r. w sprawie wymagań w zakresie ochrony przeciwpożarowej, jakie mają"
+  },
+  {
+   "id": 411,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 221 ust. 1 i 2 WT",
+   "q": "Nad pomieszczeniem zagrożonym wybuchem o powierzchni 150 m2 i wysokości 4 m, nie jest wymagane stosowanie lekkiego dachu (o masie nieprzekraczającej 75 kg/m2 rz"
+  },
+  {
+   "id": 414,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 39 ust. 4 pkt 5 lit. b RPB",
+   "q": "Źródłem wody do celów przeciwpożarowych w lasach, które samoistnie lub wspólnie tworzą kompleks leśny o powierzchni ponad 300 ha, jest studnia z pompą oraz z in"
+  },
+  {
+   "id": 417,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 216 ust. 5 pkt 1 WT, § 212 ust. 2 i § 214 WT, załącznik nr 3 do WT (tabela 1)",
+   "q": "W ścianie zewnętrznej czterokondygnacyjnego budynku żłobka o wysokości 14 m, zastosowanie izolacji cieplnej z samogasnącego polistyrenu spienionego jest dopuszc"
+  },
+  {
+   "id": 420,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 5 ust. 1 pkt 3 rozp. w sprawie uzgadniania projektu (2021 i 2023, to samo brzmienie), § 28 ust. 1 pkt 17 RPB, § 245 pkt 1 i § 277 ust. 4 WT",
+   "q": "Zgodnie z rozporządzeniem Ministra Spraw Wewnętrznych i Administracji z dnia 17 września 2021 r. w sprawie uzgadniania projektu zagospodarowania działki lub ter"
+  },
+  {
+   "id": 421,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 19 ust. 3 pkt 1 i ust. 6 RPB oraz § 181 ust. 3 pkt 1 lit. e i pkt 2 lit. a WT",
+   "q": "W strefie pożarowej PM o powierzchni 5000 m2 i gęstości obciążenia ogniowego 1000 MJ/m2, obejmującej pomieszczenie magazynowe o powierzchni netto 3000 m2, która"
+  },
+  {
+   "id": 423,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 222 ust. 1 i 2 WT",
+   "q": "W budynku produkcyjno-magazynowym o dwóch kondygnacjach nadziemnych, nieznajdującym się na terenie zamkniętym, pomieszczenie zagrożone wybuchem może być usytuow"
+  },
+  {
+   "id": 425,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "wysoka",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 15004-1:2019, tablica minimalnych środków bezpieczeństwa w zależności od stężenia (norma niedostępna, odpowiedź z wiedzy)",
+   "q": "Zgodnie z Polską Normą PN-EN 15004-1:2019 Stałe urządzenia gaśnicze − Urządzenia gaśnicze gazowe − Część 1: Projektowanie, montaż i konserwacja, w przypadku pom"
+  },
+  {
+   "id": 427,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "srednia",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 12101-13:2022, pkt 5.2 Zastosowanie klasy 1 i klasy 2. Istnienie wyłącznie klas 1 i 2 potwierdzone w spisie treści słowackiego wydania normy, kryteria przydziału z wiedzy",
+   "q": "Zgodnie z Polską Normą PN-EN 12101-13:2022 Systemy kontroli rozprzestrzeniania dymu i ciepła – Część 13: Systemy różnicowania ciśnień (SRC) – Projektowanie i me"
+  },
+  {
+   "id": 430,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 12 ust. 1 pkt 3 i 4 RW",
+   "q": "Drogę pożarową należy zapewnić do:"
+  },
+  {
+   "id": 431,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 219 ust. 2 WT, załącznik nr 3 do WT (tabela 1)",
+   "q": "W budynku o wysokości 13 m przeznaczonym przede wszystkim dla osób o ograniczonej zdolności poruszania się (osób starszych), poddasze użytkowe przeznaczone na c"
+  },
+  {
+   "id": 435,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 8 ust. 1 pkt 1 i 2 RPB",
+   "q": "W budynku stanowiącym jedną strefę pożarową ZL, przeznaczoną do sprzedaży produktów z cieczami palnymi o temperaturze zapłonu poniżej 294,15 K (21oC), jest dopu"
+  },
+  {
+   "id": 437,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 6 ust. 3 i tabela nr 2 załącznika do RW (lp. 5, kolumna do 500 m2)",
+   "q": "Wymagana ilość wody do celów przeciwpożarowych do zewnętrznego gaszenia pożaru dla budynku produkcyjnego, stanowiącego jedną strefę pożarową o powierzchni 200 m"
+  },
+  {
+   "id": 439,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 3 ust. 1 pkt 3, 6 lit. a, 7 i 10 rozp. w sprawie uzgadniania projektu (2021 i 2023, to samo brzmienie), § 27–29 RPB",
+   "q": "Uzgodnienia pod względem zgodności z wymaganiami ochrony przeciwpożarowej nie wymaga projekt architektoniczno-budowlany:"
+  },
+  {
+   "id": 441,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 2 ust. 2 pkt 1 rozp. Ministra Cyfryzacji z 4.12.2019 (Dz.U. poz. 2479)",
+   "q": "Zgodnie z rozporządzeniem Ministra Cyfryzacji z dnia 4 grudnia 2019 r. w sprawie warunków organizacyjnych i technicznych dla podmiotów świadczących usługi z zak"
+  },
+  {
+   "id": 442,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 181 ust. 3 pkt 1 lit. c i e oraz pkt 2 lit. a WT",
+   "q": "W budynku niskim muzeum awaryjne oświetlenie ewakuacyjne należy zastosować:"
+  },
+  {
+   "id": 443,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 214 i § 227 ust. 4 pkt 1 WT",
+   "q": "W budynku średniowysokim stanowiącym dom dla osób starszych, wyposażonym w stałe samoczynne urządzenie gaśnicze wodne, dopuszczalne jest uwzględnienie tego urzą"
+  },
+  {
+   "id": 449,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 8 pkt 1, § 157 ust. 5–7 i § 177 pkt 1 WT",
+   "q": "W budynku mieszkalnym wielorodzinnym o wysokości 14 m, posiadającym na ostatniej czwartej kondygnacji nadziemnej kotłownię gazową zasilaną z sieci gazowej, zast"
+  },
+  {
+   "id": 450,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 275 ust. 1 i 3 oraz § 212 ust. 4 WT",
+   "q": "Średniowysoki budynek garażu otwartego wielokondygnacyjnego z pomieszczeniami technicznymi nad najwyższą kondygnacją przeznaczoną do parkowania samochodów, w kt"
+  },
+  {
+   "id": 454,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "srednia",
+   "flag": "niejednoznaczne",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 256 ust. 3 (ZL IV, odnośnik 2) i ust. 4 WT",
+   "q": "W budynku mieszkalnym wielorodzinnym wysokościowym, w którym drogi ewakuacyjne są chronione przez stałe urządzenia gaśnicze, uruchamiane samoczynnie za pomocą s"
+  },
+  {
+   "id": 459,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 12101-13:2022, tabela 1 (wymagania dla klasy 1 i klasy 2). Norma niedostępna, rozstrzygnięcie z wiedzy",
+   "q": "Zgodnie z Polską Normą PN-EN 12101-13:2022 Systemy kontroli rozprzestrzeniania dymu i ciepła − Część 13: Systemy różnicowania ciśnień (SRC) − Projektowanie i me"
+  },
+  {
+   "id": 461,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 6 ust. 1 pkt 1 lit. c tiret drugie rozp. MPiPS z 23.08.2012 w sprawie domów pomocy społecznej (t.j. Dz.U. z 2025 r. poz. 51, sprawdzony w api.sejm.gov.pl) oraz § 28 ust. 1 pkt 8 RPB",
+   "q": "Projektowany budynek domu pomocy społecznej, w którym przewidziano 80 miejsc przeznaczonych dla jego mieszkańców, powinien być wyposażony w:"
+  },
+  {
+   "id": 463,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "wysoka",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PKN-CEN/TS 54-14:2020, zalecenia dla dodatkowych czujek liniowych dymu na niższych poziomach (norma niedostępna, odpowiedź z wiedzy)",
+   "q": "Zgodnie ze Specyfikacją Techniczną PKN-CEN/TS 54-14:2020 Systemy sygnalizacji pożarowej. Część 14: Wytyczne planowania, projektowania, instalowania, odbioru, ek"
+  },
+  {
+   "id": 464,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 212 ust. 4, § 216 ust. 1 (kol. 5) oraz § 271 ust. 1 i 5 WT",
+   "q": "Minimalna dopuszczalna odległość dwukondygnacyjnego niskiego budynku PM stanowiącego strefę pożarową PM o maksymalnej gęstości obciążenia ogniowego 3000 MJ/m2, "
+  },
+  {
+   "id": 467,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "srednia",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 12845+A1:2020 załącznik P, wymagania budowlane przy ochronie tryskaczami ESFR (norma niedostępna, odpowiedź z wiedzy)",
+   "q": "Zgodnie z Polską Normą PN-EN 12845+A1:2020 Stałe urządzenia gaśnicze – Automatyczne urządzenia tryskaczowe – Projektowanie, instalowanie i konserwacja w przestr"
+  },
+  {
+   "id": 468,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 269 ust. 5 WT",
+   "q": "Pomieszczenie z cyklonami do palnych pyłów zlokalizowane w budynku niskim produkcyjnym o dwóch kondygnacjach nadziemnych i gęstości obciążenia ogniowego do 1000"
+  },
+  {
+   "id": 469,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 258 ust. 1 WT oraz zał. nr 3 pkt 1.2 tabela 2 WT",
+   "q": "W pomieszczeniu biurowym przeznaczonym do jednoczesnego przebywania nie więcej niż 6 osób dopuszczalne jest stosowanie wykładzin podłogowych sklasyfikowanych w "
+  },
+  {
+   "id": 471,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 26 ust. 1 i 2 rozp. MSWiA z 19.02.2020 (odpady, Dz.U. poz. 296)",
+   "q": "Zgodnie z rozporządzeniem Ministra Spraw Wewnętrznych i Administracji z dnia 19 lutego 2020 r. w sprawie wymagań w zakresie ochrony przeciwpożarowej, jakie mają"
+  },
+  {
+   "id": 472,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 13501-4, klasyfikacja klap odcinających do systemów wentylacji pożarowej (C300, C10000, Cmod). Norma niedostępna, rozstrzygnięcie z wiedzy",
+   "q": "Zgodnie z Polską Normą PN-EN 13501-4:2016 Klasyfikacja ogniowa wyrobów budowlanych i elementów budynków – Część 4: Klasyfikacja na podstawie wyników badań odpor"
+  },
+  {
+   "id": 475,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 81-72:2020 (z wiedzy, norma niedostępna)",
+   "q": "Zastosowany w budynku użyteczności publicznej wysokościowym dźwig dla ekip ratowniczych o wysokości toru jazdy 120 m, powinien, zgodnie z wymaganiami Polskiej N"
+  },
+  {
+   "id": 480,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 27 ust. 2 pkt 1 lit. a i pkt 2 oraz § 29 ust. 1 pkt 1 lit. a i pkt 3 RPB",
+   "q": "Jednokondygnacyjny budynek galerii handlowo-usługowej o powierzchni wewnętrznej 15 000 m2, z kinem o liczbie miejsc 400 i lokalami gastronomicznymi o łącznej li"
+  },
+  {
+   "id": 482,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-B-02877-4:2025-07 rozdz. 4.3 (norma niedostępna, ustalono na podstawie omówienia normy: G. Kubicki, INSTAL 10/2025, journals.pcz.pl)",
+   "q": "Zgodnie z Polską Normą PN-B 02877-4:2025-07 Ochrona przeciwpożarowa budynków – Systemy do grawitacyjnego odprowadzania dymu i ciepła – Część 4: Zasady projektow"
+  },
+  {
+   "id": 483,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 223 ust. 1 i § 224 ust. 1 WT",
+   "q": "W jednokondygnacyjnym budynku magazynowym o gęstości obciążenia ogniowego powyżej 4000 MJ/m2, wykonanym z elementów nierozprzestrzeniających ognia oraz wyposażo"
+  },
+  {
+   "id": 484,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 12 ust. 1 pkt 3 RW oraz § 226 ust. 3 WT",
+   "q": "Do budynku magazynowego z największą strefą pożarową PM o powierzchni wewnętrznej 980 m2 i całkowitej 1020 m2 oraz gęstości obciążenia ogniowego 4000 MJ/m2, bez"
+  },
+  {
+   "id": 489,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "srednia",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PKN-CEN/TS 54-14:2020, promienie działania czujek punktowych i odległości od ścian (norma niedostępna, odpowiedź z wiedzy)",
+   "q": "Zgodnie ze Specyfikacją Techniczną PKN-CEN/TS 54-14:2020 Systemy sygnalizacji pożarowej – Część 14: Wytyczne planowania, projektowania, instalowania, odbioru, e"
+  },
+  {
+   "id": 491,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 12 ust. 1 pkt 3 i 4 RW",
+   "q": "Droga pożarowa do budynku produkcyjnego z pomieszczeniem zagrożonym wybuchem, stanowiącego jedną strefę pożarową o gęstości obciążenia ogniowego 400 MJ/m2 i pow"
+  },
+  {
+   "id": 492,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "srednia",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "Projekt nowych WT z 9.06.2025, § 227 ust. 2 pkt 5 lit. b. Obowiązujące WT z 2002 r. nie zawierają takiego przepisu (jednokondygnacyjny budynek ZL I może mieć klasę „D”, w której konstrukcji dachu nie stawia się wymagań)",
+   "q": "W budynku hali sportowej o wysokości 14 m i jednej kondygnacji nadziemnej, w której może jednocześnie przebywać 100 osób niebędących jej stałymi użytkownikami, "
+  },
+  {
+   "id": 494,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 13501-4, klasyfikacja HOT 400/30 klap odcinających do systemów wielostrefowych. Norma niedostępna, rozstrzygnięcie z wiedzy",
+   "q": "Zgodnie z Polską Normą PN-EN 13501-4:2016-07 Klasyfikacja ogniowa wyrobów budowlanych i elementów budynków – Część 4: Klasyfikacja na podstawie wyników badań od"
+  },
+  {
+   "id": 495,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 19 ust. 1 pkt 2 i ust. 3 RPB",
+   "q": "Budynek tymczasowy średniowysoki (SW) stanowiący jedną strefę pożarową o powierzchni 2500 m2, w którym przewiduje się możliwość jednoczesnego przebywania 60 osó"
+  },
+  {
+   "id": 497,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 246 ust. 2 w zw. z § 211 ust. 1 WT",
+   "q": "Klatki schodowe stanowiące drogi ewakuacyjne w budynku o wysokości 28 m przeznaczonym do zakwaterowania osób osadzonych:"
+  },
+  {
+   "id": 499,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 8 pkt 3, § 212 ust. 4, § 214 oraz § 216 ust. 1 i 7 WT",
+   "q": "W dwukondygnacyjnym budynku produkcyjnym o wysokości 27 m, stanowiącym jedną strefę pożarową o gęstości obciążenia ogniowego 1800 MJ/m2, w którym zastosowano st"
+  },
+  {
+   "id": 501,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": true,
+   "podstawa": "§ 212 ust. 2 i 4, § 214, § 216 ust. 1 (kol. 5) oraz § 271 ust. 1, 5 i 7 WT",
+   "q": "Minimalna dopuszczalna odległość budynku biurowego o wysokości 18 m, który jest w całości chroniony przez stałe samoczynne urządzenia gaśnicze wodne, od dwukond"
+  },
+  {
+   "id": 506,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "załącznik do rozp. MSWiA z 20.06.2007 w sprawie wykazu wyrobów (Dz.U. poz. 1002, w brzmieniu z Dz.U. z 2010 r. poz. 553), pkt 10.5 i 11.5, sprawdzone w api.sejm.gov.pl",
+   "q": "Elementami systemu sygnalizacji pożarowej, które nie wymagają uzyskania dopuszczenia do użytkowania w formie świadectwa dopuszczenia wydanego przez instytut bad"
+  },
+  {
+   "id": 507,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "srednia",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 12845+A1:2020, wymagania dla hydroforów jako źródła zasilania wodą (norma niedostępna, odpowiedź z wiedzy)",
+   "q": "Zgodnie z Polską Normą PN-EN 12845+A1:2020 Stałe urządzenia gaśnicze – Automatyczne urządzenia tryskaczowe – Projektowanie, instalowanie i konserwacja, hydrofor"
+  },
+  {
+   "id": 509,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 5 ust. 1 rozp. MRiRW z 13.01.2023 w sprawie warunków technicznych budowli rolniczych (Dz.U. poz. 297)",
+   "q": "Zapewnienie dojścia i dojazdu, przystosowanych do prowadzenia działań ratowniczych przez jednostki ochrony przeciwpożarowej, jest wymagane do budowli rolniczej,"
+  },
+  {
+   "id": 511,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "srednia",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 12101-13:2022, pkt 5.2 i tabela 1. Norma niedostępna, rozstrzygnięcie z wiedzy",
+   "q": "Zgodnie z Polską Normą PN-EN 12101-13:2022-09 Systemy kontroli rozprzestrzeniania dymu i ciepła; Cześć 13: Systemy różnicowania ciśnień (SRC); Projektowanie i m"
+  },
+  {
+   "id": 512,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "niska",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PKN-CEN/TS 54-14:2020, zalecenia dotyczące wentylacji i ruchu powietrza (norma niedostępna, odpowiedź z wiedzy)",
+   "q": "Zgodnie ze Specyfikacją Techniczną PKN-CEN/TS 54-14:2020 Systemy sygnalizacji pożarowej – Część 14: Wytyczne planowania, projektowania, instalowania, odbioru, e"
+  },
+  {
+   "id": 516,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "srednia",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 15004-1 (z wiedzy, norma niedostępna, wydania 2025-05 nie sprawdzono)",
+   "q": "Zgodnie z Polską Normą PN-EN 15004-1:2025-05 Stałe urządzenia gaśnicze – Urządzenia gaśnicze gazowe – Część 1: Projektowanie, montaż i konserwacja, urządzenie z"
+  },
+  {
+   "id": 517,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 249 ust. 3 i 4 w zw. z § 246 ust. 1 WT",
+   "q": "W budynku użyteczności publicznej o wysokości 64 m, zakwalifikowanym do kategorii zagrożenia ludzi ZL III, biegi i spoczniki schodów klatki schodowej służącej d"
+  },
+  {
+   "id": 519,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "wysoka",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 81-72:2020-12, wymagania dla klapy awaryjnej w dachu kabiny (norma niedostępna, odpowiedź z wiedzy)",
+   "q": "Zgodnie z Polską Normą PN-EN 81-72:2020-12 Zasady bezpieczeństwa dotyczące budowy i instalowania dźwigów – Szczególne zastosowania dźwigów towarowo-osobowych – "
+  },
+  {
+   "id": 520,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 7 pkt 1 rozp. MRiRW z 13.01.2023 w sprawie warunków technicznych, jakim powinny odpowiadać budowle rolnicze i ich usytuowanie (Dz.U. poz. 297)",
+   "q": "Odległość zbiornika biogazu rolniczego od pomieszczeń przeznaczonych na pobyt ludzi znajdujących się w budynku produkcyjnym o gęstości obciążenia ogniowego 1000"
+  },
+  {
+   "id": 522,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-B-02877-4:2025-07 rozdz. 4.2.1 (norma niedostępna, ustalono na podstawie omówienia normy: G. Kubicki, INSTAL 10/2025, journals.pcz.pl, oraz inzynierbudownictwa.pl)",
+   "q": "Zgodnie z Polską Normą PN-B 02877-4:2025-07 Ochrona przeciwpożarowa budynków – Systemy do grawitacyjnego odprowadzania dymu i ciepła – Część 4: Zasady projektow"
+  },
+  {
+   "id": 523,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 9 ust. 1 pkt 2 rozp. MSWiA z 4.11.2025 w sprawie warunków technicznych dla budowli ochronnych (Dz.U. poz. 1548), tekst urzędowy sprawdzony w api.sejm.gov.pl",
+   "q": "Ukrycie kategorii U-3 powinno stanowić strefę pożarową wydzieloną przeciwpożarowo w sposób zabezpieczający przed rozprzestrzenianiem się pożaru do jej wnętrza p"
+  },
+  {
+   "id": 525,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 249 ust. 3 pkt 1 i ust. 5 w zw. z § 212 ust. 2 i 3 WT",
+   "q": "Biegi i spoczniki klatki schodowej służącej do ewakuacji z budynku hotelu o dwóch kondygnacjach nadziemnych i wysokości wynoszącej 9 m, która jest obudowana i z"
+  },
+  {
+   "id": 528,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "wysoka",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 249 ust. 6, § 271 ust. 1, 4 i 11 oraz § 216 ust. 1 i 2 WT",
+   "q": "Ściana zewnętrzna w projektowanym sześciokondygnacyjnym budynku o wysokości 18 m, zakwalifikowanym w całości do kategorii zagrożenia ludzi ZL III, która tworzy "
+  },
+  {
+   "id": 531,
+   "bylo": "a",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 212 ust. 7 i 9 oraz § 232 ust. 4 WT",
+   "q": "W budynku mieszkalnym wielorodzinnym, który ma 4 kondygnacje nadziemne i jedną kondygnację podziemną, pomieszczenie z rozdzielnią elektryczną zasilającą urządze"
+  },
+  {
+   "id": 532,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "srednia",
+   "flag": "niejednoznaczne",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 262 ust. 2, § 243 ust. 1 i 2 oraz § 247 ust. 1 WT",
+   "q": "W projektowanym dwukondygnacyjnym budynku biurowym o wysokości 30 m korytarz o długości 80 m, stanowiący drogę ewakuacyjną, powinien:"
+  },
+  {
+   "id": 536,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 24 ust. 3 pkt 1 lit. a, pkt 3 lit. c i ust. 5 RPB",
+   "q": "Do zasilania w wodę instalacji wodociągowej przeciwpożarowej w budynku wysokościowym (WW) o wysokości 90 m, który na wysokości powyżej 12 m zawiera jedynie stre"
+  },
+  {
+   "id": 538,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "niska",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-B-02877-4:2025-07 (norma niedostępna, odpowiedź z wiedzy, nie udało się potwierdzić w dostępnych źródłach)",
+   "q": "Zgodnie z Polską Normą PN-B 02877-4:2025-07 Ochrona przeciwpożarowa budynków – Systemy do grawitacyjnego odprowadzania dymu i ciepła – Część 4: Zasady projektow"
+  },
+  {
+   "id": 539,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 9 ust. 2 RPB",
+   "q": "W średniowysokim (SW) budynku handlowym, zaliczonym do kategorii zagrożenia ludzi ZL I, w którym przewiduje się możliwość detalicznej sprzedaży wyrobów pirotech"
+  },
+  {
+   "id": 541,
+   "bylo": "a",
+   "jest": "b",
+   "conf": "wysoka",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-EN 12845+A1:2020, zasady stosowania tryskaczy przyściennych (norma niedostępna, odpowiedź z wiedzy)",
+   "q": "Zgodnie z Polską Normą PN-EN 12845+A1:2020 Stałe urządzenia gaśnicze – Automatyczne urządzenia tryskaczowe – Projektowanie, instalowanie i konserwacja, tryskacz"
+  },
+  {
+   "id": 542,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "niska",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PN-B-02857:2017-04, usytuowanie stanowiska czerpania wody względem budynku. Norma niedostępna, rozstrzygnięcie z pamięci",
+   "q": "Zgodnie z Polską Normą PN-B-02857:2017-04 Ochrona przeciwpożarowa – Przeciwpożarowe zbiorniki wodne – Wymagania ogólne, stanowisko czerpnia wody może być usytuo"
+  },
+  {
+   "id": 543,
+   "bylo": "b",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 8 ust. 2 pkt 5 rozp. MRiRW z 13.01.2023 (budowle rolnicze, Dz.U. poz. 297)",
+   "q": "Odległość silosów na zboże i pasze o pojemności 150 ton od granicy działki sąsiedniej powinna wynosić co najmniej:"
+  },
+  {
+   "id": 551,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 268 ust. 1 pkt 5 w zw. z § 8 WT",
+   "q": "Maszynownie wentylacyjne i klimatyzacyjne, z wyjątkiem obudowy urządzeń instalowanych ponad dachem budynku, powinny być wydzielone ścianami o klasie odporności "
+  },
+  {
+   "id": 552,
+   "bylo": "b",
+   "jest": "c",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 272 ust. 1 w zw. z § 271 ust. 1 i 2 WT, załącznik nr 3 do WT pkt 4.3",
+   "q": "Odległość ściany zewnętrznej wznoszonego budynku wolnostojącego o jednej kondygnacji nadziemnej, przeznaczonego do wykonywania działalności usługowej i handlowe"
+  },
+  {
+   "id": 555,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 217 ust. 1 pkt 1 lit. a w zw. z § 8 pkt 2 WT",
+   "q": "W budynku mieszkalnym wielorodzinnym o 9 kondygnacjach nadziemnych i wysokości 32 m, klasa odporności ogniowej ścian wewnętrznych oddzielających mieszkania od i"
+  },
+  {
+   "id": 556,
+   "bylo": "c",
+   "jest": "b",
+   "conf": "wysoka",
+   "flag": "brak źródła",
+   "bylo_zweryfikowane": false,
+   "podstawa": "PKN-CEN/TS 54-14:2020-09, promień działania czujek pod dachami pochyłymi (norma niedostępna, odpowiedź z wiedzy)",
+   "q": "Zgodnie ze Specyfikacją Techniczną PKN CEN/TS 54-14:2020-09 Systemy sygnalizacji pożarowej – Część 14: Wytyczne planowania, projektowania, instalowania, odbioru"
+  },
+  {
+   "id": 558,
+   "bylo": "c",
+   "jest": "a",
+   "conf": "tekst",
+   "flag": "",
+   "bylo_zweryfikowane": false,
+   "podstawa": "§ 6 ust. 2 pkt 1 lit. a i ust. 3 pkt 2 i 3 rozp. MSWiA z 9.07.2025 w sprawie miejsc doraźnego schronienia (Dz.U. poz. 932, sprawdzone w api.sejm.gov.pl)",
+   "q": "Drzwi stanowiące wyjście ewakuacyjne lub znajdujące się na drodze służącej do ewakuacji z miejsca doraźnego schronienia o pojemności 200 osób, powinny mieć szer"
+  }
+ ]
+}

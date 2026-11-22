@@ -21,55 +21,59 @@
   "legal": [
    "§ 179 WT / rozp. dot. zbiorników gazu płynnego"
   ],
-  "verified": false
+  "verified": true
  },
  "404": {
-  "answer": "b",
-  "explanation": "Zasady projektowania SRC wg PN-EN 12101-13 stosuje się bez dodatkowych metod weryfikacji dla budynków o wysokości do 60 m, jednak poniżej limitu określonego dla budynków wysokościowych wg wymogów krajowych.",
+  "answer": "a",
+  "explanation": "Zakres normy stanowi, że podane w niej zasady, wymagania i procedury projektowania systemów różnicowania ciśnień dotyczą budynków o wysokości do 60 m. Dla budynków wyższych obowiązują te same wymagania, ale potrzebne są dodatkowe metody obliczeń i weryfikacji opisane w załączniku D, na przykład analiza numeryczna CFD. Zakres normy nie odwołuje się przy tym do krajowego limitu budynków wysokościowych.",
   "legal": [
-   "PN-EN 12101-13:2022 – systemy różnicowania ciśnień"
+   "PN-EN 12101-13:2022 rozdział 1 – zakres normy (budynki do 60 m)",
+   "PN-EN 12101-13:2022 załącznik D – projektowanie SRC w budynkach wyższych niż 60 m"
   ],
   "verified": false
  },
  "405": {
-  "answer": "b",
-  "explanation": "Awaryjna wentylacja mechaniczna w pomieszczeniu sprężarek gazu ziemnego powinna być uruchamiana automatycznie przy przekroczeniu 20% dolnej granicy wybuchowości metanu.",
+  "answer": "a",
+  "explanation": "W pomieszczeniach ze sprężarkami gazu ziemnego awaryjna wentylacja mechaniczna musi być sprzężona z automatycznym systemem wykrywania metanu. System ten przy przekroczeniu 10% dolnej granicy wybuchowości włącza alarm i awaryjną wentylację mechaniczną. Próg 40% dolnej granicy wybuchowości oznacza już wyłączenie napędu sprężarki oraz odcięcie i odgazowanie układów technologicznych.",
   "legal": [
-   "rozp. MG z 26.04.2013 – sieci gazowe"
+   "§ 91 rozp. MG z 26.04.2013 – wentylacja i wykrywanie metanu w pomieszczeniach sprężarek gazu"
   ],
-  "verified": false
+  "verified": true
  },
  "406": {
-  "answer": "c",
-  "explanation": "Na zewnątrz powinny otwierać się drzwi zarówno z pomieszczenia dla ponad 50 osób, jak i z pomieszczenia, do którego jest możliwe niespodziewane przedostanie się mieszanin wybuchowych lub substancji trujących – obie odpowiedzi są prawidłowe.",
+  "answer": "b",
+  "explanation": "Co do zasady drzwi ewakuacyjne otwierają się na zewnątrz między innymi z pomieszczeń dla ponad 50 osób. W budynkach położonych na terenie zakładów karnych i aresztów śledczych § 211 ust. 2 WT wyłącza jednak ten wymóg (pkt 3 i 4). Nadal obowiązuje pkt 2, czyli pomieszczenia, do których mogą niespodziewanie przedostać się mieszaniny wybuchowe lub substancje trujące i duszące.",
   "legal": [
-   "§ 236 WT – kierunek otwierania drzwi ewakuacyjnych"
+   "§ 211 ust. 2 WT – wyłączenia dla budynków na terenie zakładów karnych",
+   "§ 239 ust. 2 WT – kierunek otwierania drzwi ewakuacyjnych"
   ],
-  "verified": false
+  "verified": true
  },
  "407": {
-  "answer": "b",
-  "explanation": "Silos na zboże/pasze o pojemności większej niż 100 ton należy usytuować od budynku produkcyjno-magazynowego o gęstości > 4000 MJ/m² w odległości co najmniej 15 m.",
+  "answer": "a",
+  "explanation": "Dla silosów na zboże i pasze o pojemności większej niż 100 ton § 8 ust. 2 podaje odległość 10 m od pomieszczeń przeznaczonych na pobyt ludzi i budynków inwentarskich oraz 8 m od budynków innych niż inwentarskie. Budynek produkcyjno-magazynowy bez pomieszczeń na pobyt ludzi należy do tej drugiej grupy. Rozporządzenie rolnicze nie uzależnia tej odległości od gęstości obciążenia ogniowego budynku, a 20 m to wartość z § 271 WT dla odległości między budynkami.",
   "legal": [
-   "rozp. z 13.01.2023 (Dz.U. poz. 297) – budowle rolnicze"
+   "§ 8 ust. 2 rozp. MRiRW z 13.01.2023 – odległości silosów o pojemności ponad 100 ton"
   ],
-  "verified": false
+  "verified": true
  },
  "408": {
-  "answer": "b",
-  "explanation": "Przeszklenia wypełniające otwory w ścianie oddzielenia przeciwpożarowego (klasa C) powinny mieć klasę odporności ogniowej nie niższą niż EI 60 (izolacyjność i szczelność).",
+  "answer": "a",
+  "explanation": "W budynku klasy „C” ściana oddzielenia przeciwpożarowego ma klasę REI 120. Dla takiej ściany wypełnienie otworów przeszkleniem do 10% powierzchni wymaga klasy EI 60, gdy ściana jest obudową drogi ewakuacyjnej, a E 60 w pozostałych przypadkach. Ściana między dwoma pomieszczeniami biurowymi nie jest obudową drogi ewakuacyjnej, więc wystarcza E 60.",
   "legal": [
-   "§ 234, § 256 WT – zamknięcia otworów w oddzieleniach ppoż."
+   "§ 232 ust. 6 WT – przeszklenia w ścianie oddzielenia przeciwpożarowego",
+   "§ 232 ust. 4 WT – klasa REI 120 dla budynku klasy „C”"
   ],
-  "verified": false
+  "verified": true
  },
  "409": {
-  "answer": "a",
-  "explanation": "Strefę pożarową z odpadami stałymi o powierzchni 2500 m² wyposaża się w samoczynne urządzenia oddymiające oraz stałe urządzenia gaśnicze wodne lub pianowe, jeżeli gęstość obciążenia ogniowego przekracza 1000 MJ/m².",
+  "answer": "c",
+  "explanation": "Samoczynne urządzenia oddymiające są wymagane w strefie z odpadami stałymi w budynku, gdy gęstość obciążenia ogniowego przekracza 1000 MJ/m2, a powierzchnia 1000 m2. Strefa 2500 m2, w której na każdej jednostce 500 m2 gęstość przekracza 1000 MJ/m2, spełnia ten warunek. Stałe urządzenia gaśnicze są wymagane dopiero powyżej 2000 MJ/m2 i 2000 m2, a ochrona lokalna przy przekroczeniu 4000 MJ/m2 na jednostce 500 m2, dlatego pozostałe warianty podają błędne progi.",
   "legal": [
-   "rozp. MSWiA z 19.02.2020 (Dz.U. poz. 296)"
+   "§ 37 ust. 1 rozp. MSWiA z 19.02.2020 – urządzenia oddymiające w strefie z odpadami stałymi",
+   "§ 35 rozp. MSWiA z 19.02.2020 – stałe urządzenia gaśnicze w strefie z odpadami stałymi"
   ],
-  "verified": false
+  "verified": true
  },
  "410": {
   "answer": "a",
@@ -80,12 +84,13 @@
   "verified": true
  },
  "411": {
-  "answer": "c",
-  "explanation": "Powierzchnia urządzeń odciążających wynosi 0,065 m²/m³ kubatury (600 m³ × 0,065 = 39,0 m²), przy czym nie mniej niż wynika z obliczeń przyrostu ciśnienia i parcia na ściany o wartości nie większej niż 15 kN/m².",
+  "answer": "b",
+  "explanation": "Kubatura pomieszczenia wynosi 150 m2 x 4 m = 600 m3, a 600 m3 x 0,065 m2/m3 daje 39,0 m2. Przepis zwalnia z lekkiego dachu dopiero wtedy, gdy powierzchnia urządzeń odciążających jest większa niż ta wartość, więc dokładnie 39,0 m2 nie wystarcza. Powierzchnia 39,5 m2 spełnia warunek, a przepis nie zawiera dodatkowych zastrzeżeń o obliczeniach przyrostu ciśnienia.",
   "legal": [
-   "§ 37 RPB / WT – urządzenia odciążające pomieszczeń zagrożonych wybuchem"
+   "§ 221 ust. 1 WT – lekki dach nad pomieszczeniem zagrożonym wybuchem",
+   "§ 221 ust. 2 WT – zwolnienie przy urządzeniach odciążających ponad 0,065 m2/m3"
   ],
-  "verified": false
+  "verified": true
  },
  "412": {
   "answer": "b",
@@ -104,12 +109,12 @@
   "verified": false
  },
  "414": {
-  "answer": "b",
-  "explanation": "Źródłem wody w lasach tworzących kompleks o powierzchni ponad 300 ha jest studnia z pompą oraz punkt poboru z nasadą ssawną typu 110.",
+  "answer": "a",
+  "explanation": "Wśród źródeł wody dla lasów przepis wymienia studnię z pompą wyposażoną w hydrant zewnętrzny albo w inny punkt poboru wody z nasadą tłoczną typu 75 lub 110. Woda jest tłoczona przez pompę studni, dlatego nasada jest tłoczna, a nie ssawna. Wydajność takiego źródła ma wynosić co najmniej 10 dm3/s.",
   "legal": [
-   "rozp. MŚ – zabezpieczenie przeciwpożarowe lasów"
+   "§ 39 ust. 4 pkt 5 RPB – studnia jako źródło wody do celów przeciwpożarowych w lasach"
   ],
-  "verified": false
+  "verified": true
  },
  "415": {
   "answer": "a",
@@ -125,15 +130,16 @@
   "legal": [
    "§ 19 RPB – hydranty wewnętrzne w garażach"
   ],
-  "verified": false
+  "verified": true
  },
  "417": {
-  "answer": "c",
-  "explanation": "Palną izolację (samogasnący polistyren) w ścianie zewnętrznej budynku żłobka można stosować, gdy osłaniająca ją od wewnątrz okładzina ma klasę odporności ogniowej co najmniej EI 30 (o↔i) i klasę reakcji na ogień A2-s1,d0.",
+  "answer": "a",
+  "explanation": "Żłobek to ZL II, a wysokość 14 m oznacza budynek średniowysoki, czyli klasę odporności pożarowej „B”, której w ZL II nie da się obniżyć. Okładzina osłaniająca palną izolację od wewnątrz musi być niepalna i mieć klasę EI 60. Klasa A2-s3, d0 jest według załącznika nr 3 materiałem niepalnym, natomiast B-s1, d0 to tylko materiał niezapalny.",
   "legal": [
-   "§ 216 ust. 8 WT – palna izolacja cieplna w ścianach"
+   "§ 216 ust. 5 WT – palna izolacja cieplna w ścianach zewnętrznych budynku ZL II",
+   "załącznik nr 3 WT, tabela 1 – klasy reakcji na ogień a określenia niepalny i niezapalny"
   ],
-  "verified": false
+  "verified": true
  },
  "418": {
   "answer": "c",
@@ -149,23 +155,27 @@
   "legal": [
    "§ 216, § 219 WT – rozprzestrzenianie ognia przez elementy"
   ],
-  "verified": false
+  "verified": true
  },
  "420": {
-  "answer": "a",
-  "explanation": "Scenariusz pożarowy nie jest wymagany dla prostego, dwukondygnacyjnego budynku przedszkola o wysokości poniżej 12 m (brak urządzeń ppoż. wymagających sterowania scenariuszem).",
+  "answer": "b",
+  "explanation": "Scenariusz pożarowy opracowuje się tam, gdzie przewidziano SSP, stałe urządzenia gaśnicze, oddymianie albo urządzenia zapobiegające zadymieniu. Dwukondygnacyjne przedszkole (ZL II w budynku niskim) musi mieć klatki schodowe z oddymianiem lub zabezpieczeniem przed zadymieniem, a garaż o dwóch kondygnacjach podziemnych wymaga SSP, także na terenie zamkniętym. Garaż otwarty o jednej kondygnacji podziemnej ze strefami 1500 m2 nie wymaga SSP (próg to ponad 1500 m2), a obowiązek wentylacji oddymiającej z § 277 ust. 4 WT dotyczy tylko garaży zamkniętych.",
   "legal": [
-   "rozp. z 17.09.2021 (Dz.U. poz. 1722) – uzgadnianie projektu, scenariusz pożarowy"
+   "§ 5 ust. 1 pkt 3 rozp. MSWiA w sprawie uzgadniania projektu – kiedy opracowuje się scenariusz pożarowy",
+   "§ 28 ust. 1 pkt 17 RPB – SSP w garażach podziemnych",
+   "§ 277 ust. 4 WT – wentylacja oddymiająca w garażu zamkniętym"
   ],
-  "verified": false
+  "verified": true
  },
  "421": {
-  "answer": "a",
-  "explanation": "Wymagana jest instalacja wodociągowa przeciwpożarowa z hydrantami wewnętrznymi 52 i zaworami hydrantowymi 52 oraz awaryjne oświetlenie ewakuacyjne w pomieszczeniu magazynowym i na drogach ewakuacyjnych.",
+  "answer": "c",
+  "explanation": "Strefa PM o gęstości obciążenia ogniowego ponad 500 MJ/m2 i powierzchni ponad 200 m2 wymaga hydrantów 52. Zawory 52 są wymagane tylko w budynkach wysokich i wysokościowych o więcej niż jednej kondygnacji nadziemnej, a ten budynek jest jednokondygnacyjny. Pomieszczenie magazynowe o powierzchni ponad 2000 m2 wymaga awaryjnego oświetlenia ewakuacyjnego, także na drogach ewakuacyjnych z niego.",
   "legal": [
-   "§ 19, § 181 WT/RPB – hydranty i awaryjne oświetlenie"
+   "§ 19 ust. 3 pkt 1 RPB – hydranty 52 w strefach PM",
+   "§ 19 ust. 6 RPB – zawory 52 w budynkach W i WW o więcej niż jednej kondygnacji",
+   "§ 181 ust. 3 WT – awaryjne oświetlenie ewakuacyjne"
   ],
-  "verified": false
+  "verified": true
  },
  "422": {
   "answer": "b",
@@ -176,12 +186,13 @@
   "verified": false
  },
  "423": {
-  "answer": "a",
-  "explanation": "Pomieszczenie zagrożone wybuchem na pierwszej kondygnacji może być usytuowane, jeżeli wyposaży się je w urządzenia odciążające o powierzchni 0,065 m²/m³ kubatury przestrzeni powietrznej.",
+  "answer": "b",
+  "explanation": "Pomieszczenie zagrożone wybuchem należy sytuować na najwyższej kondygnacji budynku. Inne usytuowanie, na przykład na pierwszej kondygnacji budynku dwukondygnacyjnego, jest dopuszczalne po zastosowaniu instalacji i urządzeń przeciwwybuchowych uzgodnionych z komendantem wojewódzkim PSP. Wskaźnik 0,065 m2/m3 pochodzi z § 221 ust. 2 i dotyczy zwolnienia z wymogu lekkiego dachu, a nie usytuowania pomieszczenia.",
   "legal": [
-   "§ 37 RPB / WT – pomieszczenia zagrożone wybuchem, urządzenia odciążające"
+   "§ 222 WT – usytuowanie pomieszczenia zagrożonego wybuchem",
+   "§ 221 ust. 2 WT – powierzchnia urządzeń odciążających 0,065 m2/m3"
   ],
-  "verified": false
+  "verified": true
  },
  "424": {
   "answer": "a",
@@ -192,10 +203,10 @@
   "verified": true
  },
  "425": {
-  "answer": "b",
-  "explanation": "W pomieszczeniach z ludźmi niedopuszczalne jest przyjęcie stężenia maksymalnego gazu gaśniczego powyżej LOAEL.",
+  "answer": "c",
+  "explanation": "PN-EN 15004-1 nie zakazuje stężeń powyżej NOAEL ani powyżej LOAEL w pomieszczeniach, w których przebywają ludzie, tylko uzależnia od stężenia wymagane środki bezpieczeństwa. Do poziomu NOAEL wystarcza urządzenie opóźniające, między NOAEL a LOAEL dochodzi przełącznik trybu automatyczny/ręczny, a przy stężeniu równym LOAEL lub wyższym wymagane jest dodatkowo urządzenie blokujące wyładowanie. Dlatego poprawny jest wariant dopuszczający przekroczenie LOAEL pod warunkiem zastosowania urządzenia blokującego. Uwaga: odpowiedź opiera się na normie lub źródle niedostępnym w aplikacji.",
   "legal": [
-   "PN-EN 15004-1:2019 – gazowe urządzenia gaśnicze, bezpieczeństwo ludzi"
+   "PN-EN 15004-1:2019 – bezpieczeństwo ludzi, minimalne środki bezpieczeństwa a NOAEL i LOAEL"
   ],
   "verified": false
  },
@@ -208,10 +219,10 @@
   "verified": false
  },
  "427": {
-  "answer": "a",
-  "explanation": "System różnicowania ciśnień w klatce schodowej budynku mieszkalnego o wysokości 29 m powinien spełniać kryteria klasy B.",
+  "answer": "b",
+  "explanation": "Norma PN-EN 12101-13 rozróżnia tylko dwie klasy systemów: klasę 1 i klasę 2. Oznaczenia literowe A–F, w tym klasa B, pochodzą z wcześniejszej normy PN-EN 12101-6. Klasę 1 stosuje się w budynkach z instalacją tryskaczową z tryskaczami szybkiego reagowania oraz w budynkach mieszkalnych poniżej krajowego limitu budynków wysokościowych, a klasę 2 w pozostałych przypadkach. Budynek mieszkalny o wysokości 29 m nie jest wysokościowy, więc wystarcza klasa 1.",
   "legal": [
-   "PN-EN 12101-13:2022 / PN-EN 12101-6 – klasy systemów"
+   "PN-EN 12101-13:2022 pkt 5.2 – zastosowanie klasy 1 i klasy 2 systemów różnicowania ciśnień"
   ],
   "verified": false
  },
@@ -232,20 +243,22 @@
   "verified": false
  },
  "430": {
-  "answer": "a",
-  "explanation": "Drogę pożarową należy zapewnić do budynku średniowysokiego PM (< 500 MJ/m²), w którym występuje pomieszczenie zagrożone wybuchem.",
+  "answer": "c",
+  "explanation": "Wiata ze strefą PM o gęstości obciążenia ogniowego 1000 MJ/m2 i powierzchni 1500 m2 spełnia warunki § 12 ust. 1 pkt 3 RW, bo gęstość przekracza 500 MJ/m2, a powierzchnia 1000 m2. Budynek ze strefą PM o gęstości poniżej 500 MJ/m2 wymaga drogi pożarowej dopiero przy powierzchni ponad 20 000 m2, a pomieszczenie zagrożone wybuchem nie ma tu znaczenia. Strefa poza budynkiem z zagrożeniem wybuchem także wymaga drogi tylko przy gęstości ponad 500 MJ/m2, której wariant nie podaje.",
   "legal": [
-   "§ 12 RW – wymóg drogi pożarowej"
+   "§ 12 ust. 1 pkt 3 RW – droga pożarowa do stref PM, placów składowych i wiat",
+   "§ 12 ust. 1 pkt 4 RW – budynki ze strefą PM poniżej 500 MJ/m2"
   ],
-  "verified": false
+  "verified": true
  },
  "431": {
-  "answer": "a",
-  "explanation": "Poddasze użytkowe należy oddzielić od konstrukcji i przekrycia dachu przegrodami o klasie odporności ogniowej co najmniej EI 30.",
+  "answer": "c",
+  "explanation": "Wymóg oddzielenia poddasza użytkowego przegrodami EI 30 lub EI 60 dotyczy tylko palnej konstrukcji i palnego przekrycia dachu. Klasa A2-s3, d0 oznacza materiał niepalny, więc nie ma czego oddzielać. Dodatkowo przepis wymienia budynki ZL III, ZL IV i ZL V, a budynek dla osób starszych to ZL II.",
   "legal": [
-   "§ 219 WT – oddzielenie poddasza użytkowego"
+   "§ 219 ust. 2 WT – oddzielenie poddasza użytkowego od palnej konstrukcji dachu",
+   "załącznik nr 3 WT, tabela 1 – A2-s3, d0 jako materiał niepalny"
   ],
-  "verified": false
+  "verified": true
  },
  "432": {
   "answer": "c",
@@ -272,12 +285,13 @@
   "verified": false
  },
  "435": {
-  "answer": "a",
-  "explanation": "W pomieszczeniach handlowo-usługowych dopuszcza się przechowywanie cieczy palnych o temperaturze zapłonu poniżej 21°C w ilości do 10 dm³.",
+  "answer": "c",
+  "explanation": "Limity 10 dm3 i 50 dm3 z § 8 ust. 1 pkt 1 RPB dotyczą stref pożarowych ZL o przeznaczeniu innym niż handlowo-usługowe. Dla pomieszczeń handlowo-usługowych pkt 2 nie podaje limitu w litrach, tylko wymaga, aby gęstość obciążenia ogniowego stworzona przez ciecze o temperaturze zapłonu do 55°C nie przekroczyła 500 MJ/m2. Większe ilości są możliwe dopiero w pomieszczeniach stanowiących odrębną strefę pożarową spełniającą wymagania dla stref PM.",
   "legal": [
-   "§ 8 RPB – składowanie cieczy palnych"
+   "§ 8 ust. 1 pkt 1 RPB – limity cieczy palnych w strefach ZL innych niż handlowo-usługowe",
+   "§ 8 ust. 1 pkt 2 RPB – ciecze palne w pomieszczeniach handlowo-usługowych"
   ],
-  "verified": false
+  "verified": true
  },
  "436": {
   "answer": "a",
@@ -288,12 +302,13 @@
   "verified": false
  },
  "437": {
-  "answer": "a",
-  "explanation": "Dla budynku produkcyjnego o niewielkiej powierzchni (200 m²) wymagana ilość wody do zewnętrznego gaszenia pożaru wynosi co najmniej 10 dm³/s.",
+  "answer": "c",
+  "explanation": "Ilość wody dla budynku produkcyjnego odczytuje się z tabeli nr 2 według gęstości obciążenia ogniowego i powierzchni strefy. Dla gęstości powyżej 2000 do 4000 MJ/m2 już w najmniejszym przedziale powierzchni (do 500 m2) tabela wymaga 20 dm3/s. Mała powierzchnia strefy nie obniża więc wymagania do 10 dm3/s.",
   "legal": [
-   "§ 5 RW – ilość wody do zewnętrznego gaszenia pożaru"
+   "§ 6 ust. 3 RW – ilość wody dla obiektów PM",
+   "tabela nr 2 załącznika do RW – wydajność wodociągu"
   ],
-  "verified": false
+  "verified": true
  },
  "438": {
   "answer": "a",
@@ -304,12 +319,13 @@
   "verified": false
  },
  "439": {
-  "answer": "c",
-  "explanation": "Uzgodnienia nie wymaga projekt przejścia podziemnego przeznaczonego tylko do ruchu pieszych (tunel 150 m); garaż i budynek handlowy ZL III 5000 m² – wymagają.",
+  "answer": "b",
+  "explanation": "Garaż dwukondygnacyjny jest garażem wielokondygnacyjnym, a tunel dla pieszych o długości 150 m przekracza próg 100 m, więc oba obiekty wymagają uzgodnienia. Jednokondygnacyjny budynek niski ze strefą ZL III nie spełnia przesłanki z pkt 3, bo strefa nie obejmuje kondygnacji innej niż pierwsza. Nie jest też objęty obowiązkiem SSP, bo próg dla jednokondygnacyjnych budynków handlowych to powierzchnia strefy powyżej 5000 m2, a tu jest dokładnie 5000 m2.",
   "legal": [
-   "§ 4 rozp. w sprawie uzgadniania projektu pod względem ochrony ppoż."
+   "§ 3 ust. 1 rozp. MSWiA w sprawie uzgadniania projektu – obiekty wymagające uzgodnienia",
+   "§ 28 ust. 1 pkt 1 lit. a RPB – SSP w jednokondygnacyjnych budynkach handlowych powyżej 5000 m2"
   ],
-  "verified": false
+  "verified": true
  },
  "440": {
   "answer": "b",

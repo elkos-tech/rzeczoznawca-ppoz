@@ -1,19 +1,21 @@
 {
  "321": {
-  "answer": "b",
-  "explanation": "Wylot kanału dymowego w dachu niższego budynku, blisko wyższego z bezklasowymi oknami, jest dopuszczalny pod warunkiem zachowania odległości wylotu od najbliższego okna co najmniej 8 m.",
+  "answer": "c",
+  "explanation": "§ 218 ust. 1 WT wymaga, aby dach budynku niższego w pasie 8 m od ściany z otworami budynku wyższego był nierozprzestrzeniający ognia i miał odpowiednią klasę odporności ogniowej. Wyłączenie z ust. 2 tu nie działa, bo okna znajdują się bliżej niż 10 m od dachu budynku niższego. Ust. 4 dopuszcza w tym pasie tylko wyloty kanałów wentylacyjnych, spalinowych od urządzeń gazowych i rur wentylujących piony kanalizacyjne. Kanałów dymowych wśród nich nie ma, więc ich wylotów w tym pasie sytuować nie wolno.",
   "legal": [
-   "§ 266, § 271 WT – sytuowanie wylotów i otworów"
+   "§ 218 ust. 1 i 2 WT – dach budynku niższego przy ścianie z otworami budynku wyższego",
+   "§ 218 ust. 4 WT – wyloty kanałów dopuszczone w pasie 8 m"
   ],
   "verified": false
  },
  "322": {
-  "answer": "b",
-  "explanation": "Podział korytarza na odcinki ≤ 50 m drzwiami dymoszczelnymi jest wymagany w korytarzach ZL i PM dłuższych niż 50 m, ale tylko tych, które nie mają rozwiązań zapobiegających zadymieniu.",
+  "answer": "c",
+  "explanation": "Obowiązek podziału korytarzy na odcinki do 50 m dotyczy wyłącznie korytarzy będących drogą ewakuacyjną w strefach pożarowych ZL. Stref PM przepis nie obejmuje, dlatego oba pierwsze warianty są błędne. Ust. 2 zwalnia z podziału korytarze z rozwiązaniami techniczno-budowlanymi zabezpieczającymi przed zadymieniem, ale to zwolnienie także odnosi się tylko do stref ZL.",
   "legal": [
-   "§ 256 WT – podział korytarzy ewakuacyjnych"
+   "§ 243 ust. 1 WT – podział korytarzy ewakuacyjnych w strefach ZL",
+   "§ 243 ust. 2 WT – zwolnienie przy zabezpieczeniu przed zadymieniem"
   ],
-  "verified": false
+  "verified": true
  },
  "323": {
   "answer": "c",
@@ -21,7 +23,7 @@
   "legal": [
    "§ 212 ust. 4, § 230 WT"
   ],
-  "verified": false
+  "verified": true
  },
  "324": {
   "answer": "a",
@@ -38,15 +40,15 @@
   "legal": [
    "PN-EN 13501-1; § 208 WT"
   ],
-  "verified": false
+  "verified": true
  },
  "326": {
-  "answer": "a",
-  "explanation": "Elementy jednokondygnacyjnego budynku PM o małej gęstości obciążenia ogniowego, z tryskaczami, powinny być co najmniej nierozprzestrzeniające ognia (NRO).",
+  "answer": "b",
+  "explanation": "Zasadą jest, że elementy budynku mają być nierozprzestrzeniające ognia. Przepis dopuszcza jednak elementy słabo rozprzestrzeniające ogień w budynku PM o jednej kondygnacji nadziemnej i gęstości obciążenia ogniowego do 500 MJ/m2. Budynek z pytania (jedna kondygnacja, 400 MJ/m2) mieści się w tym wyjątku, a wysokość 15 m nie ma znaczenia.",
   "legal": [
-   "§ 216 WT – wymagania w zakresie rozprzestrzeniania ognia"
+   "§ 216 ust. 2 pkt 1 WT – dopuszczenie elementów słabo rozprzestrzeniających ogień"
   ],
-  "verified": false
+  "verified": true
  },
  "327": {
   "answer": "b",
@@ -54,7 +56,7 @@
   "legal": [
    "§ 8–9 RW – uzupełniający zapas wody"
   ],
-  "verified": false
+  "verified": true
  },
  "328": {
   "answer": "c",
@@ -65,12 +67,13 @@
   "verified": false
  },
  "329": {
-  "answer": "c",
-  "explanation": "Odległość zbiornika naziemnego z gazem płynnym o pojemności do 5 m³ od granicy działki (przy zachowaniu odległości od budynku) powinna być nie mniejsza niż 3 m.",
+  "answer": "b",
+  "explanation": "Zbiornik o pojemności 4,85 m3 mieści się w przedziale powyżej 3 do 5 m3, dla którego odległość zbiornika naziemnego od budynku wynosi 5 m. Odległość od granicy działki ma być nie mniejsza niż połowa tej wartości, czyli 2,5 m.",
   "legal": [
-   "§ 179 WT – usytuowanie zbiorników gazu płynnego"
+   "§ 179 ust. 4 WT – odległości zbiorników gazu płynnego od budynków",
+   "§ 179 ust. 6 WT – odległość od granicy działki"
   ],
-  "verified": false
+  "verified": true
  },
  "330": {
   "answer": "b",
@@ -86,7 +89,7 @@
   "legal": [
    "§ 216 WT – wymagane klasy odporności ogniowej elementów"
   ],
-  "verified": false
+  "verified": true
  },
  "332": {
   "answer": "c",
@@ -94,7 +97,7 @@
   "legal": [
    "§ 37 RPB / WT – wymagania dla pomieszczeń zagrożonych wybuchem"
   ],
-  "verified": false
+  "verified": true
  },
  "333": {
   "answer": "a",
@@ -110,15 +113,15 @@
   "legal": [
    "§ 16 RPB – warunki uznania budynku za zagrażający życiu ludzi"
   ],
-  "verified": false
+  "verified": true
  },
  "335": {
-  "answer": "a",
-  "explanation": "Hydranty i działka wodne w bazie gazu płynnego powinny być rozmieszczone co najmniej 15 m od chronionych obiektów, lecz nie dalej niż 75 m.",
+  "answer": "b",
+  "explanation": "W bazach gazu płynnego hydranty i działka wodne muszą stać na tyle daleko, żeby dało się ich użyć podczas pożaru, i na tyle blisko, żeby były skuteczne. Przepis ustala ten zakres na co najmniej 20 m i nie więcej niż 100 m od chronionych obiektów.",
   "legal": [
-   "rozp. dot. baz i rozlewni gazu płynnego"
+   "§ 67 pkt 1 rozp. w sprawie baz i stacji paliw płynnych – hydranty i działka wodne w bazach gazu płynnego"
   ],
-  "verified": false
+  "verified": true
  },
  "336": {
   "answer": "b",
@@ -129,34 +132,36 @@
   "verified": false
  },
  "337": {
-  "answer": "b",
-  "explanation": "Pompownie przeciwpożarowe należy lokalizować w odległości od osi obwałowania lub ściany osłonowej zbiornika nie mniejszej niż 20 m.",
+  "answer": "c",
+  "explanation": "Pompownia przeciwpożarowa musi pozostać sprawna podczas pożaru zbiornika, dlatego przepis wymaga odsunięcia jej o co najmniej 25 m od osi obwałowania zbiornika lub jego ściany osłonowej. Wartość ta jest taka sama w rozporządzeniu z 2005 r. i w obowiązującym rozporządzeniu z 2023 r.",
   "legal": [
-   "rozp. MG z 21.11.2005 – bazy paliw płynnych"
+   "§ 55 ust. 1 pkt 1 rozp. w sprawie baz i stacji paliw płynnych – lokalizacja pompowni przeciwpożarowych"
   ],
-  "verified": false
+  "verified": true
  },
  "338": {
-  "answer": "b",
-  "explanation": "Wymagana wydajność sieci zasilającej hydranty zewnętrzne dla dużej strefy magazynowej o wysokiej gęstości obciążenia ogniowego wynosi 30 dm³/s (woda urządzenia pianowego z własnego zbiornika nie jest wliczana).",
+  "answer": "c",
+  "explanation": "Dla gęstości obciążenia ogniowego powyżej 4000 MJ/m2 i strefy powyżej 5000 m2 tabela nr 2 daje 60 dm3/s. Przy urządzeniu pianowym wymagana ilość to suma wody dla urządzenia (1200 dm3/min = 20 dm3/s) i 25% z 60 dm3/s, czyli 35 dm3/s, ale nie mniej niż 60 dm3/s. Łącznie potrzeba więc 60 dm3/s, z czego 20 dm3/s zapewnia własny zbiornik urządzenia, a sieć hydrantowa musi dać pozostałe 40 dm3/s.",
   "legal": [
-   "§ 6 RW – ilość wody do zewnętrznego gaszenia pożaru"
+   "§ 7 ust. 1 pkt 3 RW – ilość wody przy urządzeniach gaśniczych pianowych",
+   "tabela nr 2 załącznika do RW – ilość wody dla obiektów PM"
   ],
   "verified": false
  },
  "339": {
-  "answer": "a",
-  "explanation": "Drogę pożarową do strefy PM poza budynkiem (plac składowy) należy doprowadzić zawsze, gdy powierzchnia strefy pożarowej przekracza 20 000 m², niezależnie od gęstości obciążenia ogniowego.",
+  "answer": "b",
+  "explanation": "Do strefy pożarowej poza budynkiem obejmującej plac składowy drogę pożarową doprowadza się według § 12 ust. 1 pkt 3 RW, gdy gęstość obciążenia ogniowego przekracza 500 MJ/m2 i jednocześnie powierzchnia strefy przekracza 1000 m2 albo występuje pomieszczenie zagrożone wybuchem. Próg 20 000 m2 z pkt 4 dotyczy wyłącznie budynków ze strefą PM o gęstości poniżej 500 MJ/m2. Wariant z gęstością ponad 1000 MJ/m2 i powierzchnią ponad 500 m2 nie gwarantuje przekroczenia 1000 m2, więc nie opisuje sytuacji, w której droga jest wymagana zawsze.",
   "legal": [
-   "§ 12 RW – wymóg drogi pożarowej dla placów składowych"
+   "§ 12 ust. 1 pkt 3 RW – droga pożarowa do stref PM w budynkach i poza budynkami",
+   "§ 12 ust. 1 pkt 4 RW – budynki ze strefą PM poniżej 500 MJ/m2"
   ],
-  "verified": false
+  "verified": true
  },
  "340": {
-  "answer": "b",
-  "explanation": "Punkty dostarczania (nawiewu) powietrza systemu różnicowania ciśnień nie powinny być umieszczane w zasięgu 5 m od końcowych drzwi wyjściowych.",
+  "answer": "a",
+  "explanation": "PN-EN 12101-6 wymaga, aby punkt dostarczania powietrza do klatki schodowej nie znajdował się w zasięgu 3 m od końcowych drzwi wyjściowych. Chodzi o to, by powietrze nie uciekało od razu przez otwarte drzwi ewakuacyjne. Wartość 11 m to w tej normie próg wysokości budynku, od którego punkty nawiewu trzeba rozmieszczać na wysokości klatki.",
   "legal": [
-   "PN-EN 12101-6:2007 – systemy różnicowania ciśnień"
+   "PN-EN 12101-6:2007 – systemy różnicowania ciśnień, rozmieszczenie punktów nawiewu"
   ],
   "verified": false
  },
@@ -166,7 +171,7 @@
   "legal": [
    "§ 10 RW – hydranty zewnętrzne na sieci"
   ],
-  "verified": false
+  "verified": true
  },
  "342": {
   "answer": "c",
@@ -182,7 +187,7 @@
   "legal": [
    "§ 8 RPB – składowanie gazu płynnego w punktach sprzedaży"
   ],
-  "verified": false
+  "verified": true
  },
  "344": {
   "answer": "b",
@@ -214,21 +219,22 @@
   "legal": [
    "§ 19 RPB / PN-EN 671-2 – hydranty wewnętrzne 52"
   ],
-  "verified": false
+  "verified": true
  },
  "348": {
-  "answer": "b",
-  "explanation": "Otwory klap dymowych powinny być usytuowane od ścian oddzielenia przeciwpożarowego (REI 240) w odległości co najmniej 5 m.",
+  "answer": "a",
+  "explanation": "Norma wymaga odsunięcia otworów klap dymowych od ścian oddzielenia przeciwpożarowego, aby pożar nie przeniósł się przez klapy do sąsiedniej strefy. Odległość ta wynosi co najmniej 5 m od ścian o klasie REI 120 oraz co najmniej 7 m od ścian o klasie REI 240. Pytanie dotyczy ściany REI 240, więc poprawna jest wartość 7 m.",
   "legal": [
-   "PN-B-02877-4:2001/Az1:2006 – usytuowanie klap dymowych"
+   "PN-B-02877-4:2001/Az1:2006 – odległość klap dymowych od ścian oddzielenia przeciwpożarowego (5 m i 7 m)"
   ],
   "verified": false
  },
  "349": {
-  "answer": "a",
-  "explanation": "Maksymalna odległość przeciwpożarowego zbiornika wodnego od obiektu chronionego nie powinna przekraczać 500 m.",
+  "answer": "c",
+  "explanation": "Zbiornik musi leżeć na tyle blisko obiektu, żeby dało się podać wodę liniami wężowymi bez przetłaczania. Przyjęto 250 m, czyli tę samą odległość, jaką § 4 ust. 5 RW ustala dla uzupełniających źródeł wody liczoną od skrajnej zabudowy lub chronionego obiektu. Odpowiedź wymaga potwierdzenia w tekście normy. Uwaga: odpowiedź opiera się na normie lub źródle niedostępnym w aplikacji.",
   "legal": [
-   "PN-B-02857:2017 – przeciwpożarowe zbiorniki wodne"
+   "PN-B-02857:2017-04 – usytuowanie zbiornika względem obiektu chronionego",
+   "§ 4 ust. 5 RW – odległość uzupełniających źródeł wody"
   ],
   "verified": false
  },
@@ -289,26 +295,27 @@
   "verified": false
  },
  "357": {
-  "answer": "b",
-  "explanation": "Pomieszczenia z materiałami wybuchowymi wytwarzającymi falę uderzeniową > 5 kPa rozpatruje się jako pomieszczenia zagrożone wybuchem, ale bez stref zagrożenia wybuchem (brak atmosfery gazowej/pyłowej).",
+  "answer": "c",
+  "explanation": "RPB definiuje pomieszczenie zagrożone wybuchem wyłącznie przez możliwość powstania mieszaniny wybuchowej palnych gazów, par, mgieł lub pyłów z powietrzem, której wybuch dałby przyrost ciśnienia ponad 5 kPa. Materiały wybuchowe rozporządzenie zalicza do materiałów niebezpiecznych pożarowo, ale nie zawiera przepisu, który nakazywałby traktować ich magazyny jako pomieszczenia zagrożone wybuchem, ze strefami albo bez nich. Dlatego oba pierwsze warianty są nieprawidłowe.",
   "legal": [
-   "§ 37 RPB – pomieszczenia zagrożone wybuchem"
+   "§ 37 ust. 7 RPB – definicja pomieszczenia zagrożonego wybuchem",
+   "§ 2 ust. 1 pkt 1 RPB – materiały niebezpieczne pożarowo"
   ],
   "verified": false
  },
  "358": {
-  "answer": "c",
-  "explanation": "Dla stacji gazu ziemnego w granicach miasta rozporządzenie nie określa odrębnie wymaganej ilości wody do zewnętrznego gaszenia pożaru (zapewnianej w ramach zaopatrzenia jednostki osadniczej).",
+  "answer": "a",
+  "explanation": "Rozporządzenie wprost określa ilość wody dla stacji paliw, stacji gazu płynnego i stacji gazu ziemnego na 10 dm3/s. Położenie stacji w granicach miasta nie zmienia tej wartości.",
   "legal": [
-   "RW – zaopatrzenie w wodę jednostek osadniczych"
+   "§ 6 ust. 4 RW – ilość wody dla stacji paliw i stacji gazu"
   ],
-  "verified": false
+  "verified": true
  },
  "359": {
-  "answer": "c",
-  "explanation": "Efektywny zasięg rzutu prądu gaśniczego rozproszonego płaskiego hydrantu z wężem półsztywnym przy 0,2 MPa nie powinien być mniejszy niż 3 m.",
+  "answer": "b",
+  "explanation": "Norma podaje minimalny efektywny zasięg rzutu przy ciśnieniu 0,2 MPa osobno dla każdego rodzaju prądu. Dla prądu zwartego jest to 10 m, dla rozproszonego płaskiego 6 m, a dla rozproszonego stożkowego 3 m. Pytanie dotyczy prądu rozproszonego płaskiego, więc poprawna wartość to 6 m.",
   "legal": [
-   "PN-EN 671-1:2012 – hydranty wewnętrzne z wężem półsztywnym"
+   "PN-EN 671-1:2012 – hydranty wewnętrzne z wężem półsztywnym, efektywny zasięg rzutu"
   ],
   "verified": false
  },
@@ -318,6 +325,6 @@
   "legal": [
    "rozp. MSWiA z 19.02.2020 (Dz.U. poz. 296)"
   ],
-  "verified": false
+  "verified": true
  }
 }

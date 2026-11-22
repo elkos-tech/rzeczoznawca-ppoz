@@ -5,7 +5,7 @@
   "legal": [
    "§ 261 WT – podłogi podniesione"
   ],
-  "verified": false
+  "verified": true
  },
  "362": {
   "answer": "c",
@@ -21,31 +21,33 @@
   "legal": [
    "rozp. dot. baz i rozlewni gazu płynnego"
   ],
-  "verified": false
+  "verified": true
  },
  "364": {
-  "answer": "b",
-  "explanation": "Wylot kanału dymowego w dachu niższego budynku, blisko wyższego z oknami, jest dopuszczalny pod warunkiem zachowania odległości wylotu od najbliższego okna co najmniej 8 m.",
+  "answer": "c",
+  "explanation": "W pasie 8 m od ściany z otworami budynku wyższego dach budynku niższego musi spełniać wymagania § 218 ust. 1 WT. Ust. 4 dopuszcza w tym pasie tylko wyloty kanałów wentylacyjnych, spalinowych od urządzeń gazowych i rur wentylujących piony kanalizacyjne. Kanały dymowe nie zostały wymienione, więc ich wylotów w tym pasie sytuować nie wolno. Przepis nie zna warunku 8 m od najbliższego okna.",
   "legal": [
-   "§ 266, § 271 WT"
+   "§ 218 ust. 1 WT – dach budynku niższego przy ścianie z otworami budynku wyższego",
+   "§ 218 ust. 4 WT – wyloty kanałów dopuszczone w pasie 8 m"
   ],
   "verified": false
  },
  "365": {
-  "answer": "a",
-  "explanation": "Instalacja gazowa może być zasilana z grupy zbiorników naziemnych (do 6 sztuk), pod warunkiem że ich łączna pojemność nie przekroczy 20 m³.",
+  "answer": "c",
+  "explanation": "Instalacja gazowa może być zasilana z grupy zbiorników z gazem płynnym. Dla zbiorników naziemnych przepis ogranicza grupę do 6 sztuk i łącznej pojemności 100 m3. Wartość 30 m3 w tym samym ustępie służy tylko do ustalenia odległości między grupami (7,5 m albo 15 m).",
   "legal": [
-   "§ 179 WT – zbiorniki gazu płynnego"
+   "§ 179 ust. 2 WT – liczba i łączna pojemność zbiorników naziemnych w grupie"
   ],
-  "verified": false
+  "verified": true
  },
  "366": {
-  "answer": "c",
-  "explanation": "W tunelu drogowym przewody i kable obwodów urządzeń ppoż. powinny zapewniać ciągłość dostawy energii/przekazu sygnału przez czas nie mniejszy niż 120 minut (bezpieczeństwo ekip ratowniczych).",
+  "answer": "b",
+  "explanation": "W tunelu przewody i kable wraz z zamocowaniami muszą zapewniać ciągłość dostawy energii lub przekazu sygnału przez 30 minut dla obwodów sterowania zasilaniem, znaków drogowych, monitoringu wizyjnego i nagłośnienia. Dla obwodów urządzeń służących ochronie przeciwpożarowej wymagany czas to 90 minut. Przepis nie uzależnia tych czasów od długości tunelu, a obecne rozporządzenie z 2022 r. podaje te same wartości.",
   "legal": [
-   "rozp. z 30.05.2000 – drogowe obiekty inżynierskie"
+   "§ 321a ust. 2 rozp. MTiGM z 30.05.2000 – ciągłość zasilania i sygnału w tunelu",
+   "zał. nr 3 pkt 46 rozp. MI z 24.06.2022 – ciągłość zasilania i sygnału w tunelu"
   ],
-  "verified": false
+  "verified": true
  },
  "367": {
   "answer": "b",
@@ -72,12 +74,13 @@
   "verified": false
  },
  "370": {
-  "answer": "b",
-  "explanation": "Strefa PM (2500 MJ/m²) w budynku wysokim z tryskaczami i oddymianiem może być powiększona o 150% (100% za tryskacze + 50% za oddymianie).",
+  "answer": "c",
+  "explanation": "Tabela dopuszczalnych powierzchni stref PM nie przewiduje stref o gęstości obciążenia ogniowego powyżej 2000 MJ/m2 w wielokondygnacyjnych budynkach wysokich i wysokościowych (gwiazdka: nie dopuszcza się takich przypadków). Powiększenie z § 229 dotyczy tylko powierzchni, które tabela dopuszcza, więc nie ma tu czego powiększać.",
   "legal": [
-   "§ 228 WT – powiększanie powierzchni stref PM"
+   "§ 228 ust. 1 WT – dopuszczalne powierzchnie stref pożarowych PM",
+   "§ 212 ust. 4 WT – klasy odporności pożarowej budynków PM"
   ],
-  "verified": false
+  "verified": true
  },
  "371": {
   "answer": "a",
@@ -88,12 +91,14 @@
   "verified": false
  },
  "372": {
-  "answer": "c",
-  "explanation": "Przejście w PM (jednokondygnacyjny) = 100 m. Wysokość 6 m > 5 m → +25%; oddymianie sterowane SSP → +50%. 100 × 1,75 = 175 m.",
+  "answer": "a",
+  "explanation": "W jednokondygnacyjnym budynku PM przejście może mieć 100 m bez względu na obciążenie ogniowe. Wysokość ponad 5 m daje powiększenie o 25%, a samoczynne oddymianie o 50%, co po zsumowaniu daje 175 m. Ponieważ sposób zagospodarowania nie jest jednoznaczny, projektowa długość nie może przekroczyć 80%, czyli 100 m x 0,8 x 1,75 = 140 m.",
   "legal": [
-   "§ 237 WT – długość przejścia ewakuacyjnego"
+   "§ 237 ust. 1 pkt 3 WT – przejście 100 m w jednokondygnacyjnym budynku PM",
+   "§ 237 ust. 4 WT – ograniczenie do 80% przy nieokreślonym zagospodarowaniu",
+   "§ 237 ust. 5–7 WT – powiększenia i ich sumowanie"
   ],
-  "verified": true
+  "verified": false
  },
  "373": {
   "answer": "c",
@@ -112,12 +117,13 @@
   "verified": false
  },
  "375": {
-  "answer": "b",
-  "explanation": "Niski budynek biurowy ze strefą ZL III wymaga klasy odporności pożarowej co najmniej C.",
+  "answer": "a",
+  "explanation": "Kondygnacja podziemna należy do tej samej strefy ZL III i nie ma własnego wyjścia na zewnątrz, więc jej wysokość dolicza się do wysokości części nadziemnej. Daje to 11 m + 3 m = 14 m, czyli wymagania jak dla budynku średniowysokiego. Dla średniowysokiego budynku ZL III tabela w § 212 ust. 2 wymaga klasy B.",
   "legal": [
-   "§ 212 WT – klasa odporności pożarowej"
+   "§ 212 ust. 5 WT – doliczanie części podziemnej zaliczonej do ZL",
+   "§ 212 ust. 2 WT – klasa B dla średniowysokiego budynku ZL III"
   ],
-  "verified": false
+  "verified": true
  },
  "376": {
   "answer": "c",
@@ -128,12 +134,13 @@
   "verified": true
  },
  "377": {
-  "answer": "a",
-  "explanation": "W budynku wysokim użyteczności publicznej zastosowanie instalacji gazowej do urządzeń gastronomicznych w restauracji jest niedopuszczalne (dopuszcza się jedynie zasilanie pomieszczeń technicznych).",
+  "answer": "b",
+  "explanation": "Ograniczenie instalacji gazowej wyłącznie do pomieszczeń technicznych dotyczy budynków o wysokości większej niż 35 m, a budynek o wysokości równo 35 m tej granicy nie przekracza. Jest to jednak budynek wyższy niż 25 m, więc zastosowanie instalacji gazowej wymaga pozytywnego stanowiska komendanta wojewódzkiego PSP. Odstępstwo w trybie art. 9 Prawa budowlanego nie jest tu potrzebne.",
   "legal": [
-   "§ 157 WT – instalacje gazowe w budynkach wysokich"
+   "§ 157 ust. 3 WT – instalacja gazowa w budynku wyższym niż 35 m",
+   "§ 157 ust. 4 WT – stanowisko komendanta wojewódzkiego PSP powyżej 25 m"
   ],
-  "verified": false
+  "verified": true
  },
  "378": {
   "answer": "b",
@@ -144,12 +151,12 @@
   "verified": false
  },
  "379": {
-  "answer": "a",
-  "explanation": "Pompownie przeciwpożarowe należy lokalizować od osi obwałowania lub ściany osłonowej zbiornika ropy naftowej w odległości nie mniejszej niż 20 m.",
+  "answer": "b",
+  "explanation": "Pompownie przeciwpożarowe w bazach paliw płynnych lokalizuje się co najmniej 25 m od osi obwałowania zbiornika lub jego ściany osłonowej. Odległość ta ma zapewnić działanie pompowni w czasie pożaru zbiornika.",
   "legal": [
-   "rozp. MG z 21.11.2005 – bazy paliw płynnych"
+   "§ 55 ust. 1 pkt 1 rozp. w sprawie baz i stacji paliw płynnych – lokalizacja pompowni przeciwpożarowych"
   ],
-  "verified": false
+  "verified": true
  },
  "380": {
   "answer": "c",
@@ -168,20 +175,20 @@
   "verified": false
  },
  "382": {
-  "answer": "b",
-  "explanation": "W poziomach pośrednich regałów dopuszcza się zasilanie z tego samego stanowiska kontrolno-alarmowego nie więcej niż 100 tryskaczy w regałach.",
+  "answer": "a",
+  "explanation": "Norma PN-EN 12845 pozwala zasilać tryskacze regałowe z tego samego stanowiska kontrolno-alarmowego co tryskacze pod dachem lub stropem tylko przy niewielkiej ich liczbie. Granicą jest 50 tryskaczy w poziomach pośrednich. Gdy w regałach jest ich więcej niż 50, wymagane jest dla nich oddzielne stanowisko kontrolno-alarmowe. Uwaga: odpowiedź opiera się na normie lub źródle niedostępnym w aplikacji.",
   "legal": [
-   "PN-EN 12845+A1:2020 – tryskacze w regałach"
+   "PN-EN 12845+A1:2020 – tryskacze w poziomach pośrednich regałów i stanowiska kontrolno-alarmowe"
   ],
   "verified": false
  },
  "383": {
-  "answer": "a",
-  "explanation": "Ściany zewnętrzne kotłowni gazowej nad dachem budynku powinny mieć klasę odporności ogniowej jak ściany zewnętrzne (wg klasy budynku) i być wykonane z materiałów klasy reakcji na ogień co najmniej B,d0.",
+  "answer": "c",
+  "explanation": "Dla kotłowni gazowej zlokalizowanej ponad dachem budynku przepis wprost rezygnuje z klasy odporności ogniowej przegród zewnętrznych. Jedynym warunkiem jest wykonanie tych przegród z materiałów niepalnych. Moc kotła 350 kW nie zmienia tej zasady.",
   "legal": [
-   "§ 220 WT / PN-B-02431-1 – kotłownie gazowe"
+   "§ 220 ust. 3 WT – przegrody zewnętrzne kotłowni gazowej ponad dachem"
   ],
-  "verified": false
+  "verified": true
  },
  "384": {
   "answer": "b",
@@ -189,15 +196,15 @@
   "legal": [
    "§ 277 WT – oddymianie garaży"
   ],
-  "verified": false
+  "verified": true
  },
  "385": {
-  "answer": "c",
-  "explanation": "Nie jest wymagane zastosowanie hydrantów 52: strefa ma gęstość 400 MJ/m² (< 500), a pojedyncze pomieszczenie o wyższej gęstości ma powierzchnię poniżej progu.",
+  "answer": "a",
+  "explanation": "§ 19 ust. 3 pkt 2 RPB wymaga hydrantów 52 w strefie PM o gęstości obciążenia ogniowego do 500 MJ/m2, jeżeli znajduje się w niej pomieszczenie o powierzchni ponad 100 m2 i gęstości ponad 1000 MJ/m2. Pomieszczenie 150 m2 o gęstości 1200 MJ/m2 spełnia oba warunki. Obowiązek dotyczy strefy pożarowej, a nie samego pomieszczenia, i nie obejmuje go dopuszczenie hydrantów 33 z ust. 4.",
   "legal": [
-   "§ 19 RPB – dobór hydrantów wewnętrznych"
+   "§ 19 ust. 3 pkt 2 RPB – hydranty 52 w strefie PM z pomieszczeniem o dużej gęstości obciążenia ogniowego"
   ],
-  "verified": false
+  "verified": true
  },
  "386": {
   "answer": "c",
@@ -213,7 +220,7 @@
   "legal": [
    "§ 12 RW – wymóg drogi pożarowej dla ZL V"
   ],
-  "verified": false
+  "verified": true
  },
  "388": {
   "answer": "b",
@@ -224,20 +231,22 @@
   "verified": false
  },
  "389": {
-  "answer": "b",
-  "explanation": "Awaryjne oświetlenie ewakuacyjne należy obligatoryjnie zastosować w pomieszczeniu o powierzchni netto ponad 1000 m² w budynku użyteczności publicznej, niezależnie od liczby osób.",
+  "answer": "c",
+  "explanation": "Widownie kin, teatrów, filharmonii i innych sal widowiskowych wymagają awaryjnego oświetlenia ewakuacyjnego bez względu na liczbę miejsc. Lokal rozrywkowy podlega temu obowiązkowi dopiero przy ponad 200 osobach, a pomieszczenie w budynku użyteczności publicznej przy powierzchni netto ponad 2000 m2. Dlatego obligatoryjny jest tylko przypadek sali widowiskowej.",
   "legal": [
-   "§ 181 WT – awaryjne oświetlenie ewakuacyjne"
+   "§ 181 ust. 3 pkt 1 lit. a WT – widownie sal widowiskowych",
+   "§ 181 ust. 3 pkt 1 lit. b i e WT – progi 200 osób i 2000 m2"
   ],
-  "verified": false
+  "verified": true
  },
  "390": {
-  "answer": "a",
-  "explanation": "Na terenie zamkniętym służącym obronności państwa SSP jest wymagany m.in. w budynku zamieszkania zbiorowego, w którym okres pobytu tych samych osób przekracza 3 doby, a liczba miejsc noclegowych przekracza 150.",
+  "answer": "c",
+  "explanation": "§ 28 ust. 1 RPB wymaga systemu sygnalizacji pożarowej między innymi w budynkach z ponad 300 miejscami gastronomicznymi (pkt 4) oraz w budynkach zamieszkania zbiorowego z pobytem tych samych osób ponad trzy doby i ponad 200 miejscami noclegowymi (pkt 11). Ust. 2 wyłącza oba te punkty dla budynków na terenach zamkniętych służących obronności państwa. Dlatego ani budynek z 500 miejscami gastronomicznymi, ani opisany budynek zamieszkania zbiorowego nie wymaga tam systemu sygnalizacji pożarowej.",
   "legal": [
-   "§ 28 RPB – obiekty wymagające SSP (tereny zamknięte)"
+   "§ 28 ust. 1 RPB – obiekty wymagające systemu sygnalizacji pożarowej",
+   "§ 28 ust. 2 RPB – wyłączenie dla terenów zamkniętych służących obronności państwa"
   ],
-  "verified": false
+  "verified": true
  },
  "391": {
   "answer": "b",
@@ -245,13 +254,13 @@
   "legal": [
    "§ 12 RW – wymóg drogi pożarowej"
   ],
-  "verified": false
+  "verified": true
  },
  "392": {
-  "answer": "b",
-  "explanation": "Okna dla ekip ratowniczych powinny znajdować się w każdej klatce schodowej służącej ewakuacji.",
+  "answer": "c",
+  "explanation": "Przepis wymaga, aby na kondygnacjach powyżej trzeciej, do wysokości 25 m, każda klatka schodowa służąca ewakuacji miała okno dla ekip ratowniczych albo zapewnione dotarcie do takiego okna poziomą drogą ewakuacyjną o długości do 50 m. Okno nie musi więc być w każdej klatce ewakuacyjnej, wystarczy tyle okien, by warunek 50 m był spełniony. Wariant b opisuje tylko pierwszą z dwóch dopuszczonych możliwości, dlatego pytanie jest niejednoznaczne. Uwaga: pytanie niejednoznaczne, do obrony jest też inny wariant.",
   "legal": [
-   "§ 13 RW / WT – okna dla ekip ratowniczych"
+   "§ 12 ust. 6 pkt 1 RW – okna dla ekip ratowniczych w klatkach schodowych"
   ],
   "verified": false
  },
@@ -261,7 +270,7 @@
   "legal": [
    "rozp. MSWiA z 19.02.2020 (Dz.U. poz. 296)"
   ],
-  "verified": false
+  "verified": true
  },
  "394": {
   "answer": "b",
@@ -277,7 +286,7 @@
   "legal": [
    "§ 4 rozp. w sprawie uzgadniania projektu pod względem ochrony ppoż."
   ],
-  "verified": false
+  "verified": true
  },
  "396": {
   "answer": "c",
@@ -293,7 +302,7 @@
   "legal": [
    "§ 3–5 RW – wymagane zaopatrzenie w wodę"
   ],
-  "verified": false
+  "verified": true
  },
  "398": {
   "answer": "c",
@@ -312,10 +321,10 @@
   "verified": false
  },
  "400": {
-  "answer": "a",
-  "explanation": "Długość przewodu ssawnego do pracy ze ssaniem przy zbiorniku o pojemności do 150 m³ nie powinna przekraczać 8 m.",
+  "answer": "b",
+  "explanation": "Długość przewodu ssawnego do pracy ze ssaniem jest ograniczona, bo wraz z długością rosną straty ciśnienia i trudniej zassać wodę. Przyjęto wartość 10 m. Jest to odpowiedź szacunkowa i wymaga sprawdzenia w tekście normy. Uwaga: odpowiedź opiera się na normie lub źródle niedostępnym w aplikacji.",
   "legal": [
-   "PN-B-02857:2017 – przeciwpożarowe zbiorniki wodne"
+   "PN-B-02857:2017-04 – przewody ssawne zbiornika"
   ],
   "verified": false
  }

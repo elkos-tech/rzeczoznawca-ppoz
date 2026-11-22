@@ -1,11 +1,12 @@
 {
  "81": {
-  "answer": "a",
-  "explanation": "Droga pożarowa prowadzona pod estakadą powinna mieć prześwit o szerokości co najmniej 3,6 m i wysokości co najmniej 4,5 m.",
+  "answer": "c",
+  "explanation": "Estakada z instalacjami nad drogą pożarową musi zapewniać prześwit o wysokości i szerokości nie mniejszej niż 4,5 m. Szerokość 3,6 m odnosi się do przejazdów na dziedzińce (§ 14), a 4 m do szerokości drogi pożarowej przy budynku (§ 13). Nie należy mylić tych trzech wartości.",
   "legal": [
-   "§ 13 RW – prześwit nad drogą pożarową"
+   "§ 15 RW – prześwit pod wiaduktami i estakadami nad drogą pożarową",
+   "§ 14 ust. 1 RW – wymiary przejazdów na dziedzińce"
   ],
-  "verified": false
+  "verified": true
  },
  "82": {
   "answer": "b",
@@ -16,10 +17,11 @@
   "verified": false
  },
  "83": {
-  "answer": "a",
-  "explanation": "Osłona/obudowa o klasie EI 30 (EI 60) instalacji palnych w przestrzeni podpodłogowej wymagana jest, gdy przestrzeń ta służy do wentylacji lub ogrzewania i jednocześnie podłoga jest podniesiona o więcej niż 0,2 m.",
+  "answer": "c",
+  "explanation": "Próg 0,2 m występuje tylko w ust. 1, który dotyczy konstrukcji i płyt podłogi oraz podziału przestrzeni podpodłogowej na sektory. Ust. 2 o osłonach instalacji palnych nie zawiera tego progu, a jedynym warunkiem jest wykorzystywanie przestrzeni do wentylacji lub ogrzewania pomieszczenia. Klasa EI 60 zamiast EI 30 obowiązuje w budynkach wysokościowych i przy gęstości obciążenia ogniowego ponad 4000 MJ/m2.",
   "legal": [
-   "§ 261 WT – przestrzeń podpodłogowa podłóg podniesionych"
+   "§ 259 ust. 2 WT – osłony instalacji palnych w przestrzeni podpodłogowej",
+   "§ 259 ust. 1 WT – wymagania dla podłóg podniesionych o więcej niż 0,2 m"
   ],
   "verified": false
  },
@@ -29,7 +31,7 @@
   "legal": [
    "PN-EN 13501-1 – klasyfikacja reakcji na ogień posadzek (indeks fl)"
   ],
-  "verified": false
+  "verified": true
  },
  "85": {
   "answer": "b",
@@ -37,7 +39,7 @@
   "legal": [
    "§ 111 WT / RPB – przechowywanie materiałów niebezpiecznych w garażach"
   ],
-  "verified": false
+  "verified": true
  },
  "86": {
   "answer": "c",
@@ -45,13 +47,15 @@
   "legal": [
    "rozp. w sprawie warunków technicznych obiektów budowlanych metra – kryteria środowiskowe"
   ],
-  "verified": false
+  "verified": true
  },
  "87": {
-  "answer": "a",
-  "explanation": "Przekrycie dachu powinno być nierozprzestrzeniające ognia, co odpowiada klasie co najmniej BROOF(t1).",
+  "answer": "b",
+  "explanation": "Co do zasady elementy budynku mają być nierozprzestrzeniające ognia, ale w niskim budynku PM o gęstości obciążenia ogniowego do 1000 MJ/m2 dopuszcza się przekrycie dachu słabo rozprzestrzeniające ogień. Według załącznika nr 3 jest to przekrycie spełniające kryteria grupy b, a niespełniające kryteriów grupy a klasy BROOF(t1). Pełna klasa BROOF(t1) byłaby wymagana dopiero dla dachu o powierzchni ponad 1000 m2, o czym pytanie nie mówi.",
   "legal": [
-   "§ 216 WT / PN-EN 13501-5 – klasyfikacja przekryć dachów"
+   "§ 216 ust. 2 pkt 2 WT – dopuszczenie elementów słabo rozprzestrzeniających ogień",
+   "zał. nr 3 pkt 4 WT – klasyfikacja przekryć dachów",
+   "§ 219 ust. 1 WT – przekrycie dachu ponad 1000 m2"
   ],
   "verified": false
  },
@@ -61,7 +65,7 @@
   "legal": [
    "§ 6–7 RW – ilość wody dla obiektów innych niż budynki"
   ],
-  "verified": false
+  "verified": true
  },
  "89": {
   "answer": "b",
@@ -69,7 +73,7 @@
   "legal": [
    "§ 28, § 29 RPB – obowiązek SSP i DSO"
   ],
-  "verified": false
+  "verified": true
  },
  "90": {
   "answer": "b",
@@ -93,7 +97,7 @@
   "legal": [
    "§ 212, § 216 WT – klasa B, wymagane klasy odporności ogniowej elementów"
   ],
-  "verified": false
+  "verified": true
  },
  "93": {
   "answer": "b",
@@ -101,7 +105,7 @@
   "legal": [
    "§ 271, § 272 WT – odległości między budynkami i od granicy działki"
   ],
-  "verified": false
+  "verified": true
  },
  "94": {
   "answer": "b",
@@ -125,7 +129,7 @@
   "legal": [
    "§ 37 RPB / WT – wentylacja pomieszczeń zagrożonych wybuchem"
   ],
-  "verified": false
+  "verified": true
  },
  "97": {
   "answer": "a",
@@ -133,15 +137,15 @@
   "legal": [
    "§ 179 WT / rozp. dot. zbiorników gazu płynnego – odległości"
   ],
-  "verified": false
+  "verified": true
  },
  "98": {
-  "answer": "c",
-  "explanation": "Na drogach ewakuacyjnych z lokalu na kondygnacji podziemnej (dyskoteka, 200 osób) należy zastosować urządzenia zapobiegające zadymieniu lub służące do usuwania dymu.",
+  "answer": "a",
+  "explanation": "Dyskoteka dla 200 osób na kondygnacji podziemnej to pomieszczenie przeznaczone dla ponad 100 osób. § 247 ust. 3 WT wymaga wtedy rozwiązań zapewniających usuwanie dymu z pomieszczenia i z dróg ewakuacyjnych. Przepis mówi o usuwaniu dymu, a nie o zabezpieczeniu przed zadymieniem ani o wyborze między tymi rozwiązaniami.",
   "legal": [
-   "§ 270 WT – usuwanie dymu z dróg ewakuacyjnych"
+   "§ 247 ust. 3 WT – usuwanie dymu z podziemnej kondygnacji z pomieszczeniem dla ponad 100 osób"
   ],
-  "verified": false
+  "verified": true
  },
  "99": {
   "answer": "c",
@@ -152,10 +156,10 @@
   "verified": true
  },
  "100": {
-  "answer": "b",
-  "explanation": "Wg PN-EN 13200-1 dla obszarów pod przykryciem zaleca się osiągnięcie miejsca bezpiecznego w ciągu 8 minut.",
+  "answer": "a",
+  "explanation": "PN-EN 13200-1 zaleca, aby widzowie mogli dotrzeć do miejsca bezpiecznego w ciągu 8 minut na obiektach otwartych i w ciągu 2 minut w obszarach pod przykryciem. Krótszy czas dla obiektów krytych wynika z szybszego narastania zagrożenia dymem. Pytanie dotyczy obszarów pod przykryciem, więc poprawne są 2 minuty.",
   "legal": [
-   "PN-EN 13200-1:2013 – ewakuacja z widowni"
+   "PN-EN 13200-1 – obiekty widowiskowe, czas ewakuacji z widowni"
   ],
   "verified": false
  },
@@ -181,23 +185,23 @@
   "legal": [
    "ustawa o ochronie ppoż. – zadania rzeczoznawcy; RPB – instrukcja bezpieczeństwa pożarowego"
   ],
-  "verified": false
+  "verified": true
  },
  "104": {
-  "answer": "a",
-  "explanation": "Garaż obejmujący kondygnację na poziomie „0” i „-1” jest garażem wielokondygnacyjnym, co skutkuje obowiązkiem wyposażenia w system sygnalizacji pożarowej.",
+  "answer": "b",
+  "explanation": "System sygnalizacji pożarowej jest wymagany w garażach podziemnych, gdy strefa pożarowa przekracza 1500 m2 albo garaż obejmuje więcej niż jedną kondygnację podziemną. W pytaniu strefa nie przekracza 1500 m2, a z dwóch kondygnacji tylko poziom „-1” jest podziemny, bo poziom „0” to kondygnacja nadziemna. Żaden z warunków nie jest więc spełniony.",
   "legal": [
-   "§ 28 RPB – obiekty wymagające SSP"
+   "§ 28 ust. 1 pkt 17 RPB – SSP w garażach podziemnych"
   ],
   "verified": false
  },
  "105": {
-  "answer": "c",
-  "explanation": "Wymóg dźwigu przystosowanego dla ekip ratowniczych dotyczy budynku mającego kondygnację z posadzką położoną powyżej 25 m ponad poziomem terenu przy najniższym wejściu.",
+  "answer": "b",
+  "explanation": "Kryterium posadzki powyżej 25 m dotyczy budynków ZL I, ZL II, ZL III i ZL V. Dla budynków mieszkalnych ZL IV dźwig dla ekip ratowniczych jest wymagany dopiero w budynku wysokościowym (WW), czyli powyżej 55 m.",
   "legal": [
-   "§ 193, § 207 WT – dźwigi dla ekip ratowniczych"
+   "§ 253 ust. 1 WT – dźwig dla ekip ratowniczych"
   ],
-  "verified": false
+  "verified": true
  },
  "106": {
   "answer": "a",
@@ -224,12 +228,12 @@
   "verified": false
  },
  "109": {
-  "answer": "c",
-  "explanation": "Wg PN-EN 1838 na drodze ewakuacyjnej średnie natężenie oświetlenia awaryjnego w centralnym pasie podłogi o szerokości 1 m powinno wynosić co najmniej 1 lx.",
+  "answer": "a",
+  "explanation": "Dla dróg ewakuacyjnych o szerokości do 2 m PN-EN 1838 wymaga co najmniej 1 lx na podłodze wzdłuż linii środkowej. Centralny pas obejmujący co najmniej połowę szerokości drogi ma być oświetlony co najmniej w 50% tej wartości, czyli 0,5 lx. Przy korytarzu 2 m pas centralny ma 1 m, więc odpowiedzią jest 0,5 lx.",
   "legal": [
-   "PN-EN 1838 – oświetlenie awaryjne dróg ewakuacyjnych"
+   "PN-EN 1838 – oświetlenie awaryjne, natężenie na drodze ewakuacyjnej"
   ],
-  "verified": true
+  "verified": false
  },
  "110": {
   "answer": "b",
@@ -249,12 +253,13 @@
   "verified": true
  },
  "112": {
-  "answer": "c",
-  "explanation": "Deficyt = 30 − 10 = 20 dm³/s. Przez względny czas trwania pożaru 6 h (21 600 s): 20 × 21 600 = 432 000 dm³ = 432 m³.",
+  "answer": "b",
+  "explanation": "Uzupełniający zapas wody liczy się jako brakującą wydajność wodociągu pomnożoną przez czas trwania pożaru, ale czas ten przyjmuje się nie większy niż 4 godziny. Brakuje 30 − 10 = 20 dm3/s, więc 20 dm3/s × 4 h × 3600 s = 288 000 dm3, czyli 288 m3. Wynik 432 m3 powstaje przy błędnym przyjęciu pełnych 6 godzin.",
   "legal": [
-   "§ 8–9 RW – uzupełniający zapas wody w zbiorniku"
+   "§ 6 ust. 10 pkt 1 RW – uzupełniający zapas wody dla obiektów PM",
+   "§ 6 ust. 3 RW – ilość wody według tabeli nr 2"
   ],
-  "verified": false
+  "verified": true
  },
  "113": {
   "answer": "b",
@@ -262,15 +267,15 @@
   "legal": [
    "rozp. MG z 21.11.2005 – odległości na terenie baz paliw"
   ],
-  "verified": false
+  "verified": true
  },
  "114": {
-  "answer": "b",
-  "explanation": "Jednym z warunków dopuszczalności rozwiązań zamiennych jest uwzględnienie możliwości ewakuacji ludzi lub ich uratowania w inny sposób.",
+  "answer": "a",
+  "explanation": "Art. 6a ust. 1 UOP wymaga, aby rozwiązania zamienne ograniczały możliwość powstania pożaru, a w razie pożaru między innymi zapewniały możliwość ewakuacji ludzi lub ich uratowania w inny sposób oraz uwzględniały bezpieczeństwo ekip ratowniczych. Pozostałe warianty zamieniają czasowniki: ewakuację trzeba zapewnić, a nie tylko uwzględnić, natomiast bezpieczeństwo ekip trzeba uwzględnić. Dosłownie zgodny z ustawą jest tylko wariant o ograniczeniu możliwości powstania pożaru.",
   "legal": [
-   "art. 6a ustawy o ochronie ppoż. – rozwiązania zamienne"
+   "art. 6a ust. 1 UOP – warunki stosowania rozwiązań zamiennych"
   ],
-  "verified": false
+  "verified": true
  },
  "115": {
   "answer": "c",
@@ -286,15 +291,15 @@
   "legal": [
    "ustawa o ochronie ppoż. – uzgadnianie projektów urządzeń ppoż."
   ],
-  "verified": false
+  "verified": true
  },
  "117": {
-  "answer": "a",
-  "explanation": "W scenariuszu pożarowym uwzględnia się przede wszystkim sposób funkcjonowania urządzeń przeciwpożarowych i innych środków zabezpieczenia oraz ich współdziałanie i wzajemne oddziaływanie.",
+  "answer": "c",
+  "explanation": "Definicja scenariusza pożarowego wymienia dwa elementy, które uwzględnia się przede wszystkim. Pierwszy to sposób funkcjonowania urządzeń przeciwpożarowych, innych technicznych środków zabezpieczenia oraz instalacji użytkowych i technologicznych wraz z ich współdziałaniem. Drugi to rozwiązania organizacyjne niezbędne do właściwego funkcjonowania projektowanych zabezpieczeń. Poprawna jest więc odpowiedź obejmująca oba elementy.",
   "legal": [
-   "§ 2 RPB – definicja scenariusza pożarowego"
+   "§ 2 pkt 4 rozp. MSWiA w sprawie uzgadniania projektu – definicja scenariusza pożarowego"
   ],
-  "verified": false
+  "verified": true
  },
  "118": {
   "answer": "b",
@@ -318,6 +323,6 @@
   "legal": [
    "§ 19 RPB – hydranty wewnętrzne w garażach"
   ],
-  "verified": false
+  "verified": true
  }
 }

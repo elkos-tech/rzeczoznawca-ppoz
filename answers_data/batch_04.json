@@ -13,7 +13,7 @@
   "legal": [
    "§ 164 WT – instalacje gazowe zasilające kotłownie"
   ],
-  "verified": false
+  "verified": true
  },
  "123": {
   "answer": "b",
@@ -32,12 +32,12 @@
   "verified": false
  },
  "125": {
-  "answer": "a",
-  "explanation": "Dla hydrantów wewnętrznych 33 z wężem półsztywnym średnica nominalna przewodów zasilających powinna wynosić co najmniej DN 32.",
+  "answer": "c",
+  "explanation": "Przepis podaje trzy progi średnic przewodów zasilających. Dla hydrantów 25 jest to DN 25, a dla hydrantów 33 i 52 wspólnie DN 50. DN 80 dotyczy zaworów 52 na nawodnionych pionach w budynkach wysokich i wysokościowych.",
   "legal": [
-   "§ 19–20 RPB – instalacja wodociągowa przeciwpożarowa"
+   "§ 25 ust. 4 RPB – średnice przewodów zasilających hydranty wewnętrzne"
   ],
-  "verified": false
+  "verified": true
  },
  "126": {
   "answer": "b",
@@ -61,21 +61,22 @@
   "legal": [
    "ustawa o ochronie ppoż. / rozp. w sprawie OC rzeczoznawcy"
   ],
-  "verified": false
+  "verified": true
  },
  "129": {
-  "answer": "a",
-  "explanation": "W przypadku stropów płaskich czujki należy sytuować bezpośrednio na stropie (lub tuż pod nim, w dopuszczalnych granicach).",
+  "answer": "b",
+  "explanation": "Specyfikacja CEN/TS 54-14 zaleca, aby pod stropami płaskimi czujki rozmieszczać tak, żeby ich elementy detekcyjne znajdowały się w granicach górnych 5% wysokości pomieszczenia. Wynika to z tego, że dym i ciepło gromadzą się pod stropem, ale bezpośrednio przy nim może zalegać chłodniejsza warstwa powietrza. Specyfikacja nie wymaga montażu wyłącznie bezpośrednio na stropie ani nie podaje granicy 0,5 m. Uwaga: odpowiedź opiera się na normie lub źródle niedostępnym w aplikacji.",
   "legal": [
-   "PKN-CEN/TS 54-14:2006 – rozmieszczenie czujek"
+   "PKN-CEN/TS 54-14:2006 pkt A.6.5.1 – rozmieszczenie czujek pod stropami płaskimi"
   ],
   "verified": false
  },
  "130": {
-  "answer": "c",
-  "explanation": "Oznaczenie „multi” wskazuje, że klapa ma konstrukcję umożliwiającą jej montaż w zespole (baterii) wielu klap przylegających do siebie.",
+  "answer": "b",
+  "explanation": "W klasyfikacji klap odcinających do systemów wentylacji oddymiającej końcowe oznaczenie „single” albo „multi” określa zakres zastosowania. Klapa „single” jest przeznaczona do systemów obsługujących jedną strefę pożarową, a klapa „multi” do systemów wielostrefowych, w których musi zachować także izolacyjność ogniową. Położenie montażu opisują symbole ve i ho, a nie słowo „multi”.",
   "legal": [
-   "PN-EN 13501-4 / PN-EN 1366-10 – klasyfikacja klap wentylacji oddymiającej"
+   "PN-EN 13501-4 – klasyfikacja ogniowa elementów systemów kontroli rozprzestrzeniania dymu",
+   "PN-EN 12101-8 – klapy odcinające wentylacji pożarowej"
   ],
   "verified": false
  },
@@ -85,7 +86,7 @@
   "legal": [
    "rozp. dot. warunków technicznych zbiorników gazu płynnego – odległości"
   ],
-  "verified": false
+  "verified": true
  },
  "132": {
   "answer": "b",
@@ -93,15 +94,15 @@
   "legal": [
    "rozp. w sprawie warunków technicznych obiektów metra – kryteria środowiskowe"
   ],
-  "verified": false
+  "verified": true
  },
  "133": {
-  "answer": "a",
-  "explanation": "Przewody wodociągowe w odgałęzieniach sieci obwodowej, na których instaluje się hydranty zewnętrzne, powinny mieć średnicę co najmniej DN 100.",
+  "answer": "c",
+  "explanation": "Minimalne średnice DN 100 i DN 125 dotyczą odpowiednio sieci obwodowej i sieci rozgałęzieniowej. Dla odgałęzień sieci obwodowej przepis nie podaje wartości i każe przyjąć średnicę według obliczeń hydraulicznych. DN 80 dotyczy tylko rozbudowy istniejącego wodociągu w małej jednostce osadniczej.",
   "legal": [
-   "§ 10 RW – sieć wodociągowa i hydranty zewnętrzne"
+   "§ 9 ust. 7 RW – średnice przewodów z hydrantami zewnętrznymi"
   ],
-  "verified": false
+  "verified": true
  },
  "134": {
   "answer": "a",
@@ -109,7 +110,7 @@
   "legal": [
    "rozp. MEN z 31.12.2014 (Dz.U. 2015 poz. 20)"
   ],
-  "verified": false
+  "verified": true
  },
  "135": {
   "answer": "a",
@@ -117,15 +118,16 @@
   "legal": [
    "§ 208a WT – materiały niepalne; PN-EN 13501-1"
   ],
-  "verified": false
+  "verified": true
  },
  "136": {
-  "answer": "c",
-  "explanation": "W budynku klasy odporności pożarowej „E” nie stawia się wymagań co do klasy odporności ogniowej głównej konstrukcji nośnej – dotyczy to również konstrukcji nośnej antresoli.",
+  "answer": "b",
+  "explanation": "Antresola dla więcej niż 10 osób musi spełniać wymagania wynikające z klasy budynku, ale nie niższe niż dla klasy D. W budynku klasy E oznacza to wymagania jak dla klasy D, czyli główną konstrukcję nośną R 30. Złagodzenie z § 214 nie ma zastosowania, bo budynek nie ma stałych samoczynnych urządzeń gaśniczych wodnych.",
   "legal": [
-   "§ 216 WT – wymagane klasy odporności ogniowej elementów (klasa E)"
+   "§ 216 ust. 7 WT – antresola dla więcej niż 10 osób",
+   "§ 216 ust. 1 WT – klasy odporności ogniowej elementów budynku"
   ],
-  "verified": false
+  "verified": true
  },
  "137": {
   "answer": "a",
@@ -133,7 +135,7 @@
   "legal": [
    "art. 10 ust. 1 ustawy o wyrobach budowlanych"
   ],
-  "verified": false
+  "verified": true
  },
  "138": {
   "answer": "c",
@@ -149,7 +151,7 @@
   "legal": [
    "§ 20 RPB / RW – zasilanie rezerwowe pompowni przeciwpożarowych"
   ],
-  "verified": false
+  "verified": true
  },
  "140": {
   "answer": "c",
@@ -157,7 +159,7 @@
   "legal": [
    "wytyczne / normy dot. zasilania urządzeń ppoż."
   ],
-  "verified": false
+  "verified": true
  },
  "141": {
   "answer": "a",
@@ -165,7 +167,7 @@
   "legal": [
    "§ 37 RPB – pomieszczenia uznane za zagrożone wybuchem"
   ],
-  "verified": false
+  "verified": true
  },
  "142": {
   "answer": "a",
@@ -184,20 +186,22 @@
   "verified": false
  },
  "144": {
-  "answer": "c",
-  "explanation": "Elementy oddzielenia pomieszczenia zbiornika powinny mieć klasę odporności ogniowej zapewniającą pobór wody przez czas nie krótszy niż obliczeniowy czas trwania pożaru, jednak nie krótszy niż 4 godziny.",
+  "answer": "b",
+  "explanation": "Pomieszczenie ze zbiornikiem przeciwpożarowym ma stanowić odrębną strefę pożarową, a jego wydzielenie musi wytrzymać tak długo, jak długo potrzebna jest woda. Przyjęto, że norma wymaga czasu nie krótszego niż obliczeniowy czas trwania pożaru i nie krótszego niż 2 godziny, co odpowiada dwugodzinnemu czasowi zapewnienia wody w § 9 RW. Odpowiedź wymaga potwierdzenia w tekście normy. Uwaga: odpowiedź opiera się na normie lub źródle niedostępnym w aplikacji.",
   "legal": [
-   "PN-B-02857:2017-04 – przeciwpożarowe zbiorniki wodne"
+   "PN-B-02857:2017-04 – zbiornik przeciwpożarowy w budynku",
+   "§ 212 ust. 9 WT – pomieszczenia zbiorników przeciwpożarowych jako odrębna strefa pożarowa"
   ],
   "verified": false
  },
  "145": {
-  "answer": "c",
-  "explanation": "Doprowadzenie drogi pożarowej jest wymagane do budynku ZL V zarówno niskiego z 50 miejscami noclegowymi, jak i średniowysokiego.",
+  "answer": "b",
+  "explanation": "Do budynku średniowysokiego ze strefą ZL V drogę pożarową doprowadza się zawsze (§ 12 ust. 1 pkt 2). Budynek niski ZL V wymaga drogi dopiero wtedy, gdy ma ponad 50 miejsc noclegowych. Dokładnie 50 miejsc nie spełnia warunku „ponad 50”, więc poprawny jest tylko budynek średniowysoki.",
   "legal": [
-   "§ 12 RW – wymóg drogi pożarowej"
+   "§ 12 ust. 1 pkt 2 RW – droga pożarowa do budynków SW, W i WW z ZL III, IV lub V",
+   "§ 12 ust. 1 pkt 5 lit. b RW – budynek niski ZL V z ponad 50 miejscami noclegowymi"
   ],
-  "verified": false
+  "verified": true
  },
  "146": {
   "answer": "b",
@@ -217,12 +221,13 @@
   "verified": true
  },
  "148": {
-  "answer": "a",
-  "explanation": "Awaryjne oświetlenie ewakuacyjne w jednokondygnacyjnym muzeum stosuje się w salach wystawowych o powierzchni ponad 100 m² przeznaczonych dla ponad 50 osób i na drogach ewakuacyjnych oświetlonych wyłącznie światłem sztucznym.",
+  "answer": "c",
+  "explanation": "§ 181 ust. 3 WT wymienia pomieszczenia wystawowe w muzeach bez żadnego progu powierzchni ani liczby osób. Awaryjne oświetlenie ewakuacyjne stosuje się też na drogach ewakuacyjnych z tych pomieszczeń. Progi 200 osób i 2000 m2 dotyczą innych rodzajów pomieszczeń.",
   "legal": [
-   "§ 181 WT – awaryjne oświetlenie ewakuacyjne"
+   "§ 181 ust. 3 pkt 1 lit. c WT – pomieszczenia wystawowe w muzeach",
+   "§ 181 ust. 3 pkt 2 lit. a WT – drogi ewakuacyjne z pomieszczeń wymienionych w pkt 1"
   ],
-  "verified": false
+  "verified": true
  },
  "149": {
   "answer": "a",
@@ -242,12 +247,13 @@
   "verified": true
  },
  "151": {
-  "answer": "b",
-  "explanation": "Budynek IN (strefa PM/IN) projektuje się w klasie odporności pożarowej wynikającej z ustalonej gęstości obciążenia ogniowego.",
+  "answer": "c",
+  "explanation": "Budynki IN o kubaturze brutto do 1500 m3 są zwolnione z wymagań dotyczących klasy odporności pożarowej określonych w § 212. Budynek do przechowywania płodów rolnych o kubaturze 1000 m3 mieści się w tym limicie. Nie ustala się więc dla niego klasy odporności pożarowej na podstawie gęstości obciążenia ogniowego.",
   "legal": [
-   "§ 212 ust. 3 WT – klasa odporności pożarowej budynków PM/IN"
+   "§ 282 WT – zwolnienie budynków IN do 1500 m3 z wymagań klasy odporności pożarowej",
+   "§ 209 ust. 4 WT – budynki do przechowywania płodów rolnych jako IN"
   ],
-  "verified": false
+  "verified": true
  },
  "152": {
   "answer": "b",
@@ -263,13 +269,14 @@
   "legal": [
    "rozp. MG z 21.11.2005 – bazy paliw płynnych"
   ],
-  "verified": false
+  "verified": true
  },
  "154": {
-  "answer": "a",
-  "explanation": "Dopuszczalna długość drugiego dojścia ewakuacyjnego w opisanej strefie wynosi 60 m.",
+  "answer": "c",
+  "explanation": "Budynek stanowi jedną strefę pożarową zaliczoną do kilku kategorii ZL, więc strefa musi spełniać wymagania każdej z nich, czyli najostrzejsze. Dla ZL I i ZL II najkrótsze dojście przy dwóch dojściach może mieć 40 m, a drugie może być dłuższe o 100%, czyli 80 m. Wartość 120 m dla ZL III nie ma zastosowania, bo cała strefa podlega też wymaganiom ZL I i ZL II.",
   "legal": [
-   "§ 256 WT – długość dojść ewakuacyjnych (drugie dojście)"
+   "§ 256 ust. 3 WT – długości dojść, drugie dojście dłuższe o 100%",
+   "§ 209 ust. 5 WT – strefa zaliczona do więcej niż jednej kategorii ZL"
   ],
   "verified": false
  },
@@ -279,7 +286,7 @@
   "legal": [
    "§ 258 WT – wymagania dla posadzek na drogach ewakuacyjnych i w pomieszczeniach"
   ],
-  "verified": false
+  "verified": true
  },
  "156": {
   "answer": "b",
@@ -290,12 +297,12 @@
   "verified": false
  },
  "157": {
-  "answer": "b",
-  "explanation": "Zapas środka pianotwórczego na terenie bazy paliw płynnych powinien wystarczyć na okres zużycia wymaganego zapasu wody.",
+  "answer": "a",
+  "explanation": "Zapas środka pianotwórczego w bazie paliw płynnych ma wystarczyć na co najmniej 30 minut jego zużycia. Dwie godziny odnoszą się do zapasu wody do gaszenia największego zbiornika i jego obwałowania, a nie do środka pianotwórczego.",
   "legal": [
-   "rozp. MG z 21.11.2005 – urządzenia pianowe"
+   "§ 47 ust. 2 rozp. w sprawie baz i stacji paliw płynnych – zapas środka pianotwórczego i wody"
   ],
-  "verified": false
+  "verified": true
  },
  "158": {
   "answer": "b",
@@ -306,19 +313,19 @@
   "verified": true
  },
  "159": {
-  "answer": "c",
-  "explanation": "Deficyt = 40 − 10 = 30 dm³/s. Przez względny czas trwania pożaru 6 h (21 600 s): 30 × 21 600 = 648 000 dm³ = 648 m³.",
+  "answer": "a",
+  "explanation": "Brakująca wydajność wodociągu to 40 − 10 = 30 dm3/s. Czas trwania pożaru przyjmuje się nie większy niż 4 godziny, mimo że względny czas trwania pożaru wynosi 6 godzin. Zapas to 30 dm3/s × 4 h × 3600 s = 432 000 dm3, czyli 432 m3.",
   "legal": [
-   "§ 8–9 RW – uzupełniający zapas wody"
+   "§ 6 ust. 10 pkt 1 RW – uzupełniający zapas wody dla obiektów PM"
   ],
   "verified": true
  },
  "160": {
-  "answer": "a",
-  "explanation": "W scenariuszu pożarowym uwzględnia się przede wszystkim sposób funkcjonowania urządzeń przeciwpożarowych i innych środków oraz ich współdziałanie i wzajemne oddziaływanie.",
+  "answer": "c",
+  "explanation": "Definicja scenariusza pożarowego wymienia dwa elementy, które uwzględnia się przede wszystkim. Pierwszy to sposób funkcjonowania urządzeń przeciwpożarowych, innych technicznych środków zabezpieczenia oraz instalacji użytkowych i technologicznych wraz z ich współdziałaniem. Drugi to rozwiązania organizacyjne niezbędne do właściwego funkcjonowania projektowanych zabezpieczeń. Poprawna jest więc odpowiedź obejmująca oba elementy.",
   "legal": [
-   "§ 2 RPB – definicja scenariusza pożarowego"
+   "§ 2 pkt 4 rozp. MSWiA w sprawie uzgadniania projektu – definicja scenariusza pożarowego"
   ],
-  "verified": false
+  "verified": true
  }
 }

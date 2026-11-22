@@ -21,7 +21,7 @@
   "legal": [
    "§ 253 WT – biegi i spoczniki schodów"
   ],
-  "verified": false
+  "verified": true
  },
  "284": {
   "answer": "a",
@@ -29,15 +29,16 @@
   "legal": [
    "§ 179 WT / rozp. dot. zbiorników gazu płynnego"
   ],
-  "verified": false
+  "verified": true
  },
  "285": {
-  "answer": "c",
-  "explanation": "W budynku wysokim użyteczności publicznej instalacja gazowa może być wykonana tylko do pomieszczeń technicznych, w których zainstalowane są urządzenia gazowe.",
+  "answer": "b",
+  "explanation": "Budynek wysoki ma ponad 25 m, więc instalacja gazowa wymaga pozytywnej opinii komendanta wojewódzkiego PSP. Ograniczenie do pomieszczeń technicznych z urządzeniami gazowymi dotyczy dopiero budynków o wysokości większej niż 35 m (ust. 3), a pytanie mówi o budynku nie wyższym niż 35 m.",
   "legal": [
-   "§ 157 WT – instalacje gazowe w budynkach wysokich"
+   "§ 157 ust. 4 WT – opinia KW PSP dla instalacji gazowej w budynku ponad 25 m",
+   "§ 157 ust. 3 WT – instalacja gazowa w budynku wyższym niż 35 m"
   ],
-  "verified": false
+  "verified": true
  },
  "286": {
   "answer": "c",
@@ -45,7 +46,7 @@
   "legal": [
    "§ 239 WT – drzwi na drogach ewakuacyjnych"
   ],
-  "verified": false
+  "verified": true
  },
  "287": {
   "answer": "b",
@@ -65,12 +66,14 @@
   "verified": true
  },
  "289": {
-  "answer": "a",
-  "explanation": "Przy spełnionym NRO ścian i dachów oraz ponad 65% powierzchni ściany w wymaganej klasie (75%), budynek średniowysoki należy usytuować od równoległej ściany sąsiedniego budynku ZL w odległości nie mniejszej niż 8 m.",
+  "answer": "c",
+  "explanation": "Biurowiec średniowysoki to ZL III w klasie odporności pożarowej „B”, dla której ściana zewnętrzna ma mieć klasę EI 60, czyli szczelność E 60. Ściana z klasą E 30 nie ma wymaganej klasy na żadnej części powierzchni, więc traktuje się ją jak ścianę z wymaganą klasą na mniej niż 30% powierzchni. Odległość podstawową ZL–ZL 8 m zwiększa się wtedy o 100%, czyli do 16 m.",
   "legal": [
-   "§ 271 WT – odległości między budynkami"
+   "§ 271 ust. 1 i 5 WT – odległości między budynkami i ich zwiększenie o 100%",
+   "§ 216 ust. 1 WT – klasa ściany zewnętrznej EI 60 w budynku klasy „B”",
+   "§ 212 ust. 2 WT – klasa „B” dla ZL III średniowysokiego"
   ],
-  "verified": false
+  "verified": true
  },
  "290": {
   "answer": "a",
@@ -89,18 +92,21 @@
   "verified": false
  },
  "292": {
-  "answer": "c",
-  "explanation": "Przepusty instalacyjne w ścianie oddzielenia przeciwpożarowego powinny mieć klasę EI wymaganą dla tej ściany (tu EI 60), lecz tylko dla przepustów o średnicy ponad 0,04 m.",
+  "answer": "b",
+  "explanation": "Niski budynek biurowy (ZL III) wymaga klasy „C”, a klasę „D” przyjęto tylko dzięki urządzeniom gaśniczym. Takie obniżenie nie zmienia wymagań dla elementów oddzielenia przeciwpożarowego, więc ściany oddzielenia muszą mieć klasę REI 120 jak dla klasy „C”. Przepusty w elementach oddzielenia przeciwpożarowego mają mieć klasę EI wymaganą dla tych elementów, czyli EI 120, bez względu na średnicę.",
   "legal": [
-   "§ 234 WT – przepusty instalacyjne"
+   "§ 215 ust. 2 WT – zachowanie pierwotnej klasy elementów oddzielenia przeciwpożarowego",
+   "§ 232 ust. 4 WT – REI 120 dla klasy „B” i „C”",
+   "§ 234 ust. 1 WT – klasa przepustów w elementach oddzielenia przeciwpożarowego"
   ],
-  "verified": false
+  "verified": true
  },
  "293": {
-  "answer": "c",
-  "explanation": "Dojście ewakuacyjne przy jednym dojściu dla budynku mieszkalnego (ZL IV) z drogami chronionymi tryskaczami wynosi 40 m (na poziomym odcinku).",
+  "answer": "a",
+  "explanation": "W strefie ZL IV przy jednym dojściu dopuszcza się 60 m, w tym nie więcej niż 20 m na poziomej drodze ewakuacyjnej. Powiększenie o 50% przysługuje za ochronę całej strefy pożarowej stałymi samoczynnymi urządzeniami gaśniczymi wodnymi, a pytanie mówi tylko o ochronie dróg ewakuacyjnych. Warunek z przepisu nie jest więc spełniony i zostaje 20 m. Gdyby autor pytania uznał tę ochronę za wystarczającą, wynikiem byłoby 30 m, dlatego pytanie jest niejednoznaczne. Uwaga: pytanie niejednoznaczne, do obrony jest też inny wariant.",
   "legal": [
-   "§ 256 WT – długość dojść ewakuacyjnych"
+   "§ 256 ust. 3 WT – dojście w ZL IV: 60 m, w tym do 20 m w poziomie",
+   "§ 256 ust. 4 WT – powiększenie długości dojść za urządzenia gaśnicze i oddymiające"
   ],
   "verified": false
  },
@@ -129,12 +135,13 @@
   "verified": true
  },
  "297": {
-  "answer": "b",
-  "explanation": "Tunel drogowy powinien być wyposażony w hydranty zewnętrzne nadziemne DN 80 usytuowane w odległościach nieprzekraczających 150 m.",
+  "answer": "c",
+  "explanation": "Przepis wskazany w pytaniu wymagał dla tuneli dłuższych niż 500 m hydrantów nadziemnych DN 80 w pobliżu wjazdów i w tunelu w odległościach nieprzekraczających 250 m. Rozporządzenie z 2000 r. zostało uchylone w 2022 r., ale obecne przepisy (załącznik nr 3 do rozporządzenia z 24.06.2022) utrzymały tę samą wartość.",
   "legal": [
-   "rozp. dot. drogowych obiektów inżynierskich; § 10 RW"
+   "§ 322c ust. 1 rozp. MTiGM z 30.05.2000 – hydranty w tunelu",
+   "pkt 61 zał. nr 3 rozp. MI z 24.06.2022 – hydranty w tunelu drogowym"
   ],
-  "verified": false
+  "verified": true
  },
  "298": {
   "answer": "a",
@@ -142,7 +149,7 @@
   "legal": [
    "rozp. MG z 21.11.2005 / § 179 WT – odległości zbiorników gazu"
   ],
-  "verified": false
+  "verified": true
  },
  "299": {
   "answer": "b",
@@ -150,23 +157,23 @@
   "legal": [
    "rozp. MG z 21.11.2005 – stacje kontenerowe"
   ],
-  "verified": false
+  "verified": true
  },
  "300": {
-  "answer": "a",
-  "explanation": "Instalacja do otrzymywania biogazu rolniczego o pojemności 500 m³ powinna mieć strefę bezpieczeństwa o szerokości co najmniej 3 m.",
+  "answer": "b",
+  "explanation": "Strefę bezpieczeństwa wokół instalacji do otrzymywania biogazu rolniczego ustala się w zależności od łącznej pojemności komór fermentacyjnych i zbiorników biogazu. Do 350 m3 wynosi ona co najmniej 3 m, ponad 350 m3 do 700 m3 co najmniej 5 m, a ponad 700 m3 co najmniej 8 m. Pojemność 500 m3 mieści się w drugim przedziale, więc strefa to co najmniej 5 m.",
   "legal": [
-   "rozp. dot. budowli rolniczych/biogazowni"
+   "§ 44 ust. 2 rozp. MRiRW z 13.01.2023 – strefy bezpieczeństwa wokół biogazowni rolniczych"
   ],
-  "verified": false
+  "verified": true
  },
  "301": {
-  "answer": "c",
-  "explanation": "Stosy lub pryzmy z oponami oddziela się pasami wolnej przestrzeni o szerokości co najmniej 5 m.",
+  "answer": "b",
+  "explanation": "W sekcji magazynowej opony magazynuje się w stosach lub pryzmach o powierzchni do 60 m2 albo w kontenerach stalowych. § 15 ust. 2 wymaga, aby stosy lub pryzmy były oddzielone od siebie pasami wolnej przestrzeni o szerokości co najmniej 3 m.",
   "legal": [
-   "rozp. MSWiA z 19.02.2020 (Dz.U. poz. 296) – magazynowanie odpadów"
+   "§ 15 rozp. MSWiA z 19.02.2020 – magazynowanie opon w sekcji magazynowej"
   ],
-  "verified": false
+  "verified": true
  },
  "302": {
   "answer": "c",
@@ -174,7 +181,7 @@
   "legal": [
    "§ 10 RW – sieć wodociągowa przeciwpożarowa"
   ],
-  "verified": false
+  "verified": true
  },
  "303": {
   "answer": "b",
@@ -182,15 +189,17 @@
   "legal": [
    "§ 10 RW – hydranty zewnętrzne"
   ],
-  "verified": false
+  "verified": true
  },
  "304": {
-  "answer": "b",
-  "explanation": "Dla strefy produkcyjno-magazynowej o takich parametrach najmniejsza dopuszczalna wydajność instalacji wodociągowej przeciwpożarowej do gaszenia wewnętrznego wynosi 5 dm³/s.",
+  "answer": "c",
+  "explanation": "Strefa PM o gęstości obciążenia ogniowego ponad 500 MJ/m2 i powierzchni ponad 200 m2 wymaga hydrantów 52, ale § 19 ust. 4 RPB dopuszcza hydranty 33, gdy gęstość nie przekracza 1000 MJ/m2. Jednoczesny pobór z czterech hydrantów jest wymagany dopiero przy powierzchni strefy przekraczającej 3000 m2, a tu wynosi ona dokładnie 3000 m2. Wystarcza więc pobór z dwóch sąsiednich hydrantów 33, czyli 2 x 1,5 dm3/s = 3 dm3/s.",
   "legal": [
-   "§ 15–19 RPB – zaopatrzenie w wodę do gaszenia wewnętrznego"
+   "§ 19 ust. 3 i 4 RPB – hydranty 52 i dopuszczenie hydrantów 33 w strefach PM",
+   "§ 22 ust. 1 RPB – minimalna wydajność hydrantów wewnętrznych",
+   "§ 23 RPB – jednoczesność poboru wody z hydrantów"
   ],
-  "verified": false
+  "verified": true
  },
  "305": {
   "answer": "a",
@@ -198,7 +207,7 @@
   "legal": [
    "§ 6 RW – ilość wody dla obiektów innych niż budynki"
   ],
-  "verified": false
+  "verified": true
  },
  "306": {
   "answer": "b",
@@ -206,29 +215,30 @@
   "legal": [
    "§ 12 RW – parametry drogi pożarowej"
   ],
-  "verified": false
+  "verified": true
  },
  "307": {
-  "answer": "b",
-  "explanation": "Zapas wody w zbiorniku instalacji wodociągowej ppoż. w budynku wysokościowym można, przy zasilaniu z sieci o wydajności ≥ 10 dm³/s, zmniejszyć do 25 m³.",
+  "answer": "c",
+  "explanation": "Punktem wyjścia w budynku wysokościowym jest zapas 100 m3. Zmniejszenie do 6 m3 przy sieci 10 dm3/s dotyczy tylko budynków z ust. 3 pkt 1, czyli takich, które powyżej 12 m mają wyłącznie strefy ZL IV albo nie mają stref większych niż 750 m2. Budynek użyteczności publicznej z kondygnacjami do 2000 m2 tych warunków co do zasady nie spełnia, więc przy sieci 10 dm3/s zapas można zmniejszyć ze 100 do 50 m3. Wartość 25 m3 wymagałaby sieci 15 dm3/s.",
   "legal": [
-   "§ 19–20 RPB – zapas wody instalacji wodociągowej ppoż."
+   "§ 24 ust. 2 RPB – zapas wody 100 m3 w budynkach wysokich i wysokościowych",
+   "§ 24 ust. 3 pkt 3 RPB – zmniejszenie pojemności zbiornika przy zasilaniu z sieci"
   ],
   "verified": false
  },
  "308": {
-  "answer": "c",
-  "explanation": "Obwody instalacji bezpieczeństwa nie powinny być zabezpieczane urządzeniami różnicowoprądowymi (RCD), a dopuszcza się zabezpieczenie urządzeniami do detekcji zwarć łukowych (AFDD).",
+  "answer": "b",
+  "explanation": "W warunkach pożaru w podwyższonej temperaturze między przewodami pojawiają się prądy upływu, które mogłyby spowodować zbędne zadziałanie zabezpieczeń i wyłączenie urządzeń potrzebnych w czasie pożaru. Dlatego norma nie pozwala zabezpieczać obwodów instalacji bezpieczeństwa urządzeniami do detekcji zwarć łukowych (AFDD). Wariant a nakazuje stosowanie RCD, a wariant c dopuszcza AFDD, więc oba są błędne.",
   "legal": [
-   "PN-HD 60364-5-56:2019-01 – instalacje bezpieczeństwa"
+   "PN-HD 60364-5-56:2019-01 – instalacje bezpieczeństwa, zabezpieczenia obwodów"
   ],
   "verified": false
  },
  "309": {
-  "answer": "a",
-  "explanation": "Przeciwpożarowy zbiornik wodny naziemny (250 m³) zapewniający pracę z napływem może być uzbrojony w co najmniej jeden przewód ssawny.",
+  "answer": "b",
+  "explanation": "Liczba przewodów ssawnych zależy od pojemności zbiornika, bo większy zapas wody ma umożliwiać jednoczesny pobór przez kilka pomp. Przyjęto podział: do 150 m3 jeden przewód, powyżej 150 do 300 m3 dwa, powyżej 300 m3 trzy. Zbiornik 250 m3 wymaga więc dwóch przewodów. Odpowiedź wymaga potwierdzenia w tekście normy, zwłaszcza co do zbiorników pracujących z napływem. Uwaga: odpowiedź opiera się na normie lub źródle niedostępnym w aplikacji.",
   "legal": [
-   "PN-B-02857:2017-04 – przeciwpożarowe zbiorniki wodne"
+   "PN-B-02857:2017-04 – uzbrojenie zbiornika w przewody ssawne"
   ],
   "verified": false
  },
@@ -241,10 +251,10 @@
   "verified": false
  },
  "311": {
-  "answer": "b",
-  "explanation": "Sygnalizator optyczny Typu B wg PN-EN 54-23 to urządzenie przeznaczone głównie do zastosowań wewnętrznych.",
+  "answer": "c",
+  "explanation": "Norma PN-EN 54-23 dzieli sygnalizatory optyczne ze względu na środowisko pracy na dwa typy. Typ A to urządzenia przeznaczone głównie do zastosowań wewnętrznych, a typ B głównie do zastosowań zewnętrznych. Taki sam podział stosuje PN-EN 54-3 dla sygnalizatorów akustycznych. Uwaga: odpowiedź opiera się na normie lub źródle niedostępnym w aplikacji.",
   "legal": [
-   "PN-EN 54-23 – sygnalizatory optyczne"
+   "PN-EN 54-23 – sygnalizatory optyczne, typy środowiskowe A i B"
   ],
   "verified": false
  },
@@ -281,10 +291,10 @@
   "verified": false
  },
  "316": {
-  "answer": "a",
-  "explanation": "W razie braku informacji o sile samozamykacza we wczesnej fazie projektowania dla celów projektowych można przyjąć maksymalną różnicę ciśnień 50 Pa.",
+  "answer": "b",
+  "explanation": "Norma ogranicza siłę potrzebną do otwarcia drzwi do 100 N, a maksymalną różnicę ciśnień należy wyznaczyć z uwzględnieniem wymiarów drzwi i siły samozamykacza. Gdy we wczesnej fazie projektowania siła samozamykacza nie jest znana, do celów projektowych można przyjąć maksymalną różnicę ciśnień 60 Pa. Wartość 50 Pa to nominalna różnica ciśnień przy zamkniętych drzwiach, a nie wartość maksymalna.",
   "legal": [
-   "PN-EN 12101-6:2007 – systemy różnicowania ciśnień"
+   "PN-EN 12101-6:2007 – systemy różnicowania ciśnień, maksymalna różnica ciśnień i siła otwierania drzwi 100 N"
   ],
   "verified": false
  },
@@ -313,10 +323,10 @@
   "verified": false
  },
  "320": {
-  "answer": "a",
-  "explanation": "Do ręcznego uruchamiania grawitacyjnej instalacji oddymiającej klatki schodowej w 8-kondygnacyjnym budynku wymagane są co najmniej 3 ręczne przyciski oddymiania.",
+  "answer": "b",
+  "explanation": "Według normy urządzenia oddymiające klatki schodowej uruchamia się samoczynnie oraz ręcznie. Przyciski ręcznego uruchamiania umieszcza się na najniższej i najwyższej kondygnacji oraz na kondygnacjach pośrednich, przyjęto że co najmniej na co trzeciej. W budynku o 8 kondygnacjach daje to co najmniej 4 przyciski. Odpowiedź wymaga potwierdzenia w tekście normy, bo nie udało się go sprawdzić. Uwaga: odpowiedź opiera się na normie lub źródle niedostępnym w aplikacji.",
   "legal": [
-   "PN-B-02877-4:2001 – grawitacyjne odprowadzanie dymu i ciepła"
+   "PN-B-02877-4:2001 – instalacje grawitacyjne do odprowadzania dymu i ciepła, uruchamianie oddymiania klatek schodowych"
   ],
   "verified": false
  }

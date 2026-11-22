@@ -24,12 +24,13 @@
   "verified": false
  },
  "164": {
-  "answer": "a",
-  "explanation": "Dopuszczenie do jednostkowego zastosowania nie ma zastosowania do wyrobów służących bezpieczeństwu pożarowemu, chyba że dotyczy rozwiązań zamiennych uzgodnionych w trybie art. 6a ustawy o ochronie ppoż.",
+  "answer": "c",
+  "explanation": "Jednostkowe zastosowanie jest wyłączone dla wyrobów z art. 5 ust. 1, czyli objętych normą zharmonizowaną lub europejską oceną techniczną, które wprowadza się do obrotu wyłącznie zgodnie z rozporządzeniem nr 305/2011. Ustawa nie zawiera szczególnego wyłączenia ani szczególnego trybu dla wyrobów służących bezpieczeństwu pożarowemu, nie odsyła też do art. 6a ustawy o ochronie przeciwpożarowej. Wariant b jest błędny, bo nie dotyczy to każdego wyrobu.",
   "legal": [
-   "art. 10 ustawy o wyrobach budowlanych; art. 6a ustawy o ochronie ppoż."
+   "art. 10 ust. 1 ustawy o wyrobach budowlanych – jednostkowe zastosowanie",
+   "art. 5 ust. 1 ustawy o wyrobach budowlanych – wyroby objęte normą zharmonizowaną"
   ],
-  "verified": false
+  "verified": true
  },
  "165": {
   "answer": "a",
@@ -37,7 +38,7 @@
   "legal": [
    "rozp. MG z 21.11.2005 – urządzenia gaśnicze pianowe zbiorników"
   ],
-  "verified": false
+  "verified": true
  },
  "166": {
   "answer": "c",
@@ -53,7 +54,7 @@
   "legal": [
    "§ 27, § 28, § 29 RPB – wyposażenie obiektów w urządzenia ppoż."
   ],
-  "verified": false
+  "verified": true
  },
  "168": {
   "answer": "b",
@@ -64,28 +65,31 @@
   "verified": false
  },
  "169": {
-  "answer": "a",
-  "explanation": "Ponieważ sąsiednia działka jest działką drogową (niezabudowywaną), ściana od jej strony nie musi być ścianą oddzielenia przeciwpożarowego; wymagana jest klasa ściany zewnętrznej właściwa dla budynku, tj. co najmniej EI 60.",
+  "answer": "c",
+  "explanation": "Budynek mieszkalny o 9 kondygnacjach jest średniowysoki, więc dla ZL IV wymaga klasy C, a ściana zewnętrzna klasy EI 30. Wymagania § 272 odnoszą się do sąsiedniej działki budowlanej, na której może powstać budynek, a działka drogowa taką działką nie jest, dlatego nie wymaga się od jej strony ściany oddzielenia przeciwpożarowego. Przy literalnym czytaniu § 272 ust. 3 można bronić także REI 120, stąd zastrzeżenie o niejednoznaczności. Uwaga: pytanie niejednoznaczne, do obrony jest też inny wariant.",
   "legal": [
-   "§ 271, § 216 WT – usytuowanie budynku i klasy ścian zewnętrznych"
+   "§ 216 ust. 1 WT – klasa odporności ogniowej ściany zewnętrznej",
+   "§ 272 ust. 1 i 3 WT – usytuowanie przy granicy działki",
+   "§ 212 ust. 2 WT – klasa odporności pożarowej budynku"
   ],
   "verified": false
  },
  "170": {
-  "answer": "c",
-  "explanation": "Tunel drogowy o długości większej niż 500 m powinien być wyposażony w hydranty zewnętrzne nadziemne DN 80 usytuowane przy punktach alarmowych w odległościach nieprzekraczających 150 m.",
+  "answer": "a",
+  "explanation": "Tunel dłuższy niż 500 m wyposaża się w hydranty zewnętrzne nadziemne DN 80 rozmieszczone w pobliżu wjazdów i w tunelu co najwyżej co 250 m. Hydranty w tunelu umieszcza się we wnękach ściany bocznej. Taką samą wartość podawał uchylony § 322c rozporządzenia z 2000 r.",
   "legal": [
-   "rozp. w sprawie warunków technicznych drogowych obiektów inżynierskich; § 10 RW"
+   "pkt 61 zał. nr 3 rozp. MI z 24.06.2022 – hydranty w tunelu drogowym",
+   "§ 322c rozp. MTiGM z 30.05.2000 (uchylone) – hydranty w tunelu"
   ],
-  "verified": false
+  "verified": true
  },
  "171": {
-  "answer": "a",
-  "explanation": "Obudowa schodów na stacji metra powinna mieć klasę reakcji na ogień co najmniej A2-s1,d0.",
+  "answer": "b",
+  "explanation": "Warunki techniczne dla obiektów metra wymagają dla obudów schodów, okładzin, ścianek działowych, osłon i przegród klasy reakcji na ogień co najmniej B-s1, d0. Klasa A2-s1, d0 dotyczy okładzin sufitów, sufitów podwieszanych i przewodów wentylacyjnych. Nowe rozporządzenie z 2023 r. utrzymało te same klasy.",
   "legal": [
-   "rozp. w sprawie warunków technicznych obiektów metra – reakcja na ogień"
+   "zał. nr 1 rozp. MI w sprawie warunków technicznych obiektów budowlanych metra – klasy reakcji na ogień elementów wykończenia"
   ],
-  "verified": false
+  "verified": true
  },
  "172": {
   "answer": "a",
@@ -96,12 +100,13 @@
   "verified": false
  },
  "173": {
-  "answer": "b",
-  "explanation": "W budynku magazynowym awaryjne oświetlenie ewakuacyjne należy zastosować w pomieszczeniu o powierzchni netto ponad 1000 m².",
+  "answer": "c",
+  "explanation": "W budynkach produkcyjnych i magazynowych awaryjne oświetlenie ewakuacyjne jest wymagane w pomieszczeniach o powierzchni netto ponad 2000 m2. Próg 1000 m2 dotyczy garaży oświetlonych wyłącznie światłem sztucznym. Próg 200 osób odnosi się do audytoriów, sal konferencyjnych, lokali rozrywkowych i sal sportowych.",
   "legal": [
-   "§ 181 WT – awaryjne oświetlenie ewakuacyjne"
+   "§ 181 ust. 3 pkt 1 lit. e WT – pomieszczenia ponad 2000 m2",
+   "§ 181 ust. 3 pkt 1 lit. d WT – garaże ponad 1000 m2"
   ],
-  "verified": false
+  "verified": true
  },
  "174": {
   "answer": "a",
@@ -125,7 +130,7 @@
   "legal": [
    "§ 234 WT – wyprowadzenie ścian oddzielenia ppoż."
   ],
-  "verified": false
+  "verified": true
  },
  "177": {
   "answer": "b",
@@ -157,7 +162,7 @@
   "legal": [
    "§ 19 RPB – hydranty wewnętrzne w strefach ZL"
   ],
-  "verified": false
+  "verified": true
  },
  "181": {
   "answer": "b",
@@ -168,12 +173,12 @@
   "verified": false
  },
  "182": {
-  "answer": "b",
-  "explanation": "Ograniczenie 15% powierzchni otworów w ścianach oddzieleń ppoż. nie ma zastosowania w galeriach handlowych – do ścian, które nie znajdują się na drogach ewakuacyjnych.",
+  "answer": "a",
+  "explanation": "Łączna powierzchnia otworów w ścianie oddzielenia przeciwpożarowego nie powinna przekraczać 15% powierzchni ściany. Jedyny wyjątek w § 232 ust. 2 WT dotyczy otworów w ścianach oddzielenia przeciwpożarowego w garażu, położonych na drogach manewrowych. Przepis nie przewiduje wyjątku dla galerii handlowych.",
   "legal": [
-   "§ 232 WT – otwory w ścianach oddzielenia ppoż."
+   "§ 232 ust. 2 WT – limit 15% powierzchni otworów i wyjątek dla garaży"
   ],
-  "verified": false
+  "verified": true
  },
  "183": {
   "answer": "a",
@@ -181,7 +186,7 @@
   "legal": [
    "§ 225 WT – pas międzykondygnacyjny"
   ],
-  "verified": false
+  "verified": true
  },
  "184": {
   "answer": "b",
@@ -189,7 +194,7 @@
   "legal": [
    "rozp. MG z 21.11.2005 – strefy zagrożenia wybuchem"
   ],
-  "verified": false
+  "verified": true
  },
  "185": {
   "answer": "b",
@@ -208,36 +213,37 @@
   "verified": true
  },
  "187": {
-  "answer": "a",
-  "explanation": "Korytarze ewakuacyjne o długości powyżej 50 m należy podzielić na odcinki nie dłuższe niż 50 m przegrodami z drzwiami dymoszczelnymi klasy co najmniej Sa.",
+  "answer": "c",
+  "explanation": "W budynku wysokim w strefach innych niż ZL IV poziome drogi ewakuacyjne muszą mieć rozwiązania zabezpieczające przed zadymieniem (§ 247 ust. 1). Korytarzy z takim zabezpieczeniem nie dotyczy obowiązek podziału na odcinki do 50 m drzwiami dymoszczelnymi. Dlatego żaden z wariantów o podziale korytarza nie jest prawidłowy.",
   "legal": [
-   "§ 256 WT – podział korytarzy ewakuacyjnych"
+   "§ 247 ust. 1 WT – zabezpieczenie przed zadymieniem poziomych dróg ewakuacyjnych w budynkach W i WW",
+   "§ 243 ust. 1 i 2 WT – podział korytarzy co 50 m i wyłączenie"
   ],
-  "verified": false
+  "verified": true
  },
  "188": {
-  "answer": "a",
-  "explanation": "Belki o wysokości 21 cm (powyżej progu) dzielą przestrzeń na 5 pól; przy 5 polach 20 m × 6 m (po 120 m²) wymagane są co najmniej 2 czujki na pole – łącznie 10 punktowych czujek dymu.",
+  "answer": "b",
+  "explanation": "Według PKN-CEN/TS 54-14 belki i inne nierówności stropu o wysokości nie większej niż 5% wysokości pomieszczenia pomija się i strop traktuje się jak płaski. Tutaj 5% z 4,5 m to 22,5 cm, a belki mają 21 cm. Przy promieniu działania czujki dymu 7,5 m pomieszczenie 30 × 20 m wymaga siatki 3 × 2, czyli 6 czujek. Wynik 10 czujek powstałby, gdyby belki traktować jak ściany dzielące sufit na pola.",
   "legal": [
-   "PKN-CEN/TS 54-14:2006 – rozmieszczenie czujek, wpływ belek"
+   "PKN-CEN/TS 54-14 – rozmieszczenie punktowych czujek dymu, stropy z belkami"
   ],
   "verified": false
  },
  "189": {
-  "answer": "c",
-  "explanation": "W systemie różnicowania ciśnień klasy F minimalna prędkość przepływu powietrza przez otwarte drzwi między przedsionkiem a strefą pożaru nie powinna być niższa niż 2 m/s.",
+  "answer": "b",
+  "explanation": "Podstawowe kryterium przepływu w systemie klasy F to 2 m/s przez otwarte drzwi między przedsionkiem a kondygnacją objętą pożarem. Norma przewiduje jednak szczególny przypadek przedsionka z dwojgiem drzwi prowadzących do powierzchni użytkowej, na przykład typu open space. Wtedy wymaga się co najmniej 1 m/s przez wszystkie otwarte drzwi. Odpowiedź wymaga potwierdzenia w tekście normy. Uwaga: odpowiedź opiera się na normie lub źródle niedostępnym w aplikacji.",
   "legal": [
-   "PN-EN 12101-6 – systemy różnicowania ciśnień, klasa F"
+   "PN-EN 12101-6 – systemy różnicowania ciśnień, kryterium przepływu dla klasy F"
   ],
   "verified": false
  },
  "190": {
-  "answer": "c",
-  "explanation": "Ponieważ przez hol nie prowadzi droga ewakuacyjna z klatki schodowej, drzwi do bagażowni nie muszą spełniać wymagań klasy odporności ogniowej ani dymoszczelności – żadna z pozostałych odpowiedzi nie jest prawidłowa.",
+  "answer": "a",
+  "explanation": "Hotel o wysokości 15 m to budynek średniowysoki ze strefą ZL V. Drzwi z pomieszczeń innych niż higienicznosanitarne, prowadzące na drogi komunikacji ogólnej, muszą mieć klasę co najmniej EI 30. Hol jest drogą komunikacji ogólnej, a przepis nie wymaga dymoszczelności i nie uzależnia wymagania od przebiegu drogi ewakuacyjnej z klatki schodowej.",
   "legal": [
-   "§ 239, § 245 WT – wymagania dla drzwi na drogach ewakuacyjnych"
+   "§ 246 ust. 6 WT – drzwi z pomieszczeń na drogi komunikacji ogólnej w ZL V"
   ],
-  "verified": false
+  "verified": true
  },
  "191": {
   "answer": "c",
@@ -245,7 +251,7 @@
   "legal": [
    "§ 3–5 RW – przypadki niewymagające zewnętrznego zaopatrzenia w wodę"
   ],
-  "verified": false
+  "verified": true
  },
  "192": {
   "answer": "b",
@@ -253,21 +259,23 @@
   "legal": [
    "§ 236 WT – kierunek otwierania drzwi ewakuacyjnych"
   ],
-  "verified": false
+  "verified": true
  },
  "193": {
-  "answer": "b",
-  "explanation": "Ewakuacyjną klatkę schodową w budynku ZL IV należy zamknąć drzwiami przeciwpożarowymi o klasie odporności ogniowej co najmniej EI 30, dymoszczelnymi klasy Sa, z samozamykaczem.",
+  "answer": "a",
+  "explanation": "Aby długość dojścia liczyć tylko do drzwi klatki schodowej, klatka musi być obudowana, zamykana drzwiami co najmniej EI 30 i wyposażona w urządzenia zapobiegające zadymieniu lub usuwające dym. Przepis nie wymaga dymoszczelności tych drzwi, a § 245 nie obejmuje stref ZL IV. W wariancie a pominięto liczbę przy klasie EI, chodzi o drzwi przeciwpożarowe EI 30 z samozamykaczem.",
   "legal": [
-   "§ 245, § 256 WT – obudowa i zamknięcie klatek schodowych"
+   "§ 256 ust. 2 WT – klatka schodowa równorzędna wyjściu do innej strefy pożarowej",
+   "§ 245 WT – klatki zamykane drzwiami dymoszczelnymi (nie dotyczy ZL IV)"
   ],
   "verified": false
  },
  "194": {
-  "answer": "c",
-  "explanation": "Dojście do dźwigu dla ekip ratowniczych nie może przekraczać 50 m, a w obrębie budynku – dopuszczalnej długości dojścia lub przejścia ewakuacyjnego dla strefy lub pomieszczenia, przez które przebiega.",
+  "answer": "b",
+  "explanation": "Obowiązujący § 12 ust. 5 RW wymaga, aby dźwig dla ekip ratowniczych miał połączenie z drogą pożarową dojściem o długości do 50 m, przy czym te 50 m obejmuje także drogę ewakuacyjną w budynku. Żaden wariant nie powtarza tego brzmienia. Wariant a jest wprost sprzeczny z przepisem, a z pozostałych bliższy jest wariant b, bo odcinek w budynku biegnie drogą ewakuacyjną, której dotyczą limity długości dojścia ewakuacyjnego. Pytanie wymaga ręcznej weryfikacji. Uwaga: pytanie albo warianty zawierają błąd.",
   "legal": [
-   "§ 193, § 207 WT – dźwigi dla ekip ratowniczych i dojścia"
+   "§ 12 ust. 5 RW – połączenie dźwigu dla ekip ratowniczych z drogą pożarową",
+   "§ 12 ust. 4 RW – dojście o szerokości 1,5 m i długości do 50 m"
   ],
   "verified": false
  },
@@ -317,6 +325,6 @@
   "legal": [
    "§ 6–7 RW – ilość wody dla obiektów innych niż budynki"
   ],
-  "verified": false
+  "verified": true
  }
 }
